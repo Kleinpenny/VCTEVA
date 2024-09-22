@@ -1,0 +1,4 @@
+gradio
+gradio_client
+requests
+huggingface_hub
