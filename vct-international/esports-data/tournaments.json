@@ -1,0 +1,245 @@
+[{
+  "id": "109710937834457925",
+  "status": "published",
+  "league_id": "109551178413356399",
+  "time_zone": "Etc/UTC",
+  "name": "lock_in_brazil_2023"
+},
+{
+  "id": "112053399716844250",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_masters_shanghai_2024"
+},
+{
+  "id": "108517568479631144",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Etc/UTC",
+  "name": "masters_2_2022_stage_1"
+},
+{
+  "id": "107997085398196447",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Etc/UTC",
+  "name": "masters_1_2022_stage_1"
+},
+{
+  "id": "106868306782316745",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Etc/UTC",
+  "name": "stage_03"
+},
+{
+  "id": "110445180514540816",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Etc/UTC",
+  "name": "vct_masters_2023_groups"
+},
+{
+  "id": "110445220928609427",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Etc/UTC",
+  "name": "vct_masters_2023_playoffs"
+},
+{
+  "id": "112019354266558216",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_masters_madrid_2024"
+},
+{
+  "id": "108517718725650809",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Etc/UTC",
+  "name": "masters_2_2022_stage_2"
+},
+{
+  "id": "107997428753293590",
+  "status": "published",
+  "league_id": "109940824119741550",
+  "time_zone": "Etc/UTC",
+  "name": "masters_1_2022_stage_2"
+},
+{
+  "id": "112053429695970384",
+  "status": "published",
+  "league_id": "109974804058058602",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_pacific_stage_2_2024"
+},
+{
+  "id": "109999128956889858",
+  "status": "published",
+  "league_id": "109974804058058602",
+  "time_zone": "Etc/UTC",
+  "name": "vct_pacific_2023"
+},
+{
+  "id": "112053368262018629",
+  "status": "published",
+  "league_id": "109974804058058602",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_pacific_stage_1_2024"
+},
+{
+  "id": "111759316711517786",
+  "status": "published",
+  "league_id": "109974804058058602",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_pacific_kickoff_2024"
+},
+{
+  "id": "108035194562199941",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Etc/UTC",
+  "name": "emea_promotion_stage_1_play_ins"
+},
+{
+  "id": "112053363288959526",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_emea_stage_1_2024"
+},
+{
+  "id": "108272982821713310",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_emea_stage_2_2022"
+},
+{
+  "id": "109711321498527756",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Etc/UTC",
+  "name": "vct_emea_2023"
+},
+{
+  "id": "108035344642371814",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Etc/UTC",
+  "name": "emea_promotion_stage_1_playoffs"
+},
+{
+  "id": "106736375147490543",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Etc/UTC",
+  "name": "week_04"
+},
+{
+  "id": "106109373184711105",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Etc/UTC",
+  "name": "finals"
+},
+{
+  "id": "111799864361902547",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_emea_kickoff_2024"
+},
+{
+  "id": "112053423967523566",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_emea_stage_2_2024"
+},
+{
+  "id": "107679457580785126",
+  "status": "published",
+  "league_id": "106109559530232966",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_emea_stage_1_2022"
+},
+{
+  "id": "111878301827183635",
+  "status": "published",
+  "league_id": "111691194187846945",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_cn_kickoff_2024"
+},
+{
+  "id": "112053442207017566",
+  "status": "published",
+  "league_id": "111691194187846945",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_cn_stage_2_2024"
+},
+{
+  "id": "112053372791351848",
+  "status": "published",
+  "league_id": "111691194187846945",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_cn_stage_1_2024"
+},
+{
+  "id": "109974888242063857",
+  "status": "published",
+  "league_id": "109974795266458277",
+  "time_zone": "Etc/UTC",
+  "name": "vct_americas_2023"
+},
+{
+  "id": "112053410744354403",
+  "status": "published",
+  "league_id": "109974795266458277",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_americas_stage_2_2024"
+},
+{
+  "id": "112053360171504305",
+  "status": "published",
+  "league_id": "109974795266458277",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_americas_stage_1_2024"
+},
+{
+  "id": "111811151250338218",
+  "status": "published",
+  "league_id": "109974795266458277",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_americas_kickoff_2024"
+},
+{
+  "id": "107254687577255108",
+  "status": "published",
+  "league_id": "107254585505459304",
+  "time_zone": "Etc/UTC",
+  "name": "champions_2021"
+},
+{
+  "id": "108871629797692793",
+  "status": "published",
+  "league_id": "107254585505459304",
+  "time_zone": "Etc/UTC",
+  "name": "champions_2022"
+},
+{
+  "id": "112053452805788444",
+  "status": "published",
+  "league_id": "107254585505459304",
+  "time_zone": "Europe/Sarajevo",
+  "name": "vct_champions_2024"
+},
+{
+  "id": "110551570691955817",
+  "status": "published",
+  "league_id": "107254585505459304",
+  "time_zone": "Etc/UTC",
+  "name": "vct_champions_2023"
+}]

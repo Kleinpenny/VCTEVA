@@ -1,0 +1,1548 @@
+[{
+  "id": "109710990829217937",
+  "acronym": "TAL",
+  "home_league_id": "109551178413356399",
+  "dark_logo_url": "http://static.lolesports.com/teams/1674056858750_Talon_Esports_logo1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1674056858749_Talon_Esports_logo1.png",
+  "slug": "talon-esports",
+  "name": "Talon Esports"
+},
+{
+  "id": "105680883461219195",
+  "acronym": "TL",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1637252586939_teamliquid.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1637252586938_teamliquid.png",
+  "slug": "team-liquid",
+  "name": "Team Liquid"
+},
+{
+  "id": "107739366448281763",
+  "acronym": "S1",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644309676193_1024x1024_sector_one_nameless_orange.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644309676191_1024x1024_sector_one_nameless_orange.png",
+  "slug": "sector-one",
+  "name": "Sector One"
+},
+{
+  "id": "105680908693496715",
+  "acronym": "FPX",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644542485598_download38.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644542485597_download38.png",
+  "slug": "funplus-phoenix",
+  "name": "FunPlus Phoenix"
+},
+{
+  "id": "107735185441106189",
+  "acronym": "BBL",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643908460159_BBL_Esports_logo_2021.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643908460157_BBL_Esports_logo_2021.png",
+  "slug": "bbl",
+  "name": "BBL"
+},
+{
+  "id": "105680908693496715",
+  "acronym": "FPX",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625673263392_800px-FPX_logo_2021.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1625673263390_800px-FPX_logo_2021.png",
+  "slug": "funplus-phoenix",
+  "name": "FunPlus Phoenix"
+},
+{
+  "id": "109636584963315880",
+  "acronym": "M8",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1681406018448_VCF_White_GENTLEMATES.png",
+  "slug": "supra-beaux-gosses",
+  "name": "Gentle Mates"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "M3C",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1647451114222_M3C_logo_onbright_square.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1647451114220_M3C_logo_square.png",
+  "slug": "m3c",
+  "name": "M3C"
+},
+{
+  "id": "105681061943225763",
+  "acronym": "GLD",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625673330361_Guild_Esports.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1625673330360_Guild_Esports.png",
+  "slug": "guild",
+  "name": "GUILD"
+},
+{
+  "id": "105720659034682989",
+  "acronym": "FUT",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644342678683_FUT_VRL_DARK.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644342678681_FUT_VRL_DARK.png",
+  "slug": "futbolist",
+  "name": "FUT Esports"
+},
+{
+  "id": "107773234381249683",
+  "acronym": "FKS",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644489045473_FOKUS_Emblem_red.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644489045471_FOKUS_Emblem_red.png",
+  "slug": "fokus",
+  "name": "FOKUS Clan"
+},
+{
+  "id": "106652371451437497",
+  "acronym": "NAVI",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1627386036528_Natus_Vincere_2021_lightmode.png",
+  "slug": "natus-vincere",
+  "name": "Natus Vincere"
+},
+{
+  "id": "107734457789589374",
+  "acronym": "ANM",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644568784715_Anonymo_Color1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644568784714_Anonymo_Color1.png",
+  "slug": "anonymo-mentos",
+  "name": "Anonymo Mentos"
+},
+{
+  "id": "107735250232004550",
+  "acronym": "LDNU",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643909447825_LDN_UTD_2021_lightmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643909447823_LDN_UTD_2021_lightmode.png",
+  "slug": "ldn-utd",
+  "name": "LDN UTD"
+},
+{
+  "id": "105830904252954968",
+  "acronym": "VGI",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1627094537150_vdia.jpg",
+  "light_logo_url": "http://static.lolesports.com/teams/1627094537149_vdia.jpg",
+  "slug": "vodafone-giants",
+  "name": "Vodafone Giants"
+},
+{
+  "id": "107735209806574780",
+  "acronym": "BIG",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643908831777_BIG_lightmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643908831776_berlin-international-gaming.png",
+  "slug": "berlin-international-gaming",
+  "name": "Berlin International Gaming"
+},
+{
+  "id": "107751118887377327",
+  "acronym": "FLC",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644224643797_output-onlinepngtools.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644224643795_output-onlinepngtools.png",
+  "slug": "team-falcons",
+  "name": "Team Falcons"
+},
+{
+  "id": "105788174587511565",
+  "acronym": "FRZ",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/139182.jpg",
+  "slug": "forze",
+  "name": "forZe"
+},
+{
+  "id": "107735250232004550",
+  "acronym": "OGLU",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1652352312862_OGxLDNUTD1x1White.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1652352312861_OGxLDNUTD1x1White.png",
+  "slug": "ldn-utd",
+  "name": "OG LDN UTD"
+},
+{
+  "id": "105751765959424656",
+  "acronym": "TH",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1674060672536_600px-Team_Heretics_2022_allmode1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1674060672534_600px-Team_Heretics_2022_allmode1.png",
+  "slug": "team-heretics",
+  "name": "Team Heretics"
+},
+{
+  "id": "107763583185446611",
+  "acronym": "SUR",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644341775344_surreallogo2.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644341775342_surreallogo2.png",
+  "slug": "surreal-esports",
+  "name": "Surreal Esports"
+},
+{
+  "id": "106511422474046494",
+  "acronym": "SMB",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1630017471432_supermassive_blaze_white.png",
+  "slug": "supermassive-blaze",
+  "name": "SuperMassive Blaze"
+},
+{
+  "id": "106013381894847385",
+  "acronym": "VIT",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1722030793681_VITALITY_YELLOW.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1722030793680_VITALITY_YELLOW.png",
+  "slug": "team-vitality",
+  "name": "Team Vitality"
+},
+{
+  "id": "107729441149267209",
+  "acronym": "XL",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643820809234_XL_Logo_BLK.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643820809232_XL_Logo_WHT.png",
+  "slug": "excel",
+  "name": "EXCEL"
+},
+{
+  "id": "105830904252954968",
+  "acronym": "GIA",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643718214884_61f911f3493df866838875.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643718214882_Giantsblanco.png",
+  "slug": "giants",
+  "name": "GIANTS"
+},
+{
+  "id": "107773234381249683",
+  "acronym": "FKS",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644489045473_FOKUS_Emblem_red.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644489045471_FOKUS_Emblem_red.png",
+  "slug": "fokus",
+  "name": "FOKUS"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "GMB",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1647282851002_nologo-team-valorant.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1647282850999_nologo-team-valorant.png",
+  "slug": "m3c",
+  "name": "M3C"
+},
+{
+  "id": "105720640249797517",
+  "acronym": "BBL",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/bbl512.png",
+  "slug": "bbl-esports",
+  "name": "BBL Esports"
+},
+{
+  "id": "107735250232004550",
+  "acronym": "OGLU",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1652188094882_Background.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1652188094880_OG_LDN_UTD_lightmode.png",
+  "slug": "ldn-utd",
+  "name": "OG LDN UTD"
+},
+{
+  "id": "107722875124492394",
+  "acronym": "RBLS",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643720622153_61f91215a2a4a639158092.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643720622151_61f91215a2a4a639158092.png",
+  "slug": "rebels-gaming",
+  "name": "Rebels Gaming"
+},
+{
+  "id": "107735250232004550",
+  "acronym": "LDNU",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643909447825_LDN_UTD_2021_lightmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644542162844_download32.png",
+  "slug": "ldn-utd",
+  "name": "LDN UTD"
+},
+{
+  "id": "106511422474046494",
+  "acronym": "SMB",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/supermassive.jpg",
+  "slug": "supermassive-blaze",
+  "name": "SuperMassive Blaze"
+},
+{
+  "id": "106511417404947629",
+  "acronym": "FF",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/fireflux.jpg",
+  "slug": "fire-flux",
+  "name": "Fire Flux"
+},
+{
+  "id": "105830917166593765",
+  "acronym": "ACND",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/ACEND_LOGOMARK_PURPLE.png",
+  "light_logo_url": "http://static.lolesports.com/teams/ACEND_LOGOMARK_PURPLE.png",
+  "slug": "acend",
+  "name": "ACEND"
+},
+{
+  "id": "110773882819766782",
+  "acronym": "BLG",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1707126028221_BLG.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707126028220_BLG.png",
+  "slug": "bilibili-gaming",
+  "name": "Bilibili Gaming"
+},
+{
+  "id": "111878224318084053",
+  "acronym": "NOVA",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1707126221207_NOVA.png",
+  "slug": "nova-esports",
+  "name": "NOVA ESPORTS"
+},
+{
+  "id": "111878273684158442",
+  "acronym": "WOL",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1707126969883_WOL.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707126969882_WOL.png",
+  "slug": "wolves-esports",
+  "name": "WOLVES ESPORTS"
+},
+{
+  "id": "111878280387028472",
+  "acronym": "TE",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1707127076045_TE.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707127076044_TE.png",
+  "slug": "trace-esports",
+  "name": "Trace Esports"
+},
+{
+  "id": "111878200333186955",
+  "acronym": "TYL",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1707125850142_TYLOO.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707125850142_TYLOO.png",
+  "slug": "tyloo-gaming",
+  "name": "TYLOO GAMING"
+},
+{
+  "id": "108696151689107350",
+  "acronym": "EDG",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1659933444217_EDGLOGO.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707125463810_EDG.png",
+  "slug": "edward-gaming",
+  "name": "EDward Gaming"
+},
+{
+  "id": "110467852803694749",
+  "acronym": "ASE",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1685605660060_Attacking_Soul_Esports_allmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1685605660059_Attacking_Soul_Esports_allmode.png",
+  "slug": "attacking-soul-esports",
+  "name": "Attacking Soul Esports"
+},
+{
+  "id": "108697193874816708",
+  "acronym": "KONE",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1659933595615_KONElogopng_dark.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1659933595613_KONElogopng_colour.png",
+  "slug": "kone-esport",
+  "name": "KONE Esport"
+},
+{
+  "id": "111878266367184534",
+  "acronym": "JDG",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1707126862498_JDG.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707126862498_JDG.png",
+  "slug": "jdg-esports",
+  "name": "JD MALL JDG ESPORTS"
+},
+{
+  "id": "111878262664138383",
+  "acronym": "AG",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1707126806655_AG.png",
+  "slug": "all-gamers",
+  "name": "ALL GAMERS"
+},
+{
+  "id": "105665378258561492",
+  "acronym": "GEN",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1676485343905_Gen.G_2023ver_LOGO_GEN.G_original.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1678453609404_GenG_logo_200407-051.png",
+  "slug": "geng-esports",
+  "name": "Gen.G "
+},
+{
+  "id": "107795656627193642",
+  "acronym": "DRX",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1677137381634_drxvs_transparent.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1677137381632_drxvs_transparent.png",
+  "slug": "drx",
+  "name": "DRX"
+},
+{
+  "id": "105827039633208481",
+  "acronym": "T1",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1677137430840_T1_infoboximage1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1677137430839_T1_infoboximage1.png",
+  "slug": "t1",
+  "name": "T1"
+},
+{
+  "id": "107795656627193642",
+  "acronym": "DRX",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1705652820016_DRXwhite.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1705652820016_DRXwhite.png",
+  "slug": "drx",
+  "name": "DRX"
+},
+{
+  "id": "105795137629057449",
+  "acronym": "PRX",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1630018120582_paper-rex-2021.png",
+  "slug": "paper-rex",
+  "name": "PAPER REX"
+},
+{
+  "id": "107254601668550883",
+  "acronym": "TS",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1636575342049_team-secret-on-light.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1636575342048_team-secret-on-dark.png",
+  "slug": "team-secret",
+  "name": "Team Secret"
+},
+{
+  "id": "107761408072272990",
+  "acronym": "BLD",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1705652754484_Bleed_Icon_Red.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1705652754484_Bleed_Icon_Red.png",
+  "slug": "bleed-esports",
+  "name": "Bleed Esports"
+},
+{
+  "id": "105665378258561492",
+  "acronym": "GEN",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1676485343905_Gen.G_2023ver_LOGO_GEN.G_original.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1676485343902_Gen.G_2023ver_LOGO_GEN.G_original1.png",
+  "slug": "geng-esports",
+  "name": "Gen.G Esports"
+},
+{
+  "id": "107019798230895224",
+  "acronym": "GES",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1677137854820_GERedandBlue-WhiteBG.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1677137854820_GERedandBlue-WhiteBG.png",
+  "slug": "global-esports",
+  "name": "GLOBAL ESPORTS"
+},
+{
+  "id": "106668724234385182",
+  "acronym": "UWU",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1627635559431_AAA.png",
+  "slug": "uwu",
+  "name": "UwU"
+},
+{
+  "id": "106013968992887532",
+  "acronym": "C9",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1706101430659_Blue.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1706101430659_Blue.png",
+  "slug": "cloud9",
+  "name": "Cloud9"
+},
+{
+  "id": "107772960652844036",
+  "acronym": "EG",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644568669112_CrestWhite1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644568669110_CrestWhite1.png",
+  "slug": "evil-geniuses",
+  "name": "Evil Geniuses"
+},
+{
+  "id": "105748037960121143",
+  "acronym": "100T",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644966311614_100TVAL.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644966311613_100TVAL.png",
+  "slug": "100-thieves",
+  "name": "100 Thieves"
+},
+{
+  "id": "105623681847525855",
+  "acronym": "KRÜ",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1630017626481_kru.png",
+  "slug": "kru-esports",
+  "name": "KRÜ Esports"
+},
+{
+  "id": "105788004225594471",
+  "acronym": "LEV",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644148043036_Leviatnnegro.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644148043034_Leviatncolor.png",
+  "slug": "leviatan-esports",
+  "name": "Leviatán Esports"
+},
+{
+  "id": "106013968992887532",
+  "acronym": "C9",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/Cloud9C9-03-FullonLight.png",
+  "light_logo_url": "http://static.lolesports.com/teams/Cloud9C9-01-FullonDark.png",
+  "slug": "cloud9",
+  "name": "Cloud9"
+},
+{
+  "id": "105680891295502820",
+  "acronym": "G2",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1675329807716_G2-Esports-Logo1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1675329807714_G2-Esports-Logo1.png",
+  "slug": "g2-esports",
+  "name": "G2 Esports"
+},
+{
+  "id": "107745125595754895",
+  "acronym": "LOUD",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644060140570_LOUDGreen.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644060140569_LOUDGreen.png",
+  "slug": "loud",
+  "name": "LOUD"
+},
+{
+  "id": "108058641500699213",
+  "acronym": "MIBR",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1648844013088_mibr_black-logo.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1648844013086_mibr_white-logo.png",
+  "slug": "mibr",
+  "name": "MIBR"
+},
+{
+  "id": "105665339248060878",
+  "acronym": "NRG",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/nrg-on-light.png",
+  "light_logo_url": "http://static.lolesports.com/teams/nrg-on-dark.png",
+  "slug": "nrg",
+  "name": "NRG"
+},
+{
+  "id": "105665339248060878",
+  "acronym": "NRG",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1719469530282_NRGBLK.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1719469530282_NRGWHT.png",
+  "slug": "nrg",
+  "name": "NRG"
+},
+{
+  "id": "107772960652844036",
+  "acronym": "EG",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1719469511598_VintageEG_Dark.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1719469511598_VintageEG.png",
+  "slug": "evil-geniuses",
+  "name": "Evil Geniuses"
+},
+{
+  "id": "108172241101364125",
+  "acronym": "PAM",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1651529955453_PampasBlack1-1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1651529955451_PampasWhite1-1.png",
+  "slug": "pampas",
+  "name": "Pampas"
+},
+{
+  "id": "105623615126176209",
+  "acronym": "TYP",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/Logo1TYPHOON.png",
+  "slug": "typhoon",
+  "name": "TYPHOON"
+},
+{
+  "id": "105680883461219195",
+  "acronym": "TL",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1637252586939_teamliquid.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1637252586938_teamliquid.png",
+  "slug": "team-liquid",
+  "name": "Team Liquid"
+},
+{
+  "id": "105665339248060878",
+  "acronym": "NRG",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/nrg-on-light.png",
+  "light_logo_url": "http://static.lolesports.com/teams/nrg-on-dark.png",
+  "slug": "nrg",
+  "name": "NRG"
+},
+{
+  "id": "105720659034682989",
+  "acronym": "FUT",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644342678683_FUT_VRL_DARK.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644342678681_FUT_VRL_DARK.png",
+  "slug": "futbolist",
+  "name": "FUT Esports"
+},
+{
+  "id": "108696151689107350",
+  "acronym": "EDG",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1659933444217_EDGLOGO.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1659933444214_EDGLOGO.png",
+  "slug": "edward-gaming",
+  "name": "EDward Gaming"
+},
+{
+  "id": "105680908693496715",
+  "acronym": "FPX",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644542485598_download38.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644542485597_download38.png",
+  "slug": "funplus-phoenix",
+  "name": "FunPlus Phoenix"
+},
+{
+  "id": "107795656627193642",
+  "acronym": "DRX",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1677137381634_drxvs_transparent.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1677137381632_drxvs_transparent.png",
+  "slug": "drx",
+  "name": "DRX"
+},
+{
+  "id": "110773882819766782",
+  "acronym": "BLG",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1690275307381_600px-Bilibili_Gaming_2021_full_allmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1690275307379_600px-Bilibili_Gaming_2021_full_allmode.png",
+  "slug": "bilibili-gaming",
+  "name": "Bilibili Gaming"
+},
+{
+  "id": "105680972836508184",
+  "acronym": "FNC",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644542427487_download37.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644542427486_download37.png",
+  "slug": "fnatic",
+  "name": "FNATIC"
+},
+{
+  "id": "107745125595754895",
+  "acronym": "LOUD",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644060140570_LOUDGreen.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644060140569_LOUDGreen.png",
+  "slug": "loud",
+  "name": "LOUD"
+},
+{
+  "id": "107772960652844036",
+  "acronym": "EG",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644568669112_CrestWhite1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644568669110_CrestWhite1.png",
+  "slug": "evil-geniuses",
+  "name": "Evil Geniuses"
+},
+{
+  "id": "105830917166593765",
+  "acronym": "ACE",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1630017565033_acend.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1630017565032_acend.png",
+  "slug": "acend",
+  "name": "Acend"
+},
+{
+  "id": "105749956224935810",
+  "acronym": "X10",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1637294858795_x10-on-light.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1637294858794_x10-on-dark.png",
+  "slug": "x10-esports",
+  "name": "X10 Esports"
+},
+{
+  "id": "105867454672981357",
+  "acronym": "CR",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/crazy-raccoon.png",
+  "light_logo_url": "http://static.lolesports.com/teams/crazy-raccoon.png",
+  "slug": "crazy-raccoon",
+  "name": "Crazy Raccoon"
+},
+{
+  "id": "105623681847525855",
+  "acronym": "KRU",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1630017626481_kru.png",
+  "slug": "kru-esports",
+  "name": "KRU Esports"
+},
+{
+  "id": "107254601668550883",
+  "acronym": "TS",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1636575342049_team-secret-on-light.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1636575342048_team-secret-on-dark.png",
+  "slug": "team-secret",
+  "name": "Team Secret"
+},
+{
+  "id": "105630080842965451",
+  "acronym": "FUR",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644059765263_FURIA-LOGO.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644059765262_FURIA-LOGO.png",
+  "slug": "furia",
+  "name": "FURIA"
+},
+{
+  "id": "106658760980030640",
+  "acronym": "VK",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1630705846613_vivo_keyd_011.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1630705846611_vivo_keyd_011.png",
+  "slug": "vivo-keyd",
+  "name": "Vivo Keyd"
+},
+{
+  "id": "105665270974057777",
+  "acronym": "VS",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/vision.png",
+  "light_logo_url": "http://static.lolesports.com/teams/vision.png",
+  "slug": "vision-strikers",
+  "name": "Vision Strikers"
+},
+{
+  "id": "105665869861005803",
+  "acronym": "SEN",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/sentinels.png",
+  "light_logo_url": "http://static.lolesports.com/teams/sentinels.png",
+  "slug": "sentinels",
+  "name": "Sentinels"
+},
+{
+  "id": "106013968992887532",
+  "acronym": "C9",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/Cloud9C9-03-FullonLight.png",
+  "light_logo_url": "http://static.lolesports.com/teams/Cloud9C9-01-FullonDark.png",
+  "slug": "cloud9",
+  "name": "Cloud9"
+},
+{
+  "id": "105749956224935810",
+  "acronym": "X10",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1637294858795_x10-on-light.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1637294858794_x10-on-dark.png",
+  "slug": "x10-esport",
+  "name": "X10 ESPORT"
+},
+{
+  "id": "105795264032421636",
+  "acronym": "FS",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1637252384264_fullsense.png",
+  "slug": "full-sense",
+  "name": "FULL SENSE"
+},
+{
+  "id": "105795264032421636",
+  "acronym": "FS",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/FS20_Fullsense_Logo_Color.png",
+  "slug": "full-sense",
+  "name": "FULL SENSE"
+},
+{
+  "id": "105680972836508184",
+  "acronym": "FNC",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625673139382_800px-Fnatic_2020.png",
+  "light_logo_url": "http://static.lolesports.com/teams/fnatic.png",
+  "slug": "fnatic",
+  "name": "FNATIC"
+},
+{
+  "id": "105665333506432845",
+  "acronym": "ENVY",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/envy.png",
+  "slug": "team-envy",
+  "name": "Team Envy"
+},
+{
+  "id": "105867454672981357",
+  "acronym": "CR",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1645525404043_CrazyRaccoon.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1645525404042_CrazyRaccoon.png",
+  "slug": "crazy-raccoon",
+  "name": "Crazy Raccoon"
+},
+{
+  "id": "109710990829217937",
+  "acronym": "TLN",
+  "home_league_id": "109551178413356399",
+  "dark_logo_url": "http://static.lolesports.com/teams/1674056858750_Talon_Esports_logo1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1674056858749_Talon_Esports_logo1.png",
+  "slug": "talon-esports",
+  "name": "Talon Esports"
+},
+{
+  "id": "106652371451437497",
+  "acronym": "NAVI",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1627386036528_Natus_Vincere_2021_lightmode.png",
+  "slug": "natus-vincere",
+  "name": "NAVI"
+},
+{
+  "id": "105680972836508184",
+  "acronym": "FNC",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644542427487_download37.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644542427486_download37.png",
+  "slug": "fnatic",
+  "name": "FNATIC"
+},
+{
+  "id": "106013381894847385",
+  "acronym": "VIT",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644309643639_Vitality-logo-color-rgb.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644309643637_Vitality-logo-color-rgb.png",
+  "slug": "team-vitality",
+  "name": "Team Vitality"
+},
+{
+  "id": "107735185441106189",
+  "acronym": "BBL",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1674060310688_BBL-GOLD-EMBLEM1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1674060310685_BBL-GOLD-EMBLEM1.png",
+  "slug": "bbl",
+  "name": "BBL Esports"
+},
+{
+  "id": "105830904252954968",
+  "acronym": "GX",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1706547566185_GX.png",
+  "slug": "giants",
+  "name": "GiantX"
+},
+{
+  "id": "107722603442258744",
+  "acronym": "KOI",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643716476027_61f9120a54bf5737910609.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643716476025_61f9120a54bf5737910609.png",
+  "slug": "koi-squad",
+  "name": "KOI"
+},
+{
+  "id": "105830904252954968",
+  "acronym": "GX",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643718214884_61f911f3493df866838875.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1674060474173_shield-white.png",
+  "slug": "giants",
+  "name": "GiantX"
+},
+{
+  "id": "105680883461219195",
+  "acronym": "TL",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625673163840_480px-Team_Liquid_2020.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1625673163838_480px-Team_Liquid_2020.png",
+  "slug": "team-liquid",
+  "name": "Team Liquid"
+},
+{
+  "id": "105830904252954968",
+  "acronym": "VGIA",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1628690337445_VGIADark.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1628690337441_VGIAWhite.png",
+  "slug": "vodafone-giants",
+  "name": "Vodafone Giants"
+},
+{
+  "id": "105680891295502820",
+  "acronym": "G2",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625673285918_G2-Esports-2020-Logo.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1625673285918_G2-Esports-2020-Logo.png",
+  "slug": "g2-esports",
+  "name": "G2 Esports"
+},
+{
+  "id": "105830917166593765",
+  "acronym": "ACE",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1645434356980_ACEND_VECTOR_PURPLE_WITHOUT_TEXT1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1645434356978_ACEND_VECTOR_PURPLE_WITHOUT_TEXT1.png",
+  "slug": "acend",
+  "name": "Acend"
+},
+{
+  "id": "105830917166593765",
+  "acronym": "ACE",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1645432770775_ACEND_VECTOR_PURPLE_WITHOUT_TEXT.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1645432770773_ACEND_VECTOR_PURPLE_WITHOUT_TEXT.png",
+  "slug": "acend",
+  "name": "Acend"
+},
+{
+  "id": "105720670130058864",
+  "acronym": "OXG",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/oxygen512.png",
+  "slug": "oxygen-esports",
+  "name": "Oxygen Esports"
+},
+{
+  "id": "105680972836508184",
+  "acronym": "FNC",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/fnatic.png",
+  "slug": "fnatic",
+  "name": "FNATIC"
+},
+{
+  "id": "107735250232004550",
+  "acronym": "OGLU",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1652180216230_OG_LDN_UTD_lightmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1652180216228_OG_LDN_UTD_lightmode.png",
+  "slug": "ldn-utd",
+  "name": "OG LDN UTD"
+},
+{
+  "id": "105680883461219195",
+  "acronym": "TL",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/liquid.png",
+  "slug": "team-liquid",
+  "name": "Team Liquid"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "GMB",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/download8.png",
+  "slug": "gambit",
+  "name": "Gambit"
+},
+{
+  "id": "105830904252954968",
+  "acronym": "GIA",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643718214884_61f911f3493df866838875.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1674060474173_shield-white.png",
+  "slug": "giants",
+  "name": "Giants"
+},
+{
+  "id": "105680891295502820",
+  "acronym": "G2",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1675329807716_G2-Esports-Logo1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1675329807714_G2-Esports-Logo1.png",
+  "slug": "g2-esports",
+  "name": "G2 Esports"
+},
+{
+  "id": "105830917166593765",
+  "acronym": "ACE",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644541852390_ACEND_TEXT_PURPLE.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644541852388_ACEND_TEXT_PURPLE.png",
+  "slug": "acend",
+  "name": "Acend"
+},
+{
+  "id": "105830917166593765",
+  "acronym": "ACE",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643908298205_Acend_full_lightmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643908298203_Acend_full_lightmode.png",
+  "slug": "acend",
+  "name": "Acend"
+},
+{
+  "id": "105720670130058864",
+  "acronym": "OXG",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/oxygen512.png",
+  "slug": "oxygen",
+  "name": "Oxygen"
+},
+{
+  "id": "105680908693496715",
+  "acronym": "FPX",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/fpx.png",
+  "slug": "funplus-phoenix",
+  "name": "FunPlus Phoenix"
+},
+{
+  "id": "107735250232004550",
+  "acronym": "LDNU",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643909447825_LDN_UTD_2021_lightmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644542060132_download31.png",
+  "slug": "ldn-utd",
+  "name": "LDN UTD"
+},
+{
+  "id": "107939538812978854",
+  "acronym": "GMB",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1647026652277_download10.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1647026652275_download10.png",
+  "slug": "gambit-esports",
+  "name": "Gambit Esports"
+},
+{
+  "id": "105830917166593765",
+  "acronym": "ACE",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644542306788_download34.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644542306787_download33.png",
+  "slug": "acend",
+  "name": "Acend"
+},
+{
+  "id": "105680972836508184",
+  "acronym": "FNC",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643908924274_Fnatic_2020_allmode.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1643908924273_Fnatic_2020_allmode.png",
+  "slug": "fnatic",
+  "name": "FNATIC"
+},
+{
+  "id": "108241004210065453",
+  "acronym": "KC",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1651626649159_download1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1651626649157_download1.png",
+  "slug": "karmine-corp",
+  "name": "Karmine Corp"
+},
+{
+  "id": "105681061943225763",
+  "acronym": "GUI",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/guildpng.png",
+  "slug": "guild-esports",
+  "name": "Guild Esports"
+},
+{
+  "id": "105720659034682989",
+  "acronym": "FUT",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/futbolist512_newwhite.png",
+  "slug": "futbolist",
+  "name": "Futbolist"
+},
+{
+  "id": "105830904252954968",
+  "acronym": "VGIA",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1627094537150_vdia.jpg",
+  "light_logo_url": "http://static.lolesports.com/teams/1627094537149_vdia.jpg",
+  "slug": "vodafone-giants",
+  "name": "Vodafone Giants"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "M3C",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1647282851002_nologo-team-valorant.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1647282850999_nologo-team-valorant.png",
+  "slug": "m3c",
+  "name": "M3C"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "M3C",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1647282707485_nologo-team-valorant.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1647282707484_nologo-team-valorant.png",
+  "slug": "m3c",
+  "name": "M3C"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "GMB",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1637252705329_gambit.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1637252705328_gambit.png",
+  "slug": "gambit",
+  "name": "Gambit"
+},
+{
+  "id": "105830917166593765",
+  "acronym": "ACE",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/ACEND_LOGOMARK_PURPLE.png",
+  "light_logo_url": "http://static.lolesports.com/teams/ACEND_LOGOMARK_PURPLE.png",
+  "slug": "acend",
+  "name": "ACEND"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "GBT",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/139331.jpg",
+  "slug": "gambit",
+  "name": "Gambit"
+},
+{
+  "id": "105681061943225763",
+  "acronym": "GUI",
+  "home_league_id": "106109559530232966",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625673330361_Guild_Esports.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1625673330360_Guild_Esports.png",
+  "slug": "guild",
+  "name": "GUILD"
+},
+{
+  "id": "111878266367184534",
+  "acronym": "JDG",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1707126862498_JDG.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707126862498_JDG.png",
+  "slug": "jdg-esports",
+  "name": "JDG ESPORTS"
+},
+{
+  "id": "105680908693496715",
+  "acronym": "FPX",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644542485598_download38.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644542485597_download38.png",
+  "slug": "funplus-phoenix",
+  "name": "FunPlus Phoenix"
+},
+{
+  "id": "111878219240115813",
+  "acronym": "DRG",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1707126143797_DRG.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707126143797_DRG.png",
+  "slug": "dragon-ranger-gaming",
+  "name": "DRAGON RANGER GAMING"
+},
+{
+  "id": "111878284177290231",
+  "acronym": "TEC",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1707127134616_TEC.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707127134615_TEC.png",
+  "slug": "titan-esports-club",
+  "name": "TITAN ESPORTS CLUB"
+},
+{
+  "id": "108696151689107350",
+  "acronym": "EDG",
+  "home_league_id": "111691194187846945",
+  "dark_logo_url": "http://static.lolesports.com/teams/1659933444217_EDGLOGO.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707125463810_EDG.png",
+  "slug": "edward-gaming",
+  "name": "EDWARD Gaming"
+},
+{
+  "id": "108276637165440022",
+  "acronym": "RRQ",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1652170365529_VCT22_RexRegumQeon_Logo_WhiteLarge.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1652170365528_VCT22_RexRegumQeon_LogoLarge.png",
+  "slug": "rex-regum-qeon",
+  "name": "Rex Regum Qeon"
+},
+{
+  "id": "105787560411852534",
+  "acronym": "ZETA",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625882345744_ZETADIVISION_logo_symbol_black.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1630017899610_zeta.png",
+  "slug": "zeta-division",
+  "name": "ZETA DIVISION"
+},
+{
+  "id": "109710990829217937",
+  "acronym": "TLN",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1674056858750_Talon_Esports_logo1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1674056858749_Talon_Esports_logo1.png",
+  "slug": "talon-esports",
+  "name": "Talon Esports"
+},
+{
+  "id": "105787569021644540",
+  "acronym": "DFM",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1675669923678_190px-DetonatioN_FocusMe_2022_darkmode1.png",
+  "slug": "detonation-gaming",
+  "name": "DetonatioN FocusMe"
+},
+{
+  "id": "107019798230895224",
+  "acronym": "GE",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1677137854820_GERedandBlue-WhiteBG.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1677137854820_GERedandBlue-WhiteBG.png",
+  "slug": "global-esports",
+  "name": "GLOBAL ESPORTS"
+},
+{
+  "id": "108276637165440022",
+  "acronym": "RRQ",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1652170365529_VCT22_RexRegumQeon_Logo_WhiteLarge.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707306458590_LOGO_RRQ_orange.png",
+  "slug": "rex-regum-qeon",
+  "name": "Rex Regum Qeon"
+},
+{
+  "id": "108276637165440022",
+  "acronym": "RRQ",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1652170365529_VCT22_RexRegumQeon_Logo_WhiteLarge.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1707296144991_RRQ_Rex_Regum_Qeon_Logo_SVG_-_Vector69Com.svg",
+  "slug": "rex-regum-qeon",
+  "name": "Rex Regum Qeon"
+},
+{
+  "id": "110014338798663133",
+  "acronym": "RRQ",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1678685586835_RRQ.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1678685586833_RRQ.png",
+  "slug": "rex-regum-qeon-kaguya",
+  "name": "Rex Regum Qeon Kaguya"
+},
+{
+  "id": "106036819968716680",
+  "acronym": "LFT",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/default.png",
+  "slug": "looking-for-team",
+  "name": "Looking for Team"
+},
+{
+  "id": "105795137629057449",
+  "acronym": "PRX",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1630018120582_paper-rex-2021.png",
+  "slug": "paper-rex",
+  "name": "Paper Rex"
+},
+{
+  "id": "109518073085367302",
+  "acronym": "ZTA",
+  "home_league_id": "109974804058058602",
+  "dark_logo_url": "http://static.lolesports.com/teams/1671113169248_6397476ae065a901408086.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1671113169246_6397476ae065a901408086.png",
+  "slug": "zeta",
+  "name": "ZETA"
+},
+{
+  "id": "105665869861005803",
+  "acronym": "SEN",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/sentinels.png",
+  "light_logo_url": "http://static.lolesports.com/teams/sentinels.png",
+  "slug": "sentinels",
+  "name": "Sentinels"
+},
+{
+  "id": "105630080842965451",
+  "acronym": "FUR",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644059765263_FURIA-LOGO.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644059765262_FURIA-LOGO.png",
+  "slug": "furia",
+  "name": "FURIA"
+},
+{
+  "id": "105623681847525855",
+  "acronym": "KRU",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1630017626481_kru.png",
+  "slug": "kru-esports",
+  "name": "KRÜ Esports"
+},
+{
+  "id": "105788023456281708",
+  "acronym": "ARA",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/aracne.png",
+  "light_logo_url": "http://static.lolesports.com/teams/aracne.png",
+  "slug": "aracne-esports",
+  "name": "Aracne Esports"
+},
+{
+  "id": "105788015872426711",
+  "acronym": "PRC",
+  "home_league_id": "109974795266458277",
+  "dark_logo_url": "http://static.lolesports.com/teams/procyon.png",
+  "light_logo_url": "http://static.lolesports.com/teams/procyon.png",
+  "slug": "procyon-team",
+  "name": "Procyon Team"
+},
+{
+  "id": "105787560411852534",
+  "acronym": "ZETA",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625882345744_ZETADIVISION_logo_symbol_black.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1630017899610_zeta.png",
+  "slug": "zeta-division",
+  "name": "ZETA DIVISION"
+},
+{
+  "id": "105830904252954968",
+  "acronym": "GIA",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1643718214884_61f911f3493df866838875.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1674060474173_shield-white.png",
+  "slug": "giants",
+  "name": "Giants"
+},
+{
+  "id": "105795137629057449",
+  "acronym": "PRX",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1630018120582_paper-rex-2021.png",
+  "slug": "paper-rex",
+  "name": "PAPER REX"
+},
+{
+  "id": "106652371451437497",
+  "acronym": "NAVI",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1627386036528_Natus_Vincere_2021_lightmode.png",
+  "slug": "natus-vincere",
+  "name": "NAVI"
+},
+{
+  "id": "105827039633208481",
+  "acronym": "T1",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1677137430840_T1_infoboximage1.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1677137430839_T1_infoboximage1.png",
+  "slug": "t1",
+  "name": "T1"
+},
+{
+  "id": "105623681847525855",
+  "acronym": "KRU",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/1630017626481_kru.png",
+  "slug": "kru-esports",
+  "name": "KRÜ Esports"
+},
+{
+  "id": "105680883461219195",
+  "acronym": "TL",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1625673163840_480px-Team_Liquid_2020.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1625673163838_480px-Team_Liquid_2020.png",
+  "slug": "team-liquid",
+  "name": "Team Liquid"
+},
+{
+  "id": "105749956224935810",
+  "acronym": "X10",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/VCT21_X10_Logo_White.png",
+  "slug": "x10-esport",
+  "name": "X10 ESPORT"
+},
+{
+  "id": "105629840698508229",
+  "acronym": "VKS",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1644059329541_Logos-03.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1644059329539_Logos-03.png",
+  "slug": "team-vikings",
+  "name": "Team Vikings"
+},
+{
+  "id": "105629840698508229",
+  "acronym": "VKS",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/vks-blk.png",
+  "light_logo_url": "http://static.lolesports.com/teams/TeamVikings_Fundo_Preto.png",
+  "slug": "team-vikings",
+  "name": "Team Vikings"
+},
+{
+  "id": "106658760980030640",
+  "acronym": "VK",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1637252525269_vivokeyd.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1637252525268_vivokeyd.png",
+  "slug": "vivo-keyd",
+  "name": "Vivo Keyd"
+},
+{
+  "id": "105749956224935810",
+  "acronym": "X10C",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1637294858795_x10-on-light.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1637294858794_x10-on-dark.png",
+  "slug": "x10c-esport",
+  "name": "X10C ESPORT"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "GMB",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1637252705329_gambit.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1637252705328_gambit.png",
+  "slug": "gambit",
+  "name": "Gambit"
+},
+{
+  "id": "107254601668550883",
+  "acronym": "TSC",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/1636575342049_team-secret-on-light.png",
+  "light_logo_url": "http://static.lolesports.com/teams/1636575342048_team-secret-on-dark.png",
+  "slug": "team-secret",
+  "name": "Team Secret"
+},
+{
+  "id": "105720721013519990",
+  "acronym": "GMB",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/download8.png",
+  "slug": "gambit",
+  "name": "Gambit"
+},
+{
+  "id": "105630080842965451",
+  "acronym": "FUR",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/FURIA.png",
+  "light_logo_url": "http://static.lolesports.com/teams/FURIA.png",
+  "slug": "furia",
+  "name": "FURIA"
+},
+{
+  "id": "105665333506432845",
+  "acronym": "NV",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": null,
+  "light_logo_url": "http://static.lolesports.com/teams/envy.png",
+  "slug": "team-envy",
+  "name": "Team Envy"
+},
+{
+  "id": "106013968992887532",
+  "acronym": "C9",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/Cloud9C9-03-FullonLight.png",
+  "light_logo_url": "http://static.lolesports.com/teams/Cloud9C9-01-FullonDark.png",
+  "slug": "cloud9-blue",
+  "name": "Cloud9 Blue"
+},
+{
+  "id": "106013968992887532",
+  "acronym": "C9B",
+  "home_league_id": "107254585505459304",
+  "dark_logo_url": "http://static.lolesports.com/teams/Cloud9C9-03-FullonLight.png",
+  "light_logo_url": "http://static.lolesports.com/teams/Cloud9C9-01-FullonDark.png",
+  "slug": "cloud9-blue",
+  "name": "Cloud9 Blue"
+}]
