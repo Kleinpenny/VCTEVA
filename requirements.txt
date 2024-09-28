@@ -2,3 +2,12 @@ gradio
 gradio_client
 requests
 huggingface_hub
+transformers==4.33.0
+accelerate==0.22.0
+einops==0.6.1
+langchain
+sentence_transformers==2.2.2
+chromadb==0.4.12
+torch==2.4.1
+numpy>=1.17
+xformers

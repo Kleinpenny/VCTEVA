@@ -88,7 +88,7 @@ class GradioInterface:
         )
 
     def launch(self):
-        self.demo.launch()
+        self.demo.launch(share=True)
 
 
 def main():
