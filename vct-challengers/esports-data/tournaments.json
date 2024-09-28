@@ -1,0 +1,1530 @@
+[{
+  "id": "107766658995049565",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_id_stage_01",
+  "start_time": "2022-02-08T14:00:00Z",
+  "end_time": "2022-02-28T14:00:00Z"
+},
+{
+  "id": "109664928441378836",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_id_split_1_2023",
+  "start_time": "2023-01-18T12:26:18Z",
+  "end_time": "2023-03-15T12:26:18Z"
+},
+{
+  "id": "111810911217155175",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_sea_id_split_1_2024",
+  "start_time": "2024-02-02T23:00:00Z",
+  "end_time": "2024-04-01T21:59:00Z"
+},
+{
+  "id": "105796285106680250",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-26T01:00:01Z",
+  "end_time": "2021-02-28T12:55:01Z"
+},
+{
+  "id": "106027143129150553",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-02T06:00:00Z",
+  "end_time": "2021-04-04T11:00:00Z"
+},
+{
+  "id": "105590642015487126",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_sea_id_stage_01_week_01",
+  "start_time": "2021-02-05T00:01:00Z",
+  "end_time": "2021-02-05T23:59:59Z"
+},
+{
+  "id": "110071567183636255",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_id_split_2_2023",
+  "start_time": "2023-03-26T12:26:18Z",
+  "end_time": "2023-06-07T12:26:18Z"
+},
+{
+  "id": "108248646384012111",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_id_stage_02",
+  "start_time": "2022-05-11T22:01:00Z",
+  "end_time": "2022-05-31T21:59:00Z"
+},
+{
+  "id": "112433222746274641",
+  "status": "published",
+  "league_id": "105555627532605797",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_sea_id_split_2_2024",
+  "start_time": "2024-06-12T04:00:00Z",
+  "end_time": "2024-07-28T08:00:00Z"
+},
+{
+  "id": "112435134141727101",
+  "status": "published",
+  "league_id": "109551158912464238",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_portugal_split_2_2024",
+  "start_time": "2024-05-25T22:00:00Z",
+  "end_time": "2024-07-21T21:59:00Z"
+},
+{
+  "id": "111656891823885736",
+  "status": "published",
+  "league_id": "109551158912464238",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_portugal_split_1_2024",
+  "start_time": "2024-01-14T23:00:00Z",
+  "end_time": "2024-04-14T21:59:00Z"
+},
+{
+  "id": "109626191565173329",
+  "status": "published",
+  "league_id": "109551158912464238",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_portugal_split_1_2023",
+  "start_time": "2023-01-12T16:17:18Z",
+  "end_time": "2023-03-13T16:17:18Z"
+},
+{
+  "id": "110025928984877095",
+  "status": "published",
+  "league_id": "109551158912464238",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_portugal_split_2_2023",
+  "start_time": "2023-03-31T16:17:18Z",
+  "end_time": "2023-06-12T16:17:18Z"
+},
+{
+  "id": "105788028016735346",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "week_03",
+  "start_time": "2021-02-23T08:00:01Z",
+  "end_time": "2021-03-01T07:59:01Z"
+},
+{
+  "id": "105985956639596874",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-06T07:00:00Z",
+  "end_time": "2021-04-11T18:59:00Z"
+},
+{
+  "id": "112432703020098411",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_latam_s_split_2_2024",
+  "start_time": "2024-05-14T19:00:00Z",
+  "end_time": "2024-06-26T20:00:00Z"
+},
+{
+  "id": "110190655121239827",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_latam_south_split_2_2023",
+  "start_time": "2023-04-25T09:17:19Z",
+  "end_time": "2023-06-13T09:17:19Z"
+},
+{
+  "id": "105590583771715148",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-01-26T00:01:00Z",
+  "end_time": "2021-01-31T23:59:59Z"
+},
+{
+  "id": "106587293263908076",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-07-20T07:00:00Z",
+  "end_time": "2021-07-26T07:00:00Z"
+},
+{
+  "id": "109862477010119441",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_latam_south_split_1_2023",
+  "start_time": "2023-02-26T09:17:19Z",
+  "end_time": "2023-04-04T09:17:19Z"
+},
+{
+  "id": "106688089685225601",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-08-03T07:00:00Z",
+  "end_time": "2021-08-06T07:00:00Z"
+},
+{
+  "id": "106065031734180226",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-04-20T07:01:00Z",
+  "end_time": "2021-04-26T06:59:00Z"
+},
+{
+  "id": "106461311289842861",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-06-29T07:00:00Z",
+  "end_time": "2021-08-23T07:00:00Z"
+},
+{
+  "id": "108234570782584838",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "vct_latam_south_stage_02",
+  "start_time": "2022-05-12T20:57:48Z",
+  "end_time": "2022-06-15T20:57:48Z"
+},
+{
+  "id": "111919625674376726",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_latam_s_split_1_2024",
+  "start_time": "2024-02-19T23:00:00Z",
+  "end_time": "2024-04-06T21:59:00Z"
+},
+{
+  "id": "105721001274711035",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-09T08:00:00Z",
+  "end_time": "2021-02-15T07:59:00Z"
+},
+{
+  "id": "107758042396941426",
+  "status": "published",
+  "league_id": "105555666330314783",
+  "time_zone": "Etc/UTC",
+  "name": "vct_latam_s_stage_01",
+  "start_time": "2022-02-12T16:00:00Z",
+  "end_time": "2022-03-31T17:57:33Z"
+},
+{
+  "id": "106793816677689611",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Etc/UTC",
+  "name": "playoffs",
+  "start_time": "2021-04-20T22:00:00Z",
+  "end_time": "2021-04-25T13:00:00Z"
+},
+{
+  "id": "105590686896309435",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_sea_hk_tw_stage_01_week_01",
+  "start_time": "2021-02-05T00:01:00Z",
+  "end_time": "2021-02-05T23:59:59Z"
+},
+{
+  "id": "112484136618167654",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_hktw_split_2_2024",
+  "start_time": "2024-06-05T10:00:00Z",
+  "end_time": "2024-07-11T12:00:00Z"
+},
+{
+  "id": "111799283201791021",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_hktw_split_1_2024",
+  "start_time": "2024-01-30T23:00:00Z",
+  "end_time": "2024-04-05T21:59:00Z"
+},
+{
+  "id": "106027027605677552",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-02T04:04:00Z",
+  "end_time": "2021-04-04T13:59:00Z"
+},
+{
+  "id": "110094781475507769",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_hktw_split_2_2023",
+  "start_time": "2023-03-29T11:52:44Z",
+  "end_time": "2023-06-05T11:52:44Z"
+},
+{
+  "id": "108246383751696703",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_hktw_stage_02",
+  "start_time": "2022-05-10T23:55:00Z",
+  "end_time": "2022-05-30T23:55:57Z"
+},
+{
+  "id": "105796091434485172",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-26T01:00:00Z",
+  "end_time": "2021-02-28T12:55:00Z"
+},
+{
+  "id": "109664786173759506",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_hktw_split_1_2023",
+  "start_time": "2023-01-10T11:52:44Z",
+  "end_time": "2023-03-15T11:52:44Z"
+},
+{
+  "id": "107850268706572742",
+  "status": "published",
+  "league_id": "105555699868690469",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_hktw_stage_01",
+  "start_time": "2022-02-09T01:00:00Z",
+  "end_time": "2022-02-28T13:00:00Z"
+},
+{
+  "id": "110100876560308707",
+  "status": "published",
+  "league_id": "105555705801095792",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_sgmy_split_2_2023",
+  "start_time": "2023-03-28T12:13:09Z",
+  "end_time": "2023-06-06T12:13:09Z"
+},
+{
+  "id": "112557406637216746",
+  "status": "published",
+  "league_id": "105555705801095792",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_mysg_split_2_2024",
+  "start_time": "2024-07-09T23:00:00Z",
+  "end_time": "2024-07-18T21:59:00Z"
+},
+{
+  "id": "105597272447994051",
+  "status": "published",
+  "league_id": "105555705801095792",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_sea_sg_my_stage_01_week_01",
+  "start_time": "2021-02-05T00:01:00Z",
+  "end_time": "2021-03-10T23:59:59Z"
+},
+{
+  "id": "111923448226074119",
+  "status": "published",
+  "league_id": "105555705801095792",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_mysg_split_1_2024",
+  "start_time": "2024-03-26T23:00:00Z",
+  "end_time": "2024-04-01T21:59:00Z"
+},
+{
+  "id": "108248739765282116",
+  "status": "published",
+  "league_id": "105555705801095792",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_sgmy_stage_02",
+  "start_time": "2022-05-11T22:01:00Z",
+  "end_time": "2022-05-31T21:59:00Z"
+},
+{
+  "id": "107766920103187691",
+  "status": "published",
+  "league_id": "105555705801095792",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_sgmy_stage_01",
+  "start_time": "2022-02-08T23:00:00Z",
+  "end_time": "2022-02-27T14:00:00Z"
+},
+{
+  "id": "106027421062719260",
+  "status": "published",
+  "league_id": "105555705801095792",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-02T01:00:00Z",
+  "end_time": "2021-04-04T10:00:00Z"
+},
+{
+  "id": "109664892632615626",
+  "status": "published",
+  "league_id": "105555705801095792",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_sgmy_split_1_2023",
+  "start_time": "2023-01-29T12:13:09Z",
+  "end_time": "2023-03-16T12:13:09Z"
+},
+{
+  "id": "109664866215774751",
+  "status": "published",
+  "league_id": "106470453892538426",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_vn_split_1_2023",
+  "start_time": "2023-01-29T12:13:09Z",
+  "end_time": "2023-03-16T12:13:09Z"
+},
+{
+  "id": "108248703049216740",
+  "status": "published",
+  "league_id": "106470453892538426",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_vn_stage_02",
+  "start_time": "2022-05-11T22:01:00Z",
+  "end_time": "2022-05-31T21:59:00Z"
+},
+{
+  "id": "110094488498723704",
+  "status": "published",
+  "league_id": "106470453892538426",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_vn_split_2_2023",
+  "start_time": "2023-04-03T12:13:09Z",
+  "end_time": "2023-06-05T12:13:09Z"
+},
+{
+  "id": "107767587808691297",
+  "status": "published",
+  "league_id": "106470453892538426",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_vn_stage_01",
+  "start_time": "2022-02-08T23:00:00Z",
+  "end_time": "2022-02-28T13:00:00Z"
+},
+{
+  "id": "112518847779492448",
+  "status": "published",
+  "league_id": "106470453892538426",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_vn_split_2_2024",
+  "start_time": "2024-06-11T23:00:00Z",
+  "end_time": "2024-07-28T22:59:00Z"
+},
+{
+  "id": "111843631719349574",
+  "status": "published",
+  "league_id": "106470453892538426",
+  "time_zone": "Asia/Bangkok",
+  "name": "challengers_vietnam_split_1_2024",
+  "start_time": "2024-02-13T23:00:00Z",
+  "end_time": "2024-03-14T22:59:00Z"
+},
+{
+  "id": "112432767868298199",
+  "status": "published",
+  "league_id": "106132846649518478",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_latam_regionals_2024",
+  "start_time": "2024-07-26T20:30:00Z",
+  "end_time": "2024-07-28T21:00:00Z"
+},
+{
+  "id": "108234793256464492",
+  "status": "published",
+  "league_id": "106132846649518478",
+  "time_zone": "Etc/UTC",
+  "name": "vct_latam_stage_02",
+  "start_time": "2022-06-21T22:43:54Z",
+  "end_time": "2022-06-28T22:43:54Z"
+},
+{
+  "id": "106132907427146138",
+  "status": "published",
+  "league_id": "106132846649518478",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-04-27T07:00:00Z",
+  "end_time": "2021-05-10T06:59:00Z"
+},
+{
+  "id": "106738983007323891",
+  "status": "published",
+  "league_id": "106132846649518478",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-08-17T07:00:00Z",
+  "end_time": "2021-08-20T07:00:00Z"
+},
+{
+  "id": "107989531388730894",
+  "status": "published",
+  "league_id": "106132846649518478",
+  "time_zone": "Etc/UTC",
+  "name": "vct_latam_stage_01",
+  "start_time": "2022-03-24T23:01:00Z",
+  "end_time": "2022-03-28T21:59:00Z"
+},
+{
+  "id": "110388595763873570",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_na_split_2_playoffs",
+  "start_time": "2023-05-30T07:42:31Z",
+  "end_time": "2023-06-11T07:42:31Z"
+},
+{
+  "id": "105748090550821138",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-20T08:00:01Z",
+  "end_time": "2021-02-24T07:59:01Z"
+},
+{
+  "id": "109783028871101955",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_na_split_1",
+  "start_time": "2023-01-30T09:06:29Z",
+  "end_time": "2023-04-01T09:06:29Z"
+},
+{
+  "id": "112058333580090917",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_na_split_1_2024",
+  "start_time": "2024-03-19T20:00:00Z",
+  "end_time": "2024-04-19T23:00:00Z"
+},
+{
+  "id": "112369682176711559",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_na_mid_season_cup_2024",
+  "start_time": "2024-05-15T19:00:00Z",
+  "end_time": "2024-05-19T21:00:00Z"
+},
+{
+  "id": "112789848830906270",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_na_finals_2024",
+  "start_time": "2024-07-22T19:00:00Z",
+  "end_time": "2024-07-31T21:00:00Z"
+},
+{
+  "id": "106699553189357112",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-08-11T07:00:00Z",
+  "end_time": "2021-08-16T07:00:00Z"
+},
+{
+  "id": "106065071140891571",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-04-22T07:01:00Z",
+  "end_time": "2021-04-26T06:59:00Z"
+},
+{
+  "id": "107774437554146269",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_na_stage_1_2022",
+  "start_time": "2022-02-11T23:01:00Z",
+  "end_time": "2022-03-28T22:59:00Z"
+},
+{
+  "id": "105590646623066821",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_na_stage_01_week_01",
+  "start_time": "2021-02-04T00:01:00Z",
+  "end_time": "2021-02-07T23:59:59Z"
+},
+{
+  "id": "110178896385175218",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_na_split_2",
+  "start_time": "2023-04-16T09:06:29Z",
+  "end_time": "2023-05-18T09:06:29Z"
+},
+{
+  "id": "112518045863431816",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_na_split_2_2024",
+  "start_time": "2024-05-29T20:00:00Z",
+  "end_time": "2024-07-11T23:00:00Z"
+},
+{
+  "id": "108274425468283182",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_na_stage_2_2022",
+  "start_time": "2022-05-12T22:34:04Z",
+  "end_time": "2022-06-28T22:34:04Z"
+},
+{
+  "id": "106659491715176863",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-07-29T07:00:00Z",
+  "end_time": "2021-08-02T07:00:00Z"
+},
+{
+  "id": "105985860288947946",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-08T07:00:00Z",
+  "end_time": "2021-04-11T18:59:00Z"
+},
+{
+  "id": "105787804028748404",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "week_03",
+  "start_time": "2021-03-04T08:00:01Z",
+  "end_time": "2021-03-07T07:59:01Z"
+},
+{
+  "id": "106138633338281910",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-04-29T07:00:00Z",
+  "end_time": "2021-05-03T06:55:00Z"
+},
+{
+  "id": "106506914662644504",
+  "status": "published",
+  "league_id": "105555635175479654",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-07-08T07:00:00Z",
+  "end_time": "2021-07-12T07:00:00Z"
+},
+{
+  "id": "108398951491894036",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_jpn_stage02_main_event_week2",
+  "start_time": "2022-06-02T22:34:07Z",
+  "end_time": "2022-06-09T22:34:07Z"
+},
+{
+  "id": "107925846679992255",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_jpn_stage01_round02",
+  "start_time": "2022-03-11T23:01:00Z",
+  "end_time": "2022-03-14T22:59:00Z"
+},
+{
+  "id": "106036872456564622",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-09T07:01:00Z",
+  "end_time": "2021-04-25T18:59:00Z"
+},
+{
+  "id": "110094730162027784",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_jpn_split_2_2023",
+  "start_time": "2023-04-11T12:43:53Z",
+  "end_time": "2023-06-08T12:43:53Z"
+},
+{
+  "id": "108369873666313839",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_jpn_stage02_accesswk2",
+  "start_time": "2022-05-26T19:01:14Z",
+  "end_time": "2022-06-01T19:01:14Z"
+},
+{
+  "id": "106699882785898329",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-08-12T07:00:00Z",
+  "end_time": "2021-08-16T07:00:00Z"
+},
+{
+  "id": "112449913693133659",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_jpn_split_2_2024",
+  "start_time": "2024-05-19T15:00:00Z",
+  "end_time": "2024-07-30T21:59:00Z"
+},
+{
+  "id": "106620541254040178",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-07-21T02:00:00Z",
+  "end_time": "2021-07-23T07:00:00Z"
+},
+{
+  "id": "106587304890277057",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "week_00",
+  "start_time": "2021-06-01T07:00:00Z",
+  "end_time": "2021-06-03T07:00:00Z"
+},
+{
+  "id": "105590729983186601",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_jpn_stage_01_week_01",
+  "start_time": "2021-02-19T00:01:00Z",
+  "end_time": "2021-02-21T23:59:59Z"
+},
+{
+  "id": "108313122697528558",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_jpn_stage02_playoffs",
+  "start_time": "2022-05-19T18:48:24Z",
+  "end_time": "2022-06-29T18:48:24Z"
+},
+{
+  "id": "108292814188729715",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_jpn_stage02_accesswk1",
+  "start_time": "2022-05-13T04:32:53Z",
+  "end_time": "2022-05-16T04:32:53Z"
+},
+{
+  "id": "105832642753578804",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "week_03",
+  "start_time": "2021-03-06T08:00:01Z",
+  "end_time": "2021-03-08T08:10:01Z"
+},
+{
+  "id": "108323984991642256",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_jpn_stage02_main_event_week1",
+  "start_time": "2022-05-18T16:43:47Z",
+  "end_time": "2022-06-30T16:43:47Z"
+},
+{
+  "id": "108001132228895264",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_jpn_stage01_playoffs",
+  "start_time": "2022-03-23T07:01:00Z",
+  "end_time": "2022-03-27T06:59:00Z"
+},
+{
+  "id": "111782731873798447",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_jpn_split_1_2024",
+  "start_time": "2024-02-02T23:00:00Z",
+  "end_time": "2024-04-01T21:59:00Z"
+},
+{
+  "id": "106507199290599935",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-07-10T07:00:00Z",
+  "end_time": "2021-07-12T07:00:00Z"
+},
+{
+  "id": "109715952024545787",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_jpn_split_1_2023",
+  "start_time": "2023-01-26T12:43:53Z",
+  "end_time": "2023-03-22T12:43:53Z"
+},
+{
+  "id": "106138749112899966",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-04-29T07:00:00Z",
+  "end_time": "2021-05-03T06:59:00Z"
+},
+{
+  "id": "107799910529983443",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_jpn_stage01_round01",
+  "start_time": "2022-02-25T15:01:00Z",
+  "end_time": "2022-02-28T03:27:09Z"
+},
+{
+  "id": "106110190190227367",
+  "status": "published",
+  "league_id": "105555678532655472",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-04-24T07:05:00Z",
+  "end_time": "2021-04-26T06:55:00Z"
+},
+{
+  "id": "111810786944938068",
+  "status": "published",
+  "league_id": "110032750555964337",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_south_asia_split_1_cup_1_2024",
+  "start_time": "2024-01-31T23:00:00Z",
+  "end_time": "2024-03-31T21:59:00Z"
+},
+{
+  "id": "110292251110424757",
+  "status": "published",
+  "league_id": "110032750555964337",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_south_asia_split_2",
+  "start_time": "2023-04-28T12:19:21Z",
+  "end_time": "2023-06-11T12:19:21Z"
+},
+{
+  "id": "112194945737358678",
+  "status": "published",
+  "league_id": "110032750555964337",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_south_asia_split_1_cup_2_2024",
+  "start_time": "2024-04-01T22:00:00Z",
+  "end_time": "2024-05-20T21:59:00Z"
+},
+{
+  "id": "112551940159140057",
+  "status": "published",
+  "league_id": "110032750555964337",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_south_asia_split_2_2024",
+  "start_time": "2024-06-24T09:00:00Z",
+  "end_time": "2024-06-29T09:14:00Z"
+},
+{
+  "id": "110032931687175294",
+  "status": "published",
+  "league_id": "110032750555964337",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_south_asia_split_1",
+  "start_time": "2023-03-16T12:19:21Z",
+  "end_time": "2023-04-30T12:19:21Z"
+},
+{
+  "id": "106135034699964296",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-04-30T14:04:00Z",
+  "end_time": "2021-05-10T02:04:00Z"
+},
+{
+  "id": "105590271478350857",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_br_stage_01_week_01",
+  "start_time": "2021-01-30T00:01:00Z",
+  "end_time": "2021-02-07T23:59:59Z"
+},
+{
+  "id": "106726799050929911",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-08-11T14:45:25Z",
+  "end_time": "2021-08-23T14:45:25Z"
+},
+{
+  "id": "106014096448207846",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-04-10T18:12:19Z",
+  "end_time": "2021-04-18T03:12:00Z"
+},
+{
+  "id": "112452983061648123",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_br_split_2_2024",
+  "start_time": "2024-05-20T21:43:42Z",
+  "end_time": "2024-07-29T21:43:42Z"
+},
+{
+  "id": "107747558338314114",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "stage_01",
+  "start_time": "2022-02-11T21:14:57Z",
+  "end_time": "2022-03-28T21:14:57Z"
+},
+{
+  "id": "106659193038723278",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "week_03",
+  "start_time": "2021-07-30T16:24:41Z",
+  "end_time": "2021-08-09T16:24:41Z"
+},
+{
+  "id": "111902068129163967",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_br_split_1_2024",
+  "start_time": "2024-02-13T14:31:21Z",
+  "end_time": "2024-05-03T14:31:21Z"
+},
+{
+  "id": "106092637055118701",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "week_03",
+  "start_time": "2021-04-22T14:52:15Z",
+  "end_time": "2021-04-26T02:59:00Z"
+},
+{
+  "id": "108064684867521099",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "access_series",
+  "start_time": "2022-04-04T21:39:59Z",
+  "end_time": "2022-04-09T21:39:59Z"
+},
+{
+  "id": "110124795531359382",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_br_etapa_2",
+  "start_time": "2023-04-04T17:36:26Z",
+  "end_time": "2023-06-05T17:36:26Z"
+},
+{
+  "id": "105788310876992723",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "week_03",
+  "start_time": "2021-02-27T08:00:01Z",
+  "end_time": "2021-03-08T08:00:01Z"
+},
+{
+  "id": "105715368142400422",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-12T08:00:01Z",
+  "end_time": "2021-02-21T07:59:01Z"
+},
+{
+  "id": "109660613555615311",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_br_split_1",
+  "start_time": "2023-01-17T18:04:04Z",
+  "end_time": "2023-03-20T18:04:04Z"
+},
+{
+  "id": "108244275939569756",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "stage_02",
+  "start_time": "2022-05-13T14:59:09Z",
+  "end_time": "2022-06-27T14:59:09Z"
+},
+{
+  "id": "106580429262605069",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-07-16T18:42:00Z",
+  "end_time": "2021-07-26T18:42:28Z"
+},
+{
+  "id": "105952450849004348",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-03-27T07:00:00Z",
+  "end_time": "2021-04-04T18:59:00Z"
+},
+{
+  "id": "106503148209956914",
+  "status": "published",
+  "league_id": "105555608835603034",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-07-03T12:00:00Z",
+  "end_time": "2021-07-12T02:59:00Z"
+},
+{
+  "id": "109664938776382346",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_th_split_1_2023",
+  "start_time": "2023-01-19T12:26:18Z",
+  "end_time": "2023-03-15T12:26:18Z"
+},
+{
+  "id": "105796343284446985",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-26T01:00:00Z",
+  "end_time": "2021-02-28T12:55:00Z"
+},
+{
+  "id": "108248460189077953",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_th_stage_02",
+  "start_time": "2022-05-11T22:01:00Z",
+  "end_time": "2022-05-31T21:59:00Z"
+},
+{
+  "id": "111798999006434119",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_sea_th_split_1_2024",
+  "start_time": "2024-01-25T23:00:00Z",
+  "end_time": "2024-03-11T22:59:00Z"
+},
+{
+  "id": "107766151717513534",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_th_stage_01",
+  "start_time": "2022-02-08T14:00:00Z",
+  "end_time": "2022-02-28T14:00:00Z"
+},
+{
+  "id": "110104729055157824",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_th_split_2_2023",
+  "start_time": "2023-03-28T12:26:18Z",
+  "end_time": "2023-06-06T12:26:18Z"
+},
+{
+  "id": "106027285012539119",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-02T04:01:00Z",
+  "end_time": "2021-04-04T13:59:00Z"
+},
+{
+  "id": "105591179216635121",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_sea_th_stage_01_week_01",
+  "start_time": "2021-02-05T00:01:00Z",
+  "end_time": "2021-02-08T23:59:59Z"
+},
+{
+  "id": "112473379775496602",
+  "status": "published",
+  "league_id": "105555707205380136",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_sea_th_split_2_2024",
+  "start_time": "2024-06-04T23:00:00Z",
+  "end_time": "2024-07-19T22:59:00Z"
+},
+{
+  "id": "110062073402922385",
+  "status": "published",
+  "league_id": "109551156421687480",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_italy_split_2_2023",
+  "start_time": "2023-03-31T16:44:06Z",
+  "end_time": "2023-06-11T16:44:06Z"
+},
+{
+  "id": "109620621360438269",
+  "status": "published",
+  "league_id": "109551156421687480",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_italy_split_1_2023",
+  "start_time": "2023-01-19T16:44:06Z",
+  "end_time": "2023-03-17T16:44:06Z"
+},
+{
+  "id": "112434072918743663",
+  "status": "published",
+  "league_id": "109551156421687480",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_italy_split_2_2024",
+  "start_time": "2024-05-17T22:00:00Z",
+  "end_time": "2024-07-27T21:59:00Z"
+},
+{
+  "id": "111771883698759781",
+  "status": "published",
+  "league_id": "109551156421687480",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_italy_split_1_2024",
+  "start_time": "2024-01-26T23:00:00Z",
+  "end_time": "2024-04-15T21:59:00Z"
+},
+{
+  "id": "108234255555938231",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "vct_latam_north_stage_02",
+  "start_time": "2022-05-11T20:15:30Z",
+  "end_time": "2022-06-12T20:15:30Z"
+},
+{
+  "id": "105787965035066414",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "week_03",
+  "start_time": "2021-02-23T08:00:01Z",
+  "end_time": "2021-03-01T07:59:01Z"
+},
+{
+  "id": "107757973319113645",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "vct_latam_north_stage_01",
+  "start_time": "2022-02-10T17:00:00Z",
+  "end_time": "2022-03-31T17:40:09Z"
+},
+{
+  "id": "109862385614616709",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_latam_north_split_1_2023",
+  "start_time": "2023-02-26T09:17:19Z",
+  "end_time": "2023-04-04T09:17:19Z"
+},
+{
+  "id": "106699417190527412",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "finals",
+  "start_time": "2021-08-06T07:00:00Z",
+  "end_time": "2021-08-09T07:00:00Z"
+},
+{
+  "id": "106501228053199013",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-07-06T07:00:00Z",
+  "end_time": "2021-07-12T07:00:00Z"
+},
+{
+  "id": "112432629877078743",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_latam_n_split_2_2024",
+  "start_time": "2024-05-16T22:00:00Z",
+  "end_time": "2024-06-28T23:00:00Z"
+},
+{
+  "id": "110184178210735490",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_latam_north_split_2_2023",
+  "start_time": "2023-04-23T09:17:19Z",
+  "end_time": "2023-06-12T09:17:19Z"
+},
+{
+  "id": "106633556564404638",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-07-27T07:00:00Z",
+  "end_time": "2021-08-02T07:00:00Z"
+},
+{
+  "id": "105720789294102172",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-09T08:00:01Z",
+  "end_time": "2021-02-14T07:59:01Z"
+},
+{
+  "id": "105590554761839704",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-01-26T00:01:00Z",
+  "end_time": "2021-01-31T23:59:59Z"
+},
+{
+  "id": "111919556944741694",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_latam_n_split_1_2024",
+  "start_time": "2024-02-19T23:00:00Z",
+  "end_time": "2024-04-06T21:59:00Z"
+},
+{
+  "id": "105986005776523657",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-06T07:00:00Z",
+  "end_time": "2021-04-11T18:59:00Z"
+},
+{
+  "id": "106065009401524669",
+  "status": "published",
+  "league_id": "105555664141146477",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-04-20T07:01:00Z",
+  "end_time": "2021-04-26T06:59:00Z"
+},
+{
+  "id": "108233712748906131",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_ph_stage_02",
+  "start_time": "2022-05-10T22:00:00Z",
+  "end_time": "2022-05-31T18:14:10Z"
+},
+{
+  "id": "105796322462986721",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-19T01:00:00Z",
+  "end_time": "2021-02-21T12:55:00Z"
+},
+{
+  "id": "112524822820774285",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_ph_split_2_2024",
+  "start_time": "2024-06-11T23:00:00Z",
+  "end_time": "2024-08-01T21:59:00Z"
+},
+{
+  "id": "109664922289541336",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_ph_split_1_2023",
+  "start_time": "2023-01-25T12:26:18Z",
+  "end_time": "2023-03-15T12:26:18Z"
+},
+{
+  "id": "107766270575498259",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_sea_ph_stage_01",
+  "start_time": "2022-02-08T13:00:00Z",
+  "end_time": "2022-03-01T13:00:00Z"
+},
+{
+  "id": "105590700081272455",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_sea_ph_stage_01_week_01",
+  "start_time": "2021-02-05T00:01:00Z",
+  "end_time": "2021-02-05T23:59:59Z"
+},
+{
+  "id": "111816054441609752",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_sea_ph_split_1_2024",
+  "start_time": "2024-02-13T23:00:00Z",
+  "end_time": "2024-03-31T21:59:00Z"
+},
+{
+  "id": "106027215534896262",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-04T05:50:00Z",
+  "end_time": "2021-04-06T12:00:00Z"
+},
+{
+  "id": "110095244226459701",
+  "status": "published",
+  "league_id": "105555704030157191",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_ph_split_2_2023",
+  "start_time": "2023-03-28T12:26:18Z",
+  "end_time": "2023-06-06T12:26:18Z"
+},
+{
+  "id": "107910510540406112",
+  "status": "published",
+  "league_id": "107910334624279390",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_apac_stage_1_playins_2022",
+  "start_time": "2022-03-09T15:00:00Z",
+  "end_time": "2022-03-13T18:00:00Z"
+},
+{
+  "id": "108402350133614684",
+  "status": "published",
+  "league_id": "107910334624279390",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_apac_stage_2_main_event_2022",
+  "start_time": "2022-06-03T12:30:18Z",
+  "end_time": "2022-06-29T12:30:18Z"
+},
+{
+  "id": "108402217501555569",
+  "status": "published",
+  "league_id": "107910334624279390",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_apac_stage_2_playins_2022",
+  "start_time": "2022-06-08T12:21:32Z",
+  "end_time": "2022-06-27T12:21:32Z"
+},
+{
+  "id": "107916000843416791",
+  "status": "published",
+  "league_id": "107910334624279390",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_apac_stage_1_main_event_2022",
+  "start_time": "2022-03-15T17:00:00Z",
+  "end_time": "2022-03-27T18:00:00Z"
+},
+{
+  "id": "105590420638685836",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_kr_stage_01_week_01",
+  "start_time": "2021-02-04T00:01:00Z",
+  "end_time": "2021-02-07T23:59:59Z"
+},
+{
+  "id": "108290047341490878",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_kr_stage_2_2022",
+  "start_time": "2022-05-07T16:54:11Z",
+  "end_time": "2022-06-27T16:54:11Z"
+},
+{
+  "id": "105986268433398151",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-04-03T07:00:00Z",
+  "end_time": "2021-05-02T18:59:00Z"
+},
+{
+  "id": "110145323587160473",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_kr_split_2_2023",
+  "start_time": "2023-04-09T12:41:33Z",
+  "end_time": "2023-06-05T12:41:33Z"
+},
+{
+  "id": "105748416393034590",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "week_02",
+  "start_time": "2021-02-18T08:00:01Z",
+  "end_time": "2021-02-22T07:59:01Z"
+},
+{
+  "id": "112478394485513416",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_kr_split_2_2024",
+  "start_time": "2024-06-05T06:00:00Z",
+  "end_time": "2024-07-27T08:00:00Z"
+},
+{
+  "id": "105827133194302649",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "week_03",
+  "start_time": "2021-03-03T08:00:00Z",
+  "end_time": "2021-03-08T08:00:00Z"
+},
+{
+  "id": "106590488321400246",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "week_01",
+  "start_time": "2021-07-16T13:20:31Z",
+  "end_time": "2021-08-16T13:20:31Z"
+},
+{
+  "id": "109721617083329791",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "challengers_kr_split_1_2023",
+  "start_time": "2023-01-24T12:41:33Z",
+  "end_time": "2023-02-27T12:41:33Z"
+},
+{
+  "id": "111940968738678079",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Europe/Sarajevo",
+  "name": "challengers_kr_split_1_2024",
+  "start_time": "2024-02-27T23:00:00Z",
+  "end_time": "2024-05-03T21:59:00Z"
+},
+{
+  "id": "107774584142187667",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "vct_challengers_kr_stage_1_2022",
+  "start_time": "2022-02-22T23:01:00Z",
+  "end_time": "2022-03-31T22:59:00Z"
+},
+{
+  "id": "106501302582306677",
+  "status": "published",
+  "league_id": "105555677198805024",
+  "time_zone": "Etc/UTC",
+  "name": "week_00",
+  "start_time": "2021-07-08T07:00:00Z",
+  "end_time": "2021-08-02T07:00:00Z"
+}]
