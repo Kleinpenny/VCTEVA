@@ -1,0 +1,3738 @@
+[
+    {
+        "team_id": "111006711389612074",
+        "acronym": "LH",
+        "league_id": "109029777807406730",
+        "team_name": "Lunatic-hai flax",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "109029888698112406",
+        "acronym": "LWE",
+        "league_id": "109029777807406730",
+        "team_name": "Lone Way E-SPORTS",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112439820691490172",
+        "acronym": "MIR",
+        "league_id": "109029777807406730",
+        "team_name": "MIR Gaming",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112439825505751243",
+        "acronym": "STG",
+        "league_id": "109029777807406730",
+        "team_name": "Special TiGers GC",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112439841344832900",
+        "acronym": "PIX",
+        "league_id": "109029777807406730",
+        "team_name": "Pixel",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112828979596356692",
+        "acronym": "UR",
+        "league_id": "109029777807406730",
+        "team_name": "URACHACHA",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "111006703702614704",
+        "acronym": "NC",
+        "league_id": "109029777807406730",
+        "team_name": "Nuclear GC",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "109029892382381551",
+        "acronym": "CGS",
+        "league_id": "109029777807406730",
+        "team_name": "Cherish Girls",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "109029901236098546",
+        "acronym": "SPGX",
+        "league_id": "109029777807406730",
+        "team_name": "SPEAR GAMING FEMALE",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112828981616565870",
+        "acronym": "SGA",
+        "league_id": "109029777807406730",
+        "team_name": "SGA Incheon",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "111006703702614704",
+        "acronym": "NCGC",
+        "league_id": "109029777807406730",
+        "team_name": "Nuclear GC",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "111006703702614704",
+        "acronym": "NC",
+        "league_id": "109029777807406730",
+        "team_name": "Nuclear GC",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "108076630730769001",
+        "acronym": "OGX",
+        "league_id": "112609302000026507",
+        "team_name": "Orangutan X",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "112728571541464842",
+        "acronym": "PURR",
+        "league_id": "112609302000026507",
+        "team_name": "Purr-fectionists",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "107115686855234336",
+        "acronym": "AECL",
+        "league_id": "112609302000026507",
+        "team_name": "Alter Ego Celest\u00e8",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "108825777687465687",
+        "acronym": "BSX",
+        "league_id": "112609302000026507",
+        "team_name": "BASISSIX",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "110962482917772905",
+        "acronym": "NE",
+        "league_id": "112609302000026507",
+        "team_name": "Neons",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "107115759215091303",
+        "acronym": "ARIC",
+        "league_id": "112609302000026507",
+        "team_name": "Aricat.Aresta",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "110768163318645416",
+        "acronym": "DV",
+        "league_id": "112609302000026507",
+        "team_name": "Deviant Topaz",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "110962492005261733",
+        "acronym": "NAF",
+        "league_id": "112609302000026507",
+        "team_name": "Nana and Friends",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "112721475566337918",
+        "acronym": "N2F",
+        "league_id": "112609302000026507",
+        "team_name": "9to5 workers",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "108825786502368366",
+        "acronym": "XTB",
+        "league_id": "112609302000026507",
+        "team_name": "X TEAM BO",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "110014359029298656",
+        "acronym": "GEX",
+        "league_id": "112609302000026507",
+        "team_name": "Global Esports Phoenix ",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "106976785241994019",
+        "acronym": "COL",
+        "league_id": "106976737954740691",
+        "team_name": "Complexity GX3",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976742467025364",
+        "acronym": "SR",
+        "league_id": "106976737954740691",
+        "team_name": "Shopify Rebellion",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "111170184954888187",
+        "acronym": "FLY",
+        "league_id": "106976737954740691",
+        "team_name": "FlyQuest Red",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976754343510908",
+        "acronym": "24H",
+        "league_id": "106976737954740691",
+        "team_name": "24 Haven",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976764679783298",
+        "acronym": "CLG",
+        "league_id": "106976737954740691",
+        "team_name": "CLG RED",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977273236536059",
+        "acronym": "NRD",
+        "league_id": "106976737954740691",
+        "team_name": "nerd emoji",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977309002429546",
+        "acronym": "WL",
+        "league_id": "106976737954740691",
+        "team_name": "wanderlust",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977300876395856",
+        "acronym": "EQS",
+        "league_id": "106976737954740691",
+        "team_name": "EQ Sanctity",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065567071390915",
+        "acronym": "XSET",
+        "league_id": "106976737954740691",
+        "team_name": "XSET Purple",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065446853266621",
+        "acronym": "1994",
+        "league_id": "106976737954740691",
+        "team_name": "1994 Toyota Supra",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976748636636025",
+        "acronym": "N2L",
+        "league_id": "106976737954740691",
+        "team_name": "NOTHING2LOSE",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108589672835810007",
+        "acronym": "RIOS",
+        "league_id": "106976737954740691",
+        "team_name": "Sanri-O's",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977299400066381",
+        "acronym": "VX",
+        "league_id": "106976737954740691",
+        "team_name": "VersionX",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976774374552352",
+        "acronym": "GGB",
+        "league_id": "106976737954740691",
+        "team_name": "Gen.G Black",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976745966764918",
+        "acronym": "C9W",
+        "league_id": "106976737954740691",
+        "team_name": "Cloud9 White",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976759763796863",
+        "acronym": "BDE",
+        "league_id": "106976737954740691",
+        "team_name": "Biddies Doin Esports",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "111170184954888187",
+        "acronym": "FLY",
+        "league_id": "106976737954740691",
+        "team_name": "FlyQuest RED",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977287967863905",
+        "acronym": "TSM",
+        "league_id": "106976737954740691",
+        "team_name": "TSM X",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976764679783298",
+        "acronym": "CLG",
+        "league_id": "106976737954740691",
+        "team_name": "CLG RED",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976761722303258",
+        "acronym": "CAST",
+        "league_id": "106976737954740691",
+        "team_name": "Castaways",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "112002571999495485",
+        "acronym": "BOYS",
+        "league_id": "106976737954740691",
+        "team_name": "The Boys",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108589667110761626",
+        "acronym": "ARI",
+        "league_id": "106976737954740691",
+        "team_name": "Ariana Grande Perfume",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065433951603310",
+        "acronym": "ROU",
+        "league_id": "106976737954740691",
+        "team_name": "Roulette",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977297720996964",
+        "acronym": "ILG",
+        "league_id": "106976737954740691",
+        "team_name": "ILG Jade",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "112002577740055872",
+        "acronym": "YFPX",
+        "league_id": "106976737954740691",
+        "team_name": "YFP X",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976785241994019",
+        "acronym": "COL",
+        "league_id": "106976737954740691",
+        "team_name": "Complexity GX3",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "112002550347318574",
+        "acronym": "QTS",
+        "league_id": "106976737954740691",
+        "team_name": "misu's qts",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "110169268513534850",
+        "acronym": "FAZE",
+        "league_id": "106976737954740691",
+        "team_name": "FaZe Clan GC",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977283361375551",
+        "acronym": "ANCT",
+        "league_id": "106976737954740691",
+        "team_name": "Team Ancients",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977304035558739",
+        "acronym": "SRNP",
+        "league_id": "106976737954740691",
+        "team_name": "Serenity Purple",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "112018915721508604",
+        "acronym": "DCM",
+        "league_id": "106976737954740691",
+        "team_name": "Decimate",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "110765768243847715",
+        "acronym": "OVK",
+        "league_id": "106976737954740691",
+        "team_name": "Overkill Black",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065567071390915",
+        "acronym": "XSET",
+        "league_id": "106976737954740691",
+        "team_name": "XSET",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977287967863905",
+        "acronym": "TSM",
+        "league_id": "106976737954740691",
+        "team_name": "TSM X",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976771652907805",
+        "acronym": "DIG",
+        "league_id": "106976737954740691",
+        "team_name": "Dignitas",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065482897804480",
+        "acronym": "TMX",
+        "league_id": "106976737954740691",
+        "team_name": "Team X",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065366079163569",
+        "acronym": "DART",
+        "league_id": "106976737954740691",
+        "team_name": "Dart Monkeys",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065662045094243",
+        "acronym": "AMP",
+        "league_id": "106976737954740691",
+        "team_name": "AIMPUNCH",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "112018915721508604",
+        "acronym": "DCM",
+        "league_id": "106976737954740691",
+        "team_name": "Decimate",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "105749857330015191",
+        "acronym": "SMG",
+        "league_id": "106976737954740691",
+        "team_name": "Team SMG",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "110169218376325528",
+        "acronym": "MXM",
+        "league_id": "106976737954740691",
+        "team_name": "Moist Moguls",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "105665312228269898",
+        "acronym": "IMT",
+        "league_id": "106976737954740691",
+        "team_name": "Immortals",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "105665353676229940",
+        "acronym": "XSET",
+        "league_id": "106976737954740691",
+        "team_name": "XSET",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976768287291869",
+        "acronym": "INV",
+        "league_id": "106976737954740691",
+        "team_name": "Invicta",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106375895211556516",
+        "acronym": "VK22",
+        "league_id": "106375817979489820",
+        "team_name": "Vivo Keyd Athenas",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108453976399479890",
+        "acronym": "ODK",
+        "league_id": "106375817979489820",
+        "team_name": "ODDIK",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "111052908436700798",
+        "acronym": "PROZ",
+        "league_id": "106375817979489820",
+        "team_name": "PROJECT Z",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108453910156735671",
+        "acronym": "CLT",
+        "league_id": "106375817979489820",
+        "team_name": "Cleiteam",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108453893686167874",
+        "acronym": "TL",
+        "league_id": "106375817979489820",
+        "team_name": "Team Liquid Brazil",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "111052908436700798",
+        "acronym": "PROZ",
+        "league_id": "106375817979489820",
+        "team_name": "PROJECT Z",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109993812878816554",
+        "acronym": "HMMR",
+        "league_id": "106375817979489820",
+        "team_name": "HUMMER Esports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "111052908436700798",
+        "acronym": "PROZ",
+        "league_id": "106375817979489820",
+        "team_name": "PROJECT Z",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "111052904599633531",
+        "acronym": "LGCY",
+        "league_id": "106375817979489820",
+        "team_name": "Legacy",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109993828646439027",
+        "acronym": "W7M",
+        "league_id": "106375817979489820",
+        "team_name": "bb w7m",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375895211556516",
+        "acronym": "VKA",
+        "league_id": "106375817979489820",
+        "team_name": "Vivo Keyd Athenas",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375879255649838",
+        "acronym": "B4",
+        "league_id": "106375817979489820",
+        "team_name": "B4 Angels",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375914857545383",
+        "acronym": "HL",
+        "league_id": "106375817979489820",
+        "team_name": "Havan Liberty",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "112251425271070933",
+        "acronym": "DDB",
+        "league_id": "106375817979489820",
+        "team_name": "Donas da Bala",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375834801925675",
+        "acronym": "CRZ",
+        "league_id": "106375817979489820",
+        "team_name": "Maze e amigas",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375864393973407",
+        "acronym": "JGG",
+        "league_id": "106375817979489820",
+        "team_name": "Jaguares Gaming Fem",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375834801925675",
+        "acronym": "CRZ",
+        "league_id": "106375817979489820",
+        "team_name": "Cruzeiro Esports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108878670966957055",
+        "acronym": "MIBR",
+        "league_id": "106375817979489820",
+        "team_name": "MIBR",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375846530301591",
+        "acronym": "SH",
+        "league_id": "106375817979489820",
+        "team_name": "Stars Horizon",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375864393973407",
+        "acronym": "JGF",
+        "league_id": "106375817979489820",
+        "team_name": "Jaguares Gaming Fem",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109993828646439027",
+        "acronym": "W7M",
+        "league_id": "106375817979489820",
+        "team_name": "w7m esports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "112251480922538220",
+        "acronym": "REV",
+        "league_id": "106375817979489820",
+        "team_name": "Revoada",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375933724507828",
+        "acronym": "GLP",
+        "league_id": "106375817979489820",
+        "team_name": "Gamelanders",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108453893686167874",
+        "acronym": "TL",
+        "league_id": "106375817979489820",
+        "team_name": "Team Liquid",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "107174817570297246",
+        "acronym": "OUT",
+        "league_id": "106375817979489820",
+        "team_name": "Breakout Esports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "112251458972768983",
+        "acronym": "TLV",
+        "league_id": "106375817979489820",
+        "team_name": "Team Leveling",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "112793498705860315",
+        "acronym": "PAPI",
+        "league_id": "106375817979489820",
+        "team_name": "p\u00e1prica picante",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375846530301591",
+        "acronym": "SH",
+        "league_id": "106375817979489820",
+        "team_name": "Stars Horizon V\u00eanus",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108878670966957055",
+        "acronym": "MIBR",
+        "league_id": "106375817979489820",
+        "team_name": "MIBR",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109126350461883357",
+        "acronym": "DLR",
+        "league_id": "106375817979489820",
+        "team_name": "Delira",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375933724507828",
+        "acronym": "GLP",
+        "league_id": "106375817979489820",
+        "team_name": "Gamelanders Purple",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109993931544840354",
+        "acronym": "00",
+        "league_id": "106375817979489820",
+        "team_name": "00Nation",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "112793488601579021",
+        "acronym": "PATA",
+        "league_id": "106375817979489820",
+        "team_name": "PS5PATAS",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375846530301591",
+        "acronym": "SHV",
+        "league_id": "106375817979489820",
+        "team_name": "Stars Horizon V\u00eanus",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375846530301591",
+        "acronym": "SHF",
+        "league_id": "106375817979489820",
+        "team_name": "Stars Horizon Fem",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108764409368519858",
+        "acronym": "RIG",
+        "league_id": "108752229027041361",
+        "team_name": "REIGNITE Lily",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "111057221979927756",
+        "acronym": "DFM",
+        "league_id": "108752229027041361",
+        "team_name": "DetonatioN FocusMe",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "108748169745284534",
+        "acronym": "ZETA",
+        "league_id": "108752229027041361",
+        "team_name": "ZETA DIVISION",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "110745562660975168",
+        "acronym": "DRX",
+        "league_id": "108752229027041361",
+        "team_name": "DRX Changers",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "108748177717149112",
+        "acronym": "FL",
+        "league_id": "108752229027041361",
+        "team_name": "FENNEL HOTELAVA",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "111057230004907020",
+        "acronym": "CGT",
+        "league_id": "108752229027041361",
+        "team_name": "CREST GAMING Stellar",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "110745562660975168",
+        "acronym": "DRX",
+        "league_id": "108752229027041361",
+        "team_name": "DRX Changers",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "110745559232262717",
+        "acronym": "UXMI",
+        "league_id": "108752229027041361",
+        "team_name": "UxMi ACE",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "108764409368519858",
+        "acronym": "RIG",
+        "league_id": "108752229027041361",
+        "team_name": "REIGNITE Lily",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "111057221979927756",
+        "acronym": "DFM",
+        "league_id": "108752229027041361",
+        "team_name": "DetonatioN FocusMe",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "111057221979927756",
+        "acronym": "DFM",
+        "league_id": "108752229027041361",
+        "team_name": "DetonatioN FocusMe GC",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "111890677130209352",
+        "acronym": "NB",
+        "league_id": "107019646737643925",
+        "team_name": "NEON BLADE",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196054985503335",
+        "acronym": "FLCV",
+        "league_id": "107019646737643925",
+        "team_name": "Falcons Vega",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196099498044762",
+        "acronym": "KC",
+        "league_id": "107019646737643925",
+        "team_name": "Karmine Corp",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111243757427586435",
+        "acronym": "MDK",
+        "league_id": "107019646737643925",
+        "team_name": "MAD Lions KOI",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111006781958048567",
+        "acronym": "DSY",
+        "league_id": "107019646737643925",
+        "team_name": "DSYRE",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021308990636196",
+        "acronym": "GLD",
+        "league_id": "107019646737643925",
+        "team_name": "Guild X",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110615001091896389",
+        "acronym": "XL",
+        "league_id": "107019646737643925",
+        "team_name": "EXCEL",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196086106976874",
+        "acronym": "FKS",
+        "league_id": "107019646737643925",
+        "team_name": "FOKUS Sakura",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "108240763447862128",
+        "acronym": "CASE",
+        "league_id": "107019646737643925",
+        "team_name": "CASE HYDRA",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111901707633760155",
+        "acronym": "GX",
+        "league_id": "107019646737643925",
+        "team_name": "GIANTX",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111890685909663613",
+        "acronym": "VLNT",
+        "league_id": "107019646737643925",
+        "team_name": "Valiant GC",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111006791685855925",
+        "acronym": "NASR",
+        "league_id": "107019646737643925",
+        "team_name": "NASR Ignite",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "109080969309812206",
+        "acronym": "NAVI",
+        "league_id": "107019646737643925",
+        "team_name": "NAVI Celestials",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196109977073794",
+        "acronym": "KPI",
+        "league_id": "107019646737643925",
+        "team_name": "KPI Shine",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107185970379663407",
+        "acronym": "G2",
+        "league_id": "107019646737643925",
+        "team_name": "G2 Gozen",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107185970379663407",
+        "acronym": "G2",
+        "league_id": "107019646737643925",
+        "team_name": "G2 Gozen",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021308990636196",
+        "acronym": "GLD",
+        "league_id": "107019646737643925",
+        "team_name": "Guild X",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196086106976874",
+        "acronym": "FKS",
+        "league_id": "107019646737643925",
+        "team_name": "FOKUS Sakura",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196049008258380",
+        "acronym": "CBA",
+        "league_id": "107019646737643925",
+        "team_name": "CBA",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "109080945899069171",
+        "acronym": "ACE",
+        "league_id": "107019646737643925",
+        "team_name": "Acend Rising",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196099498044762",
+        "acronym": "KC",
+        "league_id": "107019646737643925",
+        "team_name": "Karmine Corp",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111243752483759587",
+        "acronym": "HOWL",
+        "league_id": "107019646737643925",
+        "team_name": "HOWL Moonlight",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "106511512044956533",
+        "acronym": "SES",
+        "league_id": "107019646737643925",
+        "team_name": "SMARACIS eSports",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694293549946604",
+        "acronym": "IMPF",
+        "league_id": "107019646737643925",
+        "team_name": "Improve Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "106633261731303412",
+        "acronym": "TEN",
+        "league_id": "107019646737643925",
+        "team_name": "TENSTAR Nova",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "105788155492840636",
+        "acronym": "ZZ",
+        "league_id": "107019646737643925",
+        "team_name": "Zero Zone W",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694449306088262",
+        "acronym": "TFT",
+        "league_id": "107019646737643925",
+        "team_name": "TFT DEMONZ",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694321030509330",
+        "acronym": "FNS",
+        "league_id": "107019646737643925",
+        "team_name": "Team Finest Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107693988251473458",
+        "acronym": "NORG",
+        "league_id": "107019646737643925",
+        "team_name": "noOrg",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694385461892904",
+        "acronym": "VIVV",
+        "league_id": "107019646737643925",
+        "team_name": "Vivace Vista",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021298845350518",
+        "acronym": "FUT",
+        "league_id": "107019646737643925",
+        "team_name": "Futbolist JEFF",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "106511417404947629",
+        "acronym": "FF",
+        "league_id": "107019646737643925",
+        "team_name": "Fire Flux Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694162498000522",
+        "acronym": "PEPE",
+        "league_id": "107019646737643925",
+        "team_name": "Pepe E-Sports",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694162498000522",
+        "acronym": "PEPE",
+        "league_id": "107019646737643925",
+        "team_name": "Pepe E-Sports",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107282954497287384",
+        "acronym": "5G",
+        "league_id": "107019646737643925",
+        "team_name": "5ynerG",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107286139213833570",
+        "acronym": "VGIA",
+        "league_id": "107019646737643925",
+        "team_name": "Vodafone Giants G4E",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "108240781294494581",
+        "acronym": "NMS",
+        "league_id": "107019646737643925",
+        "team_name": "Nomads",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021342949884074",
+        "acronym": "CB",
+        "league_id": "107019646737643925",
+        "team_name": "ChatBanned",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694354566198041",
+        "acronym": "IRIS",
+        "league_id": "107019646737643925",
+        "team_name": "IRIS",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694247265898311",
+        "acronym": "IW",
+        "league_id": "107019646737643925",
+        "team_name": "fastPay Wildcats Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021190327681156",
+        "acronym": "OXG",
+        "league_id": "107019646737643925",
+        "team_name": "Oxxgen Esports",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021170659868789",
+        "acronym": "SMB",
+        "league_id": "107019646737643925",
+        "team_name": "SuperMassive Blaze Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694148456126083",
+        "acronym": "SADD",
+        "league_id": "107019646737643925",
+        "team_name": "Sad Games",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110614998843401533",
+        "acronym": "O1O",
+        "league_id": "107019646737643925",
+        "team_name": "Odd 1 OUT",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694424891103044",
+        "acronym": "BP5",
+        "league_id": "107019646737643925",
+        "team_name": "Budapest Five",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "109080969309812206",
+        "acronym": "NAVI",
+        "league_id": "107019646737643925",
+        "team_name": "NAVI Celestials",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694354566198041",
+        "acronym": "IRIS",
+        "league_id": "107019646737643925",
+        "team_name": "GODSENT Iris",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694095242998408",
+        "acronym": "UNT",
+        "league_id": "107019646737643925",
+        "team_name": "UNtapped",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694385461892904",
+        "acronym": "VIV",
+        "league_id": "107019646737643925",
+        "team_name": "Vivace Vista",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021329903581819",
+        "acronym": "TGHL",
+        "league_id": "107019646737643925",
+        "team_name": "TGH Lunar",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "108240763447862128",
+        "acronym": "CASE",
+        "league_id": "107019646737643925",
+        "team_name": "Case Hydra",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021205198010988",
+        "acronym": "VLS",
+        "league_id": "107019646737643925",
+        "team_name": "Valstars",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "108240841149460876",
+        "acronym": "NSX",
+        "league_id": "107019646737643925",
+        "team_name": "Nomads",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021335069887235",
+        "acronym": "TOG",
+        "league_id": "107019646737643925",
+        "team_name": "The Originals",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "108240774153974144",
+        "acronym": "BSK",
+        "league_id": "107019646737643925",
+        "team_name": "Besiktas Esports Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107693880400385512",
+        "acronym": "ALL",
+        "league_id": "107019646737643925",
+        "team_name": "Alliance Coven",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021335069887235",
+        "acronym": "ORG",
+        "league_id": "107019646737643925",
+        "team_name": "The Originals",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110014384779746706",
+        "acronym": "GOC",
+        "league_id": "107115678205203231",
+        "team_name": "GO Cyrene",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110962485054054811",
+        "acronym": "NYX",
+        "league_id": "107115678205203231",
+        "team_name": "NYX Kyosei",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110962492005261733",
+        "acronym": "NAF",
+        "league_id": "107115678205203231",
+        "team_name": "Nana and Friends",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110962482917772905",
+        "acronym": "NE",
+        "league_id": "107115678205203231",
+        "team_name": "Neons",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110962487373242786",
+        "acronym": "BOT",
+        "league_id": "107115678205203231",
+        "team_name": "BOTT",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110490682816310099",
+        "acronym": "THE",
+        "league_id": "107115678205203231",
+        "team_name": "THE HERO KDA",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108231404092290565",
+        "acronym": "NWJ",
+        "league_id": "107115678205203231",
+        "team_name": "SCYTHE NWJ",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110490674608296098",
+        "acronym": "POA",
+        "league_id": "107115678205203231",
+        "team_name": "Point of Authority Blossom",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108076630730769001",
+        "acronym": "OGT",
+        "league_id": "107115678205203231",
+        "team_name": "Orangutan",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110768152945025490",
+        "acronym": "ANC1",
+        "league_id": "107115678205203231",
+        "team_name": "Anomaly No Charms",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108231404092290565",
+        "acronym": "BIGG",
+        "league_id": "107115678205203231",
+        "team_name": "BIGG SCYTHE",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110014372774272399",
+        "acronym": "SPH",
+        "league_id": "107115678205203231",
+        "team_name": "Sapphire",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108076622781336977",
+        "acronym": "BRNV",
+        "league_id": "107115678205203231",
+        "team_name": "Bren Esports Victress",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115686855234336",
+        "acronym": "AECL",
+        "league_id": "107115678205203231",
+        "team_name": "Alter Ego Celest\u00e8",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115815394333485",
+        "acronym": "ARS",
+        "league_id": "107115678205203231",
+        "team_name": "The Capitol Arise",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115792269549165",
+        "acronym": "MADR",
+        "league_id": "107115678205203231",
+        "team_name": "MAD Army",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108549358621722857",
+        "acronym": "FTR",
+        "league_id": "107115678205203231",
+        "team_name": "Fear Eater Sierra",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "105749857330015191",
+        "acronym": "SMG",
+        "league_id": "107115678205203231",
+        "team_name": "TEAM SMG",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108231404092290565",
+        "acronym": "BIGG",
+        "league_id": "107115678205203231",
+        "team_name": "BIGG SCYTHE",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112789154857509834",
+        "acronym": "LIX",
+        "league_id": "107115678205203231",
+        "team_name": "LILAX",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108389823579775109",
+        "acronym": "LORG",
+        "league_id": "107115678205203231",
+        "team_name": "Looking for Org",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115815394333485",
+        "acronym": "ARS",
+        "league_id": "107115678205203231",
+        "team_name": "TC Arise",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108825786502368366",
+        "acronym": "XTB",
+        "league_id": "107115678205203231",
+        "team_name": "X TEAM BO",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108076627300518794",
+        "acronym": "GMD",
+        "league_id": "107115678205203231",
+        "team_name": "GamDaeng",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875594675760277",
+        "acronym": "X10F",
+        "league_id": "107115678205203231",
+        "team_name": "X10 Crit",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108825775433469032",
+        "acronym": "ARFS",
+        "league_id": "107115678205203231",
+        "team_name": "ARF Starlight",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875594675760277",
+        "acronym": "X10F",
+        "league_id": "107115678205203231",
+        "team_name": "X10 Crit",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108389823579775109",
+        "acronym": "RH",
+        "league_id": "107115678205203231",
+        "team_name": "Rising Hope",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108825777687465687",
+        "acronym": "BSX",
+        "league_id": "107115678205203231",
+        "team_name": "BASISSIX",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875541915157927",
+        "acronym": "QT",
+        "league_id": "107115678205203231",
+        "team_name": "Quintuplet",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112184363776389689",
+        "acronym": "CBD",
+        "league_id": "107115678205203231",
+        "team_name": "Cardboard Dinosaur",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112172177953171844",
+        "acronym": "VND",
+        "league_id": "107115678205203231",
+        "team_name": "Vandal",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112789186127487968",
+        "acronym": "INVI",
+        "league_id": "107115678205203231",
+        "team_name": "invincible gc",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112184356126189258",
+        "acronym": "DGR",
+        "league_id": "107115678205203231",
+        "team_name": "Dangerous Rose",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112172173943685789",
+        "acronym": "XIP",
+        "league_id": "107115678205203231",
+        "team_name": "Xipto Esports",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875537213336717",
+        "acronym": "HZE",
+        "league_id": "107115678205203231",
+        "team_name": "Hero Zero KDA",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115804398362224",
+        "acronym": "NGX",
+        "league_id": "107115678205203231",
+        "team_name": "Nigma Galaxy",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112184372369781130",
+        "acronym": "LL",
+        "league_id": "107115678205203231",
+        "team_name": "LILITH",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110014380071597544",
+        "acronym": "CAPY",
+        "league_id": "107115678205203231",
+        "team_name": "Capybara GanG",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875472318962035",
+        "acronym": "FUMA",
+        "league_id": "107115678205203231",
+        "team_name": "Fuma Esports",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108076619600890759",
+        "acronym": "AGL",
+        "league_id": "107115678205203231",
+        "team_name": "Amory Aresta",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112789154857509834",
+        "acronym": "LI",
+        "league_id": "107115678205203231",
+        "team_name": "LILAX",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110014380071597544",
+        "acronym": "CBG",
+        "league_id": "107115678205203231",
+        "team_name": "Capybara GanG",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "111265641229211189",
+        "acronym": "ASEO",
+        "league_id": "109109622360706601",
+        "team_name": "Attacking Soul Esports OvO",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "111265637999487772",
+        "acronym": "EDGS",
+        "league_id": "109109622360706601",
+        "team_name": "Chao Hui EDward Gaming",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "111265637999487772",
+        "acronym": "EDGS",
+        "league_id": "109109622360706601",
+        "team_name": "Super Empowerment Edward Gaming",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "111265636134791961",
+        "acronym": "CCG",
+        "league_id": "109109622360706601",
+        "team_name": "Chosen Clique Gaming",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "111265636134791961",
+        "acronym": "CCGG",
+        "league_id": "109109622360706601",
+        "team_name": "Chosen Clique Gaming",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "108939782290083848",
+        "acronym": "URB",
+        "league_id": "109109622360706601",
+        "team_name": "Urban Beauties",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "108939763818135570",
+        "acronym": "BBGS",
+        "league_id": "109109622360706601",
+        "team_name": "Bubble Girls",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "108939766699921413",
+        "acronym": "LKR",
+        "league_id": "109109622360706601",
+        "team_name": "Lady-Killer",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "110962503661227660",
+        "acronym": "MLT",
+        "league_id": "109109622360706601",
+        "team_name": "MLT eSports GC",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "108939758501462032",
+        "acronym": "O3O",
+        "league_id": "109109622360706601",
+        "team_name": "Oxyg3nious",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "107605767634609340",
+        "acronym": "KRU",
+        "league_id": "109879575186437267",
+        "team_name": "KR\u00dc Blaze",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107600865871683810",
+        "acronym": "AKV",
+        "league_id": "109879575186437267",
+        "team_name": "Akave",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107605767634609340",
+        "acronym": "KRU",
+        "league_id": "109879575186437267",
+        "team_name": "Visa KR\u00dc Blaze",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107910153514729818",
+        "acronym": "FSX",
+        "league_id": "109879575186437267",
+        "team_name": "Fusion Esports",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "108172266878972669",
+        "acronym": "SNX",
+        "league_id": "109879575186437267",
+        "team_name": "Sunxet Club",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107894513703662486",
+        "acronym": "MOX",
+        "league_id": "109879575186437267",
+        "team_name": "Movistar Optix",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "108452406268738690",
+        "acronym": "9Z",
+        "league_id": "109879575186437267",
+        "team_name": "9z Team",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107605767634609340",
+        "acronym": "KR\u00dc",
+        "league_id": "109879575186437267",
+        "team_name": "VISA KR\u00dc Blaze",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107600881624209463",
+        "acronym": "FIRE",
+        "league_id": "109879575186437267",
+        "team_name": "FiRePOWER",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112127324189257386",
+        "acronym": "KS",
+        "league_id": "109879575186437267",
+        "team_name": "KS Hunters",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107600865871683810",
+        "acronym": "AKV",
+        "league_id": "109879575186437267",
+        "team_name": "Akave",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "111006709047937840",
+        "acronym": "OB",
+        "league_id": "109029777807406730",
+        "team_name": "Obelisk",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "111006706101559987",
+        "acronym": "CVA",
+        "league_id": "109029777807406730",
+        "team_name": "Crazy Violent Adult",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "109029884842505867",
+        "acronym": "MBT",
+        "league_id": "109029777807406730",
+        "team_name": "MBTI",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "109029901236098546",
+        "acronym": "SPG",
+        "league_id": "109029777807406730",
+        "team_name": "SPEAR GAMING FEMALE",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112439822974643691",
+        "acronym": "BSG",
+        "league_id": "109029777807406730",
+        "team_name": "Beyond Stratos Gaming GC",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112828979596356692",
+        "acronym": "UR",
+        "league_id": "109029777807406730",
+        "team_name": "URACHACHA",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112439820691490172",
+        "acronym": "MIR",
+        "league_id": "109029777807406730",
+        "team_name": "MIR Gaming",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112828981616565870",
+        "acronym": "SGA",
+        "league_id": "109029777807406730",
+        "team_name": "SGA Incheon",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "111006706101559987",
+        "acronym": "CVA",
+        "league_id": "109029777807406730",
+        "team_name": "CVA",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "111006703702614704",
+        "acronym": "NCGC",
+        "league_id": "109029777807406730",
+        "team_name": "Nuclear GC",
+        "league_region": "KR",
+        "league_name": "game_changers_kr"
+    },
+    {
+        "team_id": "112721482272112541",
+        "acronym": "GANG",
+        "league_id": "112609302000026507",
+        "team_name": "Gang Gang",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "108076619600890759",
+        "acronym": "AGL",
+        "league_id": "112609302000026507",
+        "team_name": "Amory Aresta",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "107115766504608551",
+        "acronym": "VLT2",
+        "league_id": "112609302000026507",
+        "team_name": "VLT Asteria",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "108825775433469032",
+        "acronym": "ARFS",
+        "league_id": "112609302000026507",
+        "team_name": "ARF Starlight",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "112721487718317132",
+        "acronym": "ACEK",
+        "league_id": "112609302000026507",
+        "team_name": "Asmodeus Colosseum Esports",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "108825780201107192",
+        "acronym": "BMG",
+        "league_id": "112609302000026507",
+        "team_name": "Black Magic",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "107875594675760277",
+        "acronym": "X10S",
+        "league_id": "112609302000026507",
+        "team_name": "X10 Sapphire",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "110014372774272399",
+        "acronym": "FS",
+        "league_id": "112609302000026507",
+        "team_name": "FULLSENSE Sapphire",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "110014380071597544",
+        "acronym": "CAPY",
+        "league_id": "112609302000026507",
+        "team_name": "Capybara GanG",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "108076627300518794",
+        "acronym": "GMD",
+        "league_id": "112609302000026507",
+        "team_name": "GamDaeng",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "107115808660443946",
+        "acronym": "RTS",
+        "league_id": "112609302000026507",
+        "team_name": "Renatus White",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "107875541915157927",
+        "acronym": "QTXX",
+        "league_id": "112609302000026507",
+        "team_name": "Quintuplet",
+        "league_region": "INTL",
+        "league_name": "game_changers_sa"
+    },
+    {
+        "team_id": "111170176299489784",
+        "acronym": "WPT",
+        "league_id": "106976737954740691",
+        "team_name": "Wingman Patrol",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977306229339239",
+        "acronym": "UCR",
+        "league_id": "106976737954740691",
+        "team_name": "Unbind Crouch",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976742467025364",
+        "acronym": "SR",
+        "league_id": "106976737954740691",
+        "team_name": "Shopify Rebellion",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106013963939603177",
+        "acronym": "V1",
+        "league_id": "106976737954740691",
+        "team_name": "Version 1",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976742467025364",
+        "acronym": "SR",
+        "league_id": "106976737954740691",
+        "team_name": "Shopify Rebellion",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977295215789386",
+        "acronym": "ELY",
+        "league_id": "106976737954740691",
+        "team_name": "ELYSIUM NOIR",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "110765695281390128",
+        "acronym": "DSG",
+        "league_id": "106976737954740691",
+        "team_name": "Disguised GC",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976742467025364",
+        "acronym": "SR",
+        "league_id": "106976737954740691",
+        "team_name": "Shopify Rebellion",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977285076256066",
+        "acronym": "TLP",
+        "league_id": "106976737954740691",
+        "team_name": "TLP Peach",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977302403332865",
+        "acronym": "CCA",
+        "league_id": "106976737954740691",
+        "team_name": "CC Angels",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977276559131964",
+        "acronym": "NMGI",
+        "league_id": "106976737954740691",
+        "team_name": "NMG Indigo",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976742467025364",
+        "acronym": "SR",
+        "league_id": "106976737954740691",
+        "team_name": "Shopify Rebellion",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977280075414270",
+        "acronym": "ONYX",
+        "league_id": "106976737954740691",
+        "team_name": "ONYX Purple",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977269272511801",
+        "acronym": "KRH",
+        "league_id": "106976737954740691",
+        "team_name": "Kami's Retirement Home",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "112002564298387911",
+        "acronym": "SN",
+        "league_id": "106976737954740691",
+        "team_name": "SuperNova Galaxy",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065657347408224",
+        "acronym": "MSF",
+        "league_id": "106976737954740691",
+        "team_name": "Misfits Black",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976785241994019",
+        "acronym": "COL",
+        "league_id": "106976737954740691",
+        "team_name": "Complexity",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977291531224391",
+        "acronym": "GGP",
+        "league_id": "106976737954740691",
+        "team_name": "Gun Gals+",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977281751774302",
+        "acronym": "PLR",
+        "league_id": "106976737954740691",
+        "team_name": "Polaris",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976751141239255",
+        "acronym": "22",
+        "league_id": "106976737954740691",
+        "team_name": "+ 22",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "112002547417035182",
+        "acronym": "INFX",
+        "league_id": "106976737954740691",
+        "team_name": "Infinity X",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "109144832518501870",
+        "acronym": "EG",
+        "league_id": "106976737954740691",
+        "team_name": "Evil Geniuses GC",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "109144832518501870",
+        "acronym": "EG",
+        "league_id": "106976737954740691",
+        "team_name": "Evil Geniuses",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976768287291869",
+        "acronym": "CEI",
+        "league_id": "106976737954740691",
+        "team_name": "CUBE ESPORTS INVICTA",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977314170008685",
+        "acronym": "ANV",
+        "league_id": "106976737954740691",
+        "team_name": "Anavrin Vapor",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "112002552616520453",
+        "acronym": "PP",
+        "league_id": "106976737954740691",
+        "team_name": "Passion Project",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "111170176299489784",
+        "acronym": "WPT",
+        "league_id": "106976737954740691",
+        "team_name": "Wingman Patrol",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976757407463898",
+        "acronym": "AKU",
+        "league_id": "106976737954740691",
+        "team_name": "AKUma",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977287967863905",
+        "acronym": "TSM",
+        "league_id": "106976737954740691",
+        "team_name": "TSM",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977271529272409",
+        "acronym": "LYE",
+        "league_id": "106976737954740691",
+        "team_name": "LYCUS RED",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "108065567071390915",
+        "acronym": "XSET",
+        "league_id": "106976737954740691",
+        "team_name": "XSET Fe",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106976785241994019",
+        "acronym": "COL",
+        "league_id": "106976737954740691",
+        "team_name": "Complexity GX3",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "106977299400066381",
+        "acronym": "VX",
+        "league_id": "106976737954740691",
+        "team_name": "VersionX",
+        "league_region": "NA",
+        "league_name": "game_changers_na"
+    },
+    {
+        "team_id": "111052904599633531",
+        "acronym": "LGCY",
+        "league_id": "106375817979489820",
+        "team_name": "Legacy",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109993966808522027",
+        "acronym": "LOUD",
+        "league_id": "106375817979489820",
+        "team_name": "LOUD",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "111052904599633531",
+        "acronym": "FN",
+        "league_id": "106375817979489820",
+        "team_name": "Fake Natty",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109993966808522027",
+        "acronym": "LOUD",
+        "league_id": "106375817979489820",
+        "team_name": "LOUD",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109126359863037802",
+        "acronym": "BD",
+        "league_id": "106375817979489820",
+        "team_name": "Black Dragons",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375834801925675",
+        "acronym": "CAOS",
+        "league_id": "106375817979489820",
+        "team_name": "TropiCaos",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108453866490496078",
+        "acronym": "TBK",
+        "league_id": "106375817979489820",
+        "team_name": "TBK Esports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108878670966957055",
+        "acronym": "MIBR",
+        "league_id": "106375817979489820",
+        "team_name": "MIBR",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "107174808240592279",
+        "acronym": "4X1",
+        "league_id": "106375817979489820",
+        "team_name": "4 Duelistas e 1 Baiter",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375858751192732",
+        "acronym": "GRF",
+        "league_id": "106375817979489820",
+        "team_name": "Griffos E-Sports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375846530301591",
+        "acronym": "SH",
+        "league_id": "106375817979489820",
+        "team_name": "Stars Horizon",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375895211556516",
+        "acronym": "VK",
+        "league_id": "106375817979489820",
+        "team_name": "Vivo Keyd Athenas",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375834801925675",
+        "acronym": "FDA",
+        "league_id": "106375817979489820",
+        "team_name": "FREEZADA",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375858751192732",
+        "acronym": "GR",
+        "league_id": "106375817979489820",
+        "team_name": "Griffos E-Sports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108453893686167874",
+        "acronym": "TL",
+        "league_id": "106375817979489820",
+        "team_name": "Team Liquid",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375846530301591",
+        "acronym": "SH",
+        "league_id": "106375817979489820",
+        "team_name": "Stars Horizon Fem",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108453864978383947",
+        "acronym": "TBK",
+        "league_id": "106375817979489820",
+        "team_name": "TBK Esports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109993828646439027",
+        "acronym": "W7M",
+        "league_id": "106375817979489820",
+        "team_name": "bb w7m",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375834801925675",
+        "acronym": "MAZE",
+        "league_id": "106375817979489820",
+        "team_name": "Maze e amigas",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "112251448976294150",
+        "acronym": "DMX",
+        "league_id": "106375817979489820",
+        "team_name": "DREAMMAX",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "112251475551076579",
+        "acronym": "TBS",
+        "league_id": "106375817979489820",
+        "team_name": "Team Brave Soldiers",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375933724507828",
+        "acronym": "GLP",
+        "league_id": "106375817979489820",
+        "team_name": "Gamelanders Purple",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375858751192732",
+        "acronym": "GR",
+        "league_id": "106375817979489820",
+        "team_name": "Griffos E-Sports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375864393973407",
+        "acronym": "JGG",
+        "league_id": "106375817979489820",
+        "team_name": "Jaguares Gaming",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "109993931544840354",
+        "acronym": "00",
+        "league_id": "106375817979489820",
+        "team_name": "00Nation",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "107174808240592279",
+        "acronym": "TRY",
+        "league_id": "106375817979489820",
+        "team_name": "Try E-sports",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "107174808240592279",
+        "acronym": "4X1",
+        "league_id": "106375817979489820",
+        "team_name": "4 Duelistas e 1 Baiter",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "106375846530301591",
+        "acronym": "SH",
+        "league_id": "106375817979489820",
+        "team_name": "Stars Horizon V\u00eanus",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "112251458972768983",
+        "acronym": "TLV",
+        "league_id": "106375817979489820",
+        "team_name": "Team Leveling",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108453893686167874",
+        "acronym": "TL",
+        "league_id": "106375817979489820",
+        "team_name": "Team Liquid Visa",
+        "league_region": "BR",
+        "league_name": "game_changers_series_brazil"
+    },
+    {
+        "team_id": "108748177717149112",
+        "acronym": "FL",
+        "league_id": "108752229027041361",
+        "team_name": "FENNEL HOTELAVA",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "111057198687002900",
+        "acronym": "IGZ",
+        "league_id": "108752229027041361",
+        "team_name": "IGZIST",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "110745559232262717",
+        "acronym": "UXMI",
+        "league_id": "108752229027041361",
+        "team_name": "UxMi ACE",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "108748169745284534",
+        "acronym": "ZETA",
+        "league_id": "108752229027041361",
+        "team_name": "ZETA DIVISION",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "111057210775052567",
+        "acronym": "SZ",
+        "league_id": "108752229027041361",
+        "team_name": "SCARZ GC",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "111057230004907020",
+        "acronym": "CGST",
+        "league_id": "108752229027041361",
+        "team_name": "CREST GAMING Stellar",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "108748169745284534",
+        "acronym": "ZETA",
+        "league_id": "108752229027041361",
+        "team_name": "ZETA DIVISION GC",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "108764409368519858",
+        "acronym": "RIG",
+        "league_id": "108752229027041361",
+        "team_name": "REIGNITE Lily",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "112279706800846545",
+        "acronym": "MTR",
+        "league_id": "108752229027041361",
+        "team_name": "Meteor",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "112748621102093033",
+        "acronym": "CYG",
+        "league_id": "108752229027041361",
+        "team_name": "Cyber Geek",
+        "league_region": "JP",
+        "league_name": "game_changers_jpn"
+    },
+    {
+        "team_id": "105720640249797517",
+        "acronym": "BBL",
+        "league_id": "107019646737643925",
+        "team_name": "BBL Queens",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196093746933079",
+        "acronym": "GK",
+        "league_id": "107019646737643925",
+        "team_name": "Geekay Esports Cherry",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "108240763447862128",
+        "acronym": "CASE",
+        "league_id": "107019646737643925",
+        "team_name": "CASE HYDRA",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "109080969309812206",
+        "acronym": "NAVI",
+        "league_id": "107019646737643925",
+        "team_name": "NAVI Celestials",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694095242998408",
+        "acronym": "UNTX",
+        "league_id": "107019646737643925",
+        "team_name": "UNtapped",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111890677130209352",
+        "acronym": "NB",
+        "league_id": "107019646737643925",
+        "team_name": "NEON BLADE",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021298845350518",
+        "acronym": "FUT",
+        "league_id": "107019646737643925",
+        "team_name": "FUT Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111243763064993158",
+        "acronym": "REX",
+        "league_id": "107019646737643925",
+        "team_name": "Cardboard Rex",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196049008258380",
+        "acronym": "CBA",
+        "league_id": "107019646737643925",
+        "team_name": "CBA",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196123616413288",
+        "acronym": "NIP",
+        "league_id": "107019646737643925",
+        "team_name": "NIP Lightning",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196123616413288",
+        "acronym": "NIP",
+        "league_id": "107019646737643925",
+        "team_name": "NIP Lightning",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110614998843401533",
+        "acronym": "O1O",
+        "league_id": "107019646737643925",
+        "team_name": "Odd 1 OUT",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110450926132011209",
+        "acronym": "ANM",
+        "league_id": "107019646737643925",
+        "team_name": "TIGER Anonymo",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196049008258380",
+        "acronym": "CBA",
+        "league_id": "107019646737643925",
+        "team_name": "CBA",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "109080945899069171",
+        "acronym": "ACE",
+        "league_id": "107019646737643925",
+        "team_name": "Acend Rising",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196125802606178",
+        "acronym": "RBLS",
+        "league_id": "107019646737643925",
+        "team_name": "Rebels Velvet",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "105720640249797517",
+        "acronym": "BBL",
+        "league_id": "107019646737643925",
+        "team_name": "BBL Queens",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196109977073794",
+        "acronym": "KPI",
+        "league_id": "107019646737643925",
+        "team_name": "KPI Shine",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196054985503335",
+        "acronym": "FLCV",
+        "league_id": "107019646737643925",
+        "team_name": "Team Falcons Vega",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107693880400385512",
+        "acronym": "ALL",
+        "league_id": "107019646737643925",
+        "team_name": "Alliance Coven",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694095242998408",
+        "acronym": "UNT",
+        "league_id": "107019646737643925",
+        "team_name": "UNtapped",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110450932064505645",
+        "acronym": "TAT",
+        "league_id": "107019646737643925",
+        "team_name": "The A Team",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107693880400385512",
+        "acronym": "ALL",
+        "league_id": "107019646737643925",
+        "team_name": "Alliance Coven",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196125802606178",
+        "acronym": "RBLS",
+        "league_id": "107019646737643925",
+        "team_name": "Rebels Velvet",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021308990636196",
+        "acronym": "GLD",
+        "league_id": "107019646737643925",
+        "team_name": "Guild X",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110196093746933079",
+        "acronym": "GK",
+        "league_id": "107019646737643925",
+        "team_name": "Geekay Esports Cherry",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107693988251473458",
+        "acronym": "NORG",
+        "league_id": "107019646737643925",
+        "team_name": "noOrg",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694461871591373",
+        "acronym": "MTF",
+        "league_id": "107019646737643925",
+        "team_name": "MOTIF Violet",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694302729581323",
+        "acronym": "SBR",
+        "league_id": "107019646737643925",
+        "team_name": "Sabres Impact",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694148456126083",
+        "acronym": "SAD",
+        "league_id": "107019646737643925",
+        "team_name": "Sad Games",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107693881929216519",
+        "acronym": "ALL",
+        "league_id": "107019646737643925",
+        "team_name": "Alliance Coven",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694354566198041",
+        "acronym": "IRIS",
+        "league_id": "107019646737643925",
+        "team_name": "GODSENT Iris",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694440838926265",
+        "acronym": "LGG",
+        "league_id": "107019646737643925",
+        "team_name": "LOGOBI GG",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694414509969323",
+        "acronym": "SHY",
+        "league_id": "107019646737643925",
+        "team_name": "peepoShy",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694283633694418",
+        "acronym": "GK",
+        "league_id": "107019646737643925",
+        "team_name": "GeeKay Esports",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "106652238530500027",
+        "acronym": "RIX",
+        "league_id": "107019646737643925",
+        "team_name": "Rix.gg Lightning",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694354566198041",
+        "acronym": "GOD",
+        "league_id": "107019646737643925",
+        "team_name": "GODSENT Iris",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694130295255730",
+        "acronym": "FTW",
+        "league_id": "107019646737643925",
+        "team_name": "For The Win Fade",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694227020486315",
+        "acronym": "FDP",
+        "league_id": "107019646737643925",
+        "team_name": "FDP Hurricane",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "105720640249797517",
+        "acronym": "BBL",
+        "league_id": "107019646737643925",
+        "team_name": "BBL Queens",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "108240768731040285",
+        "acronym": "RBLS",
+        "league_id": "107019646737643925",
+        "team_name": "Rebels Gaming Velvet",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021170659868789",
+        "acronym": "SMB",
+        "league_id": "107019646737643925",
+        "team_name": "Papara SuperMassive Blaze",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694095242998408",
+        "acronym": "UNT",
+        "league_id": "107019646737643925",
+        "team_name": "UNtapped",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "105831462823052966",
+        "acronym": "SNGL",
+        "league_id": "107019646737643925",
+        "team_name": "Sangal Esports",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107286129928680005",
+        "acronym": "HEET",
+        "league_id": "107019646737643925",
+        "team_name": "HEET RED",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "106633261731303412",
+        "acronym": "TNS",
+        "league_id": "107019646737643925",
+        "team_name": "TENSTAR Nova",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021169369596018",
+        "acronym": "SMB",
+        "league_id": "107019646737643925",
+        "team_name": "SuperMassive Blaze Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694076413449802",
+        "acronym": "FLUF",
+        "league_id": "107019646737643925",
+        "team_name": "Fluffy Cows",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021298845350518",
+        "acronym": "FUT",
+        "league_id": "107019646737643925",
+        "team_name": "Futbolist Female",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107282903893156042",
+        "acronym": "BWG",
+        "league_id": "107019646737643925",
+        "team_name": "BWG",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "112491034388390805",
+        "acronym": "HER0",
+        "league_id": "107019646737643925",
+        "team_name": "HEROIC Valkyries",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111243757427586435",
+        "acronym": "MAD",
+        "league_id": "107019646737643925",
+        "team_name": "MAD Lions LAURE",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "106652238530500027",
+        "acronym": "RIX",
+        "league_id": "107019646737643925",
+        "team_name": "Rix.gg Lightning",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021342949884074",
+        "acronym": "CBAN",
+        "league_id": "107019646737643925",
+        "team_name": "ChatBanned",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "111890685909663613",
+        "acronym": "VLNT",
+        "league_id": "107019646737643925",
+        "team_name": "Valiant GC",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107042888044351095",
+        "acronym": "DACH",
+        "league_id": "107019646737643925",
+        "team_name": "DACH",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "109080945899069171",
+        "acronym": "ACE",
+        "league_id": "107019646737643925",
+        "team_name": "Acend Rising",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021284266393738",
+        "acronym": "VST",
+        "league_id": "107019646737643925",
+        "team_name": "Valstars",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021312297700093",
+        "acronym": "GLD",
+        "league_id": "107019646737643925",
+        "team_name": "Guild X",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021192529297543",
+        "acronym": "OXG",
+        "league_id": "107019646737643925",
+        "team_name": "Oxxgen Esports",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107693945562271440",
+        "acronym": "ENL",
+        "league_id": "107019646737643925",
+        "team_name": "Ennola",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107694186970395359",
+        "acronym": "RJF",
+        "league_id": "107019646737643925",
+        "team_name": "Reject$ Fe",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "107021322920626944",
+        "acronym": "TGH",
+        "league_id": "107019646737643925",
+        "team_name": "TGH Lunar",
+        "league_region": "EMEA",
+        "league_name": "game_changers_emea"
+    },
+    {
+        "team_id": "110768163318645416",
+        "acronym": "DV",
+        "league_id": "107115678205203231",
+        "team_name": "Deviant Topaz",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110014372774272399",
+        "acronym": "FS",
+        "league_id": "107115678205203231",
+        "team_name": "FULLSENSE Sapphire",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110962503661227660",
+        "acronym": "MLT",
+        "league_id": "107115678205203231",
+        "team_name": "MLT eSports GC",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110768152945025490",
+        "acronym": "ANC",
+        "league_id": "107115678205203231",
+        "team_name": "Anomaly No Charms",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108231404092290565",
+        "acronym": "NWJ",
+        "league_id": "107115678205203231",
+        "team_name": "SCYTHE NWJ",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110014359029298656",
+        "acronym": "GEX",
+        "league_id": "107115678205203231",
+        "team_name": "Global Esports Phoenix ",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110014359029298656",
+        "acronym": "GES",
+        "league_id": "107115678205203231",
+        "team_name": "Global Esports Phoenix ",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110962489863439311",
+        "acronym": "BMY",
+        "league_id": "107115678205203231",
+        "team_name": "be my team",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115808660443946",
+        "acronym": "RTS",
+        "league_id": "107115678205203231",
+        "team_name": "Renatus White",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115772214615658",
+        "acronym": "BIGS",
+        "league_id": "107115678205203231",
+        "team_name": "BIG SCYTHE",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108825780201107192",
+        "acronym": "BMG",
+        "league_id": "107115678205203231",
+        "team_name": "Black Magic",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875594675760277",
+        "acronym": "X10S",
+        "league_id": "107115678205203231",
+        "team_name": "X10 Sapphire",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108076619600890759",
+        "acronym": "ARES",
+        "league_id": "107115678205203231",
+        "team_name": "Aresta",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112172170311847035",
+        "acronym": "BOBA",
+        "league_id": "107115678205203231",
+        "team_name": "BOBA",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108389827958825096",
+        "acronym": "TST",
+        "league_id": "107115678205203231",
+        "team_name": "Thirsts Red",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108076634141887373",
+        "acronym": "ZOL",
+        "league_id": "107115678205203231",
+        "team_name": "ZOL Meraki",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108076619600890759",
+        "acronym": "ARES",
+        "league_id": "107115678205203231",
+        "team_name": "Amory Aresta",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115772214615658",
+        "acronym": "BIG5",
+        "league_id": "107115678205203231",
+        "team_name": "BIG SCYTHE",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115759215091303",
+        "acronym": "ARIC",
+        "league_id": "107115678205203231",
+        "team_name": "Aricat.Aresta",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "105749857330015191",
+        "acronym": "SMG",
+        "league_id": "107115678205203231",
+        "team_name": "TEAM SMG",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115772214615658",
+        "acronym": "BIGG",
+        "league_id": "107115678205203231",
+        "team_name": "BIG SCYTHE",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115792269549165",
+        "acronym": "MA",
+        "league_id": "107115678205203231",
+        "team_name": "MAD Army",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108549361652500716",
+        "acronym": "LSF",
+        "league_id": "107115678205203231",
+        "team_name": "L Streaks",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875537213336717",
+        "acronym": "HZE",
+        "league_id": "107115678205203231",
+        "team_name": "Hero Zero KDA",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110490674608296098",
+        "acronym": "POA",
+        "league_id": "107115678205203231",
+        "team_name": "Point of Authority Blossom",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108231404092290565",
+        "acronym": "BIGG",
+        "league_id": "107115678205203231",
+        "team_name": "BIGG SCYTHE",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112172175981134496",
+        "acronym": "MNF",
+        "league_id": "107115678205203231",
+        "team_name": "Money First",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "110014338798663133",
+        "acronym": "RRQ",
+        "league_id": "107115678205203231",
+        "team_name": "Rex Regum Qeon Kaguya",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108389823579775109",
+        "acronym": "NGXF",
+        "league_id": "107115678205203231",
+        "team_name": "Nigma Galaxy Female",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108389826322505812",
+        "acronym": "SVR",
+        "league_id": "107115678205203231",
+        "team_name": "Sovereign",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875537213336717",
+        "acronym": "HZE",
+        "league_id": "107115678205203231",
+        "team_name": "Hero Zero KDA",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115766504608551",
+        "acronym": "VAST",
+        "league_id": "107115678205203231",
+        "team_name": "VLT Asteria",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112184368638184989",
+        "acronym": "AURA",
+        "league_id": "107115678205203231",
+        "team_name": "AURA DIFFERENTIAL",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112789186127487968",
+        "acronym": "INVV",
+        "league_id": "107115678205203231",
+        "team_name": "invincible gc",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112184366728704389",
+        "acronym": "RIMA",
+        "league_id": "107115678205203231",
+        "team_name": "RIMA GC",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112184368638184989",
+        "acronym": "SISU",
+        "league_id": "107115678205203231",
+        "team_name": "sisu",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875472318962035",
+        "acronym": "FUMA",
+        "league_id": "107115678205203231",
+        "team_name": "Fuma Esports",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112789209385624568",
+        "acronym": "4F",
+        "league_id": "107115678205203231",
+        "team_name": "4Fun",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112184363776389689",
+        "acronym": "MKS",
+        "league_id": "107115678205203231",
+        "team_name": "Mommy's Kitten",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "113005424188275967",
+        "acronym": "SL9",
+        "league_id": "107115678205203231",
+        "team_name": "swaglord9000",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "108389826322505812",
+        "acronym": "SVRX",
+        "league_id": "107115678205203231",
+        "team_name": "Sovereign",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875555433196689",
+        "acronym": "SAF",
+        "league_id": "107115678205203231",
+        "team_name": "Siomai and Friends",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107115766504608551",
+        "acronym": "VLT",
+        "league_id": "107115678205203231",
+        "team_name": "VLT Asteria",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "112789199865668595",
+        "acronym": "AVNE",
+        "league_id": "107115678205203231",
+        "team_name": "Avernus Esports GC",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "107875594675760277",
+        "acronym": "X10S",
+        "league_id": "107115678205203231",
+        "team_name": "X10 Sapphire",
+        "league_region": "SEA",
+        "league_name": "game_changers_sea"
+    },
+    {
+        "team_id": "111265637999487772",
+        "acronym": "EDGS",
+        "league_id": "109109622360706601",
+        "team_name": "Super Empowerment Edward Gaming",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "111265637999487772",
+        "acronym": "EDGS",
+        "league_id": "109109622360706601",
+        "team_name": "Super Empowerment Edward Gaming",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "111265641229211189",
+        "acronym": "ASEO",
+        "league_id": "109109622360706601",
+        "team_name": "Attacking Soul Esports OvO",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "111265636134791961",
+        "acronym": "CCG",
+        "league_id": "109109622360706601",
+        "team_name": "Chosen Clique Gaming",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "108939760277180290",
+        "acronym": "NPG",
+        "league_id": "109109622360706601",
+        "team_name": "Normal Player Gaming",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "108939768443150034",
+        "acronym": "SXG",
+        "league_id": "109109622360706601",
+        "team_name": "ShanXi Girls",
+        "league_region": "INTL",
+        "league_name": "game_changers_east_asia"
+    },
+    {
+        "team_id": "110422393220825547",
+        "acronym": "6K",
+        "league_id": "109879575186437267",
+        "team_name": "Six Karma",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "108469348707752304",
+        "acronym": "LEV",
+        "league_id": "109879575186437267",
+        "team_name": "Leviatan Game Changers",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107600906767030797",
+        "acronym": "SKC",
+        "league_id": "109879575186437267",
+        "team_name": "Skull Cracker Quartz",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "108452432292545538",
+        "acronym": "UC",
+        "league_id": "109879575186437267",
+        "team_name": "Cruzados Esports",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107605767634609340",
+        "acronym": "KRU",
+        "league_id": "109879575186437267",
+        "team_name": "KR\u00dc Blaze",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107600881624209463",
+        "acronym": "FIRE",
+        "league_id": "109879575186437267",
+        "team_name": "FiRePOWER",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107605732546045047",
+        "acronym": "UBK",
+        "league_id": "109879575186437267",
+        "team_name": "Undead BK",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112710284566275584",
+        "acronym": "BBB",
+        "league_id": "109879575186437267",
+        "team_name": "Bon Bon Bum",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107910153514729818",
+        "acronym": "FSX",
+        "league_id": "109879575186437267",
+        "team_name": "Fusion X",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107910153514729818",
+        "acronym": "FSX",
+        "league_id": "109879575186437267",
+        "team_name": "Fusion",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "109879886468242240",
+        "acronym": "GET",
+        "league_id": "109879575186437267",
+        "team_name": "Globant Emerald Team",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112127218115639934",
+        "acronym": "UW",
+        "league_id": "109879575186437267",
+        "team_name": "University War",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112127261921696999",
+        "acronym": "BSCT",
+        "league_id": "109879575186437267",
+        "team_name": "Barcelona Esports Team",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "108452390946539707",
+        "acronym": "AWK",
+        "league_id": "109879575186437267",
+        "team_name": "Ramo Awake Gaming",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107910153514729818",
+        "acronym": "FSN",
+        "league_id": "109879575186437267",
+        "team_name": "Fusion",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112127324189257386",
+        "acronym": "KS",
+        "league_id": "109879575186437267",
+        "team_name": "KS Hunters",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112127272470502649",
+        "acronym": "K7",
+        "league_id": "109879575186437267",
+        "team_name": "Killer7",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "108469348707752304",
+        "acronym": "LEV",
+        "league_id": "109879575186437267",
+        "team_name": "Leviatan",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112710278985857524",
+        "acronym": "ZEN",
+        "league_id": "109879575186437267",
+        "team_name": "Zen Esports",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107605767634609340",
+        "acronym": "KR\u00dc",
+        "league_id": "109879575186437267",
+        "team_name": "VISA KR\u00dc Blaze",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112127238709173458",
+        "acronym": "MVR",
+        "league_id": "109879575186437267",
+        "team_name": "MYVRA",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "112127272470502649",
+        "acronym": "KR7",
+        "league_id": "109879575186437267",
+        "team_name": "Killer7",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "107605767634609340",
+        "acronym": "KRU",
+        "league_id": "109879575186437267",
+        "team_name": "KR\u00dc Esports",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    },
+    {
+        "team_id": "108452406268738690",
+        "acronym": "9ZG",
+        "league_id": "109879575186437267",
+        "team_name": "9z Globant",
+        "league_region": "LATAM",
+        "league_name": "game_changers_latam"
+    }
+]
