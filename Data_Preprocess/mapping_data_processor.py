@@ -1,6 +1,6 @@
 import json
 
-def platformIDs_to_participantMapping(subset_name):
+def platformIDs_to_participantMapping(LEAGUE):
     ### Example###
     #"val:a02b939b-d53b-4d6c-9cf9-8df5cbecdec6":{
     #"1": "110196391536301033",
@@ -15,7 +15,7 @@ def platformIDs_to_participantMapping(subset_name):
     #"10": "110615094848109973"
     #}
 
-    mapping_file_path = f"../DATA/{subset_name}/esports-data/mapping_data.json"
+    mapping_file_path = f"../DATA/{LEAGUE}/esports-data/mapping_data_v2.json"
     with open(mapping_file_path, "r") as json_file:
         mapping_data = json.load(json_file)
     result = {}
@@ -25,14 +25,14 @@ def platformIDs_to_participantMapping(subset_name):
         result[platform_game_id] = participant_mapping
     return result
 
-def platformIDs_to_teamMapping(subset_name):
+def platformIDs_to_teamMapping(LEAGUE):
     ### Example###
     #"val:a02b939b-d53b-4d6c-9cf9-8df5cbecdec6":{
     #"17": "108452432292545538",
     #"18": "112127218115639934"
     #}
 
-    mapping_file_path = f"../DATA/{subset_name}/esports-data/mapping_data.json"
+    mapping_file_path = f"../DATA/{LEAGUE}/esports-data/mapping_data_v2.json"
     with open(mapping_file_path, "r") as json_file:
         mapping_data = json.load(json_file)
     result = {}

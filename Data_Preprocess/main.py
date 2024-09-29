@@ -19,9 +19,9 @@ def find_values(data, key="damageEvent"):
     
     return values
 
-def get_game_json_path(search_term, subset_name):
+def get_game_json_path(search_term, LEAGUE):
     #需要检索的路径
-    directory_path = f"../DATA/{subset_name}/games"
+    directory_path = f"../DATA/{LEAGUE}/games"
 
     file_path = ""
     # 遍历目录中的所有文件
@@ -36,7 +36,7 @@ def get_game_json_path(search_term, subset_name):
 
 
     
-def damage_analysis(file_path, target_path, subset_name, year, players_map):
+def damage_analysis(file_path, target_path, LEAGUE, year, players_map):
 
     #读取对应场次的比赛的json记录
     with open(file_path, "r") as json_file:
@@ -54,7 +54,7 @@ def damage_analysis(file_path, target_path, subset_name, year, players_map):
     #   unique_locations.add(item['location'])
     #print(unique_locations) #{'LEG', 'BODY', 'GENERAL', 'HEAD'}
 
-    subset_year = f"{subset_name}-{year}"
+    subset_year = f"{LEAGUE}-{year}"
     for damage_record in damage_records:
         causedID = damage_record['causerId']['value']
         c_string = f"{causedID}"
@@ -74,7 +74,7 @@ def damage_analysis(file_path, target_path, subset_name, year, players_map):
     with open(target_path, "w") as output_file:
         json.dump(players_json_data, output_file, indent=4)
 
-def game_round_analyse(file_path, target_path, subset_name, year, players_map, teams_map):
+def game_round_analyse(file_path, target_path, LEAGUE, year, players_map, teams_map):
     #读取对应场次的比赛的json记录
     with open(file_path, "r") as json_file:
         game_json_data = json.load(json_file)
@@ -83,7 +83,7 @@ def game_round_analyse(file_path, target_path, subset_name, year, players_map, t
     with open(target_path, "r") as json_file:
         players_json_data = json.load(json_file)
 
-    subset_year = f"{subset_name}-{year}"
+    subset_year = f"{LEAGUE}-{year}"
     winner_records = find_values(game_json_data, "gameDecided")
     playersInTeam = find_values(game_json_data, "teams")
     teamID_to_players = {}
@@ -142,11 +142,11 @@ def game_round_analyse(file_path, target_path, subset_name, year, players_map, t
 def main():
     #这是按照不同的subset来自动化提取对应数据，用于拓展all_players_begin_with_ID.json的信息
 
-    subset_name = "game-changers" # "vct-challengers", "vct-international"
+    LEAGUE = "game-changers" # "vct-challengers", "vct-international"
     saved_path = "../DATA/ID_to_players_damage.json"
     
-    participantMapping_data = mapping_data_processor.platformIDs_to_participantMapping(subset_name)
-    teamMapping_data = mapping_data_processor.platformIDs_to_teamMapping(subset_name)
+    participantMapping_data = mapping_data_processor.platformIDs_to_participantMapping(LEAGUE)
+    teamMapping_data = mapping_data_processor.platformIDs_to_teamMapping(LEAGUE)
 
     keys = list(participantMapping_data.keys())
     unique_state = set()
@@ -159,7 +159,7 @@ def main():
         #val_key = "val:d7bc6669-96e0-4800-a8ed-87a7de369f53"
         #下面这个是正常的winner_decided
         val_key = "val:0a63934c-9907-4b7c-a553-ac945cc9eea4"
-        file_path = get_game_json_path(val_key, subset_name)
+        file_path = get_game_json_path(val_key, LEAGUE)
         if file_path == "":
             continue
         else:
@@ -171,20 +171,20 @@ def main():
                 year = match.group(1)
             if year != current_year and current_year == 0:
                 #每次重启程序重置之前的数据
-                all_players_processor.init_additional_data(saved_path, subset_name, year)
+                all_players_processor.init_additional_data(saved_path, LEAGUE, year)
                 current_year = year
             elif year != current_year and current_year != 0:
                 #增添不同年份的数据
-                all_players_processor.additional_summary_data(saved_path, subset_name, year)
+                all_players_processor.additional_summary_data(saved_path, LEAGUE, year)
                 current_year = year
             ##############################################################################
 
             players_map = participantMapping_data[val_key]
             teams_map = teamMapping_data[val_key]
-            state = game_round_analyse(file_path, saved_path, subset_name, year, players_map, teams_map)
+            state = game_round_analyse(file_path, saved_path, LEAGUE, year, players_map, teams_map)
             unique_state.add(state)
             if state == 'WINNER_DECIDED':
-                damage_analysis(file_path, saved_path, subset_name, year, players_map)
+                damage_analysis(file_path, saved_path, LEAGUE, year, players_map)
     print(unique_state)
     #最终效果:
     # 1 (选手的ID):{
