@@ -1,0 +1,399 @@
+[{
+  "id": "107175003635964716",
+  "status": "published",
+  "league_id": "106375817979489820",
+  "time_zone": "Etc/UTC",
+  "name": "stage_02"
+},
+{
+  "id": "108490384940728464",
+  "status": "published",
+  "league_id": "106375817979489820",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_br_s1"
+},
+{
+  "id": "111007250890578805",
+  "status": "published",
+  "league_id": "106375817979489820",
+  "time_zone": "America/Sao_Paulo",
+  "name": "game_changers_br_2023"
+},
+{
+  "id": "112787120263393743",
+  "status": "published",
+  "league_id": "106375817979489820",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_br_stage_2_2024"
+},
+{
+  "id": "109134639255397767",
+  "status": "published",
+  "league_id": "106375817979489820",
+  "time_zone": "Etc/UTC",
+  "name": "gc_etapa_2"
+},
+{
+  "id": "106381759159267591",
+  "status": "published",
+  "league_id": "106375817979489820",
+  "time_zone": "Etc/UTC",
+  "name": "stage_01"
+},
+{
+  "id": "112258839769148094",
+  "status": "published",
+  "league_id": "106375817979489820",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_br_stage_1_2024"
+},
+{
+  "id": "110005860593273808",
+  "status": "published",
+  "league_id": "106375817979489820",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_br_etapa1"
+},
+{
+  "id": "108752327107296910",
+  "status": "published",
+  "league_id": "108752229027041361",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_japan_2022"
+},
+{
+  "id": "111006194588670534",
+  "status": "published",
+  "league_id": "108752229027041361",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_jpn_split_2_2023"
+},
+{
+  "id": "112729035485517625",
+  "status": "published",
+  "league_id": "108752229027041361",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_japan_split_2_2024"
+},
+{
+  "id": "110780564306117263",
+  "status": "published",
+  "league_id": "108752229027041361",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_jpn_split_1_2023"
+},
+{
+  "id": "112279699443110651",
+  "status": "published",
+  "league_id": "108752229027041361",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_jpn_split_1_2024"
+},
+{
+  "id": "110196174354820754",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_emea_split_1"
+},
+{
+  "id": "108199208680400184",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_emea_series_2_2022"
+},
+{
+  "id": "112472465714786861",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_emea_split_2_2024"
+},
+{
+  "id": "107019662401047127",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_emea_series_01_main_event"
+},
+{
+  "id": "110705731522844732",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_emea_contenders_split_3"
+},
+{
+  "id": "111006920849083357",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_emea_split_3"
+},
+{
+  "id": "110345042083426307",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_emea_contenders_split_1"
+},
+{
+  "id": "110614878961138673",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_emea_split_2"
+},
+{
+  "id": "107657244309982331",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_emea_series_1_2022"
+},
+{
+  "id": "112948231756546712",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_emea_split_3_2024"
+},
+{
+  "id": "111890485752679867",
+  "status": "published",
+  "league_id": "107019646737643925",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_emea_split_1_2024"
+},
+{
+  "id": "110972117831830881",
+  "status": "published",
+  "league_id": "109029777807406730",
+  "time_zone": "Etc/UTC",
+  "name": "gc_kr_split_2_2023"
+},
+{
+  "id": "109029913156911991",
+  "status": "published",
+  "league_id": "109029777807406730",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_kr_2022_qualifier"
+},
+{
+  "id": "112755611489181058",
+  "status": "published",
+  "league_id": "109029777807406730",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_kr_split_2_2024"
+},
+{
+  "id": "112439813443981484",
+  "status": "published",
+  "league_id": "109029777807406730",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_kr_split_1_2024"
+},
+{
+  "id": "112609347014865473",
+  "status": "published",
+  "league_id": "112609302000026507",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_south_asia_split_2_2024"
+},
+{
+  "id": "109126504334223542",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_north_america_series_03_main_2022"
+},
+{
+  "id": "108579545006354489",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_north_america_series_02_main_2022"
+},
+{
+  "id": "108053684177107364",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_north_america_series_01_oq_2022"
+},
+{
+  "id": "110026022111419622",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_na_split_1_2023"
+},
+{
+  "id": "112002607928390126",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_na_split_1_2024"
+},
+{
+  "id": "111056735937961967",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_na_split_3_2023"
+},
+{
+  "id": "106994073508509683",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_north_america_series_03_main_event"
+},
+{
+  "id": "110552050119122298",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_na_split_2_2023"
+},
+{
+  "id": "108053883786152302",
+  "status": "published",
+  "league_id": "106976737954740691",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_north_america_series_01_main_2022"
+},
+{
+  "id": "111379631489474946",
+  "status": "published",
+  "league_id": "109222784797127274",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_championship_2023"
+},
+{
+  "id": "109223068125639275",
+  "status": "published",
+  "league_id": "109222784797127274",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_championship_2022"
+},
+{
+  "id": "110733727102952641",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_apac_split_3"
+},
+{
+  "id": "107895838219383947",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "vct_game_changers_apac_2022_open_1"
+},
+{
+  "id": "112093580768495974",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_sea_split_1_2024"
+},
+{
+  "id": "111045388138363604",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Europe/Sarajevo",
+  "name": "gc_apac_elite_2023"
+},
+{
+  "id": "109007495888372804",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_apac_2022_elite"
+},
+{
+  "id": "108197867430388892",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "vct_game_changers_apac_2022_open_3"
+},
+{
+  "id": "108549429286736368",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_apac_2022_overtime"
+},
+{
+  "id": "108364793816266834",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "vct_game_changers_apac_2022_open_4"
+},
+{
+  "id": "108041071515714265",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "vct_game_changers_apac_2022_open_2"
+},
+{
+  "id": "110275468102052312",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_apac_split_2"
+},
+{
+  "id": "108825845892943607",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_apac_2022_lcq"
+},
+{
+  "id": "110773736532519099",
+  "status": "published",
+  "league_id": "107115678205203231",
+  "time_zone": "Etc/UTC",
+  "name": "gc_apac_lcq_2023"
+},
+{
+  "id": "109879965964411657",
+  "status": "published",
+  "league_id": "109879575186437267",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_latam_regular_season_2023"
+},
+{
+  "id": "112710290866353527",
+  "status": "published",
+  "league_id": "109879575186437267",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_latam_split_2_2024"
+},
+{
+  "id": "112127322399341258",
+  "status": "published",
+  "league_id": "109879575186437267",
+  "time_zone": "Europe/Sarajevo",
+  "name": "game_changers_latam_split_1_2024"
+},
+{
+  "id": "109064405019950071",
+  "status": "published",
+  "league_id": "109109622360706601",
+  "time_zone": "Etc/UTC",
+  "name": "game_changers_east_asia_qualifier"
+},
+{
+  "id": "111289128038618057",
+  "status": "published",
+  "league_id": "109109622360706601",
+  "time_zone": "Europe/Sarajevo",
+  "name": "gc_east_asia_2023"
+}]

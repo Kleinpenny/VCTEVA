@@ -1,0 +1,136 @@
+[{
+  "league_id": "105555627532605797",
+  "region": "SEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1673418697561_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1673418697560_VCTChallengersSpark1.png",
+  "name": "challengers_sea_id",
+  "slug": "challengers_sea_id"
+},
+{
+  "league_id": "106470453892538426",
+  "region": "VN",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1673418991332_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1673418991331_VCTChallengersSpark1.png",
+  "name": "challengers_sea_vn",
+  "slug": "challengers_sea_vn"
+},
+{
+  "league_id": "105555705801095792",
+  "region": "SEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1673418729103_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1673418729103_VCTChallengersSpark1.png",
+  "name": "challengers_sea_sg_and_my",
+  "slug": "challengers_sea_sg_and_my"
+},
+{
+  "league_id": "105555608835603034",
+  "region": "BR",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1673419029645_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1673419029644_VCTChallengersSpark1.png",
+  "name": "challengers_br",
+  "slug": "challengers_br"
+},
+{
+  "league_id": "106132846649518478",
+  "region": "LATAM",
+  "dark_logo_url": "http://static.lolesports.com/leagues/EventChallengersSelectedtrue.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/EventChallengersSelectedtrue.png",
+  "name": "challengers_latam",
+  "slug": "challengers_latam"
+},
+{
+  "league_id": "105555635175479654",
+  "region": "NA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1675329392843_Black-11.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1675329392841_Gold1.png",
+  "name": "challengers_na",
+  "slug": "challengers_na"
+},
+{
+  "league_id": "109551156421687480",
+  "region": "EMEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1672932185938_ITALY_ICON_400_400.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1672932185938_ITALY_ICON_400_400.png",
+  "name": "challengers_italy",
+  "slug": "challengers_italy"
+},
+{
+  "league_id": "105555664141146477",
+  "region": "LAN",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1707758256552_FULLCOLORFORDARKBG.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1707758256552_FULLCOLORFORDARKBG.png",
+  "name": "challengers_latam_n",
+  "slug": "challengers_latam_n"
+},
+{
+  "league_id": "105555704030157191",
+  "region": "SEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1673418714681_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1673418714681_VCTChallengersSpark1.png",
+  "name": "challengers_sea_ph",
+  "slug": "challengers_sea_ph"
+},
+{
+  "league_id": "110032750555964337",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1678966522529_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1678966522528_VCTChallengersSpark1.png",
+  "name": "challengers_south_asia",
+  "slug": "challengers_south_asia"
+},
+{
+  "league_id": "109551158912464238",
+  "region": "EMEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1672932245894_PORTUGAL_ICON_400_400.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1672932245893_PORTUGAL_ICON_400_400.png",
+  "name": "challengers_portugal",
+  "slug": "challengers_portugal"
+},
+{
+  "league_id": "105555699868690469",
+  "region": "SEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1673419014494_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1673419014494_VCTChallengersSpark1.png",
+  "name": "challengers_sea_hk_and_tw",
+  "slug": "challengers_sea_hk_and_tw"
+},
+{
+  "league_id": "105555678532655472",
+  "region": "JP",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1674125917241_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1674125917239_VCTChallengersSpark1.png",
+  "name": "challengers_jpn",
+  "slug": "challengers_jpn"
+},
+{
+  "league_id": "105555666330314783",
+  "region": "LAS",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1707758329347_FULLCOLORFORDARKBG.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1707758329344_FULLCOLORFORDARKBG.png",
+  "name": "challengers_latam_s",
+  "slug": "challengers_latam_s"
+},
+{
+  "league_id": "105555707205380136",
+  "region": "SEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1673418680372_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1673418680370_VCTChallengersSpark1.png",
+  "name": "challengers_sea_th",
+  "slug": "challengers_sea_th"
+},
+{
+  "league_id": "107910334624279390",
+  "region": "SEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1646581030634_ChallengersLogo.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1646581030631_ChallengersLogo.png",
+  "name": "challengers_apac",
+  "slug": "challengers_apac"
+},
+{
+  "league_id": "105555677198805024",
+  "region": "KR",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1674218302717_VCTChallengersSpark1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1674218302715_VCTChallengersSpark1.png",
+  "name": "challengers_kr",
+  "slug": "challengers_kr"
+}]

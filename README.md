@@ -24,3 +24,6 @@ python download_dataset.py
 cd /VCTEVA/Data_Preprocess/
 python main.py
 ```
+
+写各自的函数，之后可以统一在/Data_Preprocess/main.py内引用。
+main.py的main函数最后一行，替换掉customize()的地方

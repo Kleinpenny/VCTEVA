@@ -1,0 +1,1085 @@
+Event type
+Example message
+configuration_event
+
+ {
+    "platformGameId": "val:00145049-2711-46e1-a71d-6a73f3f731b3",
+    "configuration": {
+        "teams": [
+            {
+                "teamId": {
+                    "value": 16
+                },
+                "playersInTeam": [
+                    {
+                        "value": 6
+                    },
+                    {
+                        "value": 7
+                    },
+                    {
+                        "value": 8
+                    },
+                    {
+                        "value": 9
+                    },
+                    {
+                        "value": 10
+                    }
+                ],
+                "name": "Red"
+            },
+            {
+                "teamId": {
+                    "value": 17
+                },
+                "playersInTeam": [
+                    {
+                        "value": 1
+                    },
+                    {
+                        "value": 2
+                    },
+                    {
+                        "value": 3
+                    },
+                    {
+                        "value": 4
+                    },
+                    {
+                        "value": 5
+                    }
+                ],
+                "name": "Blue"
+            }
+        ],
+        "selectedMap": {
+            "id": "UNKNOWN",
+            "fallback": {
+                "guid": "/Game/Maps/Jam/Jam",
+                "displayName": "Jam"
+            }
+        },
+        "players": [
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "ddcaaad0-bbe0-5410-931f-607287c863a5"
+                },
+                "playerId": {
+                    "value": 1
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "1E58DE9C-4950-5125-93E9-A0AEE9F98746",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "AXL Braso",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "c064ac27-f2ac-5ef6-94df-8cd38a78d5d0"
+                },
+                "playerId": {
+                    "value": 2
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "707EAB51-4836-F488-046A-CDA6BF494859",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "AXL RickyVaila",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "b314d51a-3f50-5799-b015-2ccc7d8d0f95"
+                },
+                "playerId": {
+                    "value": 3
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "8E253930-4C05-31DD-1B6C-968525494517",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "AXL fraNdina",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "bd44534b-84c0-5d14-b1a3-72b5cddb47b8"
+                },
+                "playerId": {
+                    "value": 4
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "F94C3B30-42BE-E959-889C-5AA313DBA261",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "AXL xad",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "7fac6e77-9acd-56bc-b0e2-cb6dcf8c6911"
+                },
+                "playerId": {
+                    "value": 5
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "DADE69B4-4F5A-8528-247B-219E5A1FACD6",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "AXL Mickebwoy",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "2ae65638-9fc7-5860-91e7-db995a85f3a5"
+                },
+                "playerId": {
+                    "value": 6
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "DADE69B4-4F5A-8528-247B-219E5A1FACD6",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "OP swordd",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "4d88b948-01ef-59f6-966a-70cb762fedc2"
+                },
+                "playerId": {
+                    "value": 7
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "1E58DE9C-4950-5125-93E9-A0AEE9F98746",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "OP pityth",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "def2a800-4a05-5f6b-9202-1f22c213d43c"
+                },
+                "playerId": {
+                    "value": 8
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "8E253930-4C05-31DD-1B6C-968525494517",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "OP Z3RO",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "ef530b6e-fa42-513e-a02c-b7a3db9ae3e8"
+                },
+                "playerId": {
+                    "value": 9
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "F94C3B30-42BE-E959-889C-5AA313DBA261",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "OP Nade",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            },
+            {
+                "accountId": {
+                    "type": "RIOT_ID",
+                    "value": "ea826f24-6db3-5f82-bea1-ef86ddccc498"
+                },
+                "playerId": {
+                    "value": 10
+                },
+                "selectedAgent": {
+                    "fallback": {
+                        "guid": "707EAB51-4836-F488-046A-CDA6BF494859",
+                        "displayName": ""
+                    },
+                    "type": "UNKNOWN"
+                },
+                "displayName": "OP Morphiw0w",
+                "type": "HUMAN",
+                "tagLine": "eProd"
+            }
+        ],
+        "spikeMode": {
+            "currentRound": 1,
+            "attackingTeam": {
+                "value": 16
+            },
+            "completedRounds": [],
+            "roundsToWin": 13,
+            "defendingTeam": {
+                "value": 17
+            }
+        }
+    },
+    "metadata": {
+        "serverInfo": {
+            "processId": "",
+            "rfc190Scope": "aresriot.aws-euc1-prod.tournament-gp-frankfurt-1.ares.gameserver"
+        },
+        "playback": 0,
+        "sequenceNumber": 1,
+        "stage": 1,
+        "gameVersion": "08.07.00.2460481",
+        "gameId": {
+            "value": "00145049-2711-46e1-a71d-6a73f3f731b3"
+        },
+        "eventTime": {
+            "includedPauses": "0.075s",
+            "omittingPauses": "0.075s"
+        },
+        "wallTime": "2024-05-19T17:02:03.591Z",
+        "currentGamePhase": {
+            "phase": "NOT_STARTED",
+            "roundNumber": 0
+        }
+    }
+}
+
+
+player_died
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "playerDied": {
+        "deceasedId": {
+            "value": 2
+        },
+        "weapon": {
+            "fallback": {
+                "displayName": "",
+                "inventorySlot": {
+                    "slot": "PRIMARY"
+                },
+                "guid": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A"
+            },
+            "type": "UNKNOWN"
+        },
+        "assistants": [
+            {
+                "assistantId": {
+                    "value": 7
+                }
+            }
+        ],
+        "killerId": {
+            "value": 6
+        }
+    }
+}
+
+
+round_decided
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "roundDecided": {
+        "result": {
+            "roundNumber": 14,
+            "spikeModeResult": {
+                "attackingTeam": {
+                    "value": 21
+                },
+                "cause": "ELIMINATION",
+                "defendingTeam": {
+                    "value": 20
+                }
+            },
+            "winningTeam": {
+                "value": 20
+            }
+        }
+    }
+}
+
+
+round_started
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "roundStarted": {
+        "roundNumber": 11,
+        "spikeMode": {
+            "currentRound": 11,
+            "attackingTeam": {
+                "value": 20
+            },
+            "completedRounds": [
+                {
+                    "roundNumber": 1,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 2,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 3,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "DETONATE",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 4,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 5,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 6,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 7,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 8,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 9,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 10,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                }
+            ],
+            "roundsToWin": 13,
+            "defendingTeam": {
+                "value": 21
+            }
+        }
+    }
+}
+
+
+round_ended
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "roundEnded": {
+        "roundNumber": 8
+    }
+}
+
+
+game_phase
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "gamePhase": {
+        "phase": "IN_ROUND",
+        "roundNumber": 13
+    }
+}
+
+
+player_spawn
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "playerSpawn": {
+        "player": {
+            "value": 2
+        }
+    }
+}
+
+
+
+spike_status
+
+{
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "spikeStatus": {
+        "carrier": {
+            "value": 4
+        },
+        "status": "IN_HANDS"
+    }
+}
+
+
+inventory_transaction
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "inventoryTransaction": {
+        "player": {
+            "value": 4
+        },
+        "weapon": {
+            "fallback": {
+                "displayName": "",
+                "inventorySlot": {
+                    "slot": "PRIMARY"
+                },
+                "guid": "9C82E19D-4575-0200-1A81-3EACF00CF872"
+            },
+            "type": "UNKNOWN"
+        },
+        "transactionType": "PURCHASE"
+    }
+}
+
+
+game_decided
+
+{
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "gameDecided": {
+        "state": "WINNER_DECIDED",
+        "winningTeam": {
+            "value": 20
+        },
+        "spikeMode": {
+            "currentRound": 23,
+            "attackingTeam": {
+                "value": 21
+            },
+            "completedRounds": [
+                {
+                    "roundNumber": 1,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 2,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 3,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "DETONATE",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 4,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 5,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 6,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 7,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 8,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 9,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 10,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 11,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "TIME_EXPIRED",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 12,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 20
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 21
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 13,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 14,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 15,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 16,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "DETONATE",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 17,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 21
+                    }
+                },
+                {
+                    "roundNumber": 18,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 19,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 20,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 21,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 22,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "SPIKE_DEFUSE",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                },
+                {
+                    "roundNumber": 23,
+                    "spikeModeResult": {
+                        "attackingTeam": {
+                            "value": 21
+                        },
+                        "cause": "ELIMINATION",
+                        "defendingTeam": {
+                            "value": 20
+                        }
+                    },
+                    "winningTeam": {
+                        "value": 20
+                    }
+                }
+            ],
+            "roundsToWin": 13,
+            "defendingTeam": {
+                "value": 20
+            }
+        }
+    }
+}
+
+
+round_ceremony
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "roundCeremony": {
+        "fallback": {
+            "guid": "00000000000000000000000000000000",
+            "displayName": "AceCeremony_C"
+        },
+        "type": "ACE"
+    }
+}
+
+
+damage_event
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "damageEvent": {
+        "location": "HEAD",
+        "causerId": {
+            "value": 2
+        },
+        "victimId": {
+            "value": 6
+        },
+        "killEvent": true,
+        "damageAmount": 113.998192
+    }
+}
+
+
+player_downed
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "playerDowned": {
+        "downedId": {
+            "value": 3
+        },
+        "weapon": {
+            "fallback": {
+                "displayName": "",
+                "guid": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+                "inventorySlot": {
+                    "slot": "PRIMARY"
+                }
+            },
+            "type": "UNKNOWN"
+        },
+        "downedById": {
+            "value": 6
+        }
+    }
+}
+
+
+player_revived
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "playerRevived": {
+        "revivedById": {
+            "value": 6
+        },
+        "revivedId": {
+            "value": 9
+        }
+    }
+}
+
+
+round_rollback
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "roundRollback": {
+        "rolledBackToRound": 0
+    }
+}
+
+
+observer_target
+
+ {
+    "platformGameId": "val:004b09b1-4dc9-4185-baff-9b1c66b3ef99",
+    "observerTarget": {
+        "targetId": {
+            "value": 10
+        },
+        "observerId": {
+            "value": 16
+        }
+    }
+}
+
+
+game_ended
+
+ {
+    "platformGameId": "val:007fa549-3b41-428f-bf99-c99cec7a8b1c",
+    "gameEnded": {},
+}
+
+
+ability_used
+
+ {
+    "platformGameId": "val:007fa549-3b41-428f-bf99-c99cec7a8b1c",
+    "abilityUsed": {
+        "chargesConsumed": 1,
+        "ability": {
+            "fallback": {
+                "displayName": "",
+                "inventorySlot": {
+                    "slot": "ABILITY_2"
+                },
+                "guid": "117ED9E3-49F3-6512-3CCF-0CADA7E3823B"
+            },
+            "type": "UNKNOWN"
+        },
+        "playerId": {
+            "value": 8
+        }
+    }
+}

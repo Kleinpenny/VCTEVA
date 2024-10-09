@@ -19,6 +19,7 @@ def find_values(data, key="damageEvent"):
     
     return values
 
+
 def get_game_json_path(search_term, LEAGUE):
     #需要检索的路径
     directory_path = f"../DATA/{LEAGUE}/games"
@@ -35,7 +36,6 @@ def get_game_json_path(search_term, LEAGUE):
     return file_path
 
 
-    
 def damage_analysis(file_path, target_path, LEAGUE, year, players_map):
 
     #读取对应场次的比赛的json记录
@@ -73,6 +73,7 @@ def damage_analysis(file_path, target_path, LEAGUE, year, players_map):
 
     with open(target_path, "w") as output_file:
         json.dump(players_json_data, output_file, indent=4)
+
 
 def game_round_analyse(file_path, target_path, LEAGUE, year, players_map, teams_map):
     #读取对应场次的比赛的json记录
@@ -138,11 +139,11 @@ def game_round_analyse(file_path, target_path, LEAGUE, year, players_map, teams_
         return winner_records[0]['state']
 
 
-
 def main():
     #这是按照不同的subset来自动化提取对应数据，用于拓展all_players_begin_with_ID.json的信息
 
     LEAGUE = "game-changers" # "vct-challengers", "vct-international"
+
     saved_path = "../DATA/ID_to_players_damage.json"
     
     participantMapping_data = mapping_data_processor.platformIDs_to_participantMapping(LEAGUE)
@@ -150,16 +151,21 @@ def main():
 
     keys = list(participantMapping_data.keys())
     unique_state = set()
+    
     current_year = 0
+
     for val_key in [0]: #keys:
         #这里举个例子
         #下面这个是没有game decided
         #val_key = "val:27d62958-08be-448b-9e93-0dee481d1909"
+
         #下面这个是平局
         #val_key = "val:d7bc6669-96e0-4800-a8ed-87a7de369f53"
+
         #下面这个是正常的winner_decided
         val_key = "val:0a63934c-9907-4b7c-a553-ac945cc9eea4"
         file_path = get_game_json_path(val_key, LEAGUE)
+
         if file_path == "":
             continue
         else:
@@ -185,6 +191,7 @@ def main():
             unique_state.add(state)
             if state == 'WINNER_DECIDED':
                 damage_analysis(file_path, saved_path, LEAGUE, year, players_map)
+
     print(unique_state)
     #最终效果:
     # 1 (选手的ID):{
@@ -215,8 +222,6 @@ def main():
     #       }
     #   },...
     #}
+
+
 main()
-
-
-
-

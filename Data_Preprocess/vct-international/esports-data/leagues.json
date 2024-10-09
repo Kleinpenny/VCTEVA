@@ -1,0 +1,56 @@
+[{
+  "league_id": "109940824119741550",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1685263111966_VCT_SPARK_RGB_PURPLE.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1685263111965_VCT_SPARK_RGB_PURPLE.png",
+  "name": "vct_masters",
+  "slug": "vct_masters"
+},
+{
+  "league_id": "109974804058058602",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1678447922435_VCT23_INT_PACIFIC_Logo_MARK_RGB_Blue.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1679563475464_VCT23_INT_PACIFIC_Logo_MARK_RGB_White.png",
+  "name": "vct_pacific",
+  "slug": "vct_pacific"
+},
+{
+  "league_id": "109551178413356399",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1671618316438_600px-VCT_LOCK_IN_Brasil_full_lightmode1.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1671618316438_600px-VCT_LOCK_IN_Brasil_full_lightmode1.png",
+  "name": "vct_lock_in",
+  "slug": "vct_lock_in"
+},
+{
+  "league_id": "106109559530232966",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1678724053685_VCT23_INT_EMEA_Logo_MARK_RGB_Red.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1679563459951_VCT23_INT_EMEA_Logo_MARK_RGB_White.png",
+  "name": "vct_emea",
+  "slug": "vct_emea"
+},
+{
+  "league_id": "111691194187846945",
+  "region": "CN",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1704272368564_vBPjHzRg.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1704272368563_vBPjHzRg.png",
+  "name": "vct_china",
+  "slug": "vct_china"
+},
+{
+  "league_id": "109974795266458277",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1678211702800_VCT23_INT_AMERICAS_Logo_MARK_RGB_Black2.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1678994077551_VCT23_INT_AMERICAS_Logo_MARK_RGB_White.png",
+  "name": "vct_americas",
+  "slug": "vct_americas"
+},
+{
+  "league_id": "107254585505459304",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1636575094817_VCT_Spark_Gold.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+  "name": "champions",
+  "slug": "champions"
+}]

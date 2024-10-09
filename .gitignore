@@ -164,3 +164,6 @@ cython_debug/
 !/DATA/game-changers/games/.gitkeep
 !/DATA/vct-challengers/games/.gitkeep
 !/DATA/vct-international/games/.gitkeep
+
+# ignore all .DS_Store
+.DS_Store
