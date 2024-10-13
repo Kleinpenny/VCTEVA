@@ -1,109 +1,55 @@
 import json
-def begin_with_ID():
+def all_players():
+    total_players = {}
+    def extract_players(file_path, players):
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            
+        for player in data:
+            player_id = player['id']
+            
+            handle = player['handle']
+            name = f"{player['first_name']} {player['last_name']}"
+            
+            if player_id not in players:
+                players[player_id] = {
+                    'handle': handle,
+                    'name': name
+                }
+            else:
+                # 处理handle
+                if players[player_id]['handle'] != handle:
+                    if isinstance(players[player_id]['handle'], list):
+                        if handle not in players[player_id]['handle']:
+                            players[player_id]['handle'].append(handle)
+                    else:
+                        players[player_id]['handle'] = [players[player_id]['handle'], handle]
+                
+                # 处理name
+                if players[player_id]['name'] != name:
+                    if isinstance(players[player_id]['name'], list):
+                        if name not in players[player_id]['name']:
+                            players[player_id]['name'].append(name)
+                    else:
+                        players[player_id]['name'] = [players[player_id]['name'], name]
 
-    json_file_path = "../DATA/all_players.json"
+        return players
 
-    with open(json_file_path, "r") as file:
-        data = json.load(file)
+    file_paths = [
+        "../DATA/vct-international/esports-data/players.json",
+        "../DATA/game-changers/esports-data/players.json",
+        "../DATA/vct-challengers/esports-data/players.json"
+    ]
 
-    result = {}
-
-    for item in data:
-        # 以'id'字段的值为键，整个item去掉'id'字段后的内容为值
-        result[item["id"]] = {
-            "handle": item["handle"],
-            "name": item["name"],
-            "homeTeam": item["homeTeam"],
-            "favorite_heroes": item["favorite_heroes"]
-        }
-
-    with open("../DATA/all_players_begin_with_ID.json", "w") as output_file:
-        json.dump(result, output_file, indent=4)
+    extract_players(file_paths[0], total_players)
+    extract_players(file_paths[1], total_players)
+    extract_players(file_paths[2], total_players)
+    print(f"所有联赛的选手总数: {len(total_players)}")
 
 
+    file_path = '../DATA/all_players.json'
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(total_players, file, ensure_ascii=False, indent=4)
 
-# 应该后续添加更多的信息以完备
-def init_additional_data(saved_file, subset_name, year):
-    json_file_path = "../DATA/all_players_begin_with_ID.json"
+    print(f"所有选手已写入 {file_path}")
 
-    with open(json_file_path, "r") as file:
-        data = json.load(file)
-
-    default_stats = {
-        f"{subset_name}-{year}": {
-            "games_count": 0,
-            "rounds_taken": 0,
-            "games_win": 0,
-            "rounds_win": 0,
-            "damage_caused": {
-                "LEG_count": 0,
-                "LEG_amount": 0,
-                "BODY_count": 0,
-                "BODY_amount": 0,
-                "GENERAL_count": 0,
-                "GENERAL_amount": 0,
-                "HEAD_count": 0,
-                "HEAD_amount": 0,
-            },
-            "damage_received": {
-                "LEG_count": 0,
-                "LEG_amount": 0,
-                "BODY_count": 0,
-                "BODY_amount": 0,
-                "GENERAL_count": 0,
-                "GENERAL_amount": 0,
-                "HEAD_count": 0,
-                "HEAD_amount": 0,
-            }
-        }
-    }
-    
-    key_name = f"{subset_name}-{year}"
-    for player_id, player_data in data.items():
-        if key_name not in player_data:
-            player_data[key_name] = default_stats[key_name]
-
-    with open("../DATA/ID_to_players_damage.json", "w") as output_file:
-        json.dump(data, output_file, indent=4)
-
-def additional_summary_data(saved_file, subset_name, year):
-
-    with open(saved_file, "r") as file:
-        data = json.load(file)
-
-    default_stats = {
-        f"{subset_name}-{year}": {
-            "games_count": 0,
-            "rounds_taken": 0,
-            "games_win": 0,
-            "rounds_win": 0,
-            "damage_caused": {
-                "LEG_count": 0,
-                "LEG_amount": 0,
-                "BODY_count": 0,
-                "BODY_amount": 0,
-                "GENERAL_count": 0,
-                "GENERAL_amount": 0,
-                "HEAD_count": 0,
-                "HEAD_amount": 0,
-            },
-            "damage_received": {
-                "LEG_count": 0,
-                "LEG_amount": 0,
-                "BODY_count": 0,
-                "BODY_amount": 0,
-                "GENERAL_count": 0,
-                "GENERAL_amount": 0,
-                "HEAD_count": 0,
-                "HEAD_amount": 0,
-            }
-        }
-    }
-    
-    key_name = f"{subset_name}-{year}"
-    for player_id, player_data in data.items():
-        if key_name not in player_data:
-            player_data[key_name] = default_stats[key_name]
-
-    with open(saved_file, "w") as output_file:
-        json.dump(data, output_file, indent=4)

@@ -36,8 +36,8 @@ def main(LEAGUE, YEAR):
     def download_esports_files():
         directory = f"{LEAGUE}/esports-data"
 
-        if not os.path.exists(directory):
-            os.makedirs(directory)
+        if not os.path.exists(f"../DATA/{directory}"):
+            os.makedirs(f"../DATA/{directory}")
 
         esports_data_files = ["leagues", "tournaments",
                             "players", "teams", "mapping_data_v2"]
@@ -71,7 +71,7 @@ def main(LEAGUE, YEAR):
     download_games()
 
 if __name__ == "__main__":
-    for LEAGUE in ["game-changers", "vct-international", "vct-challengers"]:
+    for LEAGUE in ["vct-challengers"]:
         for YEAR in [2023, 2024]:
             main(LEAGUE, YEAR)
     main("game-changers", 2022)
