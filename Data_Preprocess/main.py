@@ -69,7 +69,6 @@ def round_kda_for_each_game(LEAGUE, year, game_file_path, target_path, ):
 
     #108076829264740999
     for idx, player in enumerate(game_info_kda):
-        print(len(player['RoundInfo']))
         if player['PlayerId'] not in players_json_data:
             players_json_data[player['PlayerId']] = {}
         players_json_data[player['PlayerId']]["name"] = f"{player['first_name']} {player['last_name']}"
@@ -233,8 +232,10 @@ def main():
             #读取对应场次的比赛的json记录
             with open(game_file_path, "r") as json_file:
                 game_json_data = json.load(json_file)
-            state = find_values(game_json_data, "gameDecided")[0]['state']
-            if state == 'WINNER_DECIDED':
+            gameDecidedEvent = find_values(game_json_data, "gameDecided")
+
+            #当gameDecidedEvent不是空列表， 或者不是只包含空列表，或者存在有胜利队伍的时候才进行分析
+            if not all(isinstance(item, list) and len(item) == 0 for item in gameDecidedEvent) or gameDecidedEvent[0]['state'] == 'WINNER_DECIDED':
                 players_map = participantMapping_data[val_key]#{playerID in game: 实际的PlayerID}
                 teams_map = teamMapping_data[val_key]#{teamID in game: 实际的TeamID}
                 selected_map = round_kda_for_each_game(LEAGUE, year, game_file_path, saved_path)

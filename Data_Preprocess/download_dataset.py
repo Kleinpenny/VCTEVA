@@ -72,7 +72,7 @@ def main(LEAGUE, YEAR):
 
 if __name__ == "__main__":
     for LEAGUE in ["vct-challengers"]:
-        for YEAR in [2023, 2024]:
+        for YEAR in [2024]:
             main(LEAGUE, YEAR)
     main("game-changers", 2022)
     main("vct-international", 2022)
