@@ -319,6 +319,7 @@ def main(
                                 "result": result,
                             }
                         )
+                        existing_round_numbers.add(round_number)
 
         # Add game result to summary
         player_round_info.sort(key=lambda x: x["RoundNumber"])
