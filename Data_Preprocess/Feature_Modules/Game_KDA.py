@@ -299,12 +299,13 @@ def main(
             result = (
                 "win" if player["team_id"] == round_detail["winningTeam"] else "lose"
             )
-
+            cause = round_detail['cause']
             # Update existing rounds
             for round_info in player_round_info:
                 if round_info["RoundNumber"] == round_number:
                     round_info["role"] = role
                     round_info["result"] = result
+                    round_info["cause"] = cause
                     break
                 else:
                     # Add missing rounds with KDA as 0 if not present
@@ -317,6 +318,7 @@ def main(
                                 "Assists": 0,
                                 "role": role,
                                 "result": result,
+                                "cause": cause,
                             }
                         )
                         existing_round_numbers.add(round_number)

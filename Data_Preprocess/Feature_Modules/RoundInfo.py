@@ -56,7 +56,7 @@ def generate_round_details(game_kda):
                 'attackingTeam': matching_round['spikeModeResult']['attackingTeam']['value'],
                 'defendingTeam': matching_round['spikeModeResult']['defendingTeam']['value'],
                 'winningTeam': matching_round['winningTeam']['value'],
-                # 'cause': matching_round['spikeModeResult']['cause']
+                'cause': matching_round['spikeModeResult']['cause']
             })
 
         detailed_rounds.append(round_info)
