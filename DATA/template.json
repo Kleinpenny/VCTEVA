@@ -1,0 +1,71 @@
+{
+    "111170217799167483": {
+        "handle": "Starbound",
+        "name": "David Waugh",
+        "homeTeam": "109144832518501870",
+        "selected_agents":{
+            "707EAB51-4836-F488-046A-CDA6BF494859": 0
+        },
+        "region": "",
+        "weapons":{
+            "9C82E19D-4575-0200-1A81-3EACF00CF872": 0
+        },
+        "game-changers-2022": {
+            "Jam":{
+                "games_win": 0,
+                "games_count": 0,
+                "attack":{
+                    "kill": 0,
+                    "death": 0,
+                    "assistence": 0,
+                    "rounds_taken": 0,
+                    "rounds_win": 0,
+                    "damage_caused": {
+                        "LEG_count": 0,
+                        "LEG_amount": 0,
+                        "BODY_count": 0,
+                        "BODY_amount": 0,
+                        "GENERAL_count": 0,
+                        "GENERAL_amount": 0,
+                        "HEAD_count": 0,
+                        "HEAD_amount": 0
+                    },
+                    "damage_received": {
+                        "LEG_count": 0,
+                        "LEG_amount": 0,
+                        "BODY_count": 0,
+                        "BODY_amount": 0,
+                        "GENERAL_count": 0,
+                        "GENERAL_amount": 0,
+                        "HEAD_count": 0,
+                        "HEAD_amount": 0
+                    }
+                },
+                "defend":{
+                    "rounds_taken": 0,
+                    "rounds_win": 0,
+                    "damage_caused": {
+                        "LEG_count": 0,
+                        "LEG_amount": 0,
+                        "BODY_count": 0,
+                        "BODY_amount": 0,
+                        "GENERAL_count": 0,
+                        "GENERAL_amount": 0,
+                        "HEAD_count": 0,
+                        "HEAD_amount": 0
+                    },
+                    "damage_received": {
+                        "LEG_count": 0,
+                        "LEG_amount": 0,
+                        "BODY_count": 0,
+                        "BODY_amount": 0,
+                        "GENERAL_count": 0,
+                        "GENERAL_amount": 0,
+                        "HEAD_count": 0,
+                        "HEAD_amount": 0
+                    }
+                }
+            }
+        }
+    }
+}

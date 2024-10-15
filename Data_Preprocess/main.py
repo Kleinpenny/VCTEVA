@@ -7,6 +7,33 @@ import mapping_data_processor
 import pandas as pd
 from Feature_Modules import Game_Damage, Game_KDA
 
+AGENT_GUID_TO_AGENT_AND_ROLE = {
+  "320B2A48-4D9B-A075-30F1-1F93A9B638FA": {"agent_name": "Brimstone", "role": "Controller"},
+  "707EAB51-4836-F488-046A-CDA6BF494859": {"agent_name": "Viper", "role": "Controller"},
+  "8E253930-4C05-31DD-1B6C-968525494517": {"agent_name": "Omen", "role": "Controller"},
+  "5F8D3A7F-467B-97F3-062C-13ACF203C006": {"agent_name": "Jett", "role": "Duelist"},
+  "1E58DE9C-4950-5125-93E9-A0AEE9F98746": {"agent_name": "Phoenix", "role": "Duelist"},
+  "A3BFB853-43B2-7238-A4F1-AD90E9E46BCC": {"agent_name": "Reyna", "role": "Duelist"},
+  "6F2A04CA-43E0-BE17-7F36-B3908627744D": {"agent_name": "Raze", "role": "Duelist"},
+  "7F37F0E6-44D3-7276-8B4A-AB56D8DDC5A3": {"agent_name": "Yoru", "role": "Duelist"},
+  "41FB69C1-4189-7B37-F117-BCAF1E96F1BF": {"agent_name": "Sova", "role": "Initiator"},
+  "9F0D8BA9-4140-B941-57D3-A7AD57C6B417": {"agent_name": "Breach", "role": "Initiator"},
+  "EB93336A-449B-9C1B-0A54-A891F7921D69": {"agent_name": "Skye", "role": "Initiator"},
+  "ADD6443A-41BD-E414-F6AD-E58D267F4E95": {"agent_name": "KAY/O", "role": "Initiator"},
+  "A4D4B33D-8F36-5BD5-97E8-DF0F4078C0B1": {"agent_name": "Fade", "role": "Initiator"},
+  "BB2A4828-46EB-8CD1-E765-15848195D751": {"agent_name": "Sage", "role": "Sentinel"},
+  "117ED9E3-49F3-6512-3CCF-0C21417D5BF2": {"agent_name": "Cypher", "role": "Sentinel"},
+  "E370FA57-4757-3604-3648-499E1F642D3F": {"agent_name": "Killjoy", "role": "Sentinel"},
+  "22697A3D-45BF-8DD7-4FEC-84A9E28C69D7": {"agent_name": "Chamber", "role": "Sentinel"},
+  "95B78ED7-4637-86D9-7E41-71BA8C293152": {"agent_name": "Harbor", "role": "Controller"},
+  "BB2E7D46-4F11-EC8A-1FAA-C9A78D79C650": {"agent_name": "Neon", "role": "Duelist"},
+  "41FDC046-4F00-246C-20D1-5C9F0E6B0175": {"agent_name": "Astra", "role": "Controller"},
+  "E22049B7-8B92-FA85-EA86-F5D1F44B6A8F": {"agent_name": "Gekko", "role": "Initiator"},
+  "D098A1F1-362E-5E59-BCFB-218A8C4F93FE": {"agent_name": "Deadlock", "role": "Sentinel"},
+  "ED2666F8-486F-5459-B79A-6E645C02E0B5": {"agent_name": "Iso", "role": "Duelist"},
+  "F94C3B30-42BE-E959-889C-5AA313DBA261": {"agent_name": "Agent 22", "role": "Initiator"}
+}
+
 def find_values(data, key="damageEvent"):
     values = []
 
