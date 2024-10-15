@@ -1,379 +1,175 @@
 nohup: ignoring input
-vct-challengers/esports-data/leagues.json written
-vct-challengers/esports-data/tournaments.json written
-vct-challengers/esports-data/players.json written
-vct-challengers/esports-data/teams.json written
-vct-challengers/esports-data/mapping_data_v2.json written
-vct-challengers/games/2023/val:2d646f49-ed67-4949-b4e1-63add0332f6c.json written
-vct-challengers/games/2023/val:1634a42a-e290-4655-ab01-45d8abe88e0e.json written
-vct-challengers/games/2023/val:38023d16-a157-4273-9c6b-d36da5b5e411.json written
-vct-challengers/games/2023/val:2b0ecbac-744d-4472-ab43-f227532be996.json written
-vct-challengers/games/2023/val:a9b659cd-2850-4bd3-8f95-58cd683c7a67.json written
-vct-challengers/games/2023/val:e9e98c40-d678-4568-8e11-ec934b633fb8.json written
-vct-challengers/games/2023/val:c0da8857-a518-4a3b-a991-ad4c9e446095.json written
-vct-challengers/games/2023/val:82162074-0892-42cb-ba5a-51774c627e8d.json written
-vct-challengers/games/2023/val:76be141c-38bf-499d-92a9-5a0222ea1474.json written
-vct-challengers/games/2023/val:61e4876d-e30d-4575-8965-3aa47e974654.json written
------ Processed 10 games, current run time: 1.73 minutes
-vct-challengers/games/2023/val:25c3e60c-6ee7-4b57-b7ef-f04810c16615.json written
-vct-challengers/games/2023/val:18bc4388-69cc-491a-a168-e97581a5e3f4.json written
-vct-challengers/games/2023/val:58895916-8af8-48f9-9b10-adb6ad1f1e28.json written
-vct-challengers/games/2023/val:899d295b-1569-40ca-945f-3b860c5dfa0f.json written
-vct-challengers/games/2023/val:c4746a7c-4b8a-452c-9ac1-52b30a11af5b.json written
-vct-challengers/games/2023/val:ad429a36-9a9e-423d-b846-1ed3a0609f95.json written
-vct-challengers/games/2023/val:e8418caa-1c76-4c06-bfb6-eaa5595d3087.json written
-vct-challengers/games/2023/val:80c2c381-a112-4a38-ab50-adf93c6e5eb6.json written
-vct-challengers/games/2023/val:77f643e6-466c-4155-9d14-58ce5b543f6b.json written
-vct-challengers/games/2023/val:5e323813-ba31-4de6-905a-5043e94e2895.json written
------ Processed 20 games, current run time: 3.85 minutes
-vct-challengers/games/2023/val:604b03db-5026-45fa-96f5-3a937fbe0558.json written
-vct-challengers/games/2023/val:9a2ccfff-c640-4e9b-9ba0-ca31a3087bc7.json written
-vct-challengers/games/2023/val:8f4fd810-5cff-4124-a74a-82da7bf5255a.json written
-vct-challengers/games/2023/val:be80f98c-8222-489a-9411-b6952c3a38fa.json written
-vct-challengers/games/2023/val:e4ccc76d-9ad0-4d16-b9b8-c5fbf60f17a2.json written
-vct-challengers/games/2023/val:9208347a-efb7-4797-854a-d9047cf2ebd3.json written
-vct-challengers/games/2023/val:b985140a-8ef1-4a51-81f3-a84fd9308e06.json written
-vct-challengers/games/2023/val:522aef83-279e-48fe-828b-40835258f2e2.json written
-vct-challengers/games/2023/val:0e6d853a-984c-4f63-9d02-25746267afba.json written
-vct-challengers/games/2023/val:fc34a2c3-f489-4633-ab95-38d6a78898ee.json written
------ Processed 30 games, current run time: 5.22 minutes
-vct-challengers/games/2023/val:df0fcbe8-80f3-477b-abb5-715c2ce7d1b0.json written
-vct-challengers/games/2023/val:d0d954cb-0692-4992-aa93-e6ffb919a73a.json written
-vct-challengers/games/2023/val:40054bd8-1cc3-4894-aae6-9cc954954e19.json written
-vct-challengers/games/2023/val:1d14f366-a835-435f-93a6-94296c0a394d.json written
-vct-challengers/games/2023/val:b00b10f6-4e53-4232-b27c-3c81efbbcd9a.json written
-vct-challengers/games/2023/val:4e349b8e-5a6a-43be-aaa1-5b15ddd189c6.json written
-vct-challengers/games/2023/val:8991a6b1-725b-4b13-93a7-8d91bf86f02e.json written
-vct-challengers/games/2023/val:c4c3e65f-cf3c-4492-a0e2-02e87debb379.json written
-vct-challengers/games/2023/val:e6b07650-61fe-4fca-aa2e-ac328da54c17.json written
-vct-challengers/games/2023/val:ca390d84-5ceb-4d08-ba3b-084c7c8ef29c.json written
------ Processed 40 games, current run time: 7.57 minutes
-vct-challengers/games/2023/val:488c9e4d-ab25-43c8-ae42-6550963c3f4c.json written
-vct-challengers/games/2023/val:7a35f8d1-0662-469d-990c-7b8e9f93088d.json written
-vct-challengers/games/2023/val:4ea7f39d-5278-4d37-970b-6e1e6597fbed.json written
-vct-challengers/games/2023/val:77ef325c-ec1a-4214-b2b0-921431e0d2b8.json written
-vct-challengers/games/2023/val:e518bc8d-38d9-492f-9688-fa980b0cdbe8.json written
-vct-challengers/games/2023/val:86d87108-d92a-4c43-bd1d-b686f71ff751.json written
-vct-challengers/games/2023/val:66fcf8d1-2a9c-4d42-b637-1295c1e86ddc.json written
-vct-challengers/games/2023/val:b36e348c-8a43-467d-a7d3-0cb6aa39356e.json written
-vct-challengers/games/2023/val:f67e412b-2f79-46d6-b2af-21d065d74786.json written
-vct-challengers/games/2023/val:85ca6ca8-dfef-40e2-bdc5-116726c65c0a.json written
------ Processed 50 games, current run time: 9.2 minutes
-vct-challengers/games/2023/val:6c65f703-570c-4c83-9d4c-d82ce061ef6f.json written
-vct-challengers/games/2023/val:1e1d680f-7112-40b3-98a6-884cf0bb690e.json written
-vct-challengers/games/2023/val:706921a3-d20c-46bc-a52a-71ed4f6bbf35.json written
-vct-challengers/games/2023/val:61b4e6a0-3a15-4085-8f5c-924dfa71605f.json written
-vct-challengers/games/2023/val:24be2147-0f5b-41d2-b721-a1abf44960fc.json written
-vct-challengers/games/2023/val:55d0b478-58bd-45b3-a5d8-16a932508b8c.json written
-vct-challengers/games/2023/val:e8b7422a-8423-45bb-bdf6-8358aeeafcb8.json written
-vct-challengers/games/2023/val:f643b6a9-2349-4bf9-add1-b2e744724c1d.json written
-vct-challengers/games/2023/val:ec295179-d583-465b-9694-82af5a668419.json written
-vct-challengers/games/2023/val:1a895305-f294-48b0-8613-7ca89d8cd246.json written
------ Processed 60 games, current run time: 10.76 minutes
-vct-challengers/games/2023/val:c03e0c52-7abe-4e84-947a-dae6beb08690.json written
-vct-challengers/games/2023/val:816c5e32-871d-4284-86e7-a13559651b7c.json written
-vct-challengers/games/2023/val:6a6c3510-fe83-4550-a479-e5ad98147dc9.json written
-vct-challengers/games/2023/val:87ddc5ca-e12a-4526-bbd8-6af6b7081d24.json written
-vct-challengers/games/2023/val:a70e6583-160b-4090-9f8e-c22c6351347d.json written
-vct-challengers/games/2023/val:2ff1267c-c063-4968-880d-2b2f10b129d4.json written
-vct-challengers/games/2023/val:7b61cab2-b08e-42a4-8c7e-901b9a441773.json written
-vct-challengers/games/2023/val:268ae2c0-e939-43a6-aa2e-77e4b55df5e9.json written
-vct-challengers/games/2023/val:adc3c718-5343-4c0c-8d7e-3fad878619f7.json written
-vct-challengers/games/2023/val:d293fec3-1426-41e6-b605-7464a6faa831.json written
------ Processed 70 games, current run time: 12.51 minutes
-vct-challengers/games/2023/val:51f8896f-5e7e-4ddf-949d-9fa2efbc1845.json written
-vct-challengers/games/2023/val:af0993d2-57e4-4aa9-a0b0-4894901c62f0.json written
-vct-challengers/games/2023/val:9fd9a4a2-9760-4f24-885d-e463052d1468.json written
-vct-challengers/games/2023/val:798d8413-3401-4ddd-b41e-fdba75db8d69.json written
-vct-challengers/games/2023/val:11eec19c-a69d-400f-a63b-667337bf9bce.json written
-vct-challengers/games/2023/val:9c27ec4a-f85b-4165-8a4b-69243f368df2.json written
-vct-challengers/games/2023/val:8acb3688-59fe-4939-8850-853fc95eaff2.json written
-vct-challengers/games/2023/val:a318d5ff-a615-45be-b413-440362129e08.json written
-vct-challengers/games/2023/val:04a7a234-e932-4b64-97c9-30668ab01d9e.json written
-vct-challengers/games/2023/val:01c6deee-8c13-434b-ada4-f85d53f912eb.json written
------ Processed 80 games, current run time: 14.56 minutes
-vct-challengers/games/2023/val:0edbbb24-3872-48f8-86e2-e02a72b9bb47.json written
-vct-challengers/games/2023/val:6d5b9e3d-9003-4bd0-8856-e419e6b82a53.json written
-vct-challengers/games/2023/val:eb1c39bb-fd17-45c3-adf3-9d79956ab91d.json written
-vct-challengers/games/2023/val:47c7808a-0eec-423b-abfd-958434fb39a2.json written
-vct-challengers/games/2023/val:3ddd123c-9172-4843-902f-f1db815f58f9.json written
-vct-challengers/games/2023/val:1dc94954-b0a0-4478-9858-d0c4f09b2ee1.json written
-vct-challengers/games/2023/val:575a46f6-5318-478f-a7bd-822eaab3091c.json written
-vct-challengers/games/2023/val:cd43cdab-c540-4342-97da-ad029c958fa3.json written
-vct-challengers/games/2023/val:8f25d3be-ff58-42e5-aa63-a277b8be205a.json written
-vct-challengers/games/2023/val:36ddb4c9-e2d5-4792-a5ac-c08d87ed6e35.json written
------ Processed 90 games, current run time: 16.46 minutes
-vct-challengers/games/2023/val:61f45b71-e2ad-4e32-b753-cd19ec2ee83c.json written
-vct-challengers/games/2023/val:140afd83-921e-4077-b399-dc72ea46ac2a.json written
-vct-challengers/games/2023/val:c41c992c-28c9-4278-aa5a-ee21628d6ec2.json written
-vct-challengers/games/2023/val:5801876c-2cc7-401d-aef9-bc1d19acd50c.json written
-vct-challengers/games/2023/val:b9ae8183-816f-49a8-9360-55d5f5248b1c.json written
-vct-challengers/games/2023/val:e83b4461-579b-4abb-acbb-59fb57da76ce.json written
-vct-challengers/games/2023/val:92726d90-f055-41f2-bc18-cfc597570fb7.json written
-vct-challengers/games/2023/val:c6c84698-4cf0-4f86-9781-c73845ce6cff.json written
-vct-challengers/games/2023/val:f41e3bff-8921-439e-abba-1decf6c7598f.json written
-vct-challengers/games/2023/val:ac81960b-73d8-412a-83d6-1cf1bd88f0e6.json written
------ Processed 100 games, current run time: 18.12 minutes
-vct-challengers/games/2023/val:6e09661a-de8e-48e3-a0c8-1ec797ea6fb7.json written
-vct-challengers/games/2023/val:c4f1f654-c8ac-4683-ac64-4cf82ad2b109.json written
-vct-challengers/games/2023/val:fdea5247-ecc6-4051-80d0-06b559ccbb88.json written
-vct-challengers/games/2023/val:87551315-5341-4a9b-acab-1fb43a1ab477.json written
-vct-challengers/games/2023/val:f9afdafc-f1ed-4e92-9a4a-990ae9814043.json written
-vct-challengers/games/2023/val:a3bbdda2-d6e2-4d73-b341-4d5bf6c819f8.json written
-vct-challengers/games/2023/val:7a351146-a865-44f7-9fbc-7c639a11bb88.json written
-vct-challengers/games/2023/val:cff1fe68-30c5-418c-b30e-31438872ce86.json written
-vct-challengers/games/2023/val:ddc4a0ce-1763-47eb-93fc-1b9510526481.json written
-vct-challengers/games/2023/val:34093b78-d767-4481-a542-b8f652631d01.json written
------ Processed 110 games, current run time: 19.98 minutes
-vct-challengers/games/2023/val:babfad2c-5dc1-46dd-a39f-6f3978b5cd6b.json written
-vct-challengers/games/2023/val:cd6a5f17-f656-46ba-a0d4-03896f99f973.json written
-vct-challengers/games/2023/val:d2a07b1a-fffe-4753-bf54-ea44954348e2.json written
-vct-challengers/games/2023/val:f2d4aab3-e55b-4a7a-b68a-4344c98b54f0.json written
-vct-challengers/games/2023/val:1469c4b9-f4ea-472d-9aac-b1b8fa34285b.json written
-vct-challengers/games/2023/val:2d9d9d41-5479-46de-8afc-8cd9f420c10b.json written
-vct-challengers/games/2023/val:0d2a3078-0bb9-4afb-b766-ed261b0e7e20.json written
-vct-challengers/games/2023/val:25bf08ff-f805-45a1-875b-0415de036416.json written
-vct-challengers/games/2023/val:ca13f939-b825-4105-b3b4-c18747bc4a83.json written
-vct-challengers/games/2023/val:1f289809-defc-4902-9c75-b7e60282a783.json written
------ Processed 120 games, current run time: 22.27 minutes
-vct-challengers/games/2023/val:8c9bdcce-5742-4276-b1ff-505001fe817c.json written
-vct-challengers/games/2023/val:24e8fd6c-6e1e-48f3-bf62-22f1025b736b.json written
-vct-challengers/games/2023/val:3f8fc62f-b1f3-4e13-b411-9b0181c6f694.json written
-vct-challengers/games/2023/val:e27757f5-f495-4405-b167-51ffe3177ecf.json written
-vct-challengers/games/2023/val:9d0850d1-135a-499d-8a15-1d37a9663efd.json written
-vct-challengers/games/2023/val:05ab9b22-e772-48f5-91c6-b225578727f4.json written
-vct-challengers/games/2023/val:db64a9f9-5b1b-4c47-9a78-b03fa3349574.json written
-vct-challengers/games/2023/val:3634be35-d3fb-4b83-9b97-fff17ff5deea.json written
-vct-challengers/games/2023/val:46647fa5-5518-45b7-a15d-613162efbd63.json written
-vct-challengers/games/2023/val:b65fa122-3fd5-40c5-8435-88fe43c2b2bd.json written
------ Processed 130 games, current run time: 24.08 minutes
-vct-challengers/games/2023/val:66b28244-e2bd-4498-b97b-a0eb21fc4ff3.json written
-vct-challengers/games/2023/val:a8bc983b-3dbd-440d-995a-1b78af4a728e.json written
-vct-challengers/games/2023/val:4da27918-51d7-47b2-883a-a7480d1c6da6.json written
-vct-challengers/games/2023/val:e6741ac4-9f93-4e42-818b-1316fc49c48f.json written
-vct-challengers/games/2023/val:2e49f523-9dd7-46e3-b273-459da5b0df30.json written
-vct-challengers/games/2023/val:236b1afc-a4cc-419a-aa54-292bb1da87bd.json written
-vct-challengers/games/2023/val:bf1ada74-7479-450f-986d-a2775a18d6dc.json written
-vct-challengers/games/2023/val:1e3e113c-99f3-4363-bc99-9b723888d2f7.json written
-vct-challengers/games/2023/val:2c370d49-864a-453f-90ca-b3a6fbf19f32.json written
-vct-challengers/games/2023/val:8decbf00-f619-436a-a36b-e79c985a1bb9.json written
------ Processed 140 games, current run time: 26.26 minutes
-vct-challengers/games/2023/val:12fa7be6-144d-4056-83f9-74700d64b86b.json written
-vct-challengers/games/2023/val:ecf68afe-9b17-440f-8bf1-de65f8367142.json written
-vct-challengers/games/2023/val:c2a99aa6-5f8b-4d51-9c30-441443134eca.json written
-vct-challengers/games/2023/val:7245e2e9-f504-4d07-a44e-ed2eefe4c227.json written
-vct-challengers/games/2023/val:22f71492-73e9-4737-ab02-6513793abc89.json written
-vct-challengers/games/2023/val:d77467b7-b202-478a-ac24-a69067a5010b.json written
-vct-challengers/games/2023/val:1dee86fe-9b5d-4d4b-91ee-63a682a2ba43.json written
-vct-challengers/games/2023/val:b01b5441-740c-4b5d-b29c-942960e6e6e9.json written
-vct-challengers/games/2023/val:9ec7308c-5e17-4e4f-a428-11dfaef19c4e.json written
-vct-challengers/games/2023/val:9f2c1a9f-3eb3-4d05-b7e9-dc0ebb2ba826.json written
------ Processed 150 games, current run time: 28.1 minutes
-vct-challengers/games/2023/val:fdf5126d-4f03-4c6c-94fc-0aab50c439c0.json written
-vct-challengers/games/2023/val:ff1e79a3-6526-4e40-b8b6-2f01e9634135.json written
-vct-challengers/games/2023/val:2348f8a9-f23c-4e04-8071-42d12ecfc0ca.json written
-vct-challengers/games/2023/val:3bf32e4b-4345-4cf9-ae7b-7eca6c4d3a32.json written
-vct-challengers/games/2023/val:bbf9c9fe-d2ba-46b5-87f3-6cd1b9ee594d.json written
-vct-challengers/games/2023/val:517da486-7241-406b-949a-0501491fbbfc.json written
-vct-challengers/games/2023/val:21d661f7-3d39-4184-9e33-f63a526e44cf.json written
-vct-challengers/games/2023/val:5c9e4c44-53ac-4ace-b720-25900abaa2e7.json written
-vct-challengers/games/2023/val:6a19aa27-379c-4a60-9827-92d68ba73cd1.json written
-vct-challengers/games/2023/val:544cc525-a1c8-4eea-a8a7-9a944d1965dc.json written
------ Processed 160 games, current run time: 29.73 minutes
-vct-challengers/games/2023/val:d9bf49c0-115a-4e1d-a4d5-1c1fa3f2883b.json written
-vct-challengers/games/2023/val:14f6c73c-68eb-4784-81df-651810ac55b4.json written
-vct-challengers/games/2023/val:5f37d3ca-a0f6-4ba6-9e14-c883fd21d543.json written
-vct-challengers/games/2023/val:36d7b076-6401-42c8-982a-0d47abf9d01f.json written
-vct-challengers/games/2023/val:5df3bf6e-668e-4062-b623-0e4cf6cce5c2.json written
-vct-challengers/games/2023/val:dde10efd-0046-457d-94bd-0a1367abc5fb.json written
-vct-challengers/games/2023/val:8a1572c0-eeab-4c60-a8d1-a960261ef1aa.json written
-vct-challengers/games/2023/val:3501bcc0-4153-42f1-9b79-0dc16f452419.json written
-vct-challengers/games/2023/val:9105c182-849e-4426-8125-5dc7da87ed34.json written
-vct-challengers/games/2023/val:f780b927-24c9-438c-a1ff-c3a6086969e7.json written
------ Processed 170 games, current run time: 31.9 minutes
-vct-challengers/games/2023/val:f4fe9eea-f957-4e4c-b534-6d409a6e8a47.json written
-vct-challengers/games/2023/val:c8db1134-bf82-4648-976e-d04b675c3483.json written
-vct-challengers/games/2023/val:7cab448a-0adc-4779-827d-8ebdb1a35074.json written
-vct-challengers/games/2023/val:87f4bda4-f4a3-4ec3-887c-3489851db280.json written
-vct-challengers/games/2023/val:272d566d-29a4-4a9e-b91d-0251bebc56be.json written
-vct-challengers/games/2023/val:82677189-7146-4f21-836f-4e9de7317ffb.json written
-vct-challengers/games/2023/val:89eb9bf6-7fea-4a46-803d-960d379e3416.json written
-vct-challengers/games/2023/val:2bea1c26-ac1a-45d0-9a4d-bcd23047aae7.json written
-vct-challengers/games/2023/val:472be845-668c-45c1-b57b-e698273356b4.json written
-vct-challengers/games/2023/val:102a4f13-bf50-4be6-9c55-528ccd7f2b1a.json written
------ Processed 180 games, current run time: 34.02 minutes
-vct-challengers/games/2023/val:9dc704fb-1c82-4d81-94c7-60cba73aa8d2.json written
-vct-challengers/games/2023/val:4db04747-2a96-4bf3-b904-3f70dfb9e5b6.json written
-vct-challengers/games/2023/val:6f4cad70-5b5c-47c2-8e19-35749f7e329b.json written
-vct-challengers/games/2023/val:4fb91870-dbe8-4c2f-91e4-e4649010589a.json written
-vct-challengers/games/2023/val:9f71c116-2c43-49e9-b2f3-5cd7b3d63a53.json written
-vct-challengers/games/2023/val:d57f64eb-7876-492e-8005-9879de245171.json written
-vct-challengers/games/2023/val:2c5feacb-a600-4e14-8b84-a175439128a6.json written
-vct-challengers/games/2023/val:615fef91-f5dd-481b-b4ca-1534717e6d79.json written
-vct-challengers/games/2023/val:6e4ea983-4053-4935-8cff-35eaeb423f7f.json written
-vct-challengers/games/2023/val:e5479254-8eec-4dee-be46-48783485cd77.json written
------ Processed 190 games, current run time: 35.73 minutes
-vct-challengers/games/2023/val:b17910b0-bdc0-4a79-b42a-3efa68371ef1.json written
-vct-challengers/games/2023/val:f6f958a5-0ec0-4499-a0c4-fc9d512fb194.json written
-vct-challengers/games/2023/val:94d304c7-e0bd-4edc-ac9e-32a8928c5d7a.json written
-vct-challengers/games/2023/val:cc83c08e-1ba6-4880-b039-bbbfcca768cd.json written
-vct-challengers/games/2023/val:67cd848e-1f59-4167-871b-83e5ecb8dccd.json written
-vct-challengers/games/2023/val:66f5187d-0050-4bfe-8b6a-8add0f5d064b.json written
-vct-challengers/games/2023/val:8737f861-c555-4cd9-bc45-6b3830004a27.json written
-vct-challengers/games/2023/val:40115556-5d51-46b7-9fb9-ae4c3f07a164.json written
-vct-challengers/games/2023/val:6a4eb6a7-ac4d-4dbc-b4e6-5e632f7eb99b.json written
-vct-challengers/games/2023/val:bd59fc05-2451-4d73-8c6a-31f5e868d22b.json written
------ Processed 200 games, current run time: 37.85 minutes
-vct-challengers/games/2023/val:98fb2512-6372-4189-bfaf-003556a4a13c.json written
-vct-challengers/games/2023/val:27d72f5f-39a2-42d6-b012-102c6756e27a.json written
-vct-challengers/games/2023/val:2db9f125-0cd0-4d68-8ad0-437a1f3caedf.json written
-vct-challengers/games/2023/val:9121d4ba-ce05-41d5-b1fd-faf06035f14d.json written
-vct-challengers/games/2023/val:c3fb8af0-b448-4cf5-a867-2d3357f7443b.json written
-vct-challengers/games/2023/val:878861d0-fcdb-45a5-b7e4-c817e266fd62.json written
-vct-challengers/games/2023/val:cc32f78d-5b4b-4e6f-8d5e-8ad916046150.json written
-vct-challengers/games/2023/val:96b720eb-7f5c-4184-a42b-9c79f95566f0.json written
-vct-challengers/games/2023/val:cc0d40d4-2047-423b-a2d2-140e34b21dc4.json written
-vct-challengers/games/2023/val:53cf842d-c60b-497c-b227-c60a4bbd5034.json written
------ Processed 210 games, current run time: 40.15 minutes
-vct-challengers/games/2023/val:2ab8bf7c-4eb7-4ee3-bf37-e93b61a9e5ca.json written
-vct-challengers/games/2023/val:161d899e-e3ab-436e-bb19-456fabab5c48.json written
-vct-challengers/games/2023/val:2683d1ff-5423-4514-be18-dca6c786ec3e.json written
-vct-challengers/games/2023/val:910ea232-749b-4213-af4b-87d935b3a080.json written
-vct-challengers/games/2023/val:c87cd069-4ef8-4336-a1ea-51178bba1883.json written
-vct-challengers/games/2023/val:ee29a438-a2f4-475c-af2f-f167cd5ca320.json written
-vct-challengers/games/2023/val:368d5f2b-6f48-41d0-b88a-dfdfa176d47a.json written
-vct-challengers/games/2023/val:eebb0ca7-2777-4398-b221-fb02307da647.json written
-vct-challengers/games/2023/val:227fa4b4-4e73-4c97-916c-45a1c5fd6931.json written
-vct-challengers/games/2023/val:cbe654d8-e9ff-4e4e-b2f5-e20e8ef051b9.json written
------ Processed 220 games, current run time: 42.24 minutes
-vct-challengers/games/2023/val:cdc92730-fe49-442b-9bd6-88f58251735a.json written
-vct-challengers/games/2023/val:d9d53a46-a642-4fe4-a46e-80f1486f39ad.json written
-vct-challengers/games/2023/val:1f6d8157-f502-41b3-97db-c00c141a9b1e.json written
-vct-challengers/games/2023/val:0cd3059a-c5d1-484c-bc91-f9022cc9a26a.json written
-vct-challengers/games/2023/val:f9181c16-faff-4bd1-8b7a-b2b10c89c157.json written
-vct-challengers/games/2023/val:69beb569-50f2-44b5-ae3f-f700ca9d2029.json written
-vct-challengers/games/2023/val:91753e63-5ab8-4393-9d02-96a53b415a84.json written
-vct-challengers/games/2023/val:9b60f8f5-110e-4fa7-b63f-5b75a3a79418.json written
-vct-challengers/games/2023/val:f6d765ad-75df-4c22-92d4-0e24ffb98802.json written
-vct-challengers/games/2023/val:0b43dfaf-647d-440d-8405-abd27d7b48f2.json written
------ Processed 230 games, current run time: 44.32 minutes
-vct-challengers/games/2023/val:c8474204-e208-49bb-9c5c-586ff486a56c.json written
-vct-challengers/games/2023/val:4a5087de-ccd1-459c-a36b-1a26263a3602.json written
-vct-challengers/games/2023/val:2dcfc5b9-5415-44a0-8f0b-9a5781fe2613.json written
-vct-challengers/games/2023/val:0feaf76e-46ba-4651-8fe8-c034b18362e8.json written
-vct-challengers/games/2023/val:fc320f76-8eef-446c-9a8c-46330b165819.json written
-vct-challengers/games/2023/val:2443409a-83bc-41b3-bb5a-0e610f794d7a.json written
-vct-challengers/games/2023/val:54f9d7f6-196b-4bbc-aaf2-c60c5fdbf061.json written
-vct-challengers/games/2023/val:aa66d60c-f870-4dd9-96bb-e2115780c8f2.json written
-vct-challengers/games/2023/val:d9d9ddfb-9681-4f5f-95d7-c3d25bec7847.json written
-vct-challengers/games/2023/val:59c62d7f-9571-4a9f-a13f-6f003cac1807.json written
------ Processed 240 games, current run time: 46.18 minutes
-vct-challengers/games/2023/val:f970f2fe-d16f-4805-9b83-0d665e6fc654.json written
-vct-challengers/games/2023/val:df67f849-8c56-4169-a358-1272f290fb6e.json written
-vct-challengers/games/2023/val:316c7052-89b5-49ac-9247-4c0cbdb14063.json written
-vct-challengers/games/2023/val:7037b11e-0ac8-4459-8734-f9626cda4484.json written
-vct-challengers/games/2023/val:2df3ef79-c1b6-4e38-a018-47d9706e45b7.json written
-vct-challengers/games/2023/val:fe3e12a1-4d8f-4258-911b-64a2d4aadc68.json written
-vct-challengers/games/2023/val:5a999cbf-4e2f-4c7d-a924-45af25d9dd83.json written
-vct-challengers/games/2023/val:ab468574-27de-491a-889a-80a4d9519bea.json written
-vct-challengers/games/2023/val:cea074b9-b242-4825-afbe-d798f3a67b19.json written
-vct-challengers/games/2023/val:22ad49e1-e0d9-4c34-83d5-1018498e7b6b.json written
------ Processed 250 games, current run time: 47.93 minutes
-vct-challengers/games/2023/val:5e8115c7-bd39-4f71-9838-c3bd77877ec9.json written
-vct-challengers/games/2023/val:6e88e10c-86a6-40e5-aeca-a68ce89ed2bc.json written
-vct-challengers/games/2023/val:2bfb39ef-b034-488f-b01f-d6537e6fb918.json written
-vct-challengers/games/2023/val:993fedaf-482c-497c-a2cf-8e928c18d55b.json written
-vct-challengers/games/2023/val:df413732-a821-45b8-8aa9-ab38d05937a7.json written
-vct-challengers/games/2023/val:a99f3589-b819-40cd-9726-9a572b289b6f.json written
-vct-challengers/games/2023/val:ad3145ce-99d4-4222-9131-105c021d90ff.json written
-vct-challengers/games/2023/val:faf58c04-a8bc-42fc-a978-7d733e43fa3d.json written
-vct-challengers/games/2023/val:31f48a89-5105-41f2-a838-5496fa2a9228.json written
-vct-challengers/games/2023/val:b9a6a640-a7f5-4622-a02e-327c8f428ec4.json written
------ Processed 260 games, current run time: 50.14 minutes
-vct-challengers/games/2023/val:00957e1d-e82b-4dbf-bc1d-322b9295ac7c.json written
-vct-challengers/games/2023/val:2539f3d1-2a22-4e64-b361-aec63bfd0314.json written
-vct-challengers/games/2023/val:92547d67-e1b4-4f18-abb6-2b37c1d6f7d2.json written
-vct-challengers/games/2023/val:32eaa0e7-0399-491e-a795-cc10586e7b8c.json written
-vct-challengers/games/2023/val:7e13802a-035d-47fe-98ae-4a2616e6a19b.json written
-vct-challengers/games/2023/val:75a8f587-57c7-406b-ab31-27dbe844b35b.json written
-vct-challengers/games/2023/val:cb6c2185-d5a5-4418-8a4f-faf05baabe52.json written
-vct-challengers/games/2023/val:70862ec1-3d93-42e1-abd4-79af9f2d7a00.json written
-vct-challengers/games/2023/val:0e6089b5-d9db-4bc9-9938-d698e7d2b9bc.json written
-vct-challengers/games/2023/val:b7518e24-7911-438f-a548-d7d4a2f692ea.json written
------ Processed 270 games, current run time: 52.1 minutes
-vct-challengers/games/2023/val:aef1c68b-c960-4833-8250-13ab2ca3aa1c.json written
-vct-challengers/games/2023/val:ac9104bf-6266-43d4-9584-136cb283913d.json written
-vct-challengers/games/2023/val:11613e1d-c7fc-41c8-b4de-a8d46f5081c8.json written
-vct-challengers/games/2023/val:194ce027-ee59-4628-bea6-302e433447c7.json written
-vct-challengers/games/2023/val:22236d78-5e3b-414e-a711-9d9e99dac58d.json written
-vct-challengers/games/2023/val:1220b4c9-4081-4f87-9f3a-f9a6696940a3.json written
-vct-challengers/games/2023/val:3e6565ca-9679-4d51-b427-3007bc246938.json written
-vct-challengers/games/2023/val:ed9062fc-cd89-4ac1-a5d9-ced50fff774d.json written
-vct-challengers/games/2023/val:b031db2a-6e64-4bf4-93f7-fea6ef9e68ca.json written
-vct-challengers/games/2023/val:e3e47afc-76db-43ea-875c-59cb3791ca1c.json written
------ Processed 280 games, current run time: 54.13 minutes
-vct-challengers/games/2023/val:fcc2016b-e84f-468c-8afe-821782f8843f.json written
-vct-challengers/games/2023/val:ef24d8e8-9b98-4a9b-89de-7e75945b6493.json written
-vct-challengers/games/2023/val:f2b99b04-bd18-4b53-9ba9-a947b9b51e31.json written
-Traceback (most recent call last):
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
-    response = self._make_request(
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
-    response = conn.getresponse()
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/connection.py", line 507, in getresponse
-    httplib_response = super().getresponse()
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/http/client.py", line 1375, in getresponse
-    response.begin()
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/http/client.py", line 318, in begin
-    version, status, reason = self._read_status()
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/http/client.py", line 287, in _read_status
-    raise RemoteDisconnected("Remote end closed connection without"
-http.client.RemoteDisconnected: Remote end closed connection without response
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
-    resp = conn.urlopen(
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
-    retries = retries.increment(
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
-    raise reraise(type(error), error, _stacktrace)
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/util/util.py", line 38, in reraise
-    raise value.with_traceback(tb)
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
-    response = self._make_request(
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
-    response = conn.getresponse()
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/urllib3/connection.py", line 507, in getresponse
-    httplib_response = super().getresponse()
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/http/client.py", line 1375, in getresponse
-    response.begin()
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/http/client.py", line 318, in begin
-    version, status, reason = self._read_status()
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/http/client.py", line 287, in _read_status
-    raise RemoteDisconnected("Remote end closed connection without"
-urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/yxpeng/Projects/VCTEVA/Data_Preprocess/download_dataset.py", line 76, in <module>
-    main(LEAGUE, YEAR)
-  File "/home/yxpeng/Projects/VCTEVA/Data_Preprocess/download_dataset.py", line 71, in main
-    download_games()
-  File "/home/yxpeng/Projects/VCTEVA/Data_Preprocess/download_dataset.py", line 64, in download_games
-    response = download_gzip_and_write_to_json(s3_game_file)
-  File "/home/yxpeng/Projects/VCTEVA/Data_Preprocess/download_dataset.py", line 18, in download_gzip_and_write_to_json
-    response = requests.get(remote_file, stream=True)
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/yxpeng/anaconda3/envs/eva/lib/python3.10/site-packages/requests/adapters.py", line 682, in send
-    raise ConnectionError(err, request=request)
-requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+vct-international/esports-data/leagues.json written
+vct-international/esports-data/tournaments.json written
+vct-international/esports-data/players.json written
+vct-international/esports-data/teams.json written
+vct-international/esports-data/mapping_data_v2.json written
+vct-international/games/2022/val:6679e6f8-f95d-49eb-b9aa-ae977b4b8664.json written
+vct-international/games/2022/val:8bf9b1db-d8cf-401e-8735-68ca80bec80e.json written
+vct-international/games/2022/val:cebdcd2f-28ad-47cc-bb00-ab1fe9eebf2a.json written
+vct-international/games/2022/val:c1514574-4ba4-4ad3-b5ef-dbfef9976946.json written
+vct-international/games/2022/val:44f65f2d-1de9-43da-8df3-c543ef0ac5a8.json written
+vct-international/games/2022/val:3dcf600a-2d3b-44ae-8386-06b2ef772974.json written
+vct-international/games/2022/val:fff670c7-e775-4105-b3bf-82c2e1e6d4c7.json written
+vct-international/games/2022/val:eed9266e-ce91-444e-8262-e0fc58a4e67a.json written
+vct-international/games/2022/val:776df78d-886d-459f-8844-5c0a2597fb8e.json written
+vct-international/games/2022/val:71ee73de-11b7-4536-908e-242077c49b3b.json written
+----- Processed 10 games, current run time: 2.07 minutes
+vct-international/games/2022/val:b96bb7c1-4448-41ff-a9e3-6f068139833d.json written
+vct-international/games/2022/val:ce98d94c-3135-45ab-b7ce-13160cd2f124.json written
+vct-international/games/2022/val:6d8241d3-7ef7-41e9-8ce7-9e51743532c1.json written
+vct-international/games/2022/val:d7992b50-b185-426b-ad3f-1d52940192fc.json written
+vct-international/games/2022/val:64f7ce7c-b06d-4b13-adad-6192c9ac24c1.json written
+vct-international/games/2022/val:978654bb-4080-47da-bac1-87bd0dc8ebe1.json written
+vct-international/games/2022/val:e605323f-ef2f-4a47-8339-a5d3af2313b1.json written
+vct-international/games/2022/val:b8f7afc1-f9ea-424a-af44-57e209be2390.json written
+vct-international/games/2022/val:f2c5ed14-6718-4219-9898-2fd8802f587f.json written
+vct-international/games/2022/val:9dc9c7c5-e89b-4ac8-be0a-08c926478d27.json written
+----- Processed 20 games, current run time: 3.5 minutes
+vct-international/games/2022/val:20ae39c9-1cc1-4d31-be3a-74d7a79d4c4e.json written
+vct-international/games/2022/val:c077f216-a78f-4073-969b-569732f464d3.json written
+vct-international/games/2022/val:8bccc2a2-a04b-4d90-b088-0f1286266b28.json written
+vct-international/games/2022/val:6a702bf4-2153-4306-acbd-aa41b9309663.json written
+vct-international/games/2022/val:2280e732-844c-4124-a1da-6eafdc47eac4.json written
+vct-international/games/2022/val:15007dc7-2e37-4867-bba0-b2fb9a72bc63.json written
+vct-international/games/2022/val:bc6ce737-c2e1-4c6b-b18a-173467f5cbb0.json written
+vct-international/games/2022/val:133d0c97-961e-4454-9e7b-b58cd76e644a.json written
+vct-international/games/2022/val:06444f33-6b5f-4dc9-ba29-9bc39e45d371.json written
+vct-international/games/2022/val:244a98d1-245f-4a7b-b231-e12e373f6db7.json written
+----- Processed 30 games, current run time: 5.49 minutes
+vct-international/games/2022/val:c4cfb0d9-5d46-4943-9a6d-b4188ab2ea50.json written
+vct-international/games/2022/val:14ee1e2a-f83e-4119-bdcd-2ba9ce6a733b.json written
+vct-international/games/2022/val:7bf496c5-d7e9-43b9-86c9-8ce660c5cf7f.json written
+vct-international/games/2022/val:91c3ad28-09b0-401f-acc8-546adb0fb762.json written
+vct-international/games/2022/val:99de05e0-da91-42b5-a458-3c5169997f3a.json written
+vct-international/games/2022/val:9ad29eb7-206f-4018-80f2-02aecbc6e4b9.json written
+vct-international/games/2022/val:d4c11f56-6043-4de5-bcd8-b40e3d06a6c5.json written
+vct-international/games/2022/val:2fad4de3-a1ff-417a-a636-ad42151df233.json written
+vct-international/games/2022/val:7364b2f4-deec-4c3f-a3e6-f5f204e5e016.json written
+vct-international/games/2022/val:c99e6101-fef1-46d3-bb55-126029a66cb3.json written
+----- Processed 40 games, current run time: 7.61 minutes
+vct-international/games/2022/val:273de7c3-0541-438e-b663-c8c23767b3e4.json written
+vct-international/games/2022/val:416e7c41-a19a-4fa6-8481-8d0ba1433d71.json written
+vct-international/games/2022/val:322f1b38-8abc-4246-b95d-452dd1477ffe.json written
+vct-international/games/2022/val:839afe65-115c-4ac2-9fd3-ead0b00cc755.json written
+vct-international/games/2022/val:619e9f83-06a5-442d-81c4-3716bfa4f756.json written
+vct-international/games/2022/val:6f907011-1566-40d8-9b2f-8cad3d3d3374.json written
+vct-international/games/2022/val:a921afab-eacb-4504-a9f7-a36b7d39086d.json written
+vct-international/games/2022/val:004b09b1-4dc9-4185-baff-9b1c66b3ef99.json written
+vct-international/games/2022/val:27bd60b9-e362-49a9-be6c-87c99fd89646.json written
+vct-international/games/2022/val:2fe0ad6f-d85d-4d85-9fc6-02741f0d0f02.json written
+----- Processed 50 games, current run time: 9.67 minutes
+vct-international/games/2022/val:ec88b23b-124f-4797-9f57-e72edeae90a9.json written
+vct-international/games/2022/val:59b3415d-0d7c-44c3-b3a5-415d8aeff28f.json written
+vct-international/games/2022/val:3e039aca-a653-4f83-b7ea-3ce698468d6c.json written
+vct-international/games/2022/val:8deac130-a289-4cc3-8b75-0e0d6c2621f5.json written
+vct-international/games/2022/val:e6aa51a6-80df-4a39-947e-85d2b5fdd3cc.json written
+vct-international/games/2022/val:614a4986-8a66-4641-a43e-fac208c789be.json written
+vct-international/games/2022/val:f26ab081-b762-4a89-9da6-875639afd9ad.json written
+vct-international/games/2022/val:c118fd7f-e97a-4f21-8430-7efcacdbfe02.json written
+vct-international/games/2022/val:4b54d2e2-214a-4d28-8289-a327ff249181.json written
+vct-international/games/2022/val:4f3784f4-0096-41b6-87ed-f39c84f00111.json written
+----- Processed 60 games, current run time: 11.58 minutes
+vct-international/games/2022/val:2ba41de5-2a99-471e-bede-ec09a55fa0d9.json written
+vct-international/games/2022/val:b89bf701-1363-421d-bd18-335fa15a06fe.json written
+vct-international/games/2022/val:1bb55ce7-b57e-497e-a071-6d0cd134bc3e.json written
+vct-international/games/2022/val:44c91ec0-9cb1-48ca-9569-45a3c8bcf9fb.json written
+vct-international/games/2022/val:ea0ef986-8c74-45b6-b7a6-20d51054680c.json written
+vct-international/games/2022/val:80c2a6ed-b0bd-4ed8-8a5a-584986004ee0.json written
+vct-international/games/2022/val:ed03901e-ba05-44fa-84cc-fa7f2c3062ad.json written
+vct-international/games/2022/val:380a54ec-91a4-402f-9c1a-664636239906.json written
+vct-international/games/2022/val:370e02d2-47fd-4787-b4c3-64c105c96ad4.json written
+vct-international/games/2022/val:9031dc5c-29fe-4a28-8545-674214d431e7.json written
+----- Processed 70 games, current run time: 13.56 minutes
+vct-international/games/2022/val:f92b23f7-5411-4e0f-8269-5da1a6352afe.json written
+vct-international/games/2022/val:e6266eff-d7fc-4088-8c46-fbe374a83fea.json written
+vct-international/games/2022/val:3e404f3a-b1ff-4f96-965d-dbb8014039f8.json written
+vct-international/games/2022/val:e5cbb8fe-dc20-4a2c-a762-abeed4fc0ec6.json written
+vct-international/games/2022/val:973fa94b-d180-4368-a582-dc602c296422.json written
+vct-international/games/2022/val:3be6e126-2cd2-43f9-8c9a-9a70fe16d326.json written
+vct-international/games/2022/val:4043be3c-b646-478e-a9ef-801364b6faca.json written
+vct-international/games/2022/val:3be5d0c2-0083-4c63-bbab-8ad0cae3f8a7.json written
+vct-international/games/2022/val:879d849d-115e-4dfa-ac55-73cd5fbb9162.json written
+vct-international/games/2022/val:1a800fe0-37ce-4449-a89e-0c066edc5ea2.json written
+----- Processed 80 games, current run time: 15.85 minutes
+vct-international/games/2022/val:e87b2ebd-a45f-4354-9f16-d1a0187e1aa4.json written
+vct-international/games/2022/val:9653a458-926a-4b6d-8f72-498c8daf83a2.json written
+vct-international/games/2022/val:b70c9336-51dc-4ee4-a245-099393fb66f8.json written
+vct-international/games/2022/val:e2bde291-1d2a-4de0-92af-5193a1b6e7d8.json written
+vct-international/games/2022/val:43b0f549-9b7b-4292-9976-defbdb2d0a7d.json written
+vct-international/games/2022/val:a23b1068-738a-409a-93d7-8fb165a4134a.json written
+vct-international/games/2022/val:c9d7acfc-7a68-4fc2-a22c-60ccc69d99a9.json written
+vct-international/games/2022/val:027d5418-4afc-4bfc-9308-238f3742d3cf.json written
+vct-international/games/2022/val:96a6b1cc-5977-4b85-89e1-c62b6212e22b.json written
+vct-international/games/2022/val:cdf04244-1400-4239-8954-79b259c70eb6.json written
+----- Processed 90 games, current run time: 18.18 minutes
+vct-international/games/2022/val:91a3ff93-ce25-46a2-af95-5675fb5088fc.json written
+vct-international/games/2022/val:721d4efa-e802-4b9f-bc3f-8238f40b62e8.json written
+vct-international/games/2022/val:2e4783dd-39a8-48f3-8957-94bcb38abdd6.json written
+vct-international/games/2022/val:c9a26c06-1e81-4ae4-9608-5298be95f4a4.json written
+vct-international/games/2022/val:bb238eea-51f4-4377-a6fd-41f166830eb9.json written
+vct-international/games/2022/val:503d45af-1b2a-4647-bec8-12b66546743c.json written
+vct-international/games/2022/val:be412d79-c5fb-4dbb-841a-ec797bdbc15a.json written
+vct-international/games/2022/val:add3e8e5-051a-4003-a6ba-763f93b859b5.json written
+vct-international/games/2022/val:080c51d4-9bdf-4e63-be96-508c66b9a492.json written
+vct-international/games/2022/val:36eea3d3-8aad-4c83-b176-c10f03a78e30.json written
+----- Processed 100 games, current run time: 20.63 minutes
+vct-international/games/2022/val:92901b1a-79d5-4295-a134-e59dfdf75bf4.json written
+vct-international/games/2022/val:a8daf684-d48e-4be2-9ee4-9ad1ed8d0ce7.json written
+vct-international/games/2022/val:50b6329a-e72e-4717-95fa-5b9de3ef1a99.json written
+vct-international/games/2022/val:59ee04cf-260f-44be-8541-a615533b0d9c.json written
+vct-international/games/2022/val:b6c30dd3-4262-4db2-880e-cc20ad826964.json written
+vct-international/games/2022/val:ff347f64-5265-4540-bef6-7bc6c9bee618.json written
+vct-international/games/2022/val:96258076-58d2-4bb6-9c1d-a23a8c9def07.json written
+vct-international/games/2022/val:6f6bc9f9-2a51-4651-8308-251f92bdb278.json written
+vct-international/games/2022/val:8ad592c1-7bcb-4706-a37a-22c956f3266a.json written
+vct-international/games/2022/val:1d503115-7089-47f5-b43e-c6bb8dc63f6e.json written
+----- Processed 110 games, current run time: 23.17 minutes
+vct-international/games/2022/val:8dd82bb9-79b5-406e-a77e-3d47eee453d3.json written
+vct-international/games/2022/val:fb6bd4ef-dbd4-431b-b629-20169c72efbd.json written
+vct-international/games/2022/val:b8838375-39f1-4b3d-a1fa-02dc2e184df0.json written
+vct-international/games/2022/val:b63fe2ab-5872-4c40-a7d7-3eff73b302a0.json written
+vct-international/games/2022/val:71252c19-e882-4aaa-b1b2-adb7836d4735.json written
+vct-international/games/2022/val:e2b3db23-3821-438c-9739-c26cbf6a1164.json written
+vct-international/games/2022/val:fc86b057-9a36-44e3-ae7b-f073e8185975.json written
+vct-international/games/2022/val:37b495f4-690e-45bc-a84b-2289e9e89c4b.json written
+vct-international/games/2022/val:f3d8aee7-bd26-45cf-96be-f556ae91bdf8.json written
+vct-international/games/2022/val:23827c43-2753-4536-8f0d-832856ef3abc.json written
+----- Processed 120 games, current run time: 26.14 minutes
+vct-international/games/2022/val:8ddf5eca-24c0-4826-bb27-504115cf31c3.json written
+vct-international/games/2022/val:5bd41f62-90db-4183-8c80-e8e86e171291.json written
+vct-international/games/2022/val:15ef3a70-7e55-4034-9cae-f6a349942daf.json written
+vct-international/games/2022/val:07a8f609-6c81-4a42-b685-246ccdecc52e.json written
+vct-international/games/2022/val:9dc1873f-b54d-41f3-b1d0-d609e8a40c78.json written
+vct-international/games/2022/val:fc28bfec-59e8-43fb-adee-d604bc000683.json written
+vct-international/games/2022/val:d4db1c16-0bf7-4bdc-9b08-3725e73c6a7b.json written
+vct-international/games/2022/val:0c382722-7789-461c-865b-50611b9e4e6f.json written
+vct-international/games/2022/val:31b1483b-749d-420d-a9ce-130d6c1bf701.json written
+vct-international/games/2022/val:90ca7930-f532-4ef0-806a-03ef35be933a.json written
+----- Processed 130 games, current run time: 28.55 minutes
+vct-international/games/2022/val:02fe60b7-71cf-4d3c-90ec-3e0b5ee1c545.json written
+vct-international/games/2022/val:d580b60a-fa1f-4439-a4b6-85716550443b.json written
+vct-international/games/2022/val:5b561593-aa2f-4c8e-93c7-c5e420d80850.json written
+vct-international/games/2022/val:6b1f91d1-cdc4-4c8e-91a7-8ed89c7b3aa0.json written
+vct-international/games/2022/val:17cc89a8-219b-4792-8a3b-01e589908eb2.json written
+vct-international/games/2022/val:89d59efd-06a5-43b5-b089-8d848e34b037.json written
+vct-international/games/2022/val:e1d912f0-7480-48ab-956c-48fe852b7019.json written
+vct-international/games/2022/val:ef984c93-0d0c-458e-a3ca-f2f5813f792d.json written
+vct-international/games/2022/val:a90c6bfb-e656-4d0f-ab32-fa1c275374b4.json written
+vct-international/games/2022/val:d0d13b3f-7c61-419c-8dde-a19f25233d71.json written
+----- Processed 140 games, current run time: 31.92 minutes
+vct-international/games/2022/val:6e98cc5d-7417-45ac-b964-79aa096462c4.json written
+vct-international/games/2022/val:44f6ccf9-f652-4eee-a9f8-57393f77c3ff.json written
+vct-international/games/2022/val:46b48026-aada-4943-864b-2bc2f9e7f462.json written
+vct-international/games/2022/val:137085f0-6296-4699-93a6-58ca7dc83592.json written
+vct-international/games/2022/val:bb30a736-dc3b-41d1-b660-aae3043457e1.json written
+vct-international/games/2022/val:ac2a608f-e8a2-4e94-afaf-ee567ab26d14.json written
+vct-international/games/2022/val:c3665d76-6636-4b07-936a-5f38262729e3.json written
+vct-international/games/2022/val:509274fb-31a6-4f90-8fbc-1d4ebb056b22.json written
+vct-international/games/2022/val:7bce0432-dbff-4f61-81bf-56cff23704ec.json written
+vct-international/games/2022/val:d98afff6-0c88-4c05-93c6-716f2a79df24.json written
+----- Processed 150 games, current run time: 36.16 minutes
+vct-international/games/2022/val:4dc2fe77-00fc-4e88-a8fa-699e98aa036b.json written
+vct-international/games/2022/val:7fb5afe4-a315-4c67-8f67-9aa38ac717ca.json written
+vct-international/games/2022/val:2223212f-95bb-4bac-84bf-9b603b065659.json written
+vct-international/games/2022/val:255c2c57-9750-4934-9351-afba38f08c4e.json written

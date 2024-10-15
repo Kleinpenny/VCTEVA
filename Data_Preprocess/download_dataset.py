@@ -71,9 +71,5 @@ def main(LEAGUE, YEAR):
     download_games()
 
 if __name__ == "__main__":
-    for LEAGUE in ["vct-challengers"]:
-        for YEAR in [2024]:
-            main(LEAGUE, YEAR)
-    main("game-changers", 2022)
     main("vct-international", 2022)
     #Failed to download game-changers/games/2023/val:cedd61d9-0fab-4615-bea5-7a446ee3c2ed
