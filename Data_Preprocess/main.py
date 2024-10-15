@@ -5,7 +5,8 @@ import re
 import all_players_processor
 import mapping_data_processor
 import pandas as pd
-from Feature_Modules import Game_Damage, Game_KDA
+from Feature_Modules import Game_Damage, Game_KDA, Selected_Agent
+import pprint
 
 AGENT_GUID_TO_AGENT_AND_ROLE = {
   "320B2A48-4D9B-A075-30F1-1F93A9B638FA": {"agent_name": "Brimstone", "role": "Controller"},
@@ -65,12 +66,14 @@ def get_game_json_path(search_term, LEAGUE):
     return file_path
 
 
-def round_kda_for_each_game(LEAGUE, year, game_file_path, target_path, ):
+def round_kda_for_each_game(LEAGUE, year, game_file_path, target_path, agent_list):
     mapping_file_path = f"../DATA/{LEAGUE}/esports-data/mapping_data_v2.json"
     player_file_path = f"../DATA/{LEAGUE}/esports-data/players.json"
     team_file_path = f"../DATA/{LEAGUE}/esports-data/teams.json"
     league_file_path = f"../DATA/{LEAGUE}/esports-data/leagues.json"
     game_info_kda = Game_KDA.main(game_file_path, mapping_file_path, player_file_path, team_file_path, league_file_path)
+
+    
     LEAGUE_year = f"{LEAGUE}-{year}"
     info = {
         "games_win": 0,
@@ -93,11 +96,11 @@ def round_kda_for_each_game(LEAGUE, year, game_file_path, target_path, ):
     #读取每位选手的json数据，用于拓展
     with open(target_path, "r") as json_file:
         players_json_data = json.load(json_file)
-
     #108076829264740999
     for idx, player in enumerate(game_info_kda):
         if player['PlayerId'] not in players_json_data:
             players_json_data[player['PlayerId']] = {}
+        agent = agent_list[player['PlayerId']]
         players_json_data[player['PlayerId']]["name"] = f"{player['first_name']} {player['last_name']}"
         players_json_data[player['PlayerId']]["team_id"] = player['team_id']
         players_json_data[player['PlayerId']]["handle"] = player['handle']
@@ -106,32 +109,51 @@ def round_kda_for_each_game(LEAGUE, year, game_file_path, target_path, ):
         if LEAGUE_year not in players_json_data[player['PlayerId']]:
             players_json_data[player['PlayerId']][LEAGUE_year] = {}
         if player['Map'] not in players_json_data[player['PlayerId']][LEAGUE_year]:
-            players_json_data[player['PlayerId']][LEAGUE_year] = {player['Map']: copy.deepcopy(info)}
+            players_json_data[player['PlayerId']][LEAGUE_year] = {player['Map']: {agent:copy.deepcopy(info)}}
+        if agent not in players_json_data[player['PlayerId']][LEAGUE_year][player['Map']]:
+            players_json_data[player['PlayerId']][LEAGUE_year][player['Map']][agent] = copy.deepcopy(info)
         if player['Summary']['result'] == 'win':
-            players_json_data[player['PlayerId']][LEAGUE_year][player['Map']]["games_win"] += 1
-        players_json_data[player['PlayerId']][LEAGUE_year][player['Map']]["games_count"] += 1
+            players_json_data[player['PlayerId']][LEAGUE_year][player['Map']][agent]["games_win"] += 1
+        players_json_data[player['PlayerId']][LEAGUE_year][player['Map']][agent]["games_count"] += 1
 
         for round_info in player['RoundInfo']:
             if round_info['role'] == 'attacking':
-                a = players_json_data[player['PlayerId']][LEAGUE_year][player['Map']]["attacking"]
+                a = players_json_data[player['PlayerId']][LEAGUE_year][player['Map']][agent]["attacking"]
                 for kda in list(a.keys())[:3]:
                     a[kda] += round_info[kda]
                 a["rounds_taken"] += 1
                 if round_info['result'] == 'win':
                     a["rounds_win"] += 1
+
+                if 'cause' not in a:
+                    a['cause'] = {}
+                    a['cause'][round_info['cause']] = 1
+                else:
+                    if round_info['cause'] not in a['cause']:
+                        a['cause'][round_info['cause']] = 1
+                    else:
+                        a['cause'][round_info['cause']] += 1
             else:
-                d = players_json_data[player['PlayerId']][LEAGUE_year][player['Map']]["defending"]
+                d = players_json_data[player['PlayerId']][LEAGUE_year][player['Map']][agent]["defending"]
                 for kda in list(d.keys())[:3]:
                     d[kda] += round_info[kda]
                 d["rounds_taken"] += 1
                 if round_info['result'] == 'win':
                     d["rounds_win"] += 1
+                if 'cause' not in d:
+                    d['cause'] = {}
+                    d['cause'][round_info['cause']] = 1
+                else:
+                    if round_info['cause'] not in d['cause']:
+                        d['cause'][round_info['cause']] = 1
+                    else:
+                        d['cause'][round_info['cause']] += 1
 
     with open(target_path, "w") as output_file:
         json.dump(players_json_data, output_file, indent=4)
     return player['Map']
 
-def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, players_map, selected_map):
+def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, players_map, selected_map, agent_list):
 
     game_damage_event_df =Game_Damage.main(game_file_path)
     #df.columns
@@ -148,7 +170,7 @@ def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, playe
     for p_id  in game_damage_event_df['PlayerID']:
         id_string = f"{p_id}"
         playerID = players_map[id_string]
-        game_dict = players_json_data[playerID][LEAGUE_year][selected_map]
+        game_dict = players_json_data[playerID][LEAGUE_year][selected_map][agent_list[playerID]]
         for col in game_damage_event_df.columns[1:]:
             #这里对于数据进行平均计算
             if 'SummaryPerGame' not in game_dict:
@@ -167,9 +189,9 @@ def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, playe
     #print(unique_locations) #{'LEG', 'BODY', 'GENERAL', 'HEAD'}
     flags = [0 for _ in players_map]
     for idx, id in enumerate(players_map.values()):
-        if "damageCausedPerGame" not in players_json_data[id][LEAGUE_year][selected_map] or "damageReceivedPerGame" not in players_json_data[id][LEAGUE_year][selected_map]:
-            players_json_data[id][LEAGUE_year][selected_map]["damageCausedPerGame"] = {}
-            players_json_data[id][LEAGUE_year][selected_map]["damageReceivedPerGame"] = {}
+        if "damageCausedPerGame" not in players_json_data[id][LEAGUE_year][selected_map][agent_list[id]] or "damageReceivedPerGame" not in players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]:
+            players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"] = {}
+            players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"] = {}
             flags[idx] = 1 #表明对应的选手是第一次进行这样的计算，因此不需要取平均值
     if not all(isinstance(item, list) and len(item) == 0 for item in damage_records):
         for damage_record in damage_records:
@@ -184,37 +206,37 @@ def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, playe
                 if c_playerID in players_json_data:
                     location_count = location + "_count"
                     location_amount = location + "_amount"
-                    if location_count not in players_json_data[c_playerID][LEAGUE_year][selected_map]["damageCausedPerGame"]:
-                        players_json_data[c_playerID][LEAGUE_year][selected_map]["damageCausedPerGame"][location_count] = 0
-                    if location_amount not in players_json_data[c_playerID][LEAGUE_year][selected_map]["damageCausedPerGame"]:
-                        players_json_data[c_playerID][LEAGUE_year][selected_map]["damageCausedPerGame"][location_amount] = 0
+                    if location_count not in players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"]:
+                        players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"][location_count] = 0
+                    if location_amount not in players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"]:
+                        players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"][location_amount] = 0
 
-                    if location_count not in players_json_data[v_playerID][LEAGUE_year][selected_map]["damageReceivedPerGame"]:
-                        players_json_data[v_playerID][LEAGUE_year][selected_map]["damageReceivedPerGame"][location_count] = 0
-                    if location_amount not in players_json_data[v_playerID][LEAGUE_year][selected_map]["damageReceivedPerGame"]:
-                        players_json_data[v_playerID][LEAGUE_year][selected_map]["damageReceivedPerGame"][location_amount] = 0
+                    if location_count not in players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"]:
+                        players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"][location_count] = 0
+                    if location_amount not in players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"]:
+                        players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"][location_amount] = 0
 
-                    players_json_data[c_playerID][LEAGUE_year][selected_map]["damageCausedPerGame"][location_count] += 1
-                    players_json_data[c_playerID][LEAGUE_year][selected_map]["damageCausedPerGame"][location_amount] += round(damage_record['damageAmount'], 2)
-                    players_json_data[v_playerID][LEAGUE_year][selected_map]["damageReceivedPerGame"][location_count] += 1
-                    players_json_data[v_playerID][LEAGUE_year][selected_map]["damageReceivedPerGame"][location_amount] += round(damage_record['damageAmount'], 2)
+                    players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"][location_count] += 1
+                    players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"][location_amount] += round(damage_record['damageAmount'], 2)
+                    players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"][location_count] += 1
+                    players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"][location_amount] += round(damage_record['damageAmount'], 2)
             except Exception as e:
                 continue
 
         #同样的，对于每场比赛造成/接受的伤害进行平均计算
         for idx, id in enumerate(players_map.values()):
             if flags[idx] == 0: #表明这个选手不是第一次进行这样的统计
-                players_json_data[id][LEAGUE_year][selected_map]["damageCausedPerGame"][location_count] = round(
-                    players_json_data[id][LEAGUE_year][selected_map]["damageCausedPerGame"][location_count] / 2, 2)
+                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"][location_count] = round(
+                    players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"][location_count] / 2, 2)
                 
-                players_json_data[id][LEAGUE_year][selected_map]["damageCausedPerGame"][location_amount] = round(
-                    players_json_data[id][LEAGUE_year][selected_map]["damageCausedPerGame"][location_amount] / 2, 2)
+                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"][location_amount] = round(
+                    players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"][location_amount] / 2, 2)
                 
-                players_json_data[id][LEAGUE_year][selected_map]["damageReceivedPerGame"][location_count] = round(
-                    players_json_data[id][LEAGUE_year][selected_map]["damageReceivedPerGame"][location_count] / 2, 2)
+                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"][location_count] = round(
+                    players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"][location_count] / 2, 2)
                 
-                players_json_data[id][LEAGUE_year][selected_map]["damageReceivedPerGame"][location_amount] = round(
-                    players_json_data[id][LEAGUE_year][selected_map]["damageReceivedPerGame"][location_amount] / 2, 2)
+                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"][location_amount] = round(
+                    players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"][location_amount] / 2, 2)
 
     with open(target_path, "w") as output_file:
         json.dump(players_json_data, output_file, indent=4)
@@ -226,7 +248,7 @@ def main():
 
     #这是按照不同的LEAGUE来提取对应数据，用于拓展all_players_begin_with_ID.json的信息
 
-    LEAGUE = "game-changers" # "vct-challengers", "vct-international"
+    LEAGUE = "vct-international" # "vct-challengers", "vct-international"
     saved_path = "../DATA/all_players.json"
     
     #不是按照年份来提取，但是是根据mapping_data中保存的比赛来
@@ -235,7 +257,7 @@ def main():
 
     keys = list(participantMapping_data.keys())
     unique_state = set()
-    for val_key in keys[:100]:
+    for val_key in keys[13:100]:
         #这里举个例子
         #下面这个是没有game decided
         #val_key = "val:27d62958-08be-448b-9e93-0dee481d1909"
@@ -264,14 +286,19 @@ def main():
             #读取对应场次的比赛的json记录
             with open(game_file_path, "r") as json_file:
                 game_json_data = json.load(json_file)
+
+            mapping_file_path = f"../DATA/{LEAGUE}/esports-data/mapping_data_v2.json"
+            with open(mapping_file_path, 'r') as file:   
+                mapping_data = json.load(file)
             gameDecidedEvent = find_values(game_json_data, "gameDecided")
 
             #当gameDecidedEvent不是空列表， 或者不是只包含空列表，或者存在有胜利队伍的时候才进行分析
             if not all(isinstance(item, list) and len(item) == 0 for item in gameDecidedEvent) or gameDecidedEvent[0]['state'] == 'WINNER_DECIDED':
                 players_map = participantMapping_data[val_key]#{playerID in game: 实际的PlayerID}
                 teams_map = teamMapping_data[val_key]#{teamID in game: 实际的TeamID}
-                selected_map = round_kda_for_each_game(LEAGUE, year, game_file_path, saved_path)
-                damage_performance_analysis(game_file_path, saved_path, LEAGUE, year, players_map, selected_map)
+                selected_agent_per_game = Selected_Agent.extract_player_information(LEAGUE, year, game_json_data, mapping_data)
+                selected_map = round_kda_for_each_game(LEAGUE, year, game_file_path, saved_path, selected_agent_per_game)
+                damage_performance_analysis(game_file_path, saved_path, LEAGUE, year, players_map, selected_map, selected_agent_per_game)
                 #df_dict = {col: 0 for col in damage_event_df.columns[1:]}
 
     #print(unique_state)#{DRAW, WINNER_DECIDED}

@@ -185,10 +185,14 @@ def merge_player_data(game_data, mapping_data, player_data, game_summary):
         player_info = find_player_by_id_and_team(
             player_data, player_kda["PlayerId"], player_kda["team_id"]
         )
-
-        player_kda["handle"] = player_info["handle"]
-        player_kda["first_name"] = player_info["first_name"]
-        player_kda["last_name"] = player_info["last_name"]
+        if player_info is not None:
+            player_kda["handle"] = player_info["handle"]
+            player_kda["first_name"] = player_info["first_name"]
+            player_kda["last_name"] = player_info["last_name"]
+        else:
+            player_kda["handle"] = ""
+            player_kda["first_name"] = ""
+            player_kda["last_name"] = ""
     return kda_per_player_list
 
 

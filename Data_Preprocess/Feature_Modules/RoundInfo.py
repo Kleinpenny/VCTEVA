@@ -4,19 +4,25 @@ def generate_round_summary(game_kda):
 
     # Extract roundStarted and roundEnded events
     for item in game_kda:
-        if 'roundStarted' in item:
-            round_started.append({'roundNumber': item['roundStarted']['roundNumber'], 'startTime': item['metadata']['wallTime']})
-        elif 'roundEnded' in item:
-            round_ended.append({'roundNumber': item['roundEnded']['roundNumber'], 'endTime': item['metadata']['wallTime']})
+        try:
+            if 'roundStarted' in item:
+                round_started.append({'roundNumber': item['roundStarted']['roundNumber'], 'startTime': item['metadata']['wallTime']})
+            elif 'roundEnded' in item:
+                round_ended.append({'roundNumber': item['roundEnded']['roundNumber'], 'endTime': item['metadata']['wallTime']})
+        except Exception as e:
+            continue
 
     # Match roundStarted and roundEnded events
     rounds = []
     for i in range(len(round_ended)):
-        rounds.append({
-            'roundNumber': round_started[i]['roundNumber'],
-            'startTime': round_started[i]['startTime'],
-            'endTime': round_ended[i]['endTime']
-        })
+        try:
+            rounds.append({
+                'roundNumber': round_started[i]['roundNumber'],
+                'startTime': round_started[i]['startTime'],
+                'endTime': round_ended[i]['endTime']
+            })
+        except Exception as e:
+            continue
 
     # Handle the case where there is an extra roundStarted without a matching roundEnded
     if len(round_started) > len(round_ended):
@@ -64,10 +70,14 @@ def generate_round_details(game_kda):
     # Set winning team for the last round if necessary
     if len(rounds_summary) > len(completed_rounds):
         last_round = detailed_rounds[-1]
+        if 'winningTeam' not in spike_mode:
+            win_team = spike_mode['attackingTeam']['value']
+        else:
+            win_team = spike_mode['winningTeam']['value']
         last_round.update({
             'attackingTeam': spike_mode['attackingTeam']['value'],
             'defendingTeam': spike_mode['defendingTeam']['value'],
-            'winningTeam': spike_mode['winningTeam']['value'],
+            'winningTeam': win_team,
             # 'cause': 'Game End'
         })
 
