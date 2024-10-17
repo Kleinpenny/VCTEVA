@@ -1,18 +1,6 @@
-from typing import List, Tuple, Dict, Any
-from abc import ABC, abstractmethod
-import gradio as gr
-from huggingface_hub import InferenceClient
-
-
-class RAGInterface(ABC):
-    @abstractmethod
-    def retrieve(self, query: str) -> str:
-        pass
-
-
-class LLMClient:
-    def __init__(self, model_name: str, token: str):
-        self.client = InferenceClient(model_name, token=token)
+from typing import List, Tuple
+from .base_llm_client import BaseLLMClient
+from .rag_interface import RAGInterface
 
 
 class ChatBot:
@@ -33,7 +21,7 @@ class ChatBot:
             input message before generating the response.
     """
 
-    def __init__(self, llm_client: LLMClient, rag: RAGInterface = None):
+    def __init__(self, llm_client: BaseLLMClient, rag: RAGInterface = None):
         self.llm_client = llm_client
         self.rag = rag
 
@@ -120,8 +108,8 @@ class ChatBot:
 
         "What recent performances or statistics justify the inclusion of *player name* in the team?
 
+        '''
 
-'''
         messages.append({"role": "user", "content": code_msg})
         for user_msg, assistant_msg in history:
             if user_msg:
@@ -137,40 +125,22 @@ class ChatBot:
         messages.append({"role": "user", "content": message})
 
         response = ""
-        for mes in self.llm_client.client.chat_completion(
+
+        completion = self.llm_client.chat_completion(
             messages,
             max_tokens=2048,
             stream=True,
             temperature=0.7,
             top_p=0.95,
-        ):
-            token = mes.choices[0].delta.content
-            response += token
+        )
+
+        if isinstance(completion, str):
+            response = completion
             yield response
+        else:
+            for mes in completion:
+                token = mes.choices[0].delta.content
+                response += token
+                yield response
+
         print(response)
-
-class GradioInterface:
-    def __init__(self, chatbot: ChatBot):
-        self.chatbot = chatbot
-        self.demo = gr.ChatInterface(
-            self.chatbot.respond
-        ).queue()
-
-    def launch(self):
-        self.demo.launch(share=True)
-
-
-def main():
-    llm_client = LLMClient(
-        "meta-llama/Meta-Llama-3-8B-Instruct", token="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")
-
-    chatbot = ChatBot(llm_client)
-    # extends the chatbot to use RAG
-    # chatbot = ChatBot(llm_client, rag=RAGInterface())
-
-    interface = GradioInterface(chatbot)
-    interface.launch()
-
-
-if __name__ == "__main__":
-    main()
