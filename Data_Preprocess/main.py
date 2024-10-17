@@ -187,17 +187,27 @@ def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, playe
 
     damage_records = find_values(game_json_data, "damageEvent")
 
+    dmg_event = {
+        "GENERAL_count": 0,
+        "GENERAL_amount": 0,
+        "BODY_count": 0,
+        "BODY_amount": 0,
+        "HEAD_count": 0,
+        "HEAD_amount": 0,
+        "LEG_count": 0,
+        "LEG_amount": 0
+    }
+
     #得到部位的唯一值
     #unique_locations = set()
     #for item in damage_records:
     #   unique_locations.add(item['location'])
     #print(unique_locations) #{'LEG', 'BODY', 'GENERAL', 'HEAD'}
-    flags = [0 for _ in players_map]
     for idx, id in enumerate(players_map.values()):
-        if "damageCausedPerGame" not in players_json_data[id][LEAGUE_year][selected_map][agent_list[id]] or "damageReceivedPerGame" not in players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]:
-            players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"] = {}
-            players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"] = {}
-            flags[idx] = 1 #表明对应的选手是第一次进行这样的计算，因此不需要取平均值
+        if "damageCaused" not in players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]:
+            players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCaused"] = copy.deepcopy(dmg_event)
+            if "damageReceived" not in players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]:
+                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceived"] = copy.deepcopy(dmg_event)
     if not all(isinstance(item, list) and len(item) == 0 for item in damage_records):
         for damage_record in damage_records:
             try:
@@ -211,37 +221,13 @@ def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, playe
                 if c_playerID in players_json_data:
                     location_count = location + "_count"
                     location_amount = location + "_amount"
-                    if location_count not in players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"]:
-                        players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"][location_count] = 0
-                    if location_amount not in players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"]:
-                        players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"][location_amount] = 0
 
-                    if location_count not in players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"]:
-                        players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"][location_count] = 0
-                    if location_amount not in players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"]:
-                        players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"][location_amount] = 0
-
-                    players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"][location_count] += 1
-                    players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCausedPerGame"][location_amount] += round(damage_record['damageAmount'], 2)
-                    players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"][location_count] += 1
-                    players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceivedPerGame"][location_amount] += round(damage_record['damageAmount'], 2)
+                    players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCaused"][location_count] += 1
+                    players_json_data[c_playerID][LEAGUE_year][selected_map][agent_list[c_playerID]]["damageCaused"][location_amount] += round(damage_record['damageAmount'], 2)
+                    players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceived"][location_count] += 1
+                    players_json_data[v_playerID][LEAGUE_year][selected_map][agent_list[v_playerID]]["damageReceived"][location_amount] += round(damage_record['damageAmount'], 2)
             except Exception as e:
                 continue
-
-        #同样的，对于每场比赛造成/接受的伤害进行平均计算
-        for idx, id in enumerate(players_map.values()):
-            if flags[idx] == 0: #表明这个选手不是第一次进行这样的统计
-                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"][location_count] = round(
-                    players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"][location_count] / 2, 2)
-                
-                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"][location_amount] = round(
-                    players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageCausedPerGame"][location_amount] / 2, 2)
-                
-                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"][location_count] = round(
-                    players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"][location_count] / 2, 2)
-                
-                players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"][location_amount] = round(
-                    players_json_data[id][LEAGUE_year][selected_map][agent_list[id]]["damageReceivedPerGame"][location_amount] / 2, 2)
 
     with open(target_path, "w") as output_file:
         json.dump(players_json_data, output_file, indent=4)
@@ -272,7 +258,7 @@ def main():
             #val_key = "val:0d2d307e-530b-4043-bfd7-04025529e02d"
 
             ###当遇到bug中断时候用于恢复的
-            #pause_key = 'val:d0de0f95-bf4c-4973-8384-5404b6eff4cc'
+            #pause_key = 'val:9c356744-aeda-4630-ac52-c52cf592b8b9'
             #if val_key != pause_key and continue_sig == 1:
             #    print("已经统计过了")
             #    continue
