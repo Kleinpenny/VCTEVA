@@ -25,10 +25,41 @@ cd /VCTEVA/Data_Preprocess/
 python main.py
 ```
 
+### 4. 设置AWS Bedrock和LLM客户端
+
+1. 安装AWS CLI
+   根据[AWS CLI安装指南](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)安装AWS CLI。
+
+2. 创建IAM用户
+   在AWS控制台的IAM服务中创建一个新用户，并获取该用户的访问凭证（Access Key ID和Secret Access Key）。
+
+3. 配置AWS CLI
+   打开终端，运行以下命令：
+   ```
+   aws configure
+   ```
+   按照提示输入您的AWS凭证信息。
+
+4. 验证凭证
+   运行以下命令验证您的AWS凭证是否正确配置：
+   ```
+   aws sts get-caller-identity
+   ```
+   如果凭证有效，您将看到类似以下的输出：
+   ```json
+   {
+       "UserId": "AIDAI...",
+       "Account": "123456789012",
+       "Arn": "arn:aws:iam::123456789012:user/username"
+   }
+   ```
+   如果凭证无效，您将收到错误消息。
+
+完成以上步骤后，您就可以使用AWS Bedrock服务和选定的LLM客户端了。
+
 ### 4. Run the Chatbot
 
 ```
-cd /VCTEVA/Chatbot_UI/
 python app.py
 ```
 

@@ -17,22 +17,18 @@ class GradioInterface:
 
 def main():
     # 使用HuggingFace模型
-    hf_client = HuggingFaceLLMClient(
-        "meta-llama/Meta-Llama-3-8B-Instruct",
-        token="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"
-    )
-    hf_chatbot = ChatBot(hf_client)
+    # llm_client = HuggingFaceLLMClient(
+    #     "meta-llama/Meta-Llama-3-8B-Instruct",
+    #     token="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"
+    # )
 
     # 使用AWS Bedrock模型
-    # aws_client = AWSBedrockLLMClient(
-    #     model_id="amazon.titan-text-express-v1",
-    #     region_name="us-west-2"  # 请根据您的AWS配置更改区域
-    # )
-    # aws_chatbot = ChatBot(aws_client)
+    llm_client = AWSBedrockLLMClient(
+        model_id="amazon.titan-text-express-v1",
+        region_name="eu-central-1"  # 请根据您的AWS配置更改区域
+    )
 
-    # 选择要使用的chatbot
-    chatbot = hf_chatbot  # 或 aws_chatbot
-
+    chatbot = ChatBot(llm_client)
     interface = GradioInterface(chatbot)
     interface.launch()
 
