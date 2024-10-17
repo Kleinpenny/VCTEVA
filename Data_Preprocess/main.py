@@ -7,6 +7,7 @@ import mapping_data_processor
 import pandas as pd
 from Feature_Modules import Game_Damage, Game_KDA, Selected_Agent
 import pprint
+import shutil
 
 AGENT_GUID_TO_AGENT_AND_ROLE = {
   "320B2A48-4D9B-A075-30F1-1F93A9B638FA": {"agent_name": "Brimstone", "role": "Controller"},
@@ -73,7 +74,6 @@ def round_kda_for_each_game(LEAGUE, year, game_file_path, target_path, agent_lis
     league_file_path = f"../DATA/{LEAGUE}/esports-data/leagues.json"
     game_info_kda = Game_KDA.main(game_file_path, mapping_file_path, player_file_path, team_file_path, league_file_path)
 
-    
     LEAGUE_year = f"{LEAGUE}-{year}"
     info = {
         "games_win": 0,
@@ -96,12 +96,14 @@ def round_kda_for_each_game(LEAGUE, year, game_file_path, target_path, agent_lis
     #读取每位选手的json数据，用于拓展
     with open(target_path, "r") as json_file:
         players_json_data = json.load(json_file)
+
+    selected_map = ""
     #108076829264740999
     for idx, player in enumerate(game_info_kda):
+        selected_map = player['Map']
         if player['PlayerId'] not in players_json_data:
             players_json_data[player['PlayerId']] = {}
-        agent = agent_list[player['PlayerId']]
-        players_json_data[player['PlayerId']]["name"] = f"{player['first_name']} {player['last_name']}"
+        agent = agent_list[player['PlayerId']] #{playerId : agentId}
         players_json_data[player['PlayerId']]["team_id"] = player['team_id']
         players_json_data[player['PlayerId']]["handle"] = player['handle']
         players_json_data[player['PlayerId']]["region"] = player['league_region']
@@ -151,11 +153,14 @@ def round_kda_for_each_game(LEAGUE, year, game_file_path, target_path, agent_lis
 
     with open(target_path, "w") as output_file:
         json.dump(players_json_data, output_file, indent=4)
-    return player['Map']
+    return selected_map
 
 def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, players_map, selected_map, agent_list):
 
     game_damage_event_df =Game_Damage.main(game_file_path)
+    #如果damage_event_df是空的，那么就马上返回，跳过这个json文件
+    if game_damage_event_df.empty:
+        return 0
     #df.columns
 
     #读取对应场次的比赛的json记录
@@ -245,62 +250,79 @@ def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, playe
 def main():
     #数据提取的最开始，需要创建一个以playerID作为key的包含所有选手基本数据的json文件.
     all_players_processor.all_players()
+    #LEAGUE = "vct-international" # "vct-challengers", "vct-international"
+    saved_path = "../DATA/all_players.json"
 
     #这是按照不同的LEAGUE来提取对应数据，用于拓展all_players_begin_with_ID.json的信息
+    for LEAGUE in ["vct-international","vct-challengers", "vct-international"]:
+        #不是按照年份来提取，但是是根据mapping_data中保存的比赛来
+        participantMapping_data = mapping_data_processor.platformIDs_to_participantMapping(LEAGUE)
+        teamMapping_data = mapping_data_processor.platformIDs_to_teamMapping(LEAGUE)
 
-    LEAGUE = "vct-international" # "vct-challengers", "vct-international"
-    saved_path = "../DATA/all_players.json"
-    
-    #不是按照年份来提取，但是是根据mapping_data中保存的比赛来
-    participantMapping_data = mapping_data_processor.platformIDs_to_participantMapping(LEAGUE)
-    teamMapping_data = mapping_data_processor.platformIDs_to_teamMapping(LEAGUE)
+        keys = list(participantMapping_data.keys())
+        unique_state = set()
+        continue_sig = 1
+        for val_key in keys:
+            #这里举个例子
+            #下面这个是没有game decided
+            #val_key = "val:27d62958-08be-448b-9e93-0dee481d1909"
+            #下面这个是平局
+            #val_key = "val:d7bc6669-96e0-4800-a8ed-87a7de369f53"
+            #下面这个是正常的winner_decided
+            #val_key = "val:0d2d307e-530b-4043-bfd7-04025529e02d"
 
-    keys = list(participantMapping_data.keys())
-    unique_state = set()
-    for val_key in keys[13:100]:
-        #这里举个例子
-        #下面这个是没有game decided
-        #val_key = "val:27d62958-08be-448b-9e93-0dee481d1909"
-        #下面这个是平局
-        #val_key = "val:d7bc6669-96e0-4800-a8ed-87a7de369f53"
-        #下面这个是正常的winner_decided
-        #val_key = "val:0d2d307e-530b-4043-bfd7-04025529e02d"
+            ###当遇到bug中断时候用于恢复的
+            #pause_key = 'val:d0de0f95-bf4c-4973-8384-5404b6eff4cc'
+            #if val_key != pause_key and continue_sig == 1:
+            #    print("已经统计过了")
+            #    continue
+            #elif val_key == pause_key:
+            #    continue_sig = 0
 
-        #找不到比赛就跳过，直到匹配上比赛的数据
-        game_file_path = get_game_json_path(val_key, LEAGUE)
-        if game_file_path == "":
-            print(f"{val_key}比赛没有记录")
-            continue
-        else:
-            year = 0
-            match = re.search(r'/(\d{4})/', game_file_path)
-            if match:
-                year = match.group(1) #找到了文件的话，一般就都会有年份。
+            #找不到比赛就跳过，直到匹配上比赛的数据
+            game_file_path = get_game_json_path(val_key, LEAGUE)
+            if game_file_path == "":
+                print(f"{val_key}比赛没有记录")
+                continue
             else:
-                print("找不到该比赛对应的年份")
-                break
-            #########################################################
-            # 只考虑有获胜队伍的比赛，因为平局的比赛有的数据有点奇怪，不利于数据分析
-            #########################################################
+                year = 0
+                match = re.search(r'/(\d{4})/', game_file_path)
+                if match:
+                    year = match.group(1) #找到了文件的话，一般就都会有年份。
+                else:
+                    print("找不到该比赛对应的年份")
+                    break
+                #########################################################
+                # 只考虑有获胜队伍的比赛，因为平局的比赛有的数据有点奇怪，不利于数据分析
+                #########################################################
 
-            #读取对应场次的比赛的json记录
-            with open(game_file_path, "r") as json_file:
-                game_json_data = json.load(json_file)
+                #读取对应场次的比赛的json记录
+                with open(game_file_path, "r") as json_file:
+                    game_json_data = json.load(json_file)
 
-            mapping_file_path = f"../DATA/{LEAGUE}/esports-data/mapping_data_v2.json"
-            with open(mapping_file_path, 'r') as file:   
-                mapping_data = json.load(file)
-            gameDecidedEvent = find_values(game_json_data, "gameDecided")
+                mapping_file_path = f"../DATA/{LEAGUE}/esports-data/mapping_data_v2.json"
+                with open(mapping_file_path, 'r') as file:   
+                    mapping_data = json.load(file)
+                gameDecidedEvent = find_values(game_json_data, "gameDecided")
+                damageEvent = find_values(game_json_data, "damageEvent")
 
-            #当gameDecidedEvent不是空列表， 或者不是只包含空列表，或者存在有胜利队伍的时候才进行分析
-            if not all(isinstance(item, list) and len(item) == 0 for item in gameDecidedEvent) or gameDecidedEvent[0]['state'] == 'WINNER_DECIDED':
-                players_map = participantMapping_data[val_key]#{playerID in game: 实际的PlayerID}
-                teams_map = teamMapping_data[val_key]#{teamID in game: 实际的TeamID}
-                selected_agent_per_game = Selected_Agent.extract_player_information(LEAGUE, year, game_json_data, mapping_data)
-                selected_map = round_kda_for_each_game(LEAGUE, year, game_file_path, saved_path, selected_agent_per_game)
-                damage_performance_analysis(game_file_path, saved_path, LEAGUE, year, players_map, selected_map, selected_agent_per_game)
-                #df_dict = {col: 0 for col in damage_event_df.columns[1:]}
+                #当gameDecidedEvent不是空列表， 或者不是只包含空列表，并且存在有胜利队伍的时候才进行分析
+                if not all(isinstance(item, list) and len(item) == 0 for item in gameDecidedEvent) and not all(isinstance(item, list) and len(item) == 0 for item in damageEvent):
+                    if gameDecidedEvent[0]['state'] == 'WINNER_DECIDED':
+                        players_map = participantMapping_data[val_key]#{playerID in game: 实际的PlayerID}
+                        teams_map = teamMapping_data[val_key]#{teamID in game: 实际的TeamID}
+                        selected_agent_per_game = Selected_Agent.extract_player_information(LEAGUE, year, game_json_data, mapping_data)
+                        selected_map = round_kda_for_each_game(LEAGUE, year, game_file_path, saved_path, selected_agent_per_game)
+                        damage_performance_analysis(game_file_path, saved_path, LEAGUE, year, players_map, selected_map, selected_agent_per_game)
+                    #df_dict = {col: 0 for col in damage_event_df.columns[1:]}
 
+    # 目标文件夹路径
+    destination_path = f'../DATA/{LEAGUE}/'
+
+    # 执行复制操作，将文件复制到目标路径
+    shutil.copy(saved_path, destination_path)
+
+    print(f"{LEAGUE} File copied to {destination_path}")
     #print(unique_state)#{DRAW, WINNER_DECIDED}
 main()
 #all_players_processor.all_players()

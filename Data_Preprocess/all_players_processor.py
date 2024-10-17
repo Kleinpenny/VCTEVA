@@ -9,7 +9,10 @@ def all_players():
             player_id = player['id']
             
             handle = player['handle']
-            name = f"{player['first_name']} {player['last_name']}"
+            if player['first_name'] != "" or player['last_name'] != "":
+                name = f"{player['first_name']} {player['last_name']}"
+            else:
+                name = ""
             
             if player_id not in players:
                 players[player_id] = {
@@ -26,12 +29,8 @@ def all_players():
                         players[player_id]['handle'] = [players[player_id]['handle'], handle]
                 
                 # 处理name
-                if players[player_id]['name'] != name:
-                    if isinstance(players[player_id]['name'], list):
-                        if name not in players[player_id]['name']:
-                            players[player_id]['name'].append(name)
-                    else:
-                        players[player_id]['name'] = [players[player_id]['name'], name]
+                if players[player_id]['name'] != name and name != "":
+                    players[player_id]['name'] = name
 
         return players
 

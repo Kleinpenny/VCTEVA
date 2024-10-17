@@ -34,6 +34,10 @@ class TeamInfoExtractor:
 
 class DamageEventExtractor:
     def extract(self, file_json):
+        # 检查 'damageEvent' 是否存在于 JSON 文件中
+        if 'damageEvent' not in file_json:
+            print("Warning: 'damageEvent' key not found in JSON file. Returning empty DataFrame.")
+            return pd.DataFrame()  # 返回一个空的 DataFrame 以避免后续错误
         df_damage_cleaned = self.clean_damage_data(file_json['damageEvent'])
         TOTAL_ROUND_NUM = self.get_total_round_num(file_json)
 

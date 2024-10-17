@@ -203,6 +203,11 @@ def merge_team_league_data(
         data, mapping_data, player_data, game_summary
     )
 
+    # 确保 kda_per_player_list 中有 'team_id' 列
+    for player_kda in kda_per_player_list:
+        if 'team_id' not in player_kda:
+            player_kda['team_id'] = ""  # 或者其他合适的默认值
+
     # Create a dictionary to map league_id to league details
     league_dict = {league["league_id"]: league for league in leagues}
 
@@ -230,8 +235,14 @@ def merge_team_league_data(
         subset="team_id", keep="first"
     )
 
+    matched_data_df = matched_data_df[matched_data_df['team_id'] != ""]
+
     # Merge team and league data with KDA data
     kda_df = pd.DataFrame(kda_per_player_list)
+    # 确保 kda_df 包含 'team_id' 列
+    if 'team_id' not in kda_df.columns:
+        kda_df['team_id'] = ""  # 如果没有 team_id 列，添加空字符串作为默认值
+    kda_df = kda_df[kda_df['team_id'] != ""]
     final_df = kda_df.merge(
         matched_data_df, left_on="team_id", right_on="team_id", how="left"
     )

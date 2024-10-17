@@ -2,7 +2,7 @@ import mysql.connector
 
 # 数据库连接配置
 config = {
-    'host': 'database-1.cd0mg86iukxn.us-east-1.rds.amazonaws.com',
+    'host': 'database-1.c3muuumcmadk.eu-central-1.rds.amazonaws.com',
     'port': 3306,
     'user': 'admin',        # 替换为您的用户名
     'password': 'vcteva_2024',    # 替换为您的密码
