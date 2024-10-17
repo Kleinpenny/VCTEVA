@@ -7,7 +7,7 @@ from mysql.connector import Error
 try:
     connection = mysql.connector.connect(
         host="localhost",
-        user="root",
+        user="vct",
         password="Leon1234",
         database="VCTEVA",  # 更改为你所使用的数据库
     )
@@ -18,7 +18,7 @@ try:
     cursor = connection.cursor()
 
     # 读取 JSON 文件
-    with open("/Users/leon/Downloads/mysql/all_players.json", "r") as file:
+    with open("../../DATA/all_players.json", "r") as file:
         data = json.load(file)
 
     # 1. 导入 Players 表的数据
