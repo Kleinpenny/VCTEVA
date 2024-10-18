@@ -162,13 +162,13 @@ LOCK TABLES `Players` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `SummaryPerGame`
+-- Table structure for table `Summary`
 --
 
-DROP TABLE IF EXISTS `SummaryPerGame`;
+DROP TABLE IF EXISTS `Summary`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `SummaryPerGame` (
+CREATE TABLE `Summary` (
   `summary_id` int NOT NULL AUTO_INCREMENT,
   `agent_id` int DEFAULT NULL,
   `combat_score` float DEFAULT NULL,
@@ -186,17 +186,17 @@ CREATE TABLE `SummaryPerGame` (
   `headshot_hit_rate` float DEFAULT NULL,
   PRIMARY KEY (`summary_id`),
   KEY `agent_id` (`agent_id`),
-  CONSTRAINT `summarypergame_ibfk_1` FOREIGN KEY (`agent_id`) REFERENCES `Agents` (`agent_id`)
+  CONSTRAINT `summary_ibfk_1` FOREIGN KEY (`agent_id`) REFERENCES `Agents` (`agent_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=246 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `SummaryPerGame`
+-- Dumping data for table `Summary`
 --
 
-LOCK TABLES `SummaryPerGame` WRITE;
-/*!40000 ALTER TABLE `SummaryPerGame` DISABLE KEYS */;
-/*!40000 ALTER TABLE `SummaryPerGame` ENABLE KEYS */;
+LOCK TABLES `Summary` WRITE;
+/*!40000 ALTER TABLE `Summary` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Summary` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
