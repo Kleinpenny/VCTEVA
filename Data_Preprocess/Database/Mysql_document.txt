@@ -25,9 +25,9 @@ JOIN Maps ON Agents.map_id = Maps.map_id
 JOIN Tournaments ON Maps.tournament_id = Tournaments.tournament_id
 WHERE Tournaments.player_id = '106230271915475632';
 
--- 查询选手的 SummaryPerGame 信息
-SELECT SummaryPerGame.* FROM SummaryPerGame
-JOIN Agents ON SummaryPerGame.agent_id = Agents.agent_id
+-- 查询选手的 Summary 信息
+SELECT Summary.* FROM Summary
+JOIN Agents ON Summary.agent_id = Agents.agent_id
 JOIN Maps ON Agents.map_id = Maps.map_id
 JOIN Tournaments ON Maps.tournament_id = Tournaments.tournament_id
 WHERE Tournaments.player_id = '106230271915475632';
@@ -43,7 +43,7 @@ WHERE Tournaments.player_id = '106230271915475632';
 SET FOREIGN_KEY_CHECKS = 0;
 Use VCTEVA;
 DELETE FROM PerformanceDetails;
-DELETE FROM SummaryPerGame;
+DELETE FROM Summary;
 DELETE FROM Agents;
 DELETE FROM Maps;
 DELETE FROM Tournaments;
