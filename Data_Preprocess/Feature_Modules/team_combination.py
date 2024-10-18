@@ -278,7 +278,7 @@ def generate_df_with_summaries(data):
 
 if __name__ == '__main__':
     # Define the directory containing the files
-    directory = Path(f"/Users/yi/Projects/Python/VCTEVA/DATA/{LEAGUE}/games/{YEAR}")
+    directory = Path(f"../../DATA/{LEAGUE}/games/{YEAR}")
 
     game_summaries = []
     count = 1
@@ -298,7 +298,7 @@ if __name__ == '__main__':
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
             continue
-        mapping_file_path = f"/Users/yi/Projects/Python/VCTEVA/DATA/{LEAGUE}/esports-data/mapping_data_v2.json"
+        mapping_file_path = f"../../DATA/{LEAGUE}/esports-data/mapping_data_v2.json"
 
         with open(mapping_file_path, 'r') as mf:
             mapping_data = json.load(mf)
