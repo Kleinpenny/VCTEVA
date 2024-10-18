@@ -175,15 +175,21 @@ def damage_performance_analysis(game_file_path, target_path, LEAGUE, year, playe
     for p_id  in game_damage_event_df['PlayerID']:
         id_string = f"{p_id}"
         playerID = players_map[id_string]
+        info = {
+        "games_win": 0,
+        "games_count": 1
+        }
+        if selected_map not in players_json_data[playerID][LEAGUE_year]:
+            players_json_data[playerID][LEAGUE_year] = {selected_map: {agent_list[playerID]: copy.deepcopy(info)}}
         game_dict = players_json_data[playerID][LEAGUE_year][selected_map][agent_list[playerID]]
         for col in game_damage_event_df.columns[1:]:
             #这里对于数据进行平均计算
-            if 'SummaryPerGame' not in game_dict:
-                game_dict['SummaryPerGame'] = {}
-            if col not in game_dict['SummaryPerGame']:
-                game_dict['SummaryPerGame'][col] = float(game_damage_event_df[col][p_id - 1])
+            if 'Summary' not in game_dict:
+                game_dict['Summary'] = {}
+            if col not in game_dict['Summary']:
+                game_dict['Summary'][col] = float(game_damage_event_df[col][p_id - 1])
             else:
-                game_dict['SummaryPerGame'][col] = (game_dict['SummaryPerGame'][col] + float(game_damage_event_df[col][p_id - 1])) / 2
+                game_dict['Summary'][col] = (game_dict['Summary'][col] + float(game_damage_event_df[col][p_id - 1]))
 
     damage_records = find_values(game_json_data, "damageEvent")
 
@@ -257,8 +263,8 @@ def main():
             #下面这个是正常的winner_decided
             #val_key = "val:0d2d307e-530b-4043-bfd7-04025529e02d"
 
-            ###当遇到bug中断时候用于恢复的
-            #pause_key = 'val:9c356744-aeda-4630-ac52-c52cf592b8b9'
+            ###当遇到bug中断时候用于恢复的,使用的时候需要注释掉 !!!!!!! all_players_processor.all_players() !!!!
+            #pause_key = 'val:a9e5e22e-bff8-4a11-b25b-4301536c97da'
             #if val_key != pause_key and continue_sig == 1:
             #    print("已经统计过了")
             #    continue

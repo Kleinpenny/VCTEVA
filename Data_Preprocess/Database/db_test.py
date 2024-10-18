@@ -221,7 +221,7 @@ try:
         )
         connection.commit()
 
-    # 6. 导入 SummaryPerGame 表的数据
+    # 6. 导入 Summary 表的数据
     summary_list = []
     for player_id, player_info in data.items():
         if isinstance(player_info, dict):
@@ -239,7 +239,7 @@ try:
                         map_id = cursor.fetchone()
                         if cursor.with_rows:
                             cursor.fetchall()  # 清除未读结果
-                        # print(f"Map ID for summary per game: {map_id}")
+                        # print(f"Map ID for summary: {map_id}")
                         if map_id and isinstance(map_data, dict):
                             for agent_key, agent_data in map_data.items():
                                 cursor.execute(
@@ -252,82 +252,82 @@ try:
                                 if cursor.with_rows:
                                     cursor.fetchall()  # 清除未读结果
                                 # print(f"Agent ID for summary per game: {agent_id}")
-                                if agent_id and "SummaryPerGame" in agent_data:
+                                if agent_id and "Summary" in agent_data:
                                     summary_list.append(
                                         (
                                             agent_id[0],
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "CombatScore", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "AverageCombatScore", 0
                                                 )
                                             ),
                                             int(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "Kills", 0
                                                 )
                                             ),
                                             int(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "Deaths", 0
                                                 )
                                             ),
                                             int(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "Assists", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "KPR", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "DPR", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "totalDamageTaken", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "totalDamageCaused", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "AverageDamagePerRound", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "AverageDamageTakenPerRound", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "DDDelta", 0
                                                 )
                                             ),
                                             float(
-                                                agent_data["SummaryPerGame"].get(
+                                                agent_data["Summary"].get(
                                                     "headshotHitRate", 0
                                                 )
                                             ),
                                         )
                                     )
-    print(f"Inserting {len(summary_list)} records into SummaryPerGame table...")
+    print(f"Inserting {len(summary_list)} records into Summary table...")
     if summary_list:
         cursor.executemany(
             """
-            INSERT INTO SummaryPerGame (agent_id, combat_score, average_combat_score, kills, deaths, assists, kpr, dpr, total_damage_taken, total_damage_caused, average_damage_per_round, average_damage_taken_per_round, dddelta, headshot_hit_rate)
+            INSERT INTO Summary (agent_id, combat_score, average_combat_score, kills, deaths, assists, kpr, dpr, total_damage_taken, total_damage_caused, average_damage_per_round, average_damage_taken_per_round, dddelta, headshot_hit_rate)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             """,
             summary_list
