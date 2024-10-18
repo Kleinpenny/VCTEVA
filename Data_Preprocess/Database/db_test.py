@@ -14,7 +14,6 @@ try:
     if connection.is_connected():
         print("Connected to MySQL server")
 
-    # 使用新游标
     cursor = connection.cursor()
 
     # 读取 JSON 文件

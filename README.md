@@ -24,6 +24,7 @@ python download_dataset.py
 cd /VCTEVA/Data_Preprocess/
 python main.py
 ```
+#### Processed data stored in /DATA/all.players.json
 
 ### 4. 设置AWS Bedrock和LLM客户端
 
