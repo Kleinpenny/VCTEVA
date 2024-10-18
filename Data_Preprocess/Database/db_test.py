@@ -367,8 +367,8 @@ try:
                                 print(f"Agent ID for damage details: {agent_id}")
                                 if agent_id:
                                     for damage_type in [
-                                        "damageCausedPerGame",
-                                        "damageReceivedPerGame",
+                                        "damageCaused",
+                                        "damageReceived",
                                     ]:
                                         if damage_type in agent_data:
                                             damage_list.append(
