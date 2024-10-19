@@ -37,7 +37,6 @@ export default {
 .team-display {
   display: flex;
   flex-direction: column;
-  background-color: #2c2c2c;
   padding: 20px;
   border-radius: 10px;
 }
@@ -50,7 +49,7 @@ export default {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 </style>

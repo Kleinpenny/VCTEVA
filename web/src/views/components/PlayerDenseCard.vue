@@ -1,61 +1,67 @@
 <template>
-  <v-card class="player-card" elevation="3">
-    <v-row no-gutters align="center">
-
-      <!-- 右侧：玩家信息和统计数据 -->
-      <div></div>
-      <v-col cols="12">
-        <div class="player-info">
-          <v-card-title class="player-nickname text-h5">{{ player.nickName }}</v-card-title>
-          <v-card-subtitle class="player-subtitle">{{ player.realName }} - {{ player.team }} - {{ player.age }} years</v-card-subtitle>
-        </div>
+  <v-container>
+    <v-row>
+      <v-col cols="12" v-for="player in players" :key="player.id">
+        <v-card
+            class="mx-auto player-card"
+            dark
+            :style="{ background: 'linear-gradient(to right, #1a202c, #2d3748)' }"
+        >
+          <v-row no-gutters>
+            <v-col cols="4">
+              <v-img
+                  :src="player.imageUrl"
+                  :alt="player.name"
+                  height="120"
+                  cover
+              ></v-img>
+            </v-col>
+            <v-col cols="8">
+              <v-card-text>
+                <v-row align="center" class="fill-height">
+                  <v-col>
+                    <p class="text-h5 font-weight-bold yellow--text text-uppercase">
+                      {{ player.name }}
+                    </p>
+                    <p class="text-subtitle-1 grey--text text--lighten-1">
+                      {{ player.position }}
+                    </p>
+                  </v-col>
+                </v-row>
+              </v-card-text>
+            </v-col>
+          </v-row>
+          <div class="player-card-footer"></div>
+        </v-card>
       </v-col>
     </v-row>
-  </v-card>
+  </v-container>
 </template>
-<script>
 
+<script>
 export default {
-  props: {
-    player: {
-      type: Object,
-      required: true
+  name: 'PlayerList',
+  data() {
+    return {
+      players: [
+        { id: 1, name: 'NARUHITEL', position: 'Striker', imageUrl: '/path/to/naruhitel.jpg' },
+        { id: 2, name: 'VEXPERT', position: 'Midfielder', imageUrl: '/path/to/vexpert.jpg' },
+        // Add more players here
+      ],
     }
-  }
-};
+  },
+}
 </script>
 
 <style scoped>
-/* 卡片样式 */
 .player-card {
-  color: white;
-  background-image: linear-gradient(136deg, #1b1f23, #3a4755);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 10px;
+  transition: box-shadow 0.3s ease-in-out;
 }
-
-/* 头像样式 */
-.v-avatar {
-  border: 2px solid white;
+.player-card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
-
-/* 玩家信息样式 */
-.player-info {
-  padding-left: 20px;
-}
-
-/* 昵称样式 */
-.player-nickname {
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-/* 副标题样式 */
-.player-subtitle {
-  font-size: 14px;
-  color: #cccccc;
-  margin-bottom: 10px;
+.player-card-footer {
+  height: 4px;
+  background: linear-gradient(to right, #f6e05e, #ed8936, #ed64a6);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="player-selection">
+  <div >
     <div class="section-title">Select Players</div>
 
         <v-text-field

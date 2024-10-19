@@ -1,20 +1,19 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col cols="12" md = "12" lg="3" class="sidebar">
-        <!-- 中间：展示用户选出的队伍 -->
-        <TeamDisplay :team="selectedTeam" @deletePlayer="deletePlayerFromTeam"/>
-      </v-col>
-      <v-col cols="12" md = "12" lg = "5" class="chat-container">
-        <!-- 左侧：聊天界面 -->
-        <ChatBox :messages="messages" @sendMessage="handleSendMessage" />
-      </v-col>
-      <v-col cols="12" md = "12" lg ='3' class="sidebar">
-        <!-- 右侧：展示可选择的选手 -->
-        <PlayerSelection :availablePlayers="availablePlayers" @addPlayer="addPlayerToTeam" />
-      </v-col>
-    </v-row>
+  <v-container id="chatPage">
 
+      <div class="chat-section">
+        <ChatBox :messages="messages" @sendMessage="handleSendMessage" />
+      </div>
+      <div class="player-list">
+        <PlayerSelection :availablePlayers="availablePlayers" @addPlayer="addPlayerToTeam" />
+      </div>
+
+<!--  <v-row>-->
+<!--    <v-col cols="12" md = "12" lg="3" class="sidebar">-->
+<!--      &lt;!&ndash; 中间：展示用户选出的队伍 &ndash;&gt;-->
+<!--      <TeamDisplay :team="selectedTeam" @deletePlayer="deletePlayerFromTeam"/>-->
+<!--    </v-col>-->
+<!--  </v-row>-->
   </v-container>
 </template>
 
@@ -174,6 +173,9 @@ export default {
         this.selectedTeam.push(player);
       }
     },
+    messageClass(type) {
+      return type === 'user' ? 'user-message justify-end' : 'bot-message justify-start';
+    },
     deletePlayerFromTeam(player) {
       const index = this.selectedTeam.indexOf(player);
       if (index > -1) { // 如果找到了该元素
@@ -185,24 +187,51 @@ export default {
 </script>
 
 <style scoped>
-.sidebar {
-  background-color: #6e6d6d;
-  background: rgba(20, 20, 20, 0);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 10px;
-  height: calc(100vh - 20px); /* 确保边栏填满整个高度 */
-  overflow-y: auto;
+#chatPage {
+    color: #fff; /* 白色字体以便在深色背景上可见 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover; /* 确保背景图片覆盖整个视窗 */
+    background-color: white;
+    width: 100vw;
+
 }
 
-.chat-container {
-  backdrop-filter: blur(10px); /* 模糊效果 */
-  background: rgba(20, 20, 20, 0.6);
-  border-radius: 10px;
-  height: calc(100vh - 20px); /* 确保聊天区域填满整个高度 */
+.user-message .message-content {
+  background-color: #4a90e2; /* 用户消息气泡颜色 */
+  align-self: flex-end;
+  border-top-right-radius: 0; /* 定制圆角 */
+}
+
+.bot-message .message-content {
+  background-color: #333; /* AI消息气泡颜色 */
+  align-self: flex-start;
+  border-top-left-radius: 0; /* 定制圆角 */
+}
+/* 聊天区域样式 */
+.chat-section {
+  width: 60%; /* 调整聊天区的宽度 */
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 15px;
 }
+
+/* 玩家列表样式 */
+.player-list {
+  width: 35%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 
 </style>

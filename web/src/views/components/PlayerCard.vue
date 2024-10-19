@@ -44,15 +44,15 @@
               <v-col cols="4">
                 <StatBar title="KAST" :value="player.kast" :avg="70" description="OKAY" unit="%" />
               </v-col>
-<!--              <v-col cols="4">-->
-<!--                <StatBar title="Impact" :value="player.impact" :avg="1.0" description="POOR" />-->
-<!--              </v-col>-->
-<!--              <v-col cols="4">-->
-<!--                <StatBar title="ADR" :value="player.adr" :avg="80" description="POOR" />-->
-<!--              </v-col>-->
-<!--              <v-col cols="4">-->
-<!--                <StatBar title="KPR" :value="player.kpr" :avg="0.7" description="POOR" />-->
-<!--              </v-col>-->
+              <v-col cols="4">
+                <StatBar title="Impact" :value="player.impact" :avg="1.0" description="POOR" />
+              </v-col>
+              <v-col cols="4">
+                <StatBar title="ADR" :value="player.adr" :avg="80" description="POOR" />
+              </v-col>
+              <v-col cols="4">
+                <StatBar title="KPR" :value="player.kpr" :avg="0.7" description="POOR" />
+              </v-col>
             </v-row>
           </v-card-actions>
         </div>
@@ -81,6 +81,7 @@ export default {
 /* 卡片样式 */
 .player-card {
   color: white;
+  background-color: #2c2c2c;
   background-image: linear-gradient(136deg, #1b1f23, #3a4755);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;

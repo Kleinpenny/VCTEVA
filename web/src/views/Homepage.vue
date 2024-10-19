@@ -9,7 +9,7 @@
     </div>
     <div class="start-button">
       <!-- 使用 router-link 进行页面跳转 -->
-      <router-link to="/chat" class="start-now">Start Now</router-link>
+      <router-link to="/test" class="start-now">Start Now</router-link>
     </div>
   </div>
 </template>
@@ -31,15 +31,6 @@ export default {
   flex-direction: column;
 }
 
-.background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 设置透明度为50%的黑色遮罩 */
-  z-index: 1;
-}
 .title-section {
   position: relative; /* 使其位于遮罩层之上 */
   text-align: center;

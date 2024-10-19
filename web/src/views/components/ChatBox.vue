@@ -1,9 +1,10 @@
 <template>
-  <div class="chat-container">
+  <div>
     <v-card-title>Esport Chat</v-card-title>
     <div class="chat-history">
       <div v-for="(message, index) in messages" :key="index" :class="['message', messageClass(message.type)]">
-        <div class="message-content">{{ message.text }}</div>
+
+        <div class="message-content"> {{ message.text }}</div>
       </div>
     </div>
     <div class="chat-input">
@@ -38,7 +39,7 @@ export default {
       this.inputMessage = '';
     },
     messageClass(type) {
-      return type === 'user' ? 'justify-end' : 'justify-start';
+      return type === 'user' ? 'user-message justify-end' : 'bot-message justify-start';
     }
   }
 };
@@ -48,23 +49,29 @@ export default {
 .chat-container {
   display: flex;
   flex-direction: column;
-  background-color: #2c2c2c;
+  background: rgba(30, 30, 30, 0.85); /* 半透明深色背景 */
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+  max-width: 600px;
+  margin: 0 auto;
+  height: 70vh;
 }
 
 .chat-title {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .chat-history {
   flex-grow: 1;
   overflow-y: auto;
-  background-color: #333;
+  background-color: rgba(50, 50, 50, 0.8); /* 半透明背景 */
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .message {
@@ -72,32 +79,58 @@ export default {
   margin-bottom: 10px;
 }
 
+.user-message .message-content {
+  background-color: #4a90e2; /* 用户消息气泡颜色 */
+  align-self: flex-end;
+  border-top-right-radius: 0; /* 定制圆角 */
+}
+
+.bot-message .message-content {
+  background-color: #333; /* AI消息气泡颜色 */
+  align-self: flex-start;
+  border-top-left-radius: 0; /* 定制圆角 */
+}
+
 .message-content {
-  background-color: #555;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: white;
+  max-width: 75%;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease-in-out; /* 消息淡入动画 */
 }
 
 .chat-input {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .chat-input-box {
   flex-grow: 1;
   padding: 10px;
   border-radius: 5px;
-  background-color: #555;
+  background-color: rgba(80, 80, 80, 0.9);
   color: white;
+  border: none;
+  outline: none;
 }
 
 .send-button {
   background-color: #007bff;
   color: white;
-  padding: 10px;
+  padding: 10px 15px;
   margin-left: 10px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+  background-color: #0056b3; /* 悬停时按钮颜色变化 */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(5px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 </style>
