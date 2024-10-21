@@ -1,26 +1,9 @@
-import pandas as pd
-from DB_Connector import sql_connector
-from ..llm.llama3 import llama_completion
-from typing import List, Tuple, Dict, Any
-import gradio as gr
-from huggingface_hub import InferenceClient
+from abc import ABC, abstractmethod
+from typing import List, Tuple
 
 
-def message_builder(message: str, history: List[Tuple[str, str]], system_message: str):
-    messages = [{"role": "system", "content": system_message}]
-    for user_msg, assistant_msg in history:
-        if user_msg:
-            messages.append({"role": "user", "content": user_msg})
-        if assistant_msg:
-            messages.append(
-                {"role": "assistant", "content": assistant_msg[:20]})
-
-    messages.append({"role": "user", "content": message})
-    return messages
-
-
-def valorant_agent(message: str, history: List[Tuple[str, str]]):
-    system_message = '''
+class AbstractChatbot(ABC):
+    VALORANT_AGENT_SYSTEM_MESSAGE = '''
     You are a Valorant esports expert skilled in analyzing player performances and competition-related issues based on provided information.
     Your objectives:
     ###
@@ -31,11 +14,8 @@ def valorant_agent(message: str, history: List[Tuple[str, str]]):
     ###
     Your responses should help users gain deeper insights into all aspects of Valorant esports. Leverage your professional knowledge and enthusiasm to help users better appreciate and understand the allure of Valorant esports.
     '''
-    return llama_completion(message_builder(message, history, system_message))
 
-
-def sql_agent(message: str, history: List[Tuple[str, str]]):
-    system_message = '''你要根据得到的语句直接输出SQL语句, 你只能输出SQL语句, 没有任何注释。
+    SQL_AGENT_SYSTEM_MESSAGE = '''你要根据得到的语句直接输出SQL语句, 你只能输出SQL语句, 没有任何注释。
         在###之后是你需要参考的数据库中table信息的概览。
         ###
         1. Players Table
@@ -104,28 +84,9 @@ def sql_agent(message: str, history: List[Tuple[str, str]]):
         body_part	Body part damaged (e.g., "BODY", "HEAD", "LEG").
         damage_count	Number of hits to the body part.
         damage_amount	Amount of damage caused or received.
-'''
-    # 得到response中的sql语句之后，直接执行，然后将得到的数据返回。(json?csv?)
-    # response = llama_completion(message_builder(message, history, system_message))
-    response = '''
-        SELECT Tournaments.player_id, PerformanceDetails.*,Maps.map_id  FROM PerformanceDetails
-        JOIN Agents ON PerformanceDetails.agent_id = Agents.agent_id
-        JOIN Maps ON Agents.map_id = Maps.map_id
-        JOIN Tournaments ON Maps.tournament_id = Tournaments.tournament_id
-        WHERE Tournaments.player_id = '106230271915475632';
-        '''
-    result_df = sql_connector(response)
-    if isinstance(result_df, pd.DataFrame):  # 不管得到的数据是空与否
-        df_json_string = result_df.to_json(orient='records', force_ascii=False)
-        print(df_json_string)
-        return df_json_string
-    else:
-        print("Check Database Status!")
-        return False
+    '''
 
-
-def team_builder_agent(message: str, history: List[Tuple[str, str]]):
-    system_message = '''
+    TEAM_BUILDER_SYSTEM_MESSAGE = '''
         You are a manager of a Valorant esports team, tasked with selecting the five best-performing players from the available data to form the strongest team. When assembling the team, you need to adhere to the following requirements:
         ###
         1. For each team composition:
@@ -140,45 +101,43 @@ def team_builder_agent(message: str, history: List[Tuple[str, str]]):
         ###
         In your responses, please provide detailed explanations and analyses to ensure the strategy is reasonable and competitive. Your goal is to maximize team synergy, creating a top-tier team with balanced offense and defense and excellent teamwork.
     '''
-    return llama_completion(message_builder(message, history, system_message))
 
-
-def normal_agent(message: str, history: List[Tuple[str, str]]):
-    system_message = '''
-    You are an AI chatbot designed to enthusiastically answer questions and provide detailed explanations to users. Your primary goal is to engage with users in a friendly, warm, and positive manner, making them feel welcome and valued. 
+    NORMAL_AGENT_SYSTEM_MESSAGE = '''
+        You are an AI chatbot designed to enthusiastically answer questions and provide detailed explanations to users. Your primary goal is to engage with users in a friendly, warm, and positive manner, making them feel welcome and valued. 
     '''
-    return llama_completion(message_builder(message, history, system_message))
 
-
-def classifier_agent(message: str, history: List[Tuple[str, str]]):
-    system_message = '''
-        You are a data scientist on a new VALORANT esports team.
-        Complete the text classification task for the "user" query, categorizing the request into one of the items provided in the following list. 
-        Your output can only be one of the items from the list: ["Team Build", "Game Infomation", "Player Info", "Others"]
+    CLASSIFIER_AGENT_SYSTEM_MESSAGE = '''
+        You are a data scientist working for a VALORANT esports team. Your task is to classify the "user" query into one of the following categories: ["Team Build", "Game Information", "Player Info", "Others"]. Please provide only the category name as the response, without any additional explanation.
         '''
-    return llama_completion(message_builder(message, history, system_message))
 
+    @abstractmethod
+    def respond(self, messages: List[str]) -> str:
+        pass
 
-def master_main(message: str, history: List[Tuple[str, str]]):
-    """
-    主函数，根据用户的问题，调用不同的agent
+    @abstractmethod
+    def message_builder(self, message: str, history: List[Tuple[str, str]], system_message: str):
+        pass
 
-    return: 返回一个response给chatbot
-    """
-    response = classifier_agent(message, history)
-    print(response)
-    if 'others' in response.lower():
-        return normal_agent(message, history)
-    else:
-        # 需要使用sql语句获得信息
-        additional_info = sql_agent(message, history)
-        if additional_info:  # not False
-            message += "Answer the question based on the following infomation: "
-            message += additional_info
-            if "team build" in response.lower():
-                return team_builder_agent(message, history)
-            else:
-                return valorant_agent(message, history)
-        else:
-            # 说明数据库出了问题，无法获得相关信息
-            return valorant_agent(message, history)
+    @abstractmethod
+    def valorant_agent(self, message: str, history: List[Tuple[str, str]]):
+        pass
+
+    @abstractmethod
+    def sql_agent(self, message: str, history: List[Tuple[str, str]]):
+        pass
+
+    @abstractmethod
+    def team_builder_agent(self, message: str, history: List[Tuple[str, str]]):
+        pass
+
+    @abstractmethod
+    def normal_agent(self, message: str, history: List[Tuple[str, str]]):
+        pass
+
+    @abstractmethod
+    def classifier_agent(self, message: str, history: List[Tuple[str, str]]):
+        pass
+
+    @abstractmethod
+    def master_main(self, message: str, history: List[Tuple[str, str]]):
+        pass
