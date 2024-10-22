@@ -67,6 +67,33 @@ python app.py
 # Project Story
 
 This project implements a flexible and extensible chatbot system that can work with different Large Language Models (LLMs) and incorporate Retrieval-Augmented Generation (RAG) capabilities. The system is designed with modularity and ease of use in mind, allowing for seamless integration of various LLM providers and easy switching between them.
+## 系统工作流程
+
+以下流程图展示了我们的聊天机器人系统如何处理用户输入并生成响应：
+
+```mermaid
+flowchart TD
+    A[User Input] -->|Message| B[Chatbot - master_main]
+    B --> C[queryclassifier - Classifier Agent]
+    C -->|Classifier: others| D[Normal Agent]
+    C -->|Classifier: SQL Query| E[SQL Agent]
+    
+    subgraph " "
+        E[SQL Agent]
+        F[Team Builder Agent]
+        G[Valorant Player Agent]
+    end
+
+    E --> G
+    E --> F
+    D --> H[Return Response]
+    F --> H
+    G --> H
+
+```
+
+这个流程图展示了用户输入如何通过不同的代理和决策点进行处理，最终生成适当的响应。
+
 
 
 ## 系统工作流程
