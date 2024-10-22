@@ -1,0 +1,88 @@
+[{
+  "league_id": "109029777807406730",
+  "region": "KR",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1663662378689_VCT_Game_Changers_Bug_Yellow_Dark.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1663662378687_VCT_Game_Changers_Bug_Yellow_Dark.png",
+  "name": "game_changers_kr",
+  "slug": "game_changers_kr"
+},
+{
+  "league_id": "112609302000026507",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1718281574120_VCT_Game_Changers_Bug_Yellow_Dark.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1718281574119_VCT_Game_Changers_Bug_Yellow_Dark.png",
+  "name": "game_changers_sa",
+  "slug": "game_changers_sa"
+},
+{
+  "league_id": "108752229027041361",
+  "region": "JP",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1659427319352_valorant-gamechangers-logo.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1659427319350_valorant-gamechangers-logo.png",
+  "name": "game_changers_jpn",
+  "slug": "game_changers_jpn"
+},
+{
+  "league_id": "106375817979489820",
+  "region": "BR",
+  "dark_logo_url": "http://static.lolesports.com/leagues/logo-gc-png.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/logo-gc-png.png",
+  "name": "game_changers_series_brazil",
+  "slug": "game_changers_series_brazil"
+},
+{
+  "league_id": "109879575186437267",
+  "region": "LATAM",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1676629257518_604be13d01964.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+  "name": "game_changers_latam",
+  "slug": "game_changers_latam"
+},
+{
+  "league_id": "106976737954740691",
+  "region": "NA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1632335477805_gamechangerslogo.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1632335477803_gamechangerslogo.png",
+  "name": "game_changers_na",
+  "slug": "game_changers_na"
+},
+{
+  "league_id": "107019646737643925",
+  "region": "EMEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1681458128931_valorantteamgamechangers.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1681458128930_valorantteamgamechangers.png",
+  "name": "game_changers_emea",
+  "slug": "game_changers_emea"
+},
+{
+  "league_id": "113005438924105895",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1724326146791_VCT_Game_Changers_Bug_Yellow_Dark.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1724326146790_VCT_Game_Changers_Bug_Yellow_Dark.png",
+  "name": "game_changers_pacific",
+  "slug": "game_changers_pacific"
+},
+{
+  "league_id": "109222784797127274",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1666607427486_VCTSpark.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1666607427484_VCTSpark.png",
+  "name": "game_changers_championship",
+  "slug": "game_changers_championship"
+},
+{
+  "league_id": "109109622360706601",
+  "region": "INTL",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1664880708236_VCT_Game_Changers_Bug_Yellow_Dark.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1664880708234_VCT_Game_Changers_Bug_Yellow_Dark.png",
+  "name": "game_changers_east_asia",
+  "slug": "game_changers_east_asia"
+},
+{
+  "league_id": "107115678205203231",
+  "region": "SEA",
+  "dark_logo_url": "http://static.lolesports.com/leagues/1710411538980_GAME_CHANGERS_SPARK_RGB_YELLOW.png",
+  "light_logo_url": "http://static.lolesports.com/leagues/1710411538980_GAME_CHANGERS_SPARK_RGB_YELLOW.png",
+  "name": "game_changers_sea",
+  "slug": "game_changers_sea"
+}]

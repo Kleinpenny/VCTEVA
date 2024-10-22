@@ -244,16 +244,14 @@ def main():
     all_players_processor.all_players()
     #LEAGUE = "vct-international" # "vct-challengers", "vct-international"
     saved_path = "../DATA/all_players.json"
-
+    continue_sig = 1
     #这是按照不同的LEAGUE来提取对应数据，用于拓展all_players_begin_with_ID.json的信息
-    for LEAGUE in ["vct-international","vct-challengers", "vct-international"]:
+    for LEAGUE in ["vct-international","vct-challengers", "game-changers"]:
         #不是按照年份来提取，但是是根据mapping_data中保存的比赛来
         participantMapping_data = mapping_data_processor.platformIDs_to_participantMapping(LEAGUE)
         teamMapping_data = mapping_data_processor.platformIDs_to_teamMapping(LEAGUE)
-
         keys = list(participantMapping_data.keys())
         unique_state = set()
-        continue_sig = 1
         for val_key in keys:
             #这里举个例子
             #下面这个是没有game decided
@@ -264,7 +262,7 @@ def main():
             #val_key = "val:0d2d307e-530b-4043-bfd7-04025529e02d"
 
             ###当遇到bug中断时候用于恢复的,使用的时候需要注释掉 !!!!!!! all_players_processor.all_players() !!!!
-            #pause_key = 'val:a9e5e22e-bff8-4a11-b25b-4301536c97da'
+            #pause_key = 'val:7223554c-fdef-4317-be64-9a6287734c0e'
             #if val_key != pause_key and continue_sig == 1:
             #    print("已经统计过了")
             #    continue
