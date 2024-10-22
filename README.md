@@ -202,5 +202,5 @@ This flowchart illustrates how user input is processed through different agents 
 - **RAG Support**: The chatbot can optionally use a Retrieval-Augmented Generation interface to enhance responses with relevant context.
 
 ## Challenges we ran into
-1. 构建怎么样的数据库。
+1. How to design the database structure.
 2. ![alt text](image.png)
