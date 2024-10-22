@@ -1,0 +1,9 @@
+const GRADIO_LOCAL_LINK = "http://127.0.0.1:7860"
+const GRADIO_GLOBAL_LINK = "http://127.0.0.1:7860"
+const LLM_SERVICE_TPYE = "CHATGPT"
+
+export default {
+    GRADIO_LOCAL_LINK,
+    GRADIO_GLOBAL_LINK,
+    LLM_SERVICE_TPYE
+}
