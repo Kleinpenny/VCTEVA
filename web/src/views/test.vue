@@ -4,7 +4,7 @@
     <div class="chat-section">
       <div class="chat-header">
         <img src="./components/llama.png" alt="ChatGPT" class="avatar" />
-        <span>ChatGPT</span>
+        <span style="color: #1b1f23"> {{ llmService }}</span>
       </div>
       <div class="chat-history">
         <div v-for="(message, index) in messages" :key="index" :class="['message', messageClass(message.type)]">
@@ -67,6 +67,9 @@
 </template>
 <script>
 import TeamDisplay from "@/views/components/TeamDisplay.vue";
+import { Client } from "@gradio/client";
+import global from "..//global.js";
+
 
 export default {
   components: {
@@ -77,8 +80,13 @@ export default {
       return this.$vuetify.display
     },
   },
+  mounted() {
+    console.log(1);
+
+  },
   data() {
     return {
+      llmService: global.LLM_SERVICE_TPYE,
       selectedTeam: [],
       inputMessage: '',
       messages: [
@@ -177,10 +185,23 @@ export default {
         this.selectedTeam.push(player);
       }
     },
-    sendMessage() {
+    async sendMessage() {
       if (!this.inputMessage.trim()) return;
       this.messages.push({type: 'user', text: this.inputMessage});
       this.messages.push({type: 'bot', text: `Bot response to: "${this.inputMessage}"`});
+      try {
+        const app = await Client.connect(global.GRADIO_LOCAL_LINK);
+
+        // 等待预测结果 因为有await，可能导致获取回复的速度较慢,可以根据运行的gradio app 来显示具体的api格式
+        const result = await app.predict("/chat", [this.inputMessage]);
+
+        const botResponse = result.data;
+        this.messages.push({ type: 'bot', text: botResponse });
+
+      } catch (error) {
+        this.messages.push({ type: 'bot', text: 'Sorry, I could not process your question at the moment.' });
+      }
+      this.inputMessage = '';
     },
     messageClass(type) {
       return type === 'user' ? 'user-message justify-end' : 'bot-message justify-start';
@@ -208,7 +229,7 @@ export default {
 
 /* 聊天区域样式 */
 .chat-section {
-  width: 70%; /* 调整聊天区的宽度 */
+  width: 65%; /* 调整聊天区的宽度 */
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -254,6 +275,11 @@ export default {
   align-self: flex-start;
 }
 
+.message-avatar{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .message-bubble {
   padding: 10px;
   max-width: 70%; /* 调整气泡的最大宽度 */
@@ -296,7 +322,7 @@ export default {
 
 /* 玩家列表样式 */
 .player-list {
-  width: 25%; /* 调整玩家列表的宽度 */
+  width: 30%; /* 调整玩家列表的宽度 */
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -304,6 +330,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  overflow-y: scroll;
 }
 .player-info {
   display: flex;
