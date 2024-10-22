@@ -4,18 +4,31 @@ from huggingface_hub import InferenceClient
 from llama3 import llama_completion
 from DB_Connector import sql_connector
 import pandas as pd
+import boto3
+import logging
 
-def message_builder(message: str, history: List[Tuple[str, str]], system_message: str):
-    messages = [{"role": "system", "content": system_message}]
+logger = logging.getLogger(__name__)
+
+# 初始化 bedrock 客户端
+bedrock_client = boto3.client(
+    service_name='bedrock-runtime', region_name="us-east-1")
+model_id = 'meta.llama3-70b-instruct-v1:0'
+
+
+def message_builder(message: str, history: List[Tuple[str, str]]):
+    messages = []
     for user_msg, assistant_msg in history:
         if user_msg:
+            user_msg = [{"text": user_msg}]
             messages.append({"role": "user", "content": user_msg})
         if assistant_msg:
-            messages.append(
-                {"role": "assistant", "content": assistant_msg[:20]})
+            assistant_msg = [{"text": assistant_msg}]
+            messages.append({"role": "assistant", "content": assistant_msg})
 
+    message = [{"text": message}]
     messages.append({"role": "user", "content": message})
     return messages
+
 
 def valorant_agent(message: str, history: List[Tuple[str, str]]):
     system_message = '''
@@ -29,7 +42,12 @@ def valorant_agent(message: str, history: List[Tuple[str, str]]):
     ###
     Your responses should help users gain deeper insights into all aspects of Valorant esports. Leverage your professional knowledge and enthusiasm to help users better appreciate and understand the allure of Valorant esports.
     '''
-    return llama_completion(message_builder(message, history, system_message))
+    system_message = [{"text": system_message}]
+
+    messages = message_builder(message, history)
+    response = generate_conversation(
+        bedrock_client, model_id, system_message, messages)
+    return response
 
 
 def sql_agent(message: str, history: List[Tuple[str, str]]):
@@ -103,6 +121,7 @@ def sql_agent(message: str, history: List[Tuple[str, str]]):
         damage_count	Number of hits to the body part.
         damage_amount	Amount of damage caused or received.
 '''
+
     ##得到response中的sql语句之后，直接执行，然后将得到的数据返回。(json?csv?)
     response = llama_completion(message_builder(message, history, system_message))
     response = '''
@@ -114,12 +133,14 @@ def sql_agent(message: str, history: List[Tuple[str, str]]):
         '''
     result_df = sql_connector(response)
     if isinstance(result_df, pd.DataFrame): # 不管得到的数据是空与否
+
         df_json_string = result_df.to_json(orient='records', force_ascii=False)
         print(df_json_string)
         return df_json_string
     else:
         print("Check Database Status!")
         return False
+
 
 def team_builder_agent(message: str, history: List[Tuple[str, str]]):
     system_message = '''
@@ -137,41 +158,94 @@ def team_builder_agent(message: str, history: List[Tuple[str, str]]):
         ###
         In your responses, please provide detailed explanations and analyses to ensure the strategy is reasonable and competitive. Your goal is to maximize team synergy, creating a top-tier team with balanced offense and defense and excellent teamwork.
     '''
-    return llama_completion(message_builder(message, history, system_message))
-     
+    system_message = [{"text": system_message}]
+
+    messages = message_builder(message, history)
+    response = generate_conversation(
+        bedrock_client, model_id, system_message, messages)
+    return response['output']['message']
+
 
 def normal_agent(message: str, history: List[Tuple[str, str]]):
     system_message = '''
     You are an AI chatbot designed to enthusiastically answer questions and provide detailed explanations to users. Your primary goal is to engage with users in a friendly, warm, and positive manner, making them feel welcome and valued. 
     '''
-    return llama_completion(message_builder(message, history, system_message))
+    system_message = [{"text": system_message}]
+
+    messages = message_builder(message, history)
+    response = generate_conversation(
+        bedrock_client, model_id, system_message, messages)
+    return response
 
 
 def classifier_agent(message: str, history: List[Tuple[str, str]]):
     system_message = '''
-        You are a data scientist on a new VALORANT esports team.
-        Complete the text classification task for the "user" query, categorizing the request into one of the items provided in the following list. 
-        Your output can only be one of the items from the list: ["Team Build", "Game Infomation", "Player Info", "Others"]
-        '''
-    return llama_completion(message_builder(message, history, system_message))
+    你是一个新的 VALORANT 电子竞技团队的数据科学家。
+    完成"用户"查询的文本分类任务，将请求分类为以下列表中提供的项目之一。
+    你的输出只能是列表中的一项：["Team Build", "Game Information", "Player Info", "Others"]
+    '''
+    system_message = [{"text": system_message}]
+
+    messages = message_builder(message, history)
+    response = generate_conversation(
+        bedrock_client, model_id, system_message, messages)
+    return response
 
 
 def master_main(message: str, history: List[Tuple[str, str]]):
-        
-        response = classifier_agent(message, history)
-        print(response)
-        if 'others' in response.lower():
-            return normal_agent(message, history)
-        else:
-            #需要使用sql语句获得信息
-            additional_info = sql_agent(message, history)
-            if additional_info: # not False
-                message += "Answer the question based on the following infomation: "
-                message += additional_info
-                if "team build" in response.lower():
-                    return team_builder_agent(message, history)
-                else:
-                    return valorant_agent(message, history)
+    response = classifier_agent(message, history)
+    logger.info(f"分类结果: {response}")
+
+    # if 'others' in response.lower():
+    if True:
+        return normal_agent(message, history)
+    else:
+        additional_info = sql_agent(message, history)
+        if additional_info:
+            message += "根据以下信息回答问题: "
+            message += additional_info
+            if "team build" in response.lower():
+                return team_builder_agent(message, history)
             else:
-                #说明数据库出了问题，无法获得相关信息
                 return valorant_agent(message, history)
+        else:
+            logger.warning("无法获取相关信息，可能是数据库问题")
+            return valorant_agent(message, history)
+
+
+def generate_conversation(bedrock_client,
+                          model_id,
+                          system_prompts,
+                          messages):
+    """
+    Sends messages to a model.
+    Args:
+        bedrock_client: The Boto3 Bedrock runtime client.
+        model_id (str): The model ID to use.
+        system_prompts (JSON) : The system prompts for the model to use.
+        messages (JSON) : The messages to send to the model.
+
+    Returns:
+        response (JSON): The conversation that the model generated.
+
+    """
+
+    # Inference parameters to use.
+    temperature = 0.5
+    top_k = 0.9
+
+    # Base inference parameters to use.
+    inference_config = {"temperature": temperature}
+    # Additional inference parameters to use.
+    # additional_model_fields = {"top_k": top_k}
+
+    # Send the message.
+    response = bedrock_client.converse(
+        modelId=model_id,
+        messages=messages,
+        system=system_prompts,
+        inferenceConfig=inference_config
+        # additionalModelRequestFields=additional_model_fields
+    )
+
+    return response['output']['message']['content'][0]['text']
