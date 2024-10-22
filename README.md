@@ -26,7 +26,87 @@ python main.py
 ```
 #### Processed data stored in /DATA/all.players.json
 
-### 4. 设置AWS Bedrock和LLM客户端
+### 4. Install MYSQL in Linux
+
+```bash
+apt-get install mysql-server
+apt-get install mysql-client
+apt-get install libmysqlclient-dev
+```
+
+### 5. 配置mysql
+```bash
+mysql -u root -p
+```
+初次使用mysql，没有设置密码，因此直接回车即可
+
+```mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'vcteva_2024';
+FLUSH PRIVILEGES;
+```
+
+<details>
+  <summary>OPTIONAL(或者遇到登陆问题)</summary>
+
+- 若需要更多用户，可以创建例如: ‘admin’ 账户并为其设置密码：
+
+````mysql
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'PASSWORD';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+````
+
+- 如果你忘记了 `root` 或 `admin` 用户的密码，可以尝试以下步骤来重置密码：
+  -  首先停止 MySQL 服务：
+     ```bash
+     sudo systemctl stop mysql
+     ```
+  - 然后以跳过权限表的模式启动 MySQL：
+     ```bash
+     sudo mysqld_safe --skip-grant-tables &
+     ```
+  - 再次登录 MySQL，此时不需要密码：
+    ```bash
+    mysql -u root
+    ```
+  - 登录成功后，重置 `admin` 或 `root` 用户的密码：
+    ```mysql
+    ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+    FLUSH PRIVILEGES;
+    ```
+  - 最后，重启 MySQL 服务：
+    ```bash
+    sudo systemctl start mysql
+    ```
+</details>
+
+### 6. 创建database以及创建TABLES
+```mysql
+Create database VCTEVA;
+exit;
+mysql -u root -p VCTEVA < VCTEVA/Data_Preprocess/Database/VCTEVA_backup.sql
+cd VCTEVA/Data_Preprocess/Database
+python db_test.py
+```
+<details>
+  <summary>OPTIONAL(删除数据库)</summary>
+
+```mysql
+SET FOREIGN_KEY_CHECKS = 0;
+Use VCTEVA;
+DELETE FROM PerformanceDetails;
+DELETE FROM Summary;
+DELETE FROM Agents;
+DELETE FROM Maps;
+DELETE FROM Tournaments;
+DELETE FROM Players;
+DELETE FROM DamageDetails;
+
+SET FOREIGN_KEY_CHECKS = 1;
+```
+</details>
+
+### 7. 设置AWS Bedrock和LLM客户端
 
 1. 安装AWS CLI
    根据[AWS CLI安装指南](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)安装AWS CLI。
@@ -58,7 +138,7 @@ python main.py
 
 完成以上步骤后，您就可以使用AWS Bedrock服务和选定的LLM客户端了。
 
-### 4. Run the Chatbot
+### 8. Run the Chatbot
 
 ```
 python app.py
