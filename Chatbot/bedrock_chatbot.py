@@ -6,7 +6,7 @@ from .abstract_chatbot import AbstractChatbot
 from .DB_Connector import sql_connector
 
 
-class TitanChatBot(AbstractChatbot):
+class ChatBotWithBedrock(AbstractChatbot):
     def __init__(self, region_name: str = "eu-central-1", model_id: str = "amazon.titan-text-express-v1"):
         self.bedrock_client = boto3.client(
             service_name='bedrock-runtime',
@@ -26,6 +26,7 @@ class TitanChatBot(AbstractChatbot):
                 "temperature": 0.7,
                 "topP": 0.95
             }
+        
         })
 
         response = self.bedrock_client.invoke_model(

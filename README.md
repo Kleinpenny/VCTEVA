@@ -76,19 +76,22 @@ This project implements a flexible and extensible chatbot system that can work w
 ```mermaid
 flowchart TD
     A[User Input] -->|Message| B[Chatbot - master_main]
-    B --> C{Response Type}
-    C -->|Classifier Agent Response| D[SQL Agent]
-    C -->|Others| F[Normal Agent]
-    D -->|SQL Success| G[Append SQL Info to Message]
-    D -->|SQL Failure| H[Valorant Agent]
-    G -->|Team Build in Classifier Response| I[Team Builder Agent]
-    G -->|Else| J[Valorant Agent]
-    F --> K[Respond Normally]
+    B --> C[queryclassifier - Classifier Agent]
+    C -->|Classifier: others| D[Normal Agent]
+    C -->|Classifier: SQL Query| E[SQL Agent]
+    
+    subgraph " "
+        E[SQL Agent]
+        F[Team Builder Agent]
+        G[Valorant Player Agent]
+    end
 
-    H --> J
-    I --> J
-    J --> L[Return Response]
-    K --> L
+    E --> G
+    E --> F
+    D --> H[Return Response]
+    F --> H
+    G --> H
+
 ```
 
 这个流程图展示了用户输入如何通过不同的代理和决策点进行处理，最终生成适当的响应。
@@ -119,3 +122,4 @@ flowchart TD
 
 ## Challenges we ran into
 1. 构建怎么样的数据库。
+2. ![alt text](image.png)

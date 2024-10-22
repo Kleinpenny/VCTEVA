@@ -1,6 +1,7 @@
 import gradio as gr
-from Chatbot.titan_chatbot import TitanChatBot
+from Chatbot.bedrock_chatbot import ChatBotWithBedrock
 from Chatbot.abstract_chatbot import AbstractChatbot
+
 
 class GradioInterface:
     """
@@ -25,8 +26,12 @@ def main():
     # )
 
     # 使用AWS Bedrock模型
-    chatbot = TitanChatBot(region_name="eu-central-1",
-                           model_id="amazon.titan-text-express-v1")  # 请根据您的AWS配置更改区域
+    chatbot = ChatBotWithBedrock(
+        # region_name="eu-central-1",
+        # model_id="amazon.titan-text-express-v1"
+        region_name="us-east-1",
+        model_id="meta.llama3-8b-instruct-v1:0"
+    )
 
     interface = GradioInterface(chatbot)
     interface.launch()
