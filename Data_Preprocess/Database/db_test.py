@@ -7,8 +7,8 @@ from mysql.connector import Error
 try:
     connection = mysql.connector.connect(
         host="localhost",
-        user="vct",
-        password="Leon1234",
+        user="root",
+        password="Dermasign_2024",
         database="VCTEVA",  # 更改为你所使用的数据库
     )
     if connection.is_connected():

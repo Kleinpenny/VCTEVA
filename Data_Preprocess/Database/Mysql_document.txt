@@ -40,6 +40,7 @@ JOIN Tournaments ON Maps.tournament_id = Tournaments.tournament_id
 WHERE Tournaments.player_id = '106230271915475632';
 
 删库方式：
+
 SET FOREIGN_KEY_CHECKS = 0;
 Use VCTEVA;
 DELETE FROM PerformanceDetails;
