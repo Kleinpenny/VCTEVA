@@ -34,11 +34,11 @@ apt-get install mysql-client
 apt-get install libmysqlclient-dev
 ```
 
-### 5. 配置mysql
+### 5. Configure MySQL
 ```bash
 mysql -u root -p
 ```
-初次使用mysql，没有设置密码，因此直接回车即可
+When using MySQL for the first time, there is no password set, so just press Enter.
 
 ```mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'vcteva_2024';
@@ -46,9 +46,9 @@ FLUSH PRIVILEGES;
 ```
 
 <details>
-  <summary>OPTIONAL(或者遇到登陆问题)</summary>
+  <summary>OPTIONAL(or if you encounter login issues)</summary>
 
-- 若需要更多用户，可以创建例如: ‘admin’ 账户并为其设置密码：
+- If you need more users, you can create an account like 'admin' and set a password for it:
 
 ````mysql
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'PASSWORD';
@@ -56,31 +56,32 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ````
 
-- 如果你忘记了 `root` 或 `admin` 用户的密码，可以尝试以下步骤来重置密码：
-  -  首先停止 MySQL 服务：
+- If you forget the password for the `root` or `admin` user，you can try the following steps to reset it:
+  -  First, stop the MySQL service:
      ```bash
      sudo systemctl stop mysql
      ```
-  - 然后以跳过权限表的模式启动 MySQL：
+  - Then start MySQL in skip-grant-tables mode:
      ```bash
      sudo mysqld_safe --skip-grant-tables &
      ```
-  - 再次登录 MySQL，此时不需要密码：
+  - Log in to MySQL again, this time without a password:
     ```bash
     mysql -u root
     ```
-  - 登录成功后，重置 `admin` 或 `root` 用户的密码：
+    
+  - Once logged in, reset the password for the `admin` or `root` user:
     ```mysql
     ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
     FLUSH PRIVILEGES;
     ```
-  - 最后，重启 MySQL 服务：
+  - Finally, restart the MySQL service:
     ```bash
     sudo systemctl start mysql
     ```
 </details>
 
-### 6. 创建database以及创建TABLES
+### 6. Create database and tables
 ```mysql
 Create database VCTEVA;
 exit;
@@ -89,7 +90,7 @@ cd VCTEVA/Data_Preprocess/Database
 python db_test.py
 ```
 <details>
-  <summary>OPTIONAL(删除数据库)</summary>
+  <summary>OPTIONAL(Delete the database)</summary>
 
 ```mysql
 SET FOREIGN_KEY_CHECKS = 0;
@@ -106,27 +107,27 @@ SET FOREIGN_KEY_CHECKS = 1;
 ```
 </details>
 
-### 7. 设置AWS Bedrock和LLM客户端
+### 7. Configure AWS Bedrock and LLM Client
 
-1. 安装AWS CLI
-   根据[AWS CLI安装指南](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)安装AWS CLI。
+1. Install AWS CLI
+Install the AWS CLI following the (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
-2. 创建IAM用户
-   在AWS控制台的IAM服务中创建一个新用户，并获取该用户的访问凭证（Access Key ID和Secret Access Key）。
+2. Create an IAM User
+In the AWS console under the IAM service, create a new user and obtain the access credentials (Access Key ID and Secret Access Key) for this user.
 
-3. 配置AWS CLI
-   打开终端，运行以下命令：
+3. Configure AWS CLI
+Open the terminal and run the following command:
    ```
    aws configure
    ```
-   按照提示输入您的AWS凭证信息。
+   Follow the prompts to input your AWS credential information.
 
-4. 验证凭证
-   运行以下命令验证您的AWS凭证是否正确配置：
+4. Verify Credentials
+Run the following command to verify if your AWS credentials are correctly configured:
    ```
    aws sts get-caller-identity
    ```
-   如果凭证有效，您将看到类似以下的输出：
+   If the credentials are valid, you will see an output similar to the following:
    ```json
    {
        "UserId": "AIDAI...",
@@ -134,9 +135,9 @@ SET FOREIGN_KEY_CHECKS = 1;
        "Arn": "arn:aws:iam::123456789012:user/username"
    }
    ```
-   如果凭证无效，您将收到错误消息。
+   If the credentials are invalid, you will receive an error message.
 
-完成以上步骤后，您就可以使用AWS Bedrock服务和选定的LLM客户端了。
+After completing these steps, you can use the AWS Bedrock service and the selected LLM client.
 
 ### 8. Run the Chatbot
 
@@ -147,38 +148,10 @@ python app.py
 # Project Story
 
 This project implements a flexible and extensible chatbot system that can work with different Large Language Models (LLMs) and incorporate Retrieval-Augmented Generation (RAG) capabilities. The system is designed with modularity and ease of use in mind, allowing for seamless integration of various LLM providers and easy switching between them.
-## 系统工作流程
-
-以下流程图展示了我们的聊天机器人系统如何处理用户输入并生成响应：
-
-```mermaid
-flowchart TD
-    A[User Input] -->|Message| B[Chatbot - master_main]
-    B --> C[queryclassifier - Classifier Agent]
-    C -->|Classifier: others| D[Normal Agent]
-    C -->|Classifier: SQL Query| E[SQL Agent]
-    
-    subgraph " "
-        E[SQL Agent]
-        F[Team Builder Agent]
-        G[Valorant Player Agent]
-    end
-
-    E --> G
-    E --> F
-    D --> H[Return Response]
-    F --> H
-    G --> H
-
-```
-
-这个流程图展示了用户输入如何通过不同的代理和决策点进行处理，最终生成适当的响应。
+## System Workflow
 
 
-
-## 系统工作流程
-
-以下流程图展示了我们的聊天机器人系统如何处理用户输入并生成响应：
+The following flowchart shows how our chatbot system processes user input and generates responses:
 
 ```mermaid
 flowchart TD
@@ -201,7 +174,8 @@ flowchart TD
 
 ```
 
-这个流程图展示了用户输入如何通过不同的代理和决策点进行处理，最终生成适当的响应。
+This flowchart illustrates how user input is processed through different agents and decision points to generate the appropriate response.
+
 
 
 ## Project Components
