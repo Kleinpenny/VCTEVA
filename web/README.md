@@ -27,3 +27,32 @@ npm run dev
 ```sh
 npm run build
 ```
+Here’s the translation of the provided text:
+
+---
+
+**INNER JOIN usage for joining two tables:**
+
+```sql
+SELECT * FROM Table1 INNER JOIN Table2 ON Table1.FieldID = Table2.FieldID
+```
+
+**INNER JOIN usage for joining three tables:**
+
+```sql
+SELECT * FROM (Table1 INNER JOIN Table2 ON Table1.FieldID = Table2.FieldID) INNER JOIN Table3 ON Table1.FieldID = Table3.FieldID
+```
+
+**INNER JOIN usage for joining four tables:**
+
+```sql
+SELECT * FROM ((Table1 INNER JOIN Table2 ON Table1.FieldID = Table2.FieldID) INNER JOIN Table3 ON Table1.FieldID = Table3.FieldID)
+INNER JOIN Table4 ON Member.FieldID = Table4.FieldID
+```
+
+**INNER JOIN usage for joining five tables:**
+
+```sql
+SELECT * FROM (((Table1 INNER JOIN Table2 ON Table1.FieldID = Table2.FieldID) INNER JOIN Table3 ON Table1.FieldID = Table3.FieldID)
+INNER JOIN Table4 ON Member.FieldID = Table4.FieldID) INNER JOIN Table5 ON Member.FieldID = Table5.FieldID
+```
