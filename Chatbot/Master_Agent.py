@@ -104,7 +104,7 @@ def sql_agent(message: str, history: List[Tuple[str, str]]):
         damage_amount	Amount of damage caused or received.
 '''
     ##得到response中的sql语句之后，直接执行，然后将得到的数据返回。(json?csv?)
-    #response = llama_completion(message_builder(message, history, system_message))
+    response = llama_completion(message_builder(message, history, system_message))
     response = '''
         SELECT Tournaments.player_id, PerformanceDetails.*,Maps.map_id  FROM PerformanceDetails
         JOIN Agents ON PerformanceDetails.agent_id = Agents.agent_id
