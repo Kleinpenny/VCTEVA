@@ -68,8 +68,8 @@ def main(LEAGUE, YEAR):
                 if game_counter % 10 == 0:
                     print(f"----- Processed {game_counter} games, current run time: {round((time.time() - start_time)/60, 2)} minutes")
     download_esports_files()
-    download_games()
+    #download_games()
 
 if __name__ == "__main__":
-    main("vct-international", 2022)
+    main("game-changers", 2022)
     #Failed to download game-changers/games/2023/val:cedd61d9-0fab-4615-bea5-7a446ee3c2ed

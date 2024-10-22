@@ -95,6 +95,35 @@ flowchart TD
 这个流程图展示了用户输入如何通过不同的代理和决策点进行处理，最终生成适当的响应。
 
 
+
+## 系统工作流程
+
+以下流程图展示了我们的聊天机器人系统如何处理用户输入并生成响应：
+
+```mermaid
+flowchart TD
+    A[User Input] -->|Message| B[Chatbot - master_main]
+    B --> C[queryclassifier - Classifier Agent]
+    C -->|Classifier: others| D[Normal Agent]
+    C -->|Classifier: SQL Query| E[SQL Agent]
+    
+    subgraph " "
+        E[SQL Agent]
+        F[Team Builder Agent]
+        G[Valorant Player Agent]
+    end
+
+    E --> G
+    E --> F
+    D --> H[Return Response]
+    F --> H
+    G --> H
+
+```
+
+这个流程图展示了用户输入如何通过不同的代理和决策点进行处理，最终生成适当的响应。
+
+
 ## Project Components
 
 1. **Base LLM Client (base_llm_client.py)**: 
@@ -120,3 +149,4 @@ flowchart TD
 
 ## Challenges we ran into
 1. 构建怎么样的数据库。
+2. ![alt text](image.png)

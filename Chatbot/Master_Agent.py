@@ -121,15 +121,19 @@ def sql_agent(message: str, history: List[Tuple[str, str]]):
         damage_count	Number of hits to the body part.
         damage_amount	Amount of damage caused or received.
 '''
-    system_message = [{"text": system_message}]
 
-    messages = message_builder(message, history)
-    response = generate_conversation(
-        bedrock_client, model_id, system_message, messages)
-    sql_query = response['output']['message']
+    ##得到response中的sql语句之后，直接执行，然后将得到的数据返回。(json?csv?)
+    response = llama_completion(message_builder(message, history, system_message))
+    response = '''
+        SELECT Tournaments.player_id, PerformanceDetails.*,Maps.map_id  FROM PerformanceDetails
+        JOIN Agents ON PerformanceDetails.agent_id = Agents.agent_id
+        JOIN Maps ON Agents.map_id = Maps.map_id
+        JOIN Tournaments ON Maps.tournament_id = Tournaments.tournament_id
+        WHERE Tournaments.player_id = '106230271915475632';
+        '''
+    result_df = sql_connector(response)
+    if isinstance(result_df, pd.DataFrame): # 不管得到的数据是空与否
 
-    result_df = sql_connector(sql_query)
-    if isinstance(result_df, pd.DataFrame):
         df_json_string = result_df.to_json(orient='records', force_ascii=False)
         print(df_json_string)
         return df_json_string
