@@ -27,17 +27,20 @@ python download_dataset.py
 ```
 
 2. Preprocess Dataset
-TODO: 我们是如何处理数据，一步一步到，最后选手，联赛，年份，地图，比赛这样处理的。
 ```
 cd /VCTEVA/Data_Preprocess/
 python main.py
 ```
-3. store data in /DATA/all.players.json
+TODO: 我们是如何处理数据，一步一步到，最后选手，联赛，年份，地图，比赛这样处理的。
+我首先统计出所有的player。
+然后遍历所有的比赛，统计每个比赛的每个选手的比赛数据，比如agent的选择，kda数据。
+
+3. store data in [all.players.json](/DATA/all.players.json)
+里面包含了所有player的比赛的数据。
 </details>
 
 ### 3. MySQL Database
 1. Install MYSQL in Linux
-
 ```bash
 apt-get install mysql-server
 apt-get install mysql-client
@@ -48,7 +51,6 @@ apt-get install libmysqlclient-dev
 mysql -u root -p
 ```
 When using MySQL for the first time, there is no password set, so just press Enter.
-
 ```mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'vcteva_2024';
 FLUSH PRIVILEGES;
