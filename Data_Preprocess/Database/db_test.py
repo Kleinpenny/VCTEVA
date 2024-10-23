@@ -7,7 +7,7 @@ from mysql.connector import Error
 try:
     connection = mysql.connector.connect(
         host="localhost",
-        user="root",
+        user="vct",
         password="vcteva_2024",
         database="VCTEVA",  # 更改为你所使用的数据库
     )

@@ -7,10 +7,10 @@ app.use(cors());
 
 // 创建 MySQL 连接
 const db = mysql.createConnection({
-    host: '127.0.0.1', // MySQL 服务器地址
+    host: 'localhost', // MySQL 服务器地址
     user: 'root', // MySQL 用户名
-    password: '123456', // MySQL 密码
-    database: 'vcteva' // 数据库名称
+    password: 'vcteva_2024', // MySQL 密码
+    database: 'VCTEVA' // 数据库名称
 });
 
 // 连接到数据库

@@ -42,7 +42,7 @@ def ensure_sql_execute(system_message, message, response, retry):
     try:
         connection = mysql.connector.connect(
         host="localhost",
-        user="vct",
+        user="root",
         password="vcteva_2024",
         database="VCTEVA",
         )
