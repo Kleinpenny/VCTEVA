@@ -1,17 +1,16 @@
 from huggingface_hub import InferenceClient
+from .base_llm_client import BaseLLMClient
 
-def llama_completion(messages: list[dict[str, str]]):
-    llm_client = InferenceClient(
-        "meta-llama/Meta-Llama-3-8B-Instruct", token="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")
-    
-    response = ""
-    for mes in llm_client.chat_completion(
-        messages,
-        max_tokens=2048,
-        stream=True,
-        temperature=0.7,
-        top_p=0.95,
-    ):
-        token = mes.choices[0].delta.content
-        response += token
-    return response
+
+class HuggingFaceLLMClient(BaseLLMClient):
+    def __init__(self, model_name: str, token: str):
+        self.client = InferenceClient(model_name, token=token)
+
+    def chat_completion(self, messages, max_tokens, stream, temperature, top_p):
+        return self.client.chat_completion(
+            messages,
+            max_tokens=max_tokens,
+            stream=stream,
+            temperature=temperature,
+            top_p=top_p,
+        )

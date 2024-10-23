@@ -1,13 +1,21 @@
 from typing import List, Tuple, Dict, Any
+import gradio as gr
+from huggingface_hub import InferenceClient
+from llama3 import llama_completion
+from DB_Connector import sql_connector
 import pandas as pd
-import mysql.connector
-import pandas as pd
-from mysql.connector import Error
-from llm.llama3 import llama_completion
-from llm.aws_bedrock import bedrock_completion
+import boto3
+import logging
+
+logger = logging.getLogger(__name__)
+
+# 初始化 bedrock 客户端
+bedrock_client = boto3.client(
+    service_name='bedrock-runtime', region_name="us-east-1")
+model_id = 'meta.llama3-70b-instruct-v1:0'
 
 
-def message_builder(system_prompt: str, message: str, history: List[Tuple[str, str]]):
+def message_builder(message: str, history: List[Tuple[str, str]]):
     messages = []
     for user_msg, assistant_msg in history:
         if user_msg:
@@ -17,7 +25,7 @@ def message_builder(system_prompt: str, message: str, history: List[Tuple[str, s
             assistant_msg = [{"text": assistant_msg}]
             messages.append({"role": "assistant", "content": assistant_msg})
 
-    message = [{"text": system_prompt + "### Based on the requirements above, respond to the following words: "+ message}]
+    message = [{"text": message}]
     messages.append({"role": "user", "content": message})
     return messages
 
@@ -34,134 +42,105 @@ def valorant_agent(message: str, history: List[Tuple[str, str]]):
     ###
     Your responses should help users gain deeper insights into all aspects of Valorant esports. Leverage your professional knowledge and enthusiasm to help users better appreciate and understand the allure of Valorant esports.
     '''
+    system_message = [{"text": system_message}]
 
-    response = bedrock_completion(message_builder(system_message, message, history))
+    messages = message_builder(message, history)
+    response = generate_conversation(
+        bedrock_client, model_id, system_message, messages)
     return response
-
-def ensure_sql_execute(system_message, message, response, retry):
-    try:
-        connection = mysql.connector.connect(
-        host="localhost",
-        user="vct",
-        password="vcteva_2024",
-        database="VCTEVA",
-        )
-        cursor = connection.cursor()
-        cursor.execute(response)
-        column_names = [desc[0] for desc in cursor.description]
-        result = cursor.fetchall()
-        result_df = pd.DataFrame(result, columns=column_names)
-        cursor.close()
-        connection.close()
-        #可执行的SQL语句: 
-        print(response)
-        return result_df
-    
-    except Exception as e:
-        retry += 1
-        if retry <= 3:
-            messages = []
-            error_msg = f"An error occurred: {e}"
-            correction_instruction = [{"text": response + "The above SQL code executes with the following problem:  " + error_msg + "Please rewrite the SQL code according to the error message. You need to follow the requests of the users listed below when making changes. : #" + message + "#" + system_message}]
-            messages.append({"role": "user", "content": correction_instruction})
-            response = bedrock_completion(messages)
-            print(messages)
-            print(response)
-            return ensure_sql_execute(system_message, message, response, retry)
-        else:
-            return False #重试超过三次就直接返回False
 
 
 def sql_agent(message: str, history: List[Tuple[str, str]]):
-    system_message = '''You have to output SQL statements directly based on the statements you get, you can only output SQL statements without any comments.
-        After the #### is an overview of the tables in the database you need to refer to.
+    system_message = '''你要根据得到的语句直接输出SQL语句, 你只能输出SQL语句, 没有任何注释。
+        在###之后是你需要参考的数据库中table信息的概览。
         ###
-        1. Players
-        Column_Name:	Description
-        player_id:	Primary key, unique identifier for each player (e.g., "109881619945257706").
-        handle:	Player's in-game handle (e.g., "may").
-        name:	Full name of the player (e.g., "Mayara Diniz").
-        team_id:	Foreign key to reference the player's team.
-        region:	Player's region (e.g., "LATAM").
-        league:	League associated with the player (e.g., "game-changers").
+        1. Players Table
+        Column_Name	Description
+        player_id	Primary key, unique identifier for each player (e.g., "109881619945257706").
+        handle	Player's in-game handle (e.g., "may").
+        name	Full name of the player (e.g., "Mayara Diniz").
+        team_id	Foreign key to reference the player's team.
+        region	Player's region (e.g., "LATAM").
+        league	League associated with the player (e.g., "game-changers").
 
-        2. Tournaments
-        Column_Name:	Description
-        tournament_id:	Primary key, unique identifier for each tournament.
-        player_id:	Foreign key, references the Players table.
-        tournament_name:	Name of the tournament.
+        2. Teams Table
+        Column_Name	Description
+        team_id	Primary key, unique identifier for each team (e.g., "107894513703662486").
+        team_name	Name of the team.
+        region	Team's region.
 
-        3. Agents
-        Column_Name:	Description
-        agent_id:	Primary key, unique identifier for each agent (agent is the game character).
-        map_id:	Foreign key, references the Maps table.
-        games_win:	Number of games won by the agent in this map.
-        games_count: 	Total number of games played by the agent in this map.
+        3. Matches Table
+        Column_Name	Description
+        match_id	Primary key, auto-incrementing match identifier.
+        league	League the match belongs to (e.g., "game-changers-2023").
+        date	Date of the match.
 
-        4. Maps 
-        Column_Name:	Description
-        map_id:	Primary key, unique identifier for each map.
-        tournament_id:	Foreign key, references the Tournaments table.
-        map_name:	Name of the map (e.g., "Canyon").
+        4. Maps Table
+        Column_Name	Description
+        map_id	Primary key, auto-incrementing identifier for each map.
+        match_id	Foreign key to reference the match.
+        map_name	Name of the map (e.g., "Canyon").
 
-        5. PerformanceDetails
-        Column_Name:	Description
-        performance_id:	Primary key, unique identifier for each performance record.
-        agent_id:	Foreign key, references the Agents table.
-        mode:	Mode of the game ("attacking" or "defending").
-        kills:	Number of kills made by the player in this performance.
-        deaths:	Number of deaths in the performance.
-        assists:	Number of assists in the performance.
-        rounds_taken:	Total number of rounds played.
-        rounds_win:	Total number of rounds won by the player.
-        cause:	JSON object storing details about the cause of certain events (e.g., {"SPIKE_DEFUSE": 9,"ELIMINATION": 32,"DETONATE": 2}).
+        5. Agents Table
+        Column_Name	Description
+        agent_id	Primary key, unique identifier for each agent (e.g., "117ED9E3-49F3-6512-3CCF-0CADA7E3823B").
+        agent_name	Name or identifier of the agent.
 
-        6. Summary
-        Column_Name:	Description
-        summary_id:	Primary key, unique identifier for summary.
-        agent_id:	Foreign key, references the Agents table.
-        combat_score:	Total combat score.
-        average_combat_score:	Average combat score per round.
-        kills:	Number of kills.
-        deaths:	Number of deaths.
-        assists:	Number of assists.
-        kpr:	Kill-per-round ratio.
-        dpr:	Death-per-round ratio.
-        total_damage_taken:	Total damage taken by the player.
-        total_damage_caused:	Total damage caused by the player.
-        average_damage_per_round:	Average damage caused per round.
-        average_damage_taken_per_round:	Average damage taken per round.
-        ddelta:	Damage delta (difference between damage taken and caused).
-        headshot_hit_rate:	Percentage of hits that were headshots.
+        6. Player_Performance Table
+        Column_Name	Description
+        performance_id	Primary key, auto-incrementing identifier.
+        player_id	Foreign key to reference the player.
+        map_id	Foreign key to reference the map.
+        agent_id	Foreign key to reference the agent used.
+        games_win	Number of games won by the player.
+        games_count	Total games played by the player on this map with this agent.
+        total_kills	Total number of kills.
+        total_deaths	Total number of deaths.
+        total_assists	Total number of assists.
+        rounds_taken	Total number of rounds played.
+        rounds_win	Number of rounds won.
+        combat_score	Combat score per game.
+        average_combat_score	Average combat score per round.
+        total_damage_taken	Total damage taken by the player.
+        total_damage_caused	Total damage caused by the player.
+        average_damage_per_round	Average damage caused per round.
+        headshot_hit_rate	Percentage of headshot hits.
 
-        7. DamageDetails 
-        Column_Name:	Description
-        damage_id:	Primary key, unique identifier for each damage record.
-        agent_id:	Foreign key, references the Agents table.
-        type:	Type of damage (e.g., "Head", "Body", "LEG", "GENERAL").
-        head_count:	Number of hits to the head.
-        body_count:	Number of hits to the body.
-        leg_count:	Number of hits to the legs.
-        general_count:	General count of all hits.
-        head_amount:	Total damage caused to the head.
-        body_amount:	Total damage caused to the body.
-        leg_amount:	Total damage caused to the legs.
-        general_amount:	General amount of all damage caused.
+        7. Cause Table
+        Column_Name	Description
+        cause_id	Primary key, auto-incrementing identifier.
+        performance_id	Foreign key to reference the performance record.
+        cause_type	Type of cause (e.g., "ELIMINATION", "SPIKE_DEFUSE", "DETONATE").
+        cause_count	Number of times this cause occurred.
+
+        8. Damage_Details Table
+        Column_Name	Description
+        damage_id	Primary key, auto-incrementing identifier.
+        performance_id	Foreign key to reference the performance record.
+        body_part	Body part damaged (e.g., "BODY", "HEAD", "LEG").
+        damage_count	Number of hits to the body part.
+        damage_amount	Amount of damage caused or received.
 '''
 
-    ##得到response中的sql语句之后，直接执行，然后将得到的数据返回。(json_to_str)
-    response = bedrock_completion(message_builder(system_message, message, history))
-    result_df = ensure_sql_execute(system_message, message, response, 0)
-    print(result_df)
-
+    ##得到response中的sql语句之后，直接执行，然后将得到的数据返回。(json?csv?)
+    response = llama_completion(message_builder(message, history, system_message))
+    response = '''
+        SELECT Tournaments.player_id, PerformanceDetails.*,Maps.map_id  FROM PerformanceDetails
+        JOIN Agents ON PerformanceDetails.agent_id = Agents.agent_id
+        JOIN Maps ON Agents.map_id = Maps.map_id
+        JOIN Tournaments ON Maps.tournament_id = Tournaments.tournament_id
+        WHERE Tournaments.player_id = '106230271915475632';
+        '''
+    result_df = sql_connector(response)
     if isinstance(result_df, pd.DataFrame): # 不管得到的数据是空与否
+
         df_json_string = result_df.to_json(orient='records', force_ascii=False)
         print(df_json_string)
         return df_json_string
     else:
         print("Check Database Status!")
         return False
-    
+
 
 def team_builder_agent(message: str, history: List[Tuple[str, str]]):
     system_message = '''
@@ -179,34 +158,46 @@ def team_builder_agent(message: str, history: List[Tuple[str, str]]):
         ###
         In your responses, please provide detailed explanations and analyses to ensure the strategy is reasonable and competitive. Your goal is to maximize team synergy, creating a top-tier team with balanced offense and defense and excellent teamwork.
     '''
-    response = bedrock_completion(message_builder(system_message, message, history))
-    return response
+    system_message = [{"text": system_message}]
+
+    messages = message_builder(message, history)
+    response = generate_conversation(
+        bedrock_client, model_id, system_message, messages)
+    return response['output']['message']
 
 
 def normal_agent(message: str, history: List[Tuple[str, str]]):
     system_message = '''
-    You are an AI chatbot designed to enthusiastically answer questions and provide detailed explanations to users. 
-    Your primary goal is to engage with users in a friendly, warm, and positive manner, making them feel welcome and valued.
-    Responses don't include any emoji. 
+    You are an AI chatbot designed to enthusiastically answer questions and provide detailed explanations to users. Your primary goal is to engage with users in a friendly, warm, and positive manner, making them feel welcome and valued. 
     '''
-    response = bedrock_completion(message_builder(system_message, message, history))
+    system_message = [{"text": system_message}]
+
+    messages = message_builder(message, history)
+    response = generate_conversation(
+        bedrock_client, model_id, system_message, messages)
     return response
 
 
 def classifier_agent(message: str, history: List[Tuple[str, str]]):
     system_message = '''
-    You are a data scientist on a new VALORANT esports team.
-    Complete the text classification task for the "user" query, categorizing the request into one of the items provided in the following list. 
-    Your output can only be one of the items from the list: ["Team Build", "Game Information", "Player Info", "Others"]
+    你是一个新的 VALORANT 电子竞技团队的数据科学家。
+    完成"用户"查询的文本分类任务，将请求分类为以下列表中提供的项目之一。
+    你的输出只能是列表中的一项：["Team Build", "Game Information", "Player Info", "Others"]
     '''
-    response = bedrock_completion(message_builder(system_message, message, history))
+    system_message = [{"text": system_message}]
+
+    messages = message_builder(message, history)
+    response = generate_conversation(
+        bedrock_client, model_id, system_message, messages)
     return response
 
 
 def master_main(message: str, history: List[Tuple[str, str]]):
     response = classifier_agent(message, history)
-    print(response)
-    if 'others' in response.lower():
+    logger.info(f"分类结果: {response}")
+
+    # if 'others' in response.lower():
+    if True:
         return normal_agent(message, history)
     else:
         additional_info = sql_agent(message, history)
@@ -218,6 +209,43 @@ def master_main(message: str, history: List[Tuple[str, str]]):
             else:
                 return valorant_agent(message, history)
         else:
-            print("无法获取相关信息，可能是数据库问题")
+            logger.warning("无法获取相关信息，可能是数据库问题")
             return valorant_agent(message, history)
 
+
+def generate_conversation(bedrock_client,
+                          model_id,
+                          system_prompts,
+                          messages):
+    """
+    Sends messages to a model.
+    Args:
+        bedrock_client: The Boto3 Bedrock runtime client.
+        model_id (str): The model ID to use.
+        system_prompts (JSON) : The system prompts for the model to use.
+        messages (JSON) : The messages to send to the model.
+
+    Returns:
+        response (JSON): The conversation that the model generated.
+
+    """
+
+    # Inference parameters to use.
+    temperature = 0.5
+    top_k = 0.9
+
+    # Base inference parameters to use.
+    inference_config = {"temperature": temperature}
+    # Additional inference parameters to use.
+    # additional_model_fields = {"top_k": top_k}
+
+    # Send the message.
+    response = bedrock_client.converse(
+        modelId=model_id,
+        messages=messages,
+        system=system_prompts,
+        inferenceConfig=inference_config
+        # additionalModelRequestFields=additional_model_fields
+    )
+
+    return response['output']['message']['content'][0]['text']

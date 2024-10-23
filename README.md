@@ -10,15 +10,7 @@ conda create --name=eva python=3.10
 conda activate eva
 pip install -r requirements.txt
 ```
-
-
-
 ### 2. Download Dataset From AWS S3 Bucket
-We have processed data and saved data as file [all player.json](/DATA/all_players.json) in our project.
-We could ues this json file do simple retrieval.
-<details>
-
-1. Download Dataset From AWS S3 Bucket
 
 ```
 git clone https://github.com/Kleinpenny/VCTEVA.git
@@ -26,40 +18,37 @@ cd /VCTEVA/Data_Preprocess/
 python download_dataset.py
 ```
 
-2. Preprocess Dataset
+### 3. Preprocess Dataset
+
 ```
 cd /VCTEVA/Data_Preprocess/
 python main.py
 ```
-TODO: 我们是如何处理数据，一步一步到，最后选手，联赛，年份，地图，比赛这样处理的。
-我首先统计出所有的player。
-然后遍历所有的比赛，统计每个比赛的每个选手的比赛数据，比如agent的选择，kda数据。
+#### Processed data stored in /DATA/all.players.json
 
-3. store data in [all.players.json](/DATA/all.players.json)
-里面包含了所有player的比赛的数据。
-</details>
+### 4. Install MYSQL in Linux
 
-### 3. MySQL Database
-1. Install MYSQL in Linux
 ```bash
 apt-get install mysql-server
 apt-get install mysql-client
 apt-get install libmysqlclient-dev
 ```
-2. Configure MySQL
+
+### 5. 配置mysql
 ```bash
 mysql -u root -p
 ```
-When using MySQL for the first time, there is no password set, so just press Enter.
+初次使用mysql，没有设置密码，因此直接回车即可
+
 ```mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'vcteva_2024';
 FLUSH PRIVILEGES;
 ```
 
 <details>
-  <summary>OPTIONAL(or if you encounter login issues)</summary>
+  <summary>OPTIONAL(或者遇到登陆问题)</summary>
 
-- If you need more users, you can create an account like 'admin' and set a password for it:
+- 若需要更多用户，可以创建例如: ‘admin’ 账户并为其设置密码：
 
 ````mysql
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'PASSWORD';
@@ -67,32 +56,31 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ````
 
-- If you forget the password for the `root` or `admin` user，you can try the following steps to reset it:
-  -  First, stop the MySQL service:
+- 如果你忘记了 `root` 或 `admin` 用户的密码，可以尝试以下步骤来重置密码：
+  -  首先停止 MySQL 服务：
      ```bash
      sudo systemctl stop mysql
      ```
-  - Then start MySQL in skip-grant-tables mode:
+  - 然后以跳过权限表的模式启动 MySQL：
      ```bash
      sudo mysqld_safe --skip-grant-tables &
      ```
-  - Log in to MySQL again, this time without a password:
+  - 再次登录 MySQL，此时不需要密码：
     ```bash
     mysql -u root
     ```
-    
-  - Once logged in, reset the password for the `admin` or `root` user:
+  - 登录成功后，重置 `admin` 或 `root` 用户的密码：
     ```mysql
     ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
     FLUSH PRIVILEGES;
     ```
-  - Finally, restart the MySQL service:
+  - 最后，重启 MySQL 服务：
     ```bash
     sudo systemctl start mysql
     ```
 </details>
 
-3. Create database and tables
+### 6. 创建database以及创建TABLES
 ```mysql
 Create database VCTEVA;
 exit;
@@ -101,7 +89,7 @@ cd VCTEVA/Data_Preprocess/Database
 python db_test.py
 ```
 <details>
-  <summary>OPTIONAL(Delete the database)</summary>
+  <summary>OPTIONAL(删除数据库)</summary>
 
 ```mysql
 SET FOREIGN_KEY_CHECKS = 0;
@@ -118,27 +106,27 @@ SET FOREIGN_KEY_CHECKS = 1;
 ```
 </details>
 
-### 4. Configure AWS Bedrock and LLM Client
+### 7. 设置AWS Bedrock和LLM客户端
 
-1. Install AWS CLI
-Install the AWS CLI following the (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+1. 安装AWS CLI
+   根据[AWS CLI安装指南](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)安装AWS CLI。
 
-2. Create an IAM User
-In the AWS console under the IAM service, create a new user and obtain the access credentials (Access Key ID and Secret Access Key) for this user.
+2. 创建IAM用户
+   在AWS控制台的IAM服务中创建一个新用户，并获取该用户的访问凭证（Access Key ID和Secret Access Key）。
 
-3. Configure AWS CLI
-Open the terminal and run the following command:
+3. 配置AWS CLI
+   打开终端，运行以下命令：
    ```
    aws configure
    ```
-   Follow the prompts to input your AWS credential information.
+   按照提示输入您的AWS凭证信息。
 
-4. Verify Credentials
-Run the following command to verify if your AWS credentials are correctly configured:
+4. 验证凭证
+   运行以下命令验证您的AWS凭证是否正确配置：
    ```
    aws sts get-caller-identity
    ```
-   If the credentials are valid, you will see an output similar to the following:
+   如果凭证有效，您将看到类似以下的输出：
    ```json
    {
        "UserId": "AIDAI...",
@@ -146,11 +134,11 @@ Run the following command to verify if your AWS credentials are correctly config
        "Arn": "arn:aws:iam::123456789012:user/username"
    }
    ```
-   If the credentials are invalid, you will receive an error message.
+   如果凭证无效，您将收到错误消息。
 
-After completing these steps, you can use the AWS Bedrock service and the selected LLM client.
+完成以上步骤后，您就可以使用AWS Bedrock服务和选定的LLM客户端了。
 
-### 5. Run the Chatbot
+### 8. Run the Chatbot
 
 ```
 python app.py
@@ -159,20 +147,18 @@ python app.py
 # Project Story
 
 This project implements a flexible and extensible chatbot system that can work with different Large Language Models (LLMs) and incorporate Retrieval-Augmented Generation (RAG) capabilities. The system is designed with modularity and ease of use in mind, allowing for seamless integration of various LLM providers and easy switching between them.
-## System Workflow
+## 系统工作流程
 
-
-The following flowchart shows how our chatbot system processes user input and generates responses:
+以下流程图展示了我们的聊天机器人系统如何处理用户输入并生成响应：
 
 ```mermaid
 flowchart TD
     A[User Input] -->|Message| B[Chatbot - master_main]
     B --> C[queryclassifier - Classifier Agent]
-    C -->|others| D[Normal Agent]
-    C -->|Game Query| E[SQL Agent]
+    C -->|Classifier: others| D[Normal Agent]
+    C -->|Classifier: SQL Query| E[SQL Agent]
     
     subgraph " "
-        DB[(MySQL Database)]
         E[SQL Agent]
         F[Team Builder Agent]
         G[Valorant Player Agent]
@@ -180,53 +166,67 @@ flowchart TD
 
     E --> G
     E --> F
-    E --> DB
-    DB --> E
     D --> H[Return Response]
     F --> H
     G --> H
+
 ```
 
-This flowchart illustrates how user input is processed through different agents and decision points to generate the appropriate response.
+这个流程图展示了用户输入如何通过不同的代理和决策点进行处理，最终生成适当的响应。
+
+
+
+## 系统工作流程
+
+以下流程图展示了我们的聊天机器人系统如何处理用户输入并生成响应：
+
+```mermaid
+flowchart TD
+    A[User Input] -->|Message| B[Chatbot - master_main]
+    B --> C[queryclassifier - Classifier Agent]
+    C -->|Classifier: others| D[Normal Agent]
+    C -->|Classifier: SQL Query| E[SQL Agent]
+    
+    subgraph " "
+        E[SQL Agent]
+        F[Team Builder Agent]
+        G[Valorant Player Agent]
+    end
+
+    E --> G
+    E --> F
+    D --> H[Return Response]
+    F --> H
+    G --> H
+
+```
+
+这个流程图展示了用户输入如何通过不同的代理和决策点进行处理，最终生成适当的响应。
+
 
 ## Project Components
 
-1. **Master Agent ([Master_Agent.py](/Chatbot/Master_Agent.py))**:  
-   Acts as the main agent, dispatching other agents based on the query context.
+1. **Base LLM Client (base_llm_client.py)**: 
+   An abstract base class that defines the interface for all LLM clients. It ensures that all concrete implementations provide a `chat_completion` method.
 
-2. **Classifier Agent**:  
-   Determines whether the query is related to Valorant.
+2. **HuggingFace LLM Client (llm_client.py)**: 
+   A concrete implementation of the BaseLLMClient for HuggingFace models. It uses the HuggingFace InferenceClient to interact with models hosted on the HuggingFace platform.
 
-3. **Normal Agent**:  
-   Handles general chat-related queries.
+3. **AWS Bedrock LLM Client (aws_bedrock_client.py)**: 
+   Another concrete implementation of the BaseLLMClient, this time for AWS Bedrock models. It uses the boto3 library to interact with AWS Bedrock services.
 
-4. **SQL Agent**:  
-   Processes queries that require SQL retrieval and generates SQL queries.
+4. **Chatbot (chatbot.py)**: 
+   The core class that handles the chat logic. It takes an LLM client as a parameter, allowing it to work with any LLM implementation that follows the BaseLLMClient interface. It also supports an optional RAG interface for enhanced context retrieval.
 
-5. **Teambuild Agent & Valorant Agent**:  
-   Called by the master agent to handle team-building and Valorant-related queries respectively.
-
-6. **AWS Bedrock LLM Client ([aws_bedrock_client.py](/llm/aws_bedrock.py))**:  
-   Uses the AWS Bedrock API to interact with LLaMA 3.1 80B.
-
-7. **Gradio Chatbot Interface ([app.py](app.py))**:  
-   Provides the front-end chat UI using Gradio.
-
-8. **Vue Front-End (in progress)**:  
-   A more refined UI under development using Vue.
-
+5. **Gradio Interface (app.py)**: 
+   Sets up the user interface using Gradio, creating a chat interface that users can interact with. It initializes the chosen LLM client and the Chatbot, then launches the interface.
 
 ## Key Features
 
 - **Modular Design**: The use of a base class for LLM clients allows for easy addition of new LLM providers without changing the core chatbot logic.
 - **Flexible LLM Selection**: Users can easily switch between different LLM providers (e.g., HuggingFace, AWS Bedrock) by changing the client initialization in the main function.
 - **RAG Support**: The chatbot can optionally use a Retrieval-Augmented Generation interface to enhance responses with relevant context.
-MySQL database
-
-sql agent: generate sql for retrieval automatically
-
 
 ## Challenges we ran into
-1. How to design the database structure.
+1. 构建怎么样的数据库。
 2. ![alt text](image.png)
-
