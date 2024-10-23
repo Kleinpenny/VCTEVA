@@ -2,31 +2,28 @@ import boto3
 import json
 
 def bedrock_completion(messages: list[dict[str, str]]):
-    bedrock_client = boto3.client(
-            service_name='bedrock-runtime',
-            region_name="eu-central-1" # 请根据您的AWS配置更改区域
-        )
-    model_id = "amazon.titan-text-express-v1"
-    
-    body = json.dumps({
-        "inputText": messages,
-        "textGenerationConfig": {
-            "maxTokenCount": 2048,
-            "stopSequences": ["User:"],
-            "temperature": 0.7,
-            "topP": 0.9
-        }
-    })
 
-    response = bedrock_client.invoke_model_with_response_stream(
-        body=body,
+    # 初始化 bedrock 客户端
+    bedrock_client = boto3.client(
+        service_name='bedrock-runtime', region_name="us-east-1")
+    model_id = 'meta.llama3-70b-instruct-v1:0' #'meta.llama3-70b-instruct-v1:0'
+    
+    # Inference parameters to use.
+    #temperature = 0.7
+    top_k = 0.9
+
+    # Base inference parameters to use.
+    #inference_config = {"temperature": temperature}
+    # Additional inference parameters to use.
+    # additional_model_fields = {"top_k": top_k}
+
+    # Send the message.
+    response = bedrock_client.converse(
         modelId=model_id,
-        accept='application/json',
-        contentType='application/json'
+        messages=messages,
+        #system=system_prompts, #效果不太好
+        #inferenceConfig=inference_config
+        # additionalModelRequestFields=additional_model_fields
     )
 
-    stream = response.get('body')
-    # response_body = json.loads(response['body'].read())
-
-    # return response_body['results'][0]['outputText']
-    return stream
+    return response['output']['message']['content'][0]['text']
