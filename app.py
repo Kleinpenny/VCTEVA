@@ -8,7 +8,7 @@ class GradioInterface:
         ).queue()
 
     def launch(self):
-        self.demo.launch(server_name="0.0.0.0", server_port=7862, share=True)
+        self.demo.launch(server_port=7862, share=True)
 
 
 def main():

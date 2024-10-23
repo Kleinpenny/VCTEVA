@@ -92,10 +92,6 @@ export default {
     TeamDisplay
   },
   computed: {
-    playerAvatarUrl() {
-      // 使用 DiceBear API，根据玩家的 ID 生成唯一的头像 （慢）
-      return `https://avatars.dicebear.com/api/bottts/${this.player.id}.svg`;
-    },
     filteredPlayers() {
       return this.availablePlayers.filter((player) => {
         const matchesName = player.name
@@ -162,21 +158,30 @@ export default {
     async sendMessage() {
       if (!this.inputMessage.trim()) return;
       this.messages.push({type: 'user', text: this.inputMessage});
+      const message = this.inputMessage;
+        this.inputMessage = '';
       try {
-        const app = await Client.connect(global.GRADIO_GLOBAL_LINK);
-        const result = await app.predict("/chat", [
-          "Howdy!", // string  in 'Message' Textbox component
-        ]);
-
-        console.log(result);
-
+        const app = await Client.connect(global.GRADIO_LOCAL_LINK);
+        console.log('client config ok')
+        const result = await app.predict("/chat", {
+          message: message,
+        });
+        console.log('get chat result')
         const botResponse = result.data;
+        console.log(botResponse)
         this.messages.push({ type: 'bot', text: botResponse });
-
       } catch (error) {
         this.messages.push({ type: 'bot', text: 'Sorry, I could not process your question at the moment.' });
+        console.log(error);
       }
-      this.inputMessage = '';
+
+      // const response = await axios.post(global.GRADIO_LOCAL_LINK + '/chat', {
+      //   data: [this.inputMessage],
+      // }, {withCredentials: false});
+
+      // 假设响应结构是 response.data.data[0]
+      // const result = response.data.data[0];
+
     },
     messageClass(type) {
       return type === 'user' ? 'user-message justify-end' : 'bot-message justify-start';

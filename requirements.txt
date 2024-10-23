@@ -1,15 +1,13 @@
-gradio == 3.50.2
+gradio == 4.44.1
 gradio_client
-requests
+requests~=2.32.3
 huggingface_hub
-transformers==4.33.0
-accelerate==0.22.0
-einops==0.6.1
-langchain
-sentence_transformers==2.2.2
-chromadb==0.4.12
-torch==2.4.1
 numpy>=1.17
-boto3
-mysql
-mysql-connector-python
+boto3~=1.35.45
+mysql~=0.0.3
+mysql-connector-python~=9.1.0
+fastapi~=0.115.3
+pandas~=2.2.3
+torch~=2.5.0
+transformers~=4.45.2
+langchain~=0.3.4
