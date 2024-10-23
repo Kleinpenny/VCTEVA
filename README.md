@@ -10,7 +10,15 @@ conda create --name=eva python=3.10
 conda activate eva
 pip install -r requirements.txt
 ```
+
+
+
 ### 2. Download Dataset From AWS S3 Bucket
+We have processed data and saved data as file [all player.json](/DATA/all_players.json) in our project.
+We could ues this json file do simple retrieval.
+<details>
+
+1. Download Dataset From AWS S3 Bucket
 
 ```
 git clone https://github.com/Kleinpenny/VCTEVA.git
@@ -18,23 +26,24 @@ cd /VCTEVA/Data_Preprocess/
 python download_dataset.py
 ```
 
-### 3. Preprocess Dataset
-
+2. Preprocess Dataset
+TODO: 我们是如何处理数据，一步一步到，最后选手，联赛，年份，地图，比赛这样处理的。
 ```
 cd /VCTEVA/Data_Preprocess/
 python main.py
 ```
-#### Processed data stored in /DATA/all.players.json
+3. store data in /DATA/all.players.json
+</details>
 
-### 4. Install MYSQL in Linux
+### 3. MySQL Database
+1. Install MYSQL in Linux
 
 ```bash
 apt-get install mysql-server
 apt-get install mysql-client
 apt-get install libmysqlclient-dev
 ```
-
-### 5. Configure MySQL
+2. Configure MySQL
 ```bash
 mysql -u root -p
 ```
@@ -81,7 +90,7 @@ FLUSH PRIVILEGES;
     ```
 </details>
 
-### 6. Create database and tables
+3. Create database and tables
 ```mysql
 Create database VCTEVA;
 exit;
@@ -107,7 +116,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 ```
 </details>
 
-### 7. Configure AWS Bedrock and LLM Client
+### 4. Configure AWS Bedrock and LLM Client
 
 1. Install AWS CLI
 Install the AWS CLI following the (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
@@ -139,7 +148,7 @@ Run the following command to verify if your AWS credentials are correctly config
 
 After completing these steps, you can use the AWS Bedrock service and the selected LLM client.
 
-### 8. Run the Chatbot
+### 5. Run the Chatbot
 
 ```
 python app.py
@@ -157,10 +166,11 @@ The following flowchart shows how our chatbot system processes user input and ge
 flowchart TD
     A[User Input] -->|Message| B[Chatbot - master_main]
     B --> C[queryclassifier - Classifier Agent]
-    C -->|Classifier: others| D[Normal Agent]
-    C -->|Classifier: SQL Query| E[SQL Agent]
+    C -->|others| D[Normal Agent]
+    C -->|Game Query| E[SQL Agent]
     
     subgraph " "
+        DB[(MySQL Database)]
         E[SQL Agent]
         F[Team Builder Agent]
         G[Valorant Player Agent]
@@ -168,39 +178,53 @@ flowchart TD
 
     E --> G
     E --> F
+    E --> DB
+    DB --> E
     D --> H[Return Response]
     F --> H
     G --> H
-
 ```
 
 This flowchart illustrates how user input is processed through different agents and decision points to generate the appropriate response.
 
-
-
 ## Project Components
 
-1. **Base LLM Client (base_llm_client.py)**: 
-   An abstract base class that defines the interface for all LLM clients. It ensures that all concrete implementations provide a `chat_completion` method.
+1. **Master Agent ([Master_Agent.py](/Chatbot/Master_Agent.py))**:  
+   Acts as the main agent, dispatching other agents based on the query context.
 
-2. **HuggingFace LLM Client (llm_client.py)**: 
-   A concrete implementation of the BaseLLMClient for HuggingFace models. It uses the HuggingFace InferenceClient to interact with models hosted on the HuggingFace platform.
+2. **Classifier Agent**:  
+   Determines whether the query is related to Valorant.
 
-3. **AWS Bedrock LLM Client (aws_bedrock_client.py)**: 
-   Another concrete implementation of the BaseLLMClient, this time for AWS Bedrock models. It uses the boto3 library to interact with AWS Bedrock services.
+3. **Normal Agent**:  
+   Handles general chat-related queries.
 
-4. **Chatbot (chatbot.py)**: 
-   The core class that handles the chat logic. It takes an LLM client as a parameter, allowing it to work with any LLM implementation that follows the BaseLLMClient interface. It also supports an optional RAG interface for enhanced context retrieval.
+4. **SQL Agent**:  
+   Processes queries that require SQL retrieval and generates SQL queries.
 
-5. **Gradio Interface (app.py)**: 
-   Sets up the user interface using Gradio, creating a chat interface that users can interact with. It initializes the chosen LLM client and the Chatbot, then launches the interface.
+5. **Teambuild Agent & Valorant Agent**:  
+   Called by the master agent to handle team-building and Valorant-related queries respectively.
+
+6. **AWS Bedrock LLM Client ([aws_bedrock_client.py](/llm/aws_bedrock.py))**:  
+   Uses the AWS Bedrock API to interact with LLaMA 3.1 80B.
+
+7. **Gradio Chatbot Interface ([app.py](app.py))**:  
+   Provides the front-end chat UI using Gradio.
+
+8. **Vue Front-End (in progress)**:  
+   A more refined UI under development using Vue.
+
 
 ## Key Features
 
 - **Modular Design**: The use of a base class for LLM clients allows for easy addition of new LLM providers without changing the core chatbot logic.
 - **Flexible LLM Selection**: Users can easily switch between different LLM providers (e.g., HuggingFace, AWS Bedrock) by changing the client initialization in the main function.
 - **RAG Support**: The chatbot can optionally use a Retrieval-Augmented Generation interface to enhance responses with relevant context.
+MySQL database
+
+sql agent: generate sql for retrieval automatically
+
 
 ## Challenges we ran into
 1. How to design the database structure.
 2. ![alt text](image.png)
+

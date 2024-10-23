@@ -15,7 +15,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-USE vcteva;
+USE VCTEVA;
 --
 -- Table structure for table `Agents`
 --
@@ -159,8 +159,8 @@ CREATE TABLE `Players` (
 
 LOCK TABLES `Players` WRITE;
 /*!40000 ALTER TABLE `Players` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Players` ENABLE KEYS */;
 UNLOCK TABLES;
+/*!40000 ALTER TABLE `Players` ENABLE KEYS */;
 
 --
 -- Table structure for table `Summary`

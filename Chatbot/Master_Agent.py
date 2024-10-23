@@ -1,12 +1,10 @@
 from typing import List, Tuple, Dict, Any
-import gradio as gr
-from llama3 import llama_completion
-from aws_bedrock import bedrock_completion
 import pandas as pd
-import boto3
 import mysql.connector
 import pandas as pd
 from mysql.connector import Error
+from llm.llama3 import llama_completion
+from llm.aws_bedrock import bedrock_completion
 
 
 def message_builder(system_prompt: str, message: str, history: List[Tuple[str, str]]):
@@ -45,7 +43,7 @@ def ensure_sql_execute(system_message, message, response, retry):
         connection = mysql.connector.connect(
         host="localhost",
         user="vct",
-        password="Leon1234",
+        password="vcteva_2024",
         database="VCTEVA",
         )
         cursor = connection.cursor()
