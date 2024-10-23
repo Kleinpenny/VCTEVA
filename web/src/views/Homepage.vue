@@ -9,7 +9,7 @@
     </div>
     <div class="start-button">
       <!-- 使用 router-link 进行页面跳转 -->
-      <router-link to="/test" class="start-now">Start Now</router-link>
+      <router-link to="/chat" class="start-now">Start Now</router-link>
     </div>
   </div>
 </template>
