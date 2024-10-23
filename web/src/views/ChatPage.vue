@@ -111,7 +111,7 @@ export default {
   },
   async created() {
     try {
-      const response = await axios.get('http://localhost:3307/players');
+      const response = await axios.get(global.DATABASE_LINK + '/players');
       this.availablePlayers = response.data.map(player => {
         // 获取玩家名字的前两个字母，并将其转换为大写
         const initials = player.name
@@ -133,8 +133,8 @@ export default {
     } catch (error) {
       console.error('Error fetching data:', error);
     }
-    const regionResponse = await axios.get('http://localhost:3307/regions');
-    const averageResponse = await axios.get('http://localhost:3307/average');
+    const regionResponse = await axios.get(global.DATABASE_LINK + '/regions');
+    const averageResponse = await axios.get(global.DATABASE_LINK + '/average');
     this.regions = regionResponse.data;
     this.average = averageResponse.data[0];
   },
@@ -143,7 +143,7 @@ export default {
       searchQuery: '',
       average: {},
       selectedRegion: '',
-      regions: [], // 赛区列表 fake data
+      regions: [],
       llmService: global.LLM_SERVICE_TPYE,
       selectedTeam: [],
       inputMessage: '',
@@ -163,10 +163,12 @@ export default {
       if (!this.inputMessage.trim()) return;
       this.messages.push({type: 'user', text: this.inputMessage});
       try {
-        const app = await Client.connect(global.GRADIO_LOCAL_LINK);
+        const app = await Client.connect(global.GRADIO_GLOBAL_LINK);
+        const result = await app.predict("/chat", [
+          "Howdy!", // string  in 'Message' Textbox component
+        ]);
 
-        // 等待预测结果 因为有await，可能导致获取回复的速度较慢,可以根据运行的gradio app 来显示具体的api格式
-        const result = await app.predict("/chat", [this.inputMessage]);
+        console.log(result);
 
         const botResponse = result.data;
         this.messages.push({ type: 'bot', text: botResponse });

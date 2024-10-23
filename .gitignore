@@ -164,3 +164,8 @@ cython_debug/
 !/DATA/game-changers/games/.gitkeep
 !/DATA/vct-challengers/games/.gitkeep
 !/DATA/vct-international/games/.gitkeep
+nodejs-backend/node_modules/vary/README.md
+nodejs-backend/node_modules/vary/HISTORY.md
+nodejs-backend/node_modules/vary/LICENSE
+/nodejs-backend/node_modules
+/nodejs-backend/.idea
