@@ -149,6 +149,7 @@ A successful response should look like:
     "Arn": "arn:aws:iam::123456789012:user/username"
 }
 ```
+Besides, You need to apply for permission to use the llama model in the us-east-1 region on Bedrock.
 
 ### 5. Launch the Chatbot
 
