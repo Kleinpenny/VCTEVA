@@ -3,50 +3,55 @@ Repository for VCT Hackathon: Esports Manager Challenge
 
 ## Python Environment Setup
 
-### 1. Conda Environment Set Up
+### 1. Python Environment
 
-```
+Set up a Conda environment:
+
+```bash
 conda create --name=eva python=3.10
 conda activate eva
 pip install -r requirements.txt
 ```
 
+### 2. Data Preparation
 
+We've preprocessed the data and stored it in [all_players.json](/DATA/all_players.json) for simple retrieval.
 
-### 2. Download Dataset From AWS S3 Bucket
-We have processed data and saved data as file [all player.json](/DATA/all_players.json) in our project.
-We could ues this json file do simple retrieval.
 <details>
+<summary>Detailed Data Processing Steps</summary>
 
 1. Download Dataset From AWS S3 Bucket
 
-```
+```bash
 git clone https://github.com/Kleinpenny/VCTEVA.git
-cd /VCTEVA/Data_Preprocess/
+cd VCTEVA/Data_Preprocess/
 python download_dataset.py
 ```
 
-2. Preprocess Dataset
-```
-cd /VCTEVA/Data_Preprocess/
+2. Preprocess the dataset:
+
+```bash
 python main.py
 ```
-TODO: 我们是如何处理数据，一步一步到，最后选手，联赛，年份，地图，比赛这样处理的。
-我首先统计出所有的player。
-然后遍历所有的比赛，统计每个比赛的每个选手的比赛数据，比如agent的选择，kda数据。
 
-3. store data in [all.players.json](/DATA/all.players.json)
-里面包含了所有player的比赛的数据。
+Our preprocessing pipeline involves:
+- Extracting all unique players from all leagues/esports-data
+- Iterating through all games to compile player statistics
+- Aggregating data on agents, KDA, and other relevant metrics
+
+3. The processed data is stored in [all_players.json](/DATA/all_players.json), containing comprehensive match data for all players.
 </details>
 
-### 3. MySQL Database
-1. Install MYSQL in Linux
+### 3. MySQL Database Setup
+
+1. Install MySQL on Linux:
+
 ```bash
-apt-get install mysql-server
-apt-get install mysql-client
-apt-get install libmysqlclient-dev
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 ```
-2. Configure MySQL
+
+2. Configure MySQL:
+
 ```bash
 mysql -u root -p
 ```
@@ -55,7 +60,6 @@ When using MySQL for the first time, there is no password set, so just press Ent
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'vcteva_2024';
 FLUSH PRIVILEGES;
 ```
-
 <details>
   <summary>OPTIONAL(or if you encounter login issues)</summary>
 
@@ -100,12 +104,12 @@ mysql -u root -p VCTEVA < VCTEVA/Data_Preprocess/Database/VCTEVA_backup.sql
 cd VCTEVA/Data_Preprocess/Database
 python db_test.py
 ```
+
 <details>
   <summary>OPTIONAL(Delete the database)</summary>
-
-```mysql
+```sql
 SET FOREIGN_KEY_CHECKS = 0;
-Use VCTEVA;
+USE VCTEVA;
 DELETE FROM PerformanceDetails;
 DELETE FROM Summary;
 DELETE FROM Agents;
@@ -113,56 +117,52 @@ DELETE FROM Maps;
 DELETE FROM Tournaments;
 DELETE FROM Players;
 DELETE FROM DamageDetails;
-
 SET FOREIGN_KEY_CHECKS = 1;
 ```
+
 </details>
 
-### 4. Configure AWS Bedrock and LLM Client
+### 4. AWS Bedrock and LLM Client Configuration
 
-1. Install AWS CLI
-Install the AWS CLI following the (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+1. Install the AWS CLI following the [official documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
-2. Create an IAM User
-In the AWS console under the IAM service, create a new user and obtain the access credentials (Access Key ID and Secret Access Key) for this user.
+2. Create an IAM User in the AWS console and obtain the access credentials(Access Key ID and Secret Access Key).
 
-3. Configure AWS CLI
-Open the terminal and run the following command:
-   ```
-   aws configure
-   ```
-   Follow the prompts to input your AWS credential information.
+3. Configure AWS CLI:
 
-4. Verify Credentials
-Run the following command to verify if your AWS credentials are correctly configured:
-   ```
-   aws sts get-caller-identity
-   ```
-   If the credentials are valid, you will see an output similar to the following:
-   ```json
-   {
-       "UserId": "AIDAI...",
-       "Account": "123456789012",
-       "Arn": "arn:aws:iam::123456789012:user/username"
-   }
-   ```
-   If the credentials are invalid, you will receive an error message.
-
-After completing these steps, you can use the AWS Bedrock service and the selected LLM client.
-
-### 5. Run the Chatbot
-
+```bash
+aws configure
 ```
+
+4. Verify your credentials:
+
+```bash
+aws sts get-caller-identity
+```
+
+A successful response should look like:
+
+```json
+{
+    "UserId": "AIDAI...",
+    "Account": "123456789012",
+    "Arn": "arn:aws:iam::123456789012:user/username"
+}
+```
+
+### 5. Launch the Chatbot
+
+```bash
 python app.py
 ```
 
-# Project Story
+## Project Overview
 
-This project implements a flexible and extensible chatbot system that can work with different Large Language Models (LLMs) and incorporate Retrieval-Augmented Generation (RAG) capabilities. The system is designed with modularity and ease of use in mind, allowing for seamless integration of various LLM providers and easy switching between them.
-## System Workflow
+This project implements a flexible and extensible chatbot system with support for various Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) capabilities. The system is designed for modularity and ease of use, allowing seamless integration of different LLM providers.
 
+### System Architecture
 
-The following flowchart shows how our chatbot system processes user input and generates responses:
+The following flowchart illustrates the chatbot's processing pipeline:
 
 ```mermaid
 flowchart TD
@@ -187,46 +187,36 @@ flowchart TD
     G --> H
 ```
 
-This flowchart illustrates how user input is processed through different agents and decision points to generate the appropriate response.
+### Key Components
 
-## Project Components
+1. **Master Agent** ([Master_Agent.py](/Chatbot/Master_Agent.py)): Orchestrates the interaction between different specialized agents.
 
-1. **Master Agent ([Master_Agent.py](/Chatbot/Master_Agent.py))**:  
-   Acts as the main agent, dispatching other agents based on the query context.
+2. **Classifier Agent**: Determines the nature of the query (Valorant-related or general).
 
-2. **Classifier Agent**:  
-   Determines whether the query is related to Valorant.
+3. **Normal Agent**: Handles general conversational queries.
 
-3. **Normal Agent**:  
-   Handles general chat-related queries.
+4. **SQL Agent**: Generates and executes SQL queries for data retrieval.
 
-4. **SQL Agent**:  
-   Processes queries that require SQL retrieval and generates SQL queries.
+5. **Team Builder & Valorant Agents**: Specialized agents for team composition and Valorant-specific queries.
 
-5. **Teambuild Agent & Valorant Agent**:  
-   Called by the master agent to handle team-building and Valorant-related queries respectively.
+6. **AWS Bedrock LLM Client** ([aws_bedrock_client.py](/llm/aws_bedrock.py)): Interfaces with AWS Bedrock API to leverage LLaMA 3.1 80B.
 
-6. **AWS Bedrock LLM Client ([aws_bedrock_client.py](/llm/aws_bedrock.py))**:  
-   Uses the AWS Bedrock API to interact with LLaMA 3.1 80B.
+7. **Gradio Chatbot Interface** ([app.py](app.py)): Provides a user-friendly chat UI.
 
-7. **Gradio Chatbot Interface ([app.py](app.py))**:  
-   Provides the front-end chat UI using Gradio.
+8. **Vue Front-End** (in development): An advanced UI built with Vue.js.
 
-8. **Vue Front-End (in progress)**:  
-   A more refined UI under development using Vue.
+### Key Features
 
+- **Modular Design**: Easily extendable to support new LLM providers.
+- **Flexible LLM Selection**: Switch between different LLM providers by modifying the client initialization.
+- **RAG Support**: Enhances responses with relevant context from the knowledge base.
+- **Automated SQL Generation**: The SQL agent dynamically generates queries for efficient data retrieval.
 
-## Key Features
+## Challenges and Solutions
 
-- **Modular Design**: The use of a base class for LLM clients allows for easy addition of new LLM providers without changing the core chatbot logic.
-- **Flexible LLM Selection**: Users can easily switch between different LLM providers (e.g., HuggingFace, AWS Bedrock) by changing the client initialization in the main function.
-- **RAG Support**: The chatbot can optionally use a Retrieval-Augmented Generation interface to enhance responses with relevant context.
-MySQL database
+1. **Database Design**: Optimizing the schema for efficient querying of complex esports data.
+2. **LLM Integration**: Seamlessly incorporating different LLM providers while maintaining a consistent interface.
+3. **Query Classification**: Developing a robust system to accurately categorize and route user queries.
+4. **Performance Optimization**: Balancing response time with the depth of data retrieval and processing.
 
-sql agent: generate sql for retrieval automatically
-
-
-## Challenges we ran into
-1. How to design the database structure.
-2. ![alt text](image.png)
-
+![alt text](image.png)
