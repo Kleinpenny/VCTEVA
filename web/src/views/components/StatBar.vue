@@ -7,12 +7,12 @@
         :location="null"
         bg-color="#92aed9"
         buffer-color="white"
-        buffer-opacity="1"
-        :buffer-value="getBarPercent() + 1"
+        buffer-opacity="10"
+        :buffer-value="getBarPercent()"
         :color="getBarColor()"
         :class="getClassBar()"
-        height="3"
-        max="9"
+        height="5"
+        max="100"
         min="0"
         :model-value="getBarPercent()"
         rounded
@@ -22,8 +22,8 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
-  data: () => ({ review: "20%" }),
   props: {
     title: String,
     value: Number,
@@ -78,7 +78,7 @@ export default {
 }
 
 .stat-title {
-  font-size: 12px;
+  font-size: 10px;
   color: white;
 }
 

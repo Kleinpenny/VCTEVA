@@ -11,4 +11,5 @@ chromadb==0.4.12
 torch==2.4.1
 numpy>=1.17
 boto3
+mysql
 mysql-connector-python

@@ -35,12 +35,28 @@
       <div class="player-list-header">
         <span>Players</span>
       </div>
-      <div v-for="(player, index) in availablePlayers" :key="index" :class="['player-card', `gradient-${index % gradients.length}`]">
+      <!-- 搜索框：根据选手名字筛选 -->
+      <input
+          type="text"
+          v-model="searchQuery"
+          placeholder="Search Players..."
+          class="custom-input"
+      />
+
+      <select v-model="selectedRegion" class="custom-select">
+        <option value="">All Regions</option>
+        <option v-for="region in regions" :key="region" :value="region">
+          {{ region }}
+        </option>
+      </select>
+      <div v-for="(player, index) in filteredPlayers" :key="index" :class="['player-card']">
         <div class="player-info">
-          <img src="./components/avatar.webp" alt="Player Avatar" class="player-avatar"  />
+          <div class="player-avatar" :style="{ backgroundColor: player.bgColor }">
+            {{ player.avatarInitials }}
+          </div>
           <div>
-            <h3 class="player-name">{{ player.nickName }}</h3>
-            <p class="player-score">{{ player.team }}/{{ player.region}}</p>
+            <h3 class="player-name">{{ player.handle }} </h3>
+            <p class="player-score">{{ player.name }}</p> <p class="player-score"> {{ player.region}}</p>
           </div>
         </div>
         <v-bottom-sheet inset>
@@ -56,7 +72,7 @@
           </template>
 
           <v-sheet>
-            <TeamDisplay :team="selectedTeam" @deletePlayer="deletePlayerFromTeam"/>
+            <TeamDisplay :average="average" :team="selectedTeam" @deletePlayer="deletePlayerFromTeam"/>
           </v-sheet>
         </v-bottom-sheet>
       </div>
@@ -69,114 +85,72 @@
 import TeamDisplay from "@/views/components/TeamDisplay.vue";
 import { Client } from "@gradio/client";
 import global from "..//global.js";
-
+import axios from 'axios';
 
 export default {
   components: {
     TeamDisplay
   },
   computed: {
-    display () {
-      return this.$vuetify.display
+    playerAvatarUrl() {
+      // 使用 DiceBear API，根据玩家的 ID 生成唯一的头像 （慢）
+      return `https://avatars.dicebear.com/api/bottts/${this.player.id}.svg`;
+    },
+    filteredPlayers() {
+      return this.availablePlayers.filter((player) => {
+        const matchesName = player.name
+            ? player.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+            : false;
+
+        const matchesRegion =
+            !this.selectedRegion || player.region === this.selectedRegion;
+
+        return matchesName && matchesRegion;
+      });
     },
   },
-  mounted() {
-    console.log(1);
+  async created() {
+    try {
+      const response = await axios.get('http://localhost:3307/players');
+      this.availablePlayers = response.data.map(player => {
+        // 获取玩家名字的前两个字母，并将其转换为大写
+        const initials = player.name
+            ? player.name.split(' ').map(word => word.charAt(0).toUpperCase()).join('').slice(0, 2)
+            : player.handle.charAt(0).toUpperCase();
 
+        // 随机生成一个背景颜色
+        const colors = ['#e57373', '#81c784', '#64b5f6', '#ffb74d', '#ba68c8'];
+        const bgColor = colors[Math.floor(Math.random() * colors.length)];
+
+        return {
+          ...player,
+          avatarInitials: initials,
+          bgColor,
+        };
+      });
+
+      console.log(this.availablePlayers); // 检查输出的内容是否正确
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+    const regionResponse = await axios.get('http://localhost:3307/regions');
+    const averageResponse = await axios.get('http://localhost:3307/average');
+    this.regions = regionResponse.data;
+    this.average = averageResponse.data[0];
   },
   data() {
     return {
+      searchQuery: '',
+      average: {},
+      selectedRegion: '',
+      regions: [], // 赛区列表 fake data
       llmService: global.LLM_SERVICE_TPYE,
       selectedTeam: [],
       inputMessage: '',
       messages: [
         { type: 'bot', text: 'Yeah, it would help in forming a team!' },
       ],
-      availablePlayers: [
-        {image: './components/avatar.webp',
-          nickName: 'tabseN',
-          realName: 'Johannes Wodarz',
-          team: 'BIG',
-          region: 'NA',
-          teamImage: './download.png',
-          age: 25,
-          rating: 20.17,
-          impact: 1.22,
-          dpr: 0.66,
-          adr: 85.1,
-          kast: 71.3,
-          kpr: 0.74},
-        {image: '../assets/avatar.webp',
-          nickName: 'wacsc',
-          realName: 'acgwefwef',
-          team: 'BIG',
-          age: 25,
-          region: 'NA',
-          rating: 100.17,
-          impact: 0.1,
-          dpr: 0.66,
-          adr: 85.1,
-          kast: 0.1,
-          kpr: 0.74},
-        {image: 'avatar.webp',
-          nickName: 'Tony',
-          realName: 'Ren',
-          team: 'T1',
-          age: 25,
-          region: 'NA',
-          rating: 1.17,
-          impact: 1.22,
-          dpr: 0.66,
-          adr: 85.1,
-          kast: 71.3,
-          kpr: 0.74},
-        {image: 'avatar.webp',
-          nickName: 'SuperGlue',
-          realName: 'Ren',
-          team: 'T1',
-          age: 25,
-          region: 'NA',
-          rating: 1.17,
-          impact: 3,
-          dpr: 0.66,
-          adr: 1001,
-          kast: 71.3,
-          kpr: 0.74},
-        {image: 'avatar.webp',
-          nickName: '12',
-          realName: 'Ren',
-          team: 'T1',
-          age: 25,
-          region: 'NA',
-          rating: 1.17,
-          impact: 2,
-          dpr: 0.66,
-          adr: 85.1,
-          kast: 71.3,
-          kpr: 0.74},
-        // 更多选手数据
-        {image: './avatar.webp',
-          nickName: 'tabseN',
-          realName: 'Johannes Wodarz',
-          team: 'BIG',
-          region: 'NA',
-          teamImage: './download.png',
-          age: 25,
-          rating: 20.17,
-          impact: 1.22,
-          dpr: 0.66,
-          adr: 85.1,
-          kast: 71.3,
-          kpr: 0.74},
-      ],
-      gradients: [
-        'linear-gradient(90deg, #FF8A65, #FF7043)',
-        'linear-gradient(90deg, #BA68C8, #AB47BC)',
-        'linear-gradient(90deg, #4FC3F7, #29B6F6)',
-        'linear-gradient(90deg, #81C784, #66BB6A)',
-        'linear-gradient(90deg, #FFD54F, #FFCA28)',
-        'linear-gradient(90deg, #E57373, #EF5350)',
-      ],
+      availablePlayers: [],
     };
   },
   methods: {
@@ -188,7 +162,6 @@ export default {
     async sendMessage() {
       if (!this.inputMessage.trim()) return;
       this.messages.push({type: 'user', text: this.inputMessage});
-      this.messages.push({type: 'bot', text: `Bot response to: "${this.inputMessage}"`});
       try {
         const app = await Client.connect(global.GRADIO_LOCAL_LINK);
 
@@ -333,11 +306,11 @@ export default {
   overflow-y: scroll;
 }
 .player-info {
+  text-align: left;
   display: flex;
   gap: 10px;
   align-items: center; /* 垂直居中 */
   height: 100%; /* 需要的高度 */
-  text-align: center; /* 文本居中 */
 }
 
 .player-list-header {
@@ -357,14 +330,21 @@ export default {
 }
 
 
-.player-avatar {
-  width: 100px;
-  height: 100px;
-}
+  .player-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
 .player-name {
   font-family: 'Bebas Neue', Impact, sans-serif; /* 选择一个粗体且霸气的字体 */
-  font-size: 24px;
+  font-size: 27px;
   color: #070602;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -372,7 +352,7 @@ export default {
 
 .player-score {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   color: #d4ac0d;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -390,5 +370,35 @@ export default {
 
 .select-button:hover {
   background-color: #4c47d8;
+}
+
+/* 右边选手名字输入框 */
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.custom-input:focus {
+  border-color: #007bff;
+}
+/* 右边选手赛区选择框 */
+.custom-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+}
+
+.custom-select:focus {
+  border-color: #007bff;
 }
 </style>

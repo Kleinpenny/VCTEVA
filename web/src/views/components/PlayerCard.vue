@@ -2,19 +2,10 @@
   <v-card class="player-card" elevation="3">
     <v-row no-gutters>
       <!-- 左侧：头像 -->
-      <v-col cols="3"  class="text-center">
-        <v-img
-            height="100%"
-            cover
-        >
-          <v-avatar
-              color="grey"
-              rounded="0"
-              size="90"
-          >
-            <img src="./avatar.webp" cover height="100" width="100"></img>
-          </v-avatar>
-        </v-img>
+      <v-col cols="3"  class="text-center ">
+        <div class="player-avatar" :style="{ backgroundColor: player.bgColor }">
+          {{ player.avatarInitials }}
+        </div>
       </v-col>
 
       <!-- 右侧：玩家信息和统计数据 -->
@@ -22,36 +13,28 @@
       <v-col cols="9" >
 
         <div class="player-info">
-          <v-card-title class="player-nickname text-h5" style="display: flex; justify-content: space-between; align-items: center;">{{ player.nickName }}
-            <v-avatar>
-            <img
-                alt="John"
-                src="./download.png"
-                height="30"
-                width="30"
-            ></img>
-          </v-avatar></v-card-title>
-          <v-card-subtitle class="player-subtitle">{{ player.realName }} - {{ player.team }} - {{ player.age }} years</v-card-subtitle>
+          <v-card-title class="player-nickname text-h5" style="display: flex; justify-content: space-between; align-items: center;">{{ player.handle }}</v-card-title>
+          <v-card-subtitle class="player-subtitle">{{ player.name }} -- {{ player.region }}</v-card-subtitle>
 
           <v-card-actions>
             <v-row dense>
               <v-col cols="4">
-                <StatBar title="Rating 1.0" :value="player.rating" :avg="1.0" description="POOR" />
+                <StatBar title="ACS " :value="player.average_combat_score" :avg="average.avg_combat_score" description="POOR" />
               </v-col>
               <v-col cols="4">
-                <StatBar title="DPR" :value="player.dpr" :avg="0.65" description="OKAY" />
+                <StatBar title="DDDelta" :value="player.average_dddelta" :avg="average.avg_dddelta" description="OKAY" />
               </v-col>
               <v-col cols="4">
-                <StatBar title="KAST" :value="player.kast" :avg="70" description="OKAY" unit="%" />
+                <StatBar title="KPR" :value="player.average_kpr" :avg="average.avg_kpr" description="OKAY" unit="%" />
               </v-col>
               <v-col cols="4">
-                <StatBar title="Impact" :value="player.impact" :avg="1.0" description="POOR" />
+                <StatBar title="Damage Cause" :value="player.average_damage_per_round" :avg="average.average_damage_per_round" description="POOR" />
               </v-col>
               <v-col cols="4">
-                <StatBar title="ADR" :value="player.adr" :avg="80" description="POOR" />
+                <StatBar title="Damage Taken" :value="player.average_damage_taken_per_round" :avg="average.average_damage_taken_per_round" description="POOR" />
               </v-col>
               <v-col cols="4">
-                <StatBar title="KPR" :value="player.kpr" :avg="0.7" description="POOR" />
+                <StatBar title="HS Rate" :value="player.average_headshot_hit_rate" :avg="average.average_headshot_hit_rate" description="POOR" />
               </v-col>
             </v-row>
           </v-card-actions>
@@ -62,13 +45,18 @@
 </template>
 
 <script>
-import StatBar from './StatBar.vue';  // 导入自定义的StatBar组件
+import StatBar from './StatBar.vue';
+import axios from "axios";  // 导入自定义的StatBar组件
 
 export default {
   components: {
     StatBar
   },
   props: {
+      average:{
+        type: {},
+        required: true
+      },
     player: {
       type: Object,
       required: true
@@ -97,6 +85,20 @@ export default {
 .player-info {
   padding-left: 10px;
 }
+.player-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
 
 /* 昵称样式 */
 .player-nickname {
