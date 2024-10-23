@@ -1,5 +1,5 @@
-const GRADIO_LOCAL_LINK = "http://127.0.0.1:7860"
-const GRADIO_GLOBAL_LINK = "http://127.0.0.1:7860"
+const GRADIO_LOCAL_LINK = "http://0.0.0.0:7862"
+const GRADIO_GLOBAL_LINK = "http://0.0.0.0:7862"
 const LLM_SERVICE_TPYE = "Llama"
 
 export default {
