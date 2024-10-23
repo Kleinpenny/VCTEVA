@@ -72,13 +72,19 @@
           </template>
 
           <v-sheet>
-            <TeamDisplay :average="average" :team="selectedTeam" @deletePlayer="deletePlayerFromTeam"/>
+            <TeamDisplay :average="average" :team="selectedTeam"
+                         @deletePlayer="deletePlayerFromTeam"
+                         @show-champion="showModal"/>
           </v-sheet>
         </v-bottom-sheet>
       </div>
     </div>
 
-
+    <TrophyModal
+        v-if="isModalVisible"
+        :isVisible="isModalVisible"
+        @close="closeModal"
+    />
   </div>
 </template>
 <script>
@@ -86,9 +92,11 @@ import TeamDisplay from "@/views/components/TeamDisplay.vue";
 import { Client } from "@gradio/client";
 import global from "..//global.js";
 import axios from 'axios';
+import TrophyModal from "@/views/components/TrophyModal.vue";
 
 export default {
   components: {
+    TrophyModal,
     TeamDisplay
   },
   computed: {
@@ -136,6 +144,7 @@ export default {
   },
   data() {
     return {
+      isModalVisible: false,
       searchQuery: '',
       average: {},
       selectedRegion: '',
@@ -150,6 +159,12 @@ export default {
     };
   },
   methods: {
+    showModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    },
     addPlayerToTeam(player) {
       if (this.selectedTeam.length < 6 && !this.selectedTeam.includes(player)) {
         this.selectedTeam.push(player);

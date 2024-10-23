@@ -9,9 +9,12 @@
           :average="average"
           @click="deletePlayer(player)"
       />
-      <div class="team-grid" v-if="team.length >= 5">
-        Chase Your Champion
-        <v-icon large color="yellow">mdi-trophy</v-icon>
+      <div class="champion-message" v-if="team.length >= 5">
+
+        <v-btn size="x-large"  class="flex-grow-1 text-none mb-4" @click="handleShowChampion">
+          Chase Your Champion
+          <v-icon large color="yellow">mdi-trophy</v-icon>
+        </v-btn>
       </div>
     </div>
   </div>
@@ -22,33 +25,47 @@ import PlayerCard from './PlayerCard.vue';
 
 export default {
   components: {
-    PlayerCard
+    PlayerCard,
   },
   props: {
-    average:{
-      type: {},
-      required: true
+    average: {
+      type: Object,
+      required: true,
     },
     team: {
       type: Array,
       required: true,
       validator(value) {
-        // 验证 team 的长度不超过 5
         return value.length <= 5;
-      }
-    }
+      },
+    },
+  },
+  data() {
+    return {
+      isModalVisible: false,
+      championImage: 'champion.webp', // 替换为实际图片路径
+    };
   },
   computed: {
     limitedTeam() {
-      // 返回最多前 5 个玩家
       return this.team.slice(0, 5);
-    }
+    },
   },
   methods: {
+    handleShowChampion() {
+      // 触发事件到父组件
+      this.$emit('show-champion');
+    },
     deletePlayer(player) {
       this.$emit('deletePlayer', player);
-    }
-  }
+    },
+    showChampion() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    },
+  },
 };
 </script>
 
@@ -73,10 +90,23 @@ export default {
 }
 
 .champion-message {
-  grid-column: span 3; /* 占据整个行 */
+  grid-column: span 1;
   text-align: center;
-  font-size: 18px;
-  color: #ff0000;
-  margin-top: 10px;
+  align-content: center;
+  justify-content: center;
+}
+
+.champion-button {
+  background-color: #ffd700;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.champion-button:hover {
+  transform: scale(1.05);
 }
 </style>

@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@rive-app/canvas": "^2.21.6",
+    "@rive-app/canvas-advanced": "^2.21.6",
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "mysql2": "^3.11.3"

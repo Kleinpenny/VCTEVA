@@ -86,8 +86,8 @@ export default {
   padding-left: 10px;
 }
 .player-avatar {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
