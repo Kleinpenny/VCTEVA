@@ -13,6 +13,25 @@ conda activate eva
 pip install -r requirements.txt
 ```
 
+
+### 1.1 venv in Linux Set Up
+```
+# 安装 Python 3 & pip
+sudo apt-get update
+sudo apt-get install python3
+sudo apt-get install python3-pip
+
+#安装python3-venv
+sudo apt-get install python3-venv
+
+#创建虚拟环境
+cd VCTEVA
+python3 -m venv eva
+source eva/bin/activate
+pip install -r requirements.txt
+```
+
+
 ### 2. Data Preparation
 
 We've preprocessed the data and stored it in [all_players.json](/DATA/all_players.json) for simple retrieval.
@@ -155,6 +174,16 @@ Besides, You need to apply for permission to use the llama model in the us-east-
 
 ```bash
 python app.py
+
+# in new terminal
+cd web
+npm install
+npm run dev
+
+# in new terminal
+cd nodejs-backend
+npm install
+node app.js
 ```
 
 ## Project Overview
