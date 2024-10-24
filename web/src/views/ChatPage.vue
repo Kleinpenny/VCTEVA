@@ -6,19 +6,19 @@
         <img src="./components/llama.png" alt="ChatGPT" class="avatar" />
         <span style="color: #1b1f23"> {{ llmService }}</span>
       </div>
-      <div class="chat-history" style="display: flex; flex-direction: column; align-items: flex-start;">
-        <div v-for="(message, index) in messages" :key="index" :class="['message', messageClass(message.type)]" style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+      <div class="chat-history">
+        <div v-for="(message, index) in messages" :key="index" :class="['message', messageClass(message.type)]">
           <!-- Bot Avatar -->
           <div class="message-avatar" v-if="message.type === 'bot'" style="margin-right: 10px;">
             <img src="./components/llama.png" alt="Bot Avatar" class="avatar" style="width: 35px; height: 35px;" />
           </div>
 
           <!-- Message Bubble -->
-          <div class="message-bubble" style="max-width: 80%; background-color: #f1f1f1; padding: 10px; border-radius: 10px; text-align: left;">
+          <div class="message-bubble">
             <!-- If the message contains markdown, render it with v-html -->
-            <p v-if="message.isMarkdown" v-html="message.text" style="margin: 0; color: black;"></p>
+            <p v-if="message.isMarkdown" v-html="message.text" class="bot-message"></p>
             <!-- Otherwise, render it as plain text -->
-            <p v-else style="margin: 0; color: black;">{{ message.text }}</p>
+            <p v-else class="user-message">{{ message.text }}</p>
           </div>
 
           <!-- User Avatar -->
