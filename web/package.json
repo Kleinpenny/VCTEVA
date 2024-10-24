@@ -9,13 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mdi/font": "^7.4.47",
-    "@rive-app/canvas": "^2.21.6",
-    "@rive-app/canvas-advanced": "^2.21.6",
-    "axios": "^1.7.7",
-    "vue": "^3.5.12",
-    "vue-router": "^4.4.5",
-    "vuetify": "^3.7.3"
+  "@mdi/font": "^7.4.47",
+  "@rive-app/canvas": "^2.21.6",
+  "@rive-app/canvas-advanced": "^2.21.6",
+  "axios": "^1.7.7",
+  "vue": "^3.5.12",
+  "vue-router": "^4.4.5",
+  "vuetify": "^3.7.3",
+  "marked": "^5.0.2"
   },
   "devDependencies": {
     "@gradio/client": "^1.6.0",

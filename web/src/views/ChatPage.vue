@@ -6,19 +6,30 @@
         <img src="./components/llama.png" alt="ChatGPT" class="avatar" />
         <span style="color: #1b1f23"> {{ llmService }}</span>
       </div>
-      <div class="chat-history">
-        <div v-for="(message, index) in messages" :key="index" :class="['message', messageClass(message.type)]">
-          <div class="message-avatar" v-if="message.type === 'bot'">
-            <img src="./components/llama.png" alt="Bot Avatar" class="avatar" />
+      <div class="chat-history" style="display: flex; flex-direction: column; align-items: flex-start;">
+        <div v-for="(message, index) in messages" :key="index" :class="['message', messageClass(message.type)]" style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+          <!-- Bot Avatar -->
+          <div class="message-avatar" v-if="message.type === 'bot'" style="margin-right: 10px;">
+            <img src="./components/llama.png" alt="Bot Avatar" class="avatar" style="width: 35px; height: 35px;" />
           </div>
-          <div class="message-bubble">
-            <p>{{ message.text }}</p>
+
+          <!-- Message Bubble -->
+          <div class="message-bubble" style="max-width: 80%; background-color: #f1f1f1; padding: 10px; border-radius: 10px; text-align: left;">
+            <!-- If the message contains markdown, render it with v-html -->
+            <p v-if="message.isMarkdown" v-html="message.text" style="margin: 0; color: black;"></p>
+            <!-- Otherwise, render it as plain text -->
+            <p v-else style="margin: 0; color: black;">{{ message.text }}</p>
           </div>
-          <div class="message-avatar" v-if="message.type === 'user'">
+
+          <!-- User Avatar -->
+          <div class="message-avatar" v-if="message.type === 'user'" style="margin-left: 10px;">
             <v-icon size="35" color="black">mdi-account-circle</v-icon>
           </div>
         </div>
       </div>
+
+
+
       <div class="chat-input">
         <input
             v-model="inputMessage"
@@ -93,6 +104,7 @@ import { client } from "@gradio/client";
 import global from "..//global.js";
 import axios from 'axios';
 import TrophyModal from "@/views/components/TrophyModal.vue";
+import { marked } from 'marked';
 
 export default {
   components: {
@@ -172,30 +184,26 @@ export default {
     },
     async sendMessage() {
       if (!this.inputMessage.trim()) return;
-      this.messages.push({type: 'user', text: this.inputMessage});
+      this.messages.push({ type: 'user', text: this.inputMessage });
       const message = this.inputMessage;
       this.inputMessage = '';
 
       try {
         const app = await client(global.GRADIO_LOCAL_LINK);
-        console.log('client config ok')
+        console.log('client config ok');
         const result = await app.predict("/chat", [message]);
-        console.log('get chat result')
+        console.log('get chat result');
         const botResponse = result.data[0];
-        console.log(botResponse)
-        this.messages.push({ type: 'bot', text: botResponse });
+        console.log(botResponse);
+
+        // Convert botResponse to markdown format using 'marked'
+        const markdownResponse = marked(botResponse);
+
+        this.messages.push({ type: 'bot', text: markdownResponse, isMarkdown: true });
       } catch (error) {
         this.messages.push({ type: 'bot', text: 'Sorry, I could not process your question at the moment.' });
         console.log(error);
       }
-
-      // const response = await axios.post(global.GRADIO_LOCAL_LINK + '/chat', {
-      //   data: [this.inputMessage],
-      // }, {withCredentials: false});
-
-      // 假设响应结构是 response.data.data[0]
-      // const result = response.data.data[0];
-
     },
     messageClass(type) {
       return type === 'user' ? 'user-message justify-end' : 'bot-message justify-start';
