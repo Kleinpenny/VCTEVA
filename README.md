@@ -16,15 +16,15 @@ pip install -r requirements.txt
 
 ### 1.1 venv in Linux Set Up
 ```
-# 安装 Python 3 & pip
+# install Python 3 & pip
 sudo apt-get update
 sudo apt-get install python3
 sudo apt-get install python3-pip
 
-#安装python3-venv
+# install python3-venv
 sudo apt-get install python3-venv
 
-#创建虚拟环境
+# create virtual env for project
 cd VCTEVA
 python3 -m venv eva
 source eva/bin/activate
