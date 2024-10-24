@@ -89,7 +89,7 @@
 </template>
 <script>
 import TeamDisplay from "@/views/components/TeamDisplay.vue";
-import { Client } from "@gradio/client";
+import { client } from "@gradio/client";
 import global from "..//global.js";
 import axios from 'axios';
 import TrophyModal from "@/views/components/TrophyModal.vue";
@@ -174,15 +174,14 @@ export default {
       if (!this.inputMessage.trim()) return;
       this.messages.push({type: 'user', text: this.inputMessage});
       const message = this.inputMessage;
-        this.inputMessage = '';
+      this.inputMessage = '';
+
       try {
-        const app = await Client.connect(global.GRADIO_LOCAL_LINK);
+        const app = await client(global.GRADIO_LOCAL_LINK);
         console.log('client config ok')
-        const result = await app.predict("/chat", {
-          message: message,
-        });
+        const result = await app.predict("/chat", [message]);
         console.log('get chat result')
-        const botResponse = result.data;
+        const botResponse = result.data[0];
         console.log(botResponse)
         this.messages.push({ type: 'bot', text: botResponse });
       } catch (error) {

@@ -1,5 +1,5 @@
-const GRADIO_LOCAL_LINK = "http://127.0.0.1:7862"
-const DATABASE_LINK = "http://0.0.0.0:3307"
+const GRADIO_LOCAL_LINK = "http://localhost:7862"
+const DATABASE_LINK = "http://localhost:3307"
 const GRADIO_TOKEN = "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"
 const LLM_SERVICE_TPYE = "Llama"
 
